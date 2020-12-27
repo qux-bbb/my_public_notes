@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application\SvcName]
+
+"TypesSupported"=dword:00000007
+"EventMessageFile"="‪C:\\Users\\hello\\Desktop\\sample.dll"
