@@ -1,4 +1,4 @@
-## 简介
+## 1 简介
 websockets，用于在Python中构建WebSocket服务器和客户端，正确且简单。  
 官网：https://websockets.readthedocs.io/en/stable/intro.html  
 
@@ -10,7 +10,7 @@ pip install websockets
 ```
 
 
-## 基本示例
+## 2 基本示例
 server.py，从客户端读取一个名字，发送问候，然后关闭连接    
 ```python
 #!/usr/bin/env python
@@ -59,7 +59,7 @@ asyncio.get_event_loop().run_until_complete(hello())
 ```
 
 
-## 安全示例
+## 3 安全示例
 首先需要生成秘钥和证书：  
 ```
 openssl req -x509 -nodes -new -sha256 -days 1024 -newkey rsa:2048 -keyout key.pem -out cert.pem -subj "/C=US/CN=localhost"
