@@ -116,3 +116,8 @@ svcconfig enable SvcName
 ```
 svccontrol stop SvcName
 ```
+
+
+## 3 让Svc.exe写文件
+官方示例中的Svc.exe没有实质的动作，我们给它加一个写文件的操作，有点真实的感觉  
+Svc_modified.cpp内容见：[files/sources/Svc_modified.cpp](files/sources/Svc_modified.cpp)  
