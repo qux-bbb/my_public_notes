@@ -121,3 +121,13 @@ svccontrol stop SvcName
 ## 3 让Svc.exe写文件
 官方示例中的Svc.exe没有实质的动作，我们给它加一个写文件的操作，有点真实的感觉  
 Svc_modified.cpp内容见：[files/sources/Svc_modified.cpp](files/sources/Svc_modified.cpp)  
+
+
+## 4 调试服务
+服务的主体程序不能像普通程序那样直接调试，官方给了一些调试方法，可参照链接：  
+https://docs.microsoft.com/zh-cn/windows/win32/services/debugging-a-service  
+
+其中，通过注册表项设置镜像劫持的方法在Windows Vista之后已不可用  
+
+还有一种比较笨的方法：  
+把对应位置改成无限循环（EB FE），然后windbg去附加。附加后在无限循环处下断点，断下后改回原来的内容，继续调试即可。  
