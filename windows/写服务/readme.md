@@ -126,8 +126,11 @@ Svc_modified.cpp内容见：[files/sources/Svc_modified.cpp](files/sources/Svc_m
 ## 4 调试服务
 服务的主体程序不能像普通程序那样直接调试，官方给了一些调试方法，可参照链接：  
 https://docs.microsoft.com/zh-cn/windows/win32/services/debugging-a-service  
+总结为：  
+1. 使用调试器附加运行中的服务进程（适用于重复运行且运行不影响后续调试的情况）
+2. 使用DebugBreak来调用调试器（适用于自己写程序的情况）
+3. 通过注册表项设置镜像劫持（看起来简单且效果最好，但在Windows Vista之后已不可用）
+4. 使用Event Tracing记录信息（适用于自己写程序的情况）
 
-其中，通过注册表项设置镜像劫持的方法在Windows Vista之后已不可用  
-
-还有一种比较笨的方法：  
-把对应位置改成无限循环（EB FE），然后windbg去附加。附加后在无限循环处下断点，断下后改回原来的内容，继续调试即可。  
+对逆向来说，一种可行的方法：  
+把关键位置改成无限循环（EB FE），然后windbg去附加。附加后在无限循环处下断点，断下后改回原来的内容，继续调试即可。  
