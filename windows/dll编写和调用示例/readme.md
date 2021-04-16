@@ -67,6 +67,7 @@ EXPORTS
 :: ","后可以有空格
 :: 随便给一个函数名都可以执行DllMain
 rundll32.exe SampleDll.dll,WrongFunc
+:: 调用HelloWorld函数
 rundll32.exe SampleDLL.dll,HelloWorld
 ```
 
