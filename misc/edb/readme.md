@@ -4,5 +4,11 @@ edb is a cross platform AArch32/x86/x86-64 debugger. It was inspired by Ollydbg,
 
 github地址: https://github.com/eteran/edb-debugger  
 
+安装：  
+```bash
+sudo apt install edb-debugger
+```
+
 
 2021/4/12  
+2021/4/20 增加安装方式  
