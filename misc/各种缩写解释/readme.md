@@ -60,7 +60,10 @@ Remote Code/Command Execution : : 远程代码/命令执行
 Proofs Of Concept :: 概念验证  
 
 **C&C**  
-Command and Control : : 命令与控制，简称C2
+Command and Control : : 命令与控制，简称C2  
+
+**ROT13**  
+Rotate by 13 places : : 凯撒密码变体，移位13  
 
 
 ## misc
