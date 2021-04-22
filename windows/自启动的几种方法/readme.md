@@ -10,6 +10,7 @@
    - `HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run`  
 3. 任务计划程序  
    win+R，输入: `taskschd.msc`, 回车可以打开任务计划程序，可以设置可执行程序的启动时间和频率  
+   设置的任务计划会存到`C:\Windows\System32\Tasks`文件夹下  
 4. 自启动服务  
    win+R，输入: `services.msc`, 回车可以打开服务列表，在这里可以设置已有任务的运行状态和启动类型  
    `sc.exe`是用来与服务控制管理器和服务进行通信的命令行程序，可以查看、创建、删除服务  
