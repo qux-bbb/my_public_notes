@@ -39,5 +39,9 @@ vmware安装遇到问题，卡死在这儿了：
 
 安装很顺利，没有什么问题。  
 
+比manjaro稳定，但软件比manjaro少一点。  
+opensuse好像受美国出口管制，manjaro没有。  
+KDE的界面有很强的可配置性，所以感觉可以按opensuse的样子给manjaro配置一下。  
+
 
 2021/5/1  
