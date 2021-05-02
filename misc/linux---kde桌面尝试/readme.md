@@ -31,6 +31,20 @@ vmware安装遇到问题，卡死在这儿了：
 
 参考链接: https://blog.csdn.net/qq_44874759/article/details/115256777  
 
+### 安装中文输入法
+如果有fcitx先删除fcitx: `sudo pacman -Rsc fcitx`  
+安装fcitx5: `sudo pacman -S fcitx5-im fcitx5-chinese-addons`  
+配置环境变量，编辑~/.pam_environment，如果没有文件自己创建一个：  
+```
+GTK_IM_MODULE DEFAULT=fcitx
+QT_IM_MODULE  DEFAULT=fcitx
+XMODIFIERS    DEFAULT=\@im=fcitx
+SDL_IM_MODULE DEFAULT=fcitx
+```
+注销重新登入即可生效  
+
+原链接: https://linuxacme.cn/336/  
+
 
 ## opensuse
 官网: https://www.opensuse.org/  
@@ -41,7 +55,7 @@ vmware安装遇到问题，卡死在这儿了：
 
 比manjaro稳定，但软件比manjaro少一点。  
 opensuse好像受美国出口管制，manjaro没有。  
-KDE的界面有很强的可配置性，所以感觉可以按opensuse的样子给manjaro配置一下。  
+opensuse的默认界面更好看一些，不过只是不同的风格，manjaro切换一下就好了。  
 
 
 2021/5/1  
