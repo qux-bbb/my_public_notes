@@ -13,6 +13,8 @@
 ## manjaro
 官网: https://manjaro.org/  
 
+Manjaro 读音 /mənˈdʒɑːroʊ/ (汉语谐音：满家柔)  
+
 有多种桌面版本，使用kde桌面的manjaro很漂亮，基于arch，安装过程对用户更友好。  
 
 ### 安装问题
