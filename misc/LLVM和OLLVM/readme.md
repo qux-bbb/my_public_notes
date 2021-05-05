@@ -1,6 +1,10 @@
 # LLVM和OLLVM
 
 ## LLVM
+
+官网: https://llvm.org  
+github地址: https://github.com/llvm/llvm-project  
+
 LLVM是构架编译器(compiler)的框架系统，以C++编写而成，可以简化编译器的实现，优化编译器的功能。  
 
 LLVM和原来的全称（Low Level Virtual Machine）没什么关系。作者本来想写类似jvm的底层虚拟机，最后变成了这个编译器框架。  
@@ -21,6 +25,17 @@ LLVM框架也分成3个阶段：
 这样的好处是，解耦合。  
 要增加新的语言，只需要写新的前端。  
 要增加处理器架构，只需要写新的后端。  
+
+linux下从最新源码编译LLVM：  
+```bash
+git clone https://github.com/llvm/llvm-project.git
+cd llvm-project
+cmake -S llvm -B build
+cd build
+make -j4
+```
+`-j` 参数表示并行数，据说可显著提高编译速度  
+默认make用时 `4h 3m 9s`， 添加 `-j8` 经历 `2h 15m 6s` 之后出错了，github举例是和CPU数相同，有时间试试 &&&&&&&  
 
 
 ## OLLVM
