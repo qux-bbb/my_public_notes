@@ -65,6 +65,7 @@ https://github.com/llvm/llvm-project/releases
 3. https://blog.csdn.net/yayaayaya123/article/details/83993041  
 4. https://blog.csdn.net/water1307/article/details/81390175  
 5. https://github.com/obfuscator-llvm/obfuscator  
+6. https://www.jianshu.com/p/e0637f3169a3
 
 
 2020/11/24  
