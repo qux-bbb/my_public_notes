@@ -32,10 +32,12 @@ git clone https://github.com/llvm/llvm-project.git
 cd llvm-project
 cmake -S llvm -B build
 cd build
-make -j4
+make
 ```
-`-j` 参数表示并行数，据说可显著提高编译速度  
-默认make用时 `4h 3m 9s`， 添加 `-j8` 经历 `2h 15m 6s` 之后出错了，github举例是和CPU数相同，有时间试试 &&&&&&&  
+make的`-j` 参数表示并行数，据说可显著提高编译速度  
+默认make用时 `4h 3m 9s`，  
+添加 `-j8` 经历 `2h 15m 6s` 之后出错了，  
+自己电脑是4核的，添加 `-j4` 经历2个小时后也还是出错了  
 
 
 ## OLLVM
