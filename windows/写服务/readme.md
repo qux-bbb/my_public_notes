@@ -134,3 +134,7 @@ https://docs.microsoft.com/zh-cn/windows/win32/services/debugging-a-service
 
 对逆向来说，一种可行的方法：  
 把关键位置改成无限循环（EB FE），然后windbg去附加。附加后在无限循环处下断点，断下后改回原来的内容，继续调试即可。  
+
+
+## 未解决问题
+看《恶意代码分析实战》说可以让服务不在任务管理器中作为一个进程显示出来，还不知道怎么实现。  
