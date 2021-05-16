@@ -47,6 +47,11 @@ SDL_IM_MODULE DEFAULT=fcitx
 
 原链接: https://linuxacme.cn/336/  
 
+### 登录界面非全中文
+搜 SDDM，换一个登录屏幕  
+
+感谢 QQ 的 Manjaro 群  
+
 
 ## opensuse
 官网: https://www.opensuse.org/  
