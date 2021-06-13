@@ -202,6 +202,8 @@ git branch -D version1.0
 ```sh
 # 将远程版本库的代码下载到本地
 git clone https://github.com/example/test.git
+# 将远程版本库的代码下载到本地，包含子仓库
+git clone --recursive https://github.com/example/test.git
 # 将本地代码同步到远程版本库，默认为`origin master`，可省略
 # 添加 `--force` 选项可强制覆盖，不推荐
 git push origin master
@@ -214,6 +216,8 @@ git push origin master
 git fetch origin master
 # 相当于执行fetch和merge这两个命令，可以从远程版本库获取最新的代码并且合并到本地
 git pull origin master
+# 拉取git子仓库
+git pull origin master --recurse-submodules
 ```
 
 
