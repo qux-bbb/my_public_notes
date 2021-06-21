@@ -124,7 +124,7 @@ FullDllName是dll的名称
 
 ## windbg获取相关信息
 
-```
+```bash
 # 展示teb信息
 !teb
 # 展示peb信息
@@ -134,6 +134,20 @@ dt _teb
 # 展示peb结构
 dt _peb
 ```
+
+```bash
+# 查看peb地址，输出的第一行就有peb地址
+!peb
+# 假设peb地址为000007fffffd9000，映射地址到结构体并显示
+dt _peb 000007fffffd9000
+# 以_PEB_LDR_DATA结构体形式显示0x77432e40地址处的数据，深度为1
+dx -r1 ((ntdll!_PEB_LDR_DATA *)0x77432e40)
+# 以_LIST_ENTRY结构体形式显示0x77432e50地址处的数据
+dx -r1 (*((ntdll!_LIST_ENTRY *)0x77432e50))
+# 以_LDR_DATA_TABLE_ENTRY结构体形式显示0x77432e50地址处的数据
+dx -r1 (*((ntdll!_LDR_DATA_TABLE_ENTRY *)0x77432e50))
+```
+_LDR_DATA_TABLE_ENTRY 是 _LIST_ENTRY 的延展  
 
 
 参考链接：  
