@@ -12,7 +12,7 @@ GADP: Ghidra Asynchronous Debug Protocol, Ghidra异步调试协议
 
 据文档介绍IN-VM模式直接调用调试器，会快一点，GADP模式通过协议连接调试器，比IN-VM模式慢，但不会导致数据丢失  
 
-调试功能起码windows上现在不好用  
+官方说明的一个bug：调试功能现在必须启动之后下断点才能生效，启动之前下的断点断不下来  
 
 
 20190925
