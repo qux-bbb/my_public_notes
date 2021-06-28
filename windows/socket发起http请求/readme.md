@@ -1,5 +1,7 @@
 # socket发起http请求
 
+keywords: 网络请求  
+
 域名和ip的处理方式不太一样  
 
 
@@ -28,12 +30,6 @@ int get_webpage(char* domain)
 		return 0;
 	}
 
-	if (LOBYTE(wsaData.wVersion) != 1 ||   //判断请求的winsocket是不是1.1的版本
-		HIBYTE(wsaData.wVersion) != 1) {
-		WSACleanup();          //清盘
-		return 0;                   //终止对winsocket使用
-	}
-
 	SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);//建立socket
 	if (sock == INVALID_SOCKET)
 	{
@@ -52,16 +48,13 @@ int get_webpage(char* domain)
 	hostadd.sin_family = AF_INET;
 	hostadd.sin_port = htons(80);
 
-
 	char buf[LEN] = "GET / HTTP/1.1\r\nHost: ";//构造Http请求数据包
 	strcat(buf, inet_ntoa(hostadd.sin_addr));
 	strcat(buf, " \r\nContent-Length: 10\r\n\r\n");
 	strcat(buf, "Connection:close");
 
-
 	int time = 10000;    //超时时间
 	setsockopt(sock, SOL_SOCKET, SO_RCVTIMEO, (char*)&time, sizeof(time));
-
 
 	if (connect(sock, (sockaddr*)&hostadd, sizeof(hostadd)) == SOCKET_ERROR)//连接请求
 	{
@@ -118,12 +111,6 @@ int get_webpage(char* ip)
 		return 0;
 	}
 
-	if (LOBYTE(wsaData.wVersion) != 1 ||   //判断请求的winsocket是不是1.1的版本
-		HIBYTE(wsaData.wVersion) != 1) {
-		WSACleanup();          //清盘
-		return 0;                   //终止对winsocket使用
-	}
-
 	SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);//建立socket
 	if (sock == INVALID_SOCKET)
 	{
@@ -135,16 +122,13 @@ int get_webpage(char* ip)
 	host.sin_family = AF_INET;
 	host.sin_port = htons(80);
 
-
 	char buf[LEN] = "GET / HTTP/1.1\r\nHost: ";//构造Http请求数据包
 	strcat(buf, inet_ntoa(host.sin_addr));
 	strcat(buf, " \r\nContent-Length: 10\r\n\r\n");
 	strcat(buf, "Connection:close");
 
-
 	int time = 10000;    //超时时间
 	setsockopt(sock, SOL_SOCKET, SO_RCVTIMEO, (char*)&time, sizeof(time));
-
 
 	if (connect(sock, (sockaddr*)&host, sizeof(host)) == SOCKET_ERROR)//连接请求
 	{

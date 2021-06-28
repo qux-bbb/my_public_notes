@@ -1,6 +1,8 @@
+# WinHttp请求网页
+
 keywords: windows 网络请求 c  
 
-```c++
+```cpp
 #pragma comment(lib,"winhttp.lib")
 
 #include <Windows.h>

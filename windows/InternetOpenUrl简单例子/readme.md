@@ -1,5 +1,7 @@
 # InternetOpenUrl简单例子
 
+keywords: 网络请求  
+
 使用 InternetOpen、InternetOpenUrl、InternetReadFile 请求url，获取结果。  
 
 ```cpp
