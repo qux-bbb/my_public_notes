@@ -1,4 +1,8 @@
-```
+# pip使用代理
+
+keywords: pip 代理 proxy  
+
+```bash
 pip install requests --proxy=<ip|domain>:<port>
 ```
 
