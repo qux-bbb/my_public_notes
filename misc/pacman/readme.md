@@ -16,6 +16,10 @@ pacman -Syu
 pacman -Syyu
 # Update package list, upgrade all packages, and then install gpm if it wasn’t already installed.
 pacman -Syu gpm
+# 从服务器下载新的软件包数据库
+pacman -Fy
+# 查询ls命令所属的包
+pacman -F ls
 ```
 
 选项解释  
@@ -32,6 +36,11 @@ pacman -Syu gpm
     Remove package(s) from the system. Groups can also be specified
     to be removed, in which case every package in that group will
     be removed.
+-F, --files
+    Query the files database. This operation allows you to look for 
+    packages owning certain files or display files owned by certain 
+    packages. Only packages that are part of your sync databases are 
+    searched. See File Options below.
 
 REMOVE OPTIONS (APPLY TO -R)
     -s, --recursive
@@ -56,6 +65,11 @@ SYNC OPTIONS (APPLY TO -S)
            server(s) defined in pacman.conf(5). This should typically be 
            used each time you use --sysupgrade or -u. Passing two 
            --refresh or -y flags will force a refresh of all package databases, even if they appear to be up-to-date.
+
+FILE OPTIONS (APPLY TO -F)
+       -y, --refresh
+           Download fresh package databases from the server. Use twice to force a refresh even if databases are up to date.
+
 ```
 
 参考man手册  
