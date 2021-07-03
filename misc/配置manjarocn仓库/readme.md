@@ -1,18 +1,19 @@
 # 配置manjarocn仓库
 
-## 正常导入流程
+## 正常配置流程
 添加 manjarocn 到 /etc/pacman.conf(如果使用archlinuxcn，确保manjarocn在前面)  
 ```
 [manjarocn]
 Server = https://repo.manjarocn.org/stable/x86_64
 ```
-导入GPG keys  
+
+导入GPG密钥  
 ```bash
 sudo pacman-key --recv-keys 974B3711CFB9BF2D && sudo pacman-key --lsign-key 974B3711CFB9BF2D
 ```
 
 ## 问题解决
-如果导入出现这样的错误：  
+如果导入密钥出现这样的错误：  
 ```
 gpg: 从公钥服务器接收失败：无名称
 ==> 错误： 无法从密匙服务器中正确取回远端密匙。
