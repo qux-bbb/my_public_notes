@@ -1,4 +1,20 @@
-# 删除自身
+# 删除文件
+
+## 删除其它文件
+```cpp
+#include <Windows.h>
+
+int main()
+{
+    DeleteFile(L"hello.txt");
+    return 0;
+}
+```
+
+参考链接: https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-deletefile  
+
+
+## 删除自身
 
 DeleteFile api不能删除自身，因为被占用，但用ShellExecuteA执行删除的命令可以把自身删掉。  
 
