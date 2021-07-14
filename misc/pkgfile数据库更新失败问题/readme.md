@@ -20,8 +20,9 @@ diff pkgfile-update.timer.bak pkgfile-update.timer
 > OnUnitActiveSec=1d
 > Persistent=no
 ```
-
-&&&&&&& 观察一段时间  
+&&&&&&&  
+这样改之后，关机出现了新的一行: `reboot: Power down`  
+先恢复原样了，不是什么大问题，以后再说  
 
 改完之后，不需要做别的，下次关机就没问题了  
 
