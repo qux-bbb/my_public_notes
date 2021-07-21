@@ -34,6 +34,8 @@ git config --global user.email "tony@email.com"
 git config --unset user.name
 ```
 
+如果发现有2对user.name和user.email，应该上面是全局的，下面是当前仓库的  
+
 
 ## 提交代码
 ```sh
@@ -73,7 +75,7 @@ git diff --name-only
 1. 没有执行过add命令的文件
     ```sh
     # 撤销单个文件
-    git checkout src/....../MianActivity.java
+    git checkout src/....../MainActivity.java
     # 放弃所有修改 方法1
     git checkout .
     # 放弃所有修改 方法2
@@ -86,15 +88,15 @@ git diff --name-only
     然后按没执行add命令的文件处理  
 
 
-## 删除新生成的文件和文件夹
-```sh
-git clean -df
-```
-
-
 ## 撤销已提交(commit)的修改
 ```sh
 git reset HEAD^
+```
+
+
+## 删除新生成的文件和文件夹
+```sh
+git clean -df
 ```
 
 
@@ -245,7 +247,7 @@ git config --global --get https.proxy
 github的地址虽然看起来是https，我设置了http才生效  
 
 
-## 将本地git仓库传到github或gitlab或其他的位置
+## 将本地git仓库传到github或gitlab或其它的位置
 想要的效果是保留以前的提交记录  
 先在github或gitlab创建一个同名空仓库  
 然后本地用以下命令添加远程仓库就好，然后就可以像正常情况一样操作了  
@@ -267,7 +269,7 @@ git config remote.origin.url git://new.url/proj.git
 
 ## 创建命令别名
 设置checkout别名为co  
-```ssh
+```sh
 git config --global alias.co checkout
 ```
 显示当前所有别名  
@@ -281,7 +283,7 @@ git不跟踪空文件夹，解决办法是在空文件夹里建一个空文件
 
 
 ## 参考链接
-https://blog.csdn.net/wq6ylg08/article/details/88798254  
-https://blog.csdn.net/logan_lg/article/details/81531796  
-http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html  
-https://baijiahao.baidu.com/s?id=1606573801465636505  
+1. https://blog.csdn.net/wq6ylg08/article/details/88798254  
+2. https://blog.csdn.net/logan_lg/article/details/81531796  
+3. http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html  
+4. https://baijiahao.baidu.com/s?id=1606573801465636505  
