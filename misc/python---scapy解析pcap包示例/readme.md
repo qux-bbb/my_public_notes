@@ -1,5 +1,10 @@
 # python---scapy解析pcap包示例
 
+安装：  
+```
+pip install scapy
+```
+
 示例1，输出源ip  
 ```python
 # coding:utf8
