@@ -4,6 +4,8 @@
 官网：https://www.qt.io/  
 根据需要选择下载，下载比较坑爹的是需要先注册登录才能下载，把页面转成中文可能比较好找一些  
 2020年开始，不提供离线安装包了，需要通过在线安装包下载安装，而且需要登录账号。  
+qt统一的下载地址: https://download.qt.io/official_releases/  
+
 可以从这里下载5.14之前的版本：  
 http://mirrors.ustc.edu.cn/qtproject/official_releases/qt/5.14/5.14.2/  
 
