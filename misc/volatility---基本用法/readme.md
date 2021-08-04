@@ -2,10 +2,18 @@
 
 Keyword: forensic 取证  
 
+大部分使用相关操作都可以这样看：  
+```
+volatility --help
+volatility --info
+```
+
 1. 查看基本信息，根据查到的信息确定profile的值  
     ```bash
     volatility -f BOOM-6452e9b9.vmem imageinfo 
     ```
+    这个有可能找不到正确的系统版本，可以参考这个链接对比一下
+    https://github.com/volatilityfoundation/volatility/wiki/2.6-Win-Profiles
 2. 指定profile，使用具体的命令  
    iehistory 是看浏览器的进程，pslist是ps命令(也可以用psscan)
     ```bash
@@ -62,6 +70,7 @@ hashdump       	Dumps passwords hashes (LM/NTLM) from memory
 imageinfo      	Identify information for the image
 malfind        	Find hidden and injected code
 memdump        	Dump the addressable memory for a process
+mftparser       Scans for and parses potential MFT entries
 notepad        	List currently displayed notepad text
 procdump       	Dump a process to an executable file sample
 pslist         	Print all running processes by following the EPROCESS lists 
@@ -78,5 +87,7 @@ wintree        	Print Z-Order Desktop Windows Tree
 
 官网: https://www.volatilityfoundation.org/  
 github地址: https://github.com/volatilityfoundation/volatility  
+wiki: https://github.com/volatilityfoundation/volatility/wiki  
+
 
 2019/10/22  
