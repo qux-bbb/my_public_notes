@@ -11,6 +11,8 @@ https://www.enigmaprotector.com/cn/downloads.html
 3. 设置一些压缩之类的选项
 4. 点击"执行"即可
 
+虽然是免费软件，但不是开源的，就先不用了，实在有需求再用  
+
 
 参考链接: https://www.cnblogs.com/mcumagic/p/5252777.html  
 
