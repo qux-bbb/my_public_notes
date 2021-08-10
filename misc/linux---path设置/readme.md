@@ -22,4 +22,4 @@ export PATH=$PATH:/place/with/the/file
 2. https://www.fujieace.com/linux/path-2.html  
 
 
-2021/8/10  
+2020/2/26  
