@@ -1,8 +1,23 @@
 # linux---自启动方法
-简单记一下已经实践过的linux程序自启动方法。  
+简单记一下linux程序自启动方法。  
 
 ## cron
 cron一般用来设置周期性执行任务，把时间指定为 `@reboot` 即可实现开机自启动  
+详见: [linux---cron](../linux---cron/readme.md)  
+
+相关配置文件或文件夹：  
+`/etc/crontab`  
+`/var/spool/cron/crontabs`  
+
+## 自启动服务
+服务一般用来做后台长时间运行的任务  
+详见：  
+[linux---service](../linux---service/readme.md)  
+[linux---systemd](../linux---systemd/readme.md)  
+
+相关配置文件：  
+`/etc/init.d`  
+`/etc/systemd`  
 
 ## gnome-session-properties
 如果是gnome环境，可以找到这个程序 `gnome-session-properties`, 图形化的界面，指定要执行的命令即可，很方便  
