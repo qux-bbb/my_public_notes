@@ -22,10 +22,13 @@ pic = im.load()
 for i in range(256):
     for j in range(256):
         if abs(i-j) < 100:
+            # 写像素
             pic[i, j] = (0, 255, 0)  # 绿色
 
 im.save('a.jpg')
 ```
+
+如果要读取像素，可以 `r, g, b = im.getpixel((j, i))`  
 
 
 2021/8/9  
