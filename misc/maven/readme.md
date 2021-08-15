@@ -4,6 +4,8 @@ https://maven.apache.org/
 
 maven是一个项目构建管理工具。  
 
+从这里可以搜各种包找到对应的maven依赖配置: https://search.maven.org/  
+
 
 ## Windows安装
 安装之前需要确保JDK已安装并配置了java环境变量  
