@@ -3,6 +3,7 @@
 keywords: swf动画  
 
 swf, shock wave flash, 动画设计软件Flash的专用格式  
+file命令得到文件类型描述为: `Macromedia Flash data, version 5`  
 
 swf文件可以用IE安装Flash Player打开  
 
