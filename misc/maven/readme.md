@@ -30,5 +30,22 @@ maven是一个项目构建管理工具。
 </project>
 ```
 
+IntelliJ IDEA自带maven，也可以在设置中改成自己安装的maven。  
+
+有时会遇到依赖无法下载的问题，原因是maven默认的库在国外，国内网络不好，可以把设置成国内的库  
+File -> Settings -> Build, Execution, Deployment -> Build Tools -> Maven -> User settings file  
+勾选后面的"Override"，然后编辑对应的文件，在mirrors节点下添加如下内容保存即可：  
+```xml
+<mirror>
+    <id>alimaven</id>
+    <name>aliyun maven</name>
+    <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+    <mirrorOf>central</mirrorOf>        
+</mirror>
+```
+
+
+参考链接: https://www.runoob.com/maven/maven-repositories.html  
+
 
 2021/8/15  
