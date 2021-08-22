@@ -66,5 +66,21 @@ for i in range(256):
 im.save('a.jpg')
 ```
 
+GIF读取像素示例：  
+```python
+# 注意点：
+# seek是选择第几帧，从0开始
+# 需要转成RGB模式才能读取像素
+from PIL import Image
+
+im = Image.open('test.gif')
+im.seek(0)
+im2 = im.convert('RGB')
+pix1 = im2.getpixel((1,1))
+print(pix1)
+im.close()
+im2.close()
+```
+
 
 2021/8/9  
