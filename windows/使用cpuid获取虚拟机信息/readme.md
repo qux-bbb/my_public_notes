@@ -1,6 +1,6 @@
-使用cpuid获取虚拟机信息  
+# 使用cpuid获取虚拟机信息  
 
-```c++
+```cpp
 #include <stdio.h>
 #include <Windows.h>
 
@@ -12,12 +12,14 @@ int main()
     unsigned int uecx = 0;
     unsigned int uedx = 0;
     __asm {
+        pushad
         mov eax, 0x40000000
         cpuid
         mov ueax, eax
         mov uebx, ebx
         mov uecx, ecx
         mov uedx, edx
+        popad
     }
     printf("%08X-%08X-%08X-%08X\n", ueax, uebx, uecx, uedx);
     // ebx, ecx, edx 存储12字节的信息
