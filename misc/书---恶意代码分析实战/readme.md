@@ -4,6 +4,7 @@
 
 相关练习程序可以在这里下载：  
 https://github.com/mikesiko/PracticalMalwareAnalysis-Labs  
+密码: malware  
 
 
 2021/5/26  
