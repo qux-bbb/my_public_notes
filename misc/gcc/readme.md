@@ -22,6 +22,7 @@ Remove all symbol table and relocation information from the executable.
 # 生成dll
 -shared
 Produce a shared object which can then be linked with other objects to form an executable. Not all systems support this option. For predictable results, you must also specify the same set of options used for compilation (-fpic, -fPIC, or model suboptions) when you specify this linker option.[1]
+pic, Position Independent Code, 位置无关代码
 
 # 静态链接
 -static
