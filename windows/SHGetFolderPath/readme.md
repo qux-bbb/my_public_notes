@@ -1,5 +1,7 @@
 # SHGetFolderPath
 
+keywords: 获取路径 自启动目录  
+
 SHGetFolderPath 可以用来获取一个常用的文件夹路径，在恶意软件中看到过几次  
 
 定义  
@@ -16,26 +18,19 @@ SHFOLDERAPI SHGetFolderPathA(
 示例  
 ```cpp
 #include <Windows.h>
-#include <shlobj_core.h>
+#include <Shlobj.h>
 #include <stdio.h>
 
 int main()
 {
-    char szPath[MAX_PATH];
+	char szPath[MAX_PATH];
+	SHGetFolderPathA(NULL,
+		CSIDL_PERSONAL | CSIDL_FLAG_CREATE,
+		NULL, 0, szPath);
 
-    if (SUCCEEDED(SHGetFolderPathA(
-        NULL,
-        CSIDL_PERSONAL | CSIDL_FLAG_CREATE,
-        NULL,
-        0,
-        szPath)))
-    {
-        //PathAppend(szPath, TEXT("New Doc.txt"));
-        //HANDLE hFile = CreateFile(szPath, ...);
-        printf("%s", szPath);
-    }
+	printf("%s", szPath);
 
-    return 0;
+	return 0;
 }
 ```
 
