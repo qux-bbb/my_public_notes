@@ -1,6 +1,6 @@
 # github---下载部分文件或文件夹
 
-第1种方法还是太慢，先用第2种方法  
+强烈推荐方法3  
 
 ## 方法1
 ```bash
@@ -26,6 +26,13 @@ git pull origin master
 要有svn，假如文件夹为 https://github.com/qux-bbb/CTF_wp/tree/master/ABCTF-2016_writeup  
 将 tree/master 替换为 trunk  
 `svn checkout https://github.com/qux-bbb/CTF_wp/trunk/ABCTF-2016_writeup`  
+
+
+## 方法3
+用github.dev  
+
+把相关地址的 `.com` 换成 `.dev`，或者直接在相应页面按 `.`，就能以vscode的形式查看库的内容了  
+如果要下载，在相应文件或文件夹上右键点 `Download`，按提示操作就好了，很方便  
 
 
 2020/3/19  
