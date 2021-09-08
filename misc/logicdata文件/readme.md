@@ -3,6 +3,7 @@
 做题的时候碰到了后缀是logicdata的文件，是IC卡片(集成电路)的交互数据  
 
 可以从这里下载软件打开分析: https://www.saleae.com/downloads/  
+遇到的题目是1.x版本才能打开的: https://support.saleae.com/logic-software/legacy-software/older-software-releases  
 程序预置了一些类型的分析器，如果有合适的，可以选择进行分析  
 右上角点"Option"可以选择导出csv文件，方便脚本解析数据  
 
