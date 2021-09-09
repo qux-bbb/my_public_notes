@@ -13,6 +13,7 @@
 比如4442卡的说明文档: https://datasheetspdf.com/datasheet/SLE4442.html  
 
 这里有一个题目例子和题解: https://github.com/EmpireCTF/empirectf/blob/master/writeups/2018-06-19-SCTF/README.md#434-misc--神秘的交易  
+这是解析导出csv数据的python脚本: [parser.py](files/parser.py), 有2个地方没找到对应逻辑，但去掉对结果也没什么影响  
 
 
 2021/9/8  
