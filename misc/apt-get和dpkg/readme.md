@@ -24,13 +24,19 @@ clean - 删除所有已下载的包文件
 autoclean - 删除已下载的旧包文件
 ```
 
-另外还有一条个人感觉很重要的命令：  
+自动解决依赖问题的命令：  
 ```bash
-apt-get -f -y install    # 自动解决依赖问题
+apt-get -f -y install
 ```
 如果安装一个软件出现了依赖问题，那就可以执行这条命令，再去安装软件，一般依赖问题就会解决了  
 
-apt-get和apt没什么太大区别，把apt当成apt-get用就可以，比如：  
+下载包和相关依赖，用于离线安装，举例：  
+```bash
+apt install -d openssh-server
+```
+下载的包放在 `/var/cache/apt/archives` 路径下  
+
+apt和apt-get没什么太大区别，把apt当成apt-get用就可以，比如：  
 `apt install aa`  
 
 其实更推荐用apt，自带进度条，而且不用敲那么多呀，哈  
