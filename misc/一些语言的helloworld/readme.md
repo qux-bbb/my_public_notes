@@ -1,7 +1,11 @@
-# 一些语言的helloworld  
+# 一些语言的helloworld
+
+keywords: hello world example  
+
+记一些语言的helloworld，直接拿来用  
 
 ## C
-```c++
+```cpp
 #include <stdio.h>
 
 int main(){
@@ -20,5 +24,12 @@ def main():
 
 if __name__ == '__main__':
     main()
+```
 
+
+## rust
+```rust
+fn main() {
+    println!("Hello, world!");
+}
 ```
