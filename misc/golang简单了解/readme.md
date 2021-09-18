@@ -27,6 +27,27 @@ go run test.go
 go build test.go
 ```
 
+
+## web例子
+```go
+package main
+
+import (
+    "fmt"
+    "net/http"
+)
+
+func main() {
+    http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+        fmt.Fprintf(w, "Hello, you've requested: %s\n", r.URL.Path)
+    })
+
+    http.ListenAndServe(":80", nil)
+}
+```
+原链接: https://gowebexamples.com/hello-world/  
+
+
 ## 安装模块示例  
 ```
 go get github.com/yuin/gopher-lua
