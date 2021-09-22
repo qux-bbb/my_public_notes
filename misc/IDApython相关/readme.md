@@ -9,6 +9,10 @@ https://www.hex-rays.com/wp-content/static/products/ida/support/idapython_docs/
 github地址:  
 https://github.com/idapython  
 
+一些技巧：  
+1. 尽量用python风格的函数，比如: `get_byte` 函数
+2. 在写脚本时，可以把脚本放在 `idaapi.py` 目录下，写起来更方便，写完可以移出来用
+
 
 一个博客的简单总结:  
 ```
@@ -60,6 +64,21 @@ while True:
 ```
 如果只是想看每一步执行的指令和相关寄存器变化，直接用IDA的指令追踪功能:  
 Debugger->Tracing->Instruction tracing  
+
+
+一个修改数据的脚本示例：  
+```python
+# coding:utf8
+
+from idaapi import get_screen_ea, get_byte, patch_byte
+
+sea = get_screen_ea()
+
+for i in range(0x00,0x50):
+    b = get_byte(sea+i)
+    decoded_byte = b ^ 0x55
+    patch_byte(sea+i,decoded_byte)
+```
 
 
 一个人总结的常用功能：  
