@@ -32,6 +32,11 @@ View -> Open subviews -> Proximity Browser
 
 
 - - -
+## 数字以常量字符串显示
+选中数字，右键 `Manual...` 输入字符串即可  
+
+
+- - -
 ## 伪C代码与汇编码对照
 F5之后的视图下，任意一行的结尾，右键 `Copy to assembly`  
 注意：这个操作会删掉汇编代码视图的前后注释  
