@@ -111,6 +111,9 @@ win7(被监控的机器)如果用的是firefox，需要这样信任证书：
 
 这样之后，win7的firefox访问任何https网站都是绿色小锁了  
 
+win7(被监控的机器)如果用的是IE，需要将burp.crt安装到受信任的根证书列表里，这样IE访问https网站不会提示证书错误  
+
+&&&&&&& 按现在的配置，inetsim貌似不支持ip直接访问网页，看看能不能解决  
 
 ## 参考链接
 1. https://www.freebuf.com/articles/system/177601.html （下面链接的翻译）  
