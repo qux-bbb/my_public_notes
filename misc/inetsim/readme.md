@@ -59,7 +59,7 @@ ubuntu会记录win7的网络请求，停止后会保存到一个report文件里�
 下载安装burp社区版: https://portswigger.net/burp/freedownload/  
 执行下载的脚本即可  
 
-准备自己数据的目录  
+准备自己数据的目录(也可以直接用系统默认的，这个不重要)  
 ```bash
 mkdir -p analysis/test-analysis
 cp /etc/inetsim/inetsim.conf analysis/test-analysis
@@ -90,7 +90,7 @@ Request handling tab:
     Redirect to port: 8443
 Check Support invisible proxying
 ```
-继续添加listener：  
+继续添加listener(该listener只是为了下载证书，用完了就可以删掉)：  
 ```
 Binding tab
     Bind to port: 8080
