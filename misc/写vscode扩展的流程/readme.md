@@ -50,4 +50,13 @@ https://marketplace.visualstudio.com/manage/publishers/my_name
 发布完，就能在扩展窗口搜到自己的扩展了。  
 
 
+## 相关资料
+增加扩展配置功能：  
+1. https://code.visualstudio.com/api/references/when-clause-contexts#conditional-operators
+2. https://code.visualstudio.com/api/references/extension-guidelines#settings
+3. https://code.visualstudio.com/api/references/contribution-points#contributes.configuration
+4. https://github.com/yzhang-gh/vscode-markdown/blob/master/package.nls.zh-cn.json
+5. https://github.com/eamodio/vscode-gitlens/blob/main/package.json
+
+
 20201129  
