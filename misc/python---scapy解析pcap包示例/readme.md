@@ -9,19 +9,19 @@ pip install scapy
 ```python
 # coding:utf8
 
-from scapy.all import *
+from scapy.all import rdpcap
 
 caps = rdpcap('test.pcapng')
 
-print caps[0].show()
-print caps[0]['IP'].src
+print(caps[0].show())
+print(caps[0]['IP'].src)
 ```
 
 示例2，解析icmp流量  
 ```python
 # coding:utf8
 
-from scapy.all import *
+from scapy.all import rdpcap
 
 caps = rdpcap('icmp_data.pcap')
 
