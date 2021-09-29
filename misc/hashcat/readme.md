@@ -1,7 +1,7 @@
 # hashcat
 
 官网: https://hashcat.net/hashcat/  
-用来爆破各种密码  
+用来爆破各种hash，不适合爆破压缩包  
 
 ```r
 Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...
