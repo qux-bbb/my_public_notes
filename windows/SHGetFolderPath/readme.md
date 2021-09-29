@@ -56,7 +56,7 @@ int main()
 #define CSIDL_NETWORK                   0x0012        // Network Neighborhood (My Network Places)
 #define CSIDL_NETHOOD                   0x0013        // <user name>\nethood
 #define CSIDL_FONTS                     0x0014        // windows\fonts
-#define CSIDL_TEMPLATES                 0x0015
+#define CSIDL_TEMPLATES                 0x0015        // <user name>\AppData\Roaming\Microsoft\Windows\Templates
 #define CSIDL_COMMON_STARTMENU          0x0016        // All Users\Start Menu
 #define CSIDL_COMMON_PROGRAMS           0X0017        // All Users\Start Menu\Programs
 #define CSIDL_COMMON_STARTUP            0x0018        // All Users\Startup
