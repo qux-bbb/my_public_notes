@@ -5,7 +5,7 @@
    - winxp: `C:\Documents and Settings\Administrator\「开始」菜单\程序\启动`  
    - win7 win10: `C:\Users\<User>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`  
 2. 各种注册表项自启动  
-   下面是2个常见的注册表项  
+   下面是2个常见的注册表项，大概操作就是右键新建REG_SZ类型的键，名字随便取，值设为程序的绝对路径就好了  
    - `HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run`  
    - `HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run`  
 3. 任务计划程序  
