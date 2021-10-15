@@ -57,7 +57,7 @@ pdf或其它有很明显固定文件头的文件也可以这么做
 本来下载地址应该是: http://www.securekit.net/oursecret.htm, 但已经404了，随便搜一个在虚拟机里临时用一下吧  
 
 ### `Outguess`
-支持3种用来隐藏信息的文件格式: PPM(Portable Pixel Map)、PNM(Portable Any Map)、jpg，需要密码  
+支持3种用来隐藏信息的文件格式: PPM(Portable Pixel Map)、PNM(Portable Any Map)、jpg，不支持png，需要密码  
 下载地址：[https://github.com/resurrecting-open-source-projects/outguess](https://github.com/resurrecting-open-source-projects/outguess)  
 看着readme自己编译一下，使用方法如下：  
 ```sh
@@ -88,7 +88,7 @@ steghide extract -sf stg.jpg
 ```
 
 ### `F5`
-F5隐写是java编写的隐写工具，支持bmp、gif、jpg图像文件，需要密码  
+F5隐写是java编写的隐写工具，支持bmp、gif、jpg图像文件，不支持png，需要密码  
 github地址: https://github.com/matthewgao/F5-steganography  
 
 简单使用方法：  
@@ -100,7 +100,8 @@ java Extract lopez.jpg -p helloworld
 ```
 
 ### `stegdetect`
-stegdetect 用于检测图片隐写方式  
+stegdetect 用于检测图片隐写方式，只支持jpg  
+详情看这篇笔记: [stegdetect](../stegdetect/readme.md)  
 
 github的版本只能在linux下编译使用: https://github.com/abeluck/stegdetect  
 
