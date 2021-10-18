@@ -23,6 +23,8 @@ int main() {
 
 官方不建议用 `InternetGetConnectedState`，建议用 `INetworkListManager::GetConnectivity`，感觉太麻烦了，就先这样  
 
+lan环境下，如果配置了同一局域网的机器作为网关，也会显示网络良好。  
+
 
 参考链接：  
 1. https://docs.microsoft.com/en-us/windows/win32/api/wininet/nf-wininet-internetgetconnectedstate
