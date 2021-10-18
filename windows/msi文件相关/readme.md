@@ -19,6 +19,19 @@ msi, microsoft installer，windows使用的一种安装包文件
 &&&&&&& 不知道怎么运行到一半故意失败  
 
 
+## 运行
+普通的运行直接双击按提示操作就好了。  
+
+命令行静默安装：  
+```bat
+msiexec /i Setup1.msi /qn /norestart
+
+:: /i 后跟msi路径，可以是url
+:: /qn 表示quiet、无用户界面
+:: /norestart 表示安装完成后不重新启动
+```
+
+
 ## 提取msi安装包中的文件
 lessmsi: http://lessmsi.activescott.com/  
 
