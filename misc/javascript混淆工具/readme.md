@@ -1,0 +1,26 @@
+# javascript混淆工具
+
+javascript混淆工具，面目全非，完全看不懂。  
+
+github地址: https://github.com/javascript-obfuscator/javascript-obfuscator  
+
+可以直接在这里用: https://obfuscator.io  
+
+原脚本：  
+```javascript
+// Paste your JavaScript code here
+function hi() {
+  console.log("Hello World!");
+}
+hi();
+```
+
+混淆脚本：  
+```javascript
+(function(_0x3e787d,_0x41b1c4){var _0x4fc84f=_0x2a60,_0x1d459d=_0x3e787d();while(!![]){try{var _0xa938e6=-parseInt(_0x4fc84f(0x1e9))/0x1*(-parseInt(_0x4fc84f(0x1e4))/0x2)+-parseInt(_0x4fc84f(0x1ee))/0x3*(parseInt(_0x4fc84f(0x1e8))/0x4)+-parseInt(_0x4fc84f(0x1ec))/0x5*(parseInt(_0x4fc84f(0x1eb))/0x6)+parseInt(_0x4fc84f(0x1e3))/0x7+parseInt(_0x4fc84f(0x1ef))/0x8+parseInt(_0x4fc84f(0x1e7))/0x9*(parseInt(_0x4fc84f(0x1ea))/0xa)+parseInt(_0x4fc84f(0x1e6))/0xb;if(_0xa938e6===_0x41b1c4)break;else _0x1d459d['push'](_0x1d459d['shift']());}catch(_0x4f119d){_0x1d459d['push'](_0x1d459d['shift']());}}}(_0x149e,0x60410));function hi(){var _0x13f83f=_0x2a60;console[_0x13f83f(0x1e5)](_0x13f83f(0x1ed));}hi();function _0x2a60(_0x2f39f6,_0x34cdaf){var _0x149e95=_0x149e();return _0x2a60=function(_0x2a6032,_0x5cb33d){_0x2a6032=_0x2a6032-0x1e3;var _0xd7bef1=_0x149e95[_0x2a6032];return _0xd7bef1;},_0x2a60(_0x2f39f6,_0x34cdaf);}function _0x149e(){var _0x563257=['3607320fleyeu','3821461fdGVCX','2TVPlmT','log','2536501UKKboj','171WNhBLz','4GhFYtr','19316YiQaTd','93320lQZAaj','747534vKYJDH','20Xcoqkj','Hello\x20World!','1594323eTZqyv'];_0x149e=function(){return _0x563257;};return _0x149e();}
+```
+
+还有很多可设置的选项，改一下就更看不懂了。  
+
+
+2021/10/18  
