@@ -14,6 +14,25 @@ github地址: https://github.com/VirusTotal/yara/
 pip install yara-python
 ```
 
+
+## yara规则示例
+hello.yar  
+```r
+import "pe"
+
+rule hello_world {
+    meta:
+        description = "Detect hello world in pe"
+        author = "alice"
+        date = "2021-10-19"
+        hash1 = "d15a99eb7d9b3ad44883ae7679a52769"
+    strings:
+        $hello = "Hello World"
+    condition:
+        pe.is_pe() and $hello
+}
+```
+
 ## 使用示例
 ```python
 import yara
