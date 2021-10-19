@@ -1,3 +1,5 @@
+# yara
+
 ## 简单信息
 yara，适用于恶意软件研究人员（及其他所有人）的模式匹配瑞士军刀。  
 
@@ -30,6 +32,18 @@ rule hello_world {
         $hello = "Hello World"
     condition:
         pe.is_pe() and $hello
+}
+```
+
+`pe.is_pe()` 和 `uint16(0) == 0x5A4D` 等价，python暂时还不支持前者，如果需要判断是否为PE文件，可使用下面的逻辑  
+```r
+rule IsPE
+{
+    condition:
+        // MZ signature at offset 0 and ...
+        uint16(0) == 0x5A4D and
+        // ... PE signature at offset stored in MZ header at 0x3C
+        uint32(uint32(0x3C)) == 0x00004550
 }
 ```
 
