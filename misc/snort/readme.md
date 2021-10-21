@@ -11,7 +11,16 @@ IPD, Intrusion Detection System, 入侵检测系统
 
 
 ## snort规则
-&&&&&&& 补充规则介绍  
+规则构成：  
+```r
+[action][protocol][sourceIP][sourceport] -> [destIP][destport] ( [Rule options] )
+```
+直接看这个吧: https://snort-org-site.s3.amazonaws.com/production/document_files/files/000/000/116/original/Snort_rule_infographic.pdf  
+
+匹配ping：  
+```r
+alert icmp any any -> any any (msg:"ping"; content:"abcdefghi"; sid:6; rev:1;)
+```
 
 
 ## 在windows安装使用
@@ -25,7 +34,20 @@ etc文件夹下的snort.conf是需要自己调整的配置文件(调整前做备
 
 直到运行上面的命令不出错，就基本改完了。  
 
-&&&&&&& 补充ping示例和pcap包读取  
+### ping示例
+1. 创建规则文件，如my.rules，写好规则后，把规则文件放在rules文件夹下  
+2. 在snort.conf中添加一行`include $RULE_PATH/snort.rules`  
+3. 执行命令: `snort -c c:\snort\etc\snort.conf`
+4. 随便ping一个地址
+
+这样就可以在log目录下的alert.ids文件里看到命中的记录了  
+如果想让命中记录既保存在alert.ids文件又显示在命令行中，可以添加选项 `-A console -A full`  
+
+### pcap包读取  
+```r
+snort -c c:\snort\etc\snort.conf -A console -A full -r ping.pcap
+```
+
 
 ---
 2021/10/21  
