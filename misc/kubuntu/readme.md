@@ -10,5 +10,8 @@ kubuntu 是 ubuntu 官方维护的 KDE 桌面版本。
 Discover -> 左下角 设置 -> 右边 Software Sources  
 然后选源就好了  
 
+vmware安装之后不能全屏，执行命令：  
+`sudo apt install open-vm-tools-desktop`  
+
 
 2021/5/15  
