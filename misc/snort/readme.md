@@ -17,9 +17,9 @@ IPD, Intrusion Detection System, 入侵检测系统
 ```
 直接看这个吧: https://snort-org-site.s3.amazonaws.com/production/document_files/files/000/000/116/original/Snort_rule_infographic.pdf  
 
-匹配ping：  
+匹配ping(ping属于ICMP)：  
 ```r
-alert icmp any any -> any any (msg:"ping"; content:"abcdefghi"; sid:6; rev:1;)
+alert icmp any any -> any any (msg:"ICMP Test"; sid:6; rev:1;)
 ```
 
 
@@ -43,12 +43,19 @@ etc文件夹下的snort.conf是需要自己调整的配置文件(调整前做备
 这样就可以在log目录下的alert.ids文件里看到命中的记录了  
 如果想让命中记录既保存在alert.ids文件又显示在命令行中，可以添加选项 `-A console -A full`  
 如果在命令行中只想看到命令记录，可以添加选项 `-q`，表示安静一点  
-&&&&&&& 默认只匹配外到内的流量吗？  
+&&&&&&& snort匹配windows下抓的包有些问题，请求包匹配不了，不清楚原因  
 
 ### pcap包读取  
 ```r
 snort -c c:\snort\etc\snort.conf -A console -A full -r ping.pcap
 ```
+
+
+## 在ubuntu安装使用
+ubuntu安装snort比较复杂，参考该链接即可：  
+https://upcloud.com/community/tutorials/install-snort-ubuntu/  
+
+配置调整也是和windows类似的思路，指定配置执行，直到不出错: `/etc/snort/snort.conf`  
 
 
 ---
