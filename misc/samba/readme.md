@@ -21,8 +21,15 @@ Server Messages Block
 ubuntu文件管理器访问: `smb://ip-address/sambashare`  
 windows文件管理器访问: `\\ip-address\sambashare`  
 
+原链接: https://ubuntu.com/tutorials/install-and-configure-samba  
 
-参考链接: https://ubuntu.com/tutorials/install-and-configure-samba  
+
+## samba修改密码后windows无法登录
+windows下打开命令行，执行: `net use`，  
+如果看到和samba服务器ip一样的行，使用该命令删除连接: `net use \\1.2.3.4\sambashare /del /y`  
+`\\1.2.3.4\sambashare`是"远程"下的项，根据实际看到的调整  
+
+原链接: https://www.cnblogs.com/linuxws/p/11138335.html  
 
 
 ---
