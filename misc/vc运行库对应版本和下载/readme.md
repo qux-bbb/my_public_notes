@@ -1,3 +1,5 @@
+# vc运行库对应版本和下载
+
 keywords: 运行时 runtime VCRUNTIME  
 
 msvcp、msvcr、vcomp140.dll属于VC++2015版  
@@ -15,7 +17,7 @@ https://www.microsoft.com/zh-cn/download/details.aspx?id=48145
 这里是官网列出的各版本运行时库：  
 https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-downloads  
 
-这是一个国外比较出名的网站，把VC运行库整理到了一起:,all-in-one-runtimes  
+这是一个国外比较出名的网站，把VC运行库整理到了一起: all-in-one-runtimes  
 https://www.computerbase.de/downloads/systemtools/all-in-one-runtimes/  
 
 
