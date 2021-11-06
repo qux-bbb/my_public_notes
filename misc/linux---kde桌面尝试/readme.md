@@ -10,6 +10,19 @@
 暂时不体验了。  
 
 
+## kubuntu
+官网: https://kubuntu.org/  
+
+基于ubuntu，由ubuntu团队维护，因为要保持稳定性，不会用最新的kde版本。  
+
+
+## KDE neon
+官网: https://neon.kde.org/  
+
+基于ubuntu长期支持版，但会安装最新的kde桌面和软件。  
+Discover没有配置源的地方，官方源太慢了，没有其它镜像源。  
+
+
 ## manjaro
 官网: https://manjaro.org/  
 
