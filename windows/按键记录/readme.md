@@ -29,7 +29,7 @@ LRESULT CALLBACK KeyboardHook(int nCode, WPARAM wParam, LPARAM lParam)
 		break;
 	}
 	printf("Captured: %s \t %s\n", keyName, keyState);
-	return CallNextHookEx(0, nCode, wParam, lParam);;
+	return CallNextHookEx(0, nCode, wParam, lParam);
 }
 
 int main()
