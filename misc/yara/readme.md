@@ -5,7 +5,7 @@ yara，适用于恶意软件研究人员（及其他所有人）的模式匹配�
 
 官网: https://virustotal.github.io/yara/  
 github地址: https://github.com/VirusTotal/yara/  
-文档地址: https://github.com/VirusTotal/yara/  
+文档地址: https://yara.readthedocs.io/en/stable/  
 
 文档里有一些模块，可以使用比较高级的用法。  
 
