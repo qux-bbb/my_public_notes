@@ -25,4 +25,9 @@ Ghidra的窗口布局是由CodeBrowser工具控制的。
 Ghidra的汇编指令窗口是`Listing:<文件名>`  
 
 
+## 入口函数
+IDA有一个入口函数叫 start，Ghidra的入口函数叫 entry  
+
+
+---
 20190925
