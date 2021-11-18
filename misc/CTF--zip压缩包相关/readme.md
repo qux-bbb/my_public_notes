@@ -7,6 +7,29 @@ ctf里，压缩包很常出现，这里记一些处理zip压缩包的思路。
 可以使用脚本处理，参照: https://github.com/qux-bbb/de-zip  
 
 
+## `归档明文攻击`
+一个有密码的zip压缩包，其中有文件以归档形式(STORE)存在，且该文件部分明文已知，如jpg、png图片。  
+这时可以采用明文攻击，使用这个项目提供的工具 https://github.com/kimci86/bkcrack  
+
+以jpg举例：  
+```r
+# jpg_header文件内容为 任意jpg文件的前12字节
+./bkcrack -C target.zip -c t.jpg -p jpg_header
+bkcrack 1.3.3 - 2021-11-08
+[21:48:20] Z reduction using 4 bytes of known plaintext
+100.0 % (4 / 4)
+[21:48:20] Attack on 1387043 Z values at index 7
+Keys: b0a90b36 14dd97b9 f5d648cf
+16.6 % (230200 / 1387043)
+[22:00:34] Keys
+b0a90b36 14dd97b9 f5d648cf
+
+# 耗时12分钟得到密钥，使用密钥生成一个密码为"easy"的压缩包
+./bkcrack -C target.zip -k b0a90b36 14dd97b9 f5d648cf -U target_with_new_password.zip easy
+```
+这样就可以解压新压缩包查看文件信息了。  
+
+
 ## `明文攻击`
 一个有密码的zip压缩包里有a.txt,b.txt，不知道密码，你有一个相同的a.txt(可通过crc32判断)，想知道b.txt的内容  
 这时可以使用工具：ARCHPR，可以随便在网上搜一个，然后虚拟机里临时用  
