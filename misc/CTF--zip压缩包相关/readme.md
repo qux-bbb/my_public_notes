@@ -14,7 +14,7 @@ ctf里，压缩包很常出现，这里记一些处理zip压缩包的思路。
 
 以jpg举例：  
 ```r
-# jpg_header文件内容为 任意jpg文件的前12字节
+# jpg_header文件内容为 任意jpg文件的前12字节(这里需要注意，jpg图片的前12字节并不总是相同的)
 ./bkcrack -C target.zip -c t.jpg -p jpg_header
 bkcrack 1.3.3 - 2021-11-08
 [21:48:20] Z reduction using 4 bytes of known plaintext
