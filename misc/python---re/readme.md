@@ -100,6 +100,8 @@ ip_re = rb'(?P<ip>(?:\d{1,3}\.){3}\d{1,3})'
 domain_re = rb'(?P<domain>(?:[-a-zA-Z0-9]+\.)+[a-zA-Z]+)'
 ```
 
+更多正则和测试可以用这个网站，超级好用: https://regex101.com/  
+
 
 ## `匹配bytes-like object`
 有时候需要匹配二进制数据，需要在正则表达式前加 `b`  
