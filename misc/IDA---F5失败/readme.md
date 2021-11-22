@@ -24,6 +24,8 @@ Please refer to the manual to find appropriate actions
 ...
 ```
 
+注意：如果失败地址处的指令是调用一个函数，大概率是函数参数个数设置有问题。  
+
 
 ## `call analysis failed`
 错误信息：  
