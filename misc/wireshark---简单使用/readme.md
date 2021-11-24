@@ -19,7 +19,7 @@ tcp   # tcp协议
 tcp contains flag  # 过滤出tcp协议中包含 flag 的部分
 ```
 
-关于端口    
+关于端口  
 ```
 tcp.port == 80     # 源端口或者目的端口
 tcp.srcport == 80  # 源端口
@@ -39,7 +39,7 @@ http.request.method == "GET"
 http.request.method == "POST"
 ```
 
-还可以用 and 或者 or 把把几条规则联系起来  
+还可以用 and 或者 or 把几条规则联系起来  
 
 
 ## 导出文件
