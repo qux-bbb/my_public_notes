@@ -31,6 +31,18 @@ a[5]: 'x'表示小写16进制输出
 ```
 还是挺方便的  
 
+以","分割的数字：  
+```python
+a = 12345678
+b1 = format(a, ',')
+b2 = '{:,}'.format(a)
+print(b1)
+print(b2)
+
+# 12,345,678
+```
+
+
 官方链接: https://docs.python.org/2/library/stdtypes.html?highlight=format#str.format  
 
 
