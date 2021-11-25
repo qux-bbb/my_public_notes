@@ -13,6 +13,18 @@ john --wordlist pass.txt hello.hash
 john --show hello.hash
 ```
 
+爆破7z示例：  
+```r
+# 722john不是自带的，需要下载
+wget https://github.com/truongkma/ctf-tools/blob/master/John/run/7z2john.py
+# 提取hash，注意该脚本只支持python2
+python 7z2john.py hello.7z > hello.hash
+# 使用字典爆破
+john --wordlist pass.txt hello.hash
+# 显示爆破结果
+john --show hello.hash
+```
+
 
 参考链接: https://dfir.science/2014/07/how-to-cracking-zip-and-rar-protected.html  
 
