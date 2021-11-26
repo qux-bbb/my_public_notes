@@ -26,7 +26,10 @@ john --show hello.hash
 ```
 
 
-参考链接: https://dfir.science/2014/07/how-to-cracking-zip-and-rar-protected.html  
+参考链接：  
+1. https://dfir.science/2014/07/how-to-cracking-zip-and-rar-protected.html
+2. https://www.hackingarticles.in/beginner-guide-john-the-ripper-part-1/
+3. https://www.hackingarticles.in/beginners-guide-for-john-the-ripper-part-2/
 
 
 2021/9/29  
