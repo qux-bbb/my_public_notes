@@ -7,9 +7,36 @@
 Usage: hashcat [options]... hash|hashfile|hccapxfile [dictionary|mask|directory]...
 ```
 hash字符串或hash文件均可，掩码或字典文件均可  
+
+官方提供示例：  
+```r
+- [ Basic Examples ] -
+
+  Attack-          | Hash- |
+  Mode             | Type  | Example command
+ ==================+=======+==================================================================
+  Wordlist         | $P$   | hashcat -a 0 -m 400 example400.hash example.dict
+  Wordlist + Rules | MD5   | hashcat -a 0 -m 0 example0.hash example.dict -r rules/best64.rule
+  Brute-Force      | MD5   | hashcat -a 3 -m 0 example0.hash ?a?a?a?a?a?a
+  Combinator       | MD5   | hashcat -a 1 -m 0 example0.hash example.dict example.dict
+```
+
+`-a` 选项表示攻击模式，有以下几种：  
+```r
+  0 | Straight
+  1 | Combination
+  3 | Brute-force
+  6 | Hybrid Wordlist + Mask
+  7 | Hybrid Mask + Wordlist
+````
+一般使用掩码选择 `-a 3`, 使用字典文件选择 `-a 0`  
+
+`-m` 选项表示hash类型，太多了  
+
+如果已经爆破出结果，在结尾加 `--show` 可以直接显示结果  
 默认结果会存在这个文件里: `~/.hashcat/hashcat.potfile`  
 
-一般不会用的时候直接 `hashcat --help` 看一遍就好了，这里举些例子  
+不会用的时候直接 `hashcat --help` 看一遍就好了，下面举些实际使用的例子  
 
 ## `md5爆破`
 ```r
@@ -21,8 +48,6 @@ hashcat -a 3 -m 0 cfa590c5b4c51852821cc9a7669cfcd1 ?l?l?l?l?l?l
 `?l?l?l?l?l?l` 表示6位小写字母  
 
 如果在 `-m 0` 后增加 `-i` 选项，爆破字典会从1位小写字母到6位小写字母  
-
-如果已经爆破出结果，在结尾加 `--show` 可以直接显示结果  
 
 
 ## `NTLM爆破`
