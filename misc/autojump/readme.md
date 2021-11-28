@@ -8,9 +8,11 @@ github地址: https://github.com/wting/autojump
 ```bash
 git clone git://github.com/wting/autojump.git
 cd autojump
-./install.py  # or ./uninstall.py
+./install.py
 ```
 然后需要注意按提示修改 `~/.bashrc`(或者是 `~/.zshrc`，取决于使用的shell类型)  
+
+可执行该脚本卸载: `./uninstall.py`  
 
 
 2019/11/06  
