@@ -82,5 +82,31 @@ im.close()
 im2.close()
 ```
 
+数字矩阵转黑白图片：  
+```python
+# 注意点：
+# aa[i][j] 应该放到 (j, i) 位置
+from PIL import Image
+
+aa = [
+    [1, 0, 1, 0, 1],
+    [1, 0, 1, 0, 0],
+    [1, 0, 1, 1, 1],
+    [1, 0, 0, 0, 0],
+    [1, 1, 1, 1, 1],
+]
+
+im = Image.new('RGB', (5, 5), (0,0,0))
+for i in range(5):
+    for j in range(5):
+        if aa[i][j] == 1:
+            im.putpixel((j, i), (0,0,0))  # (0,0,0) 表示黑色
+        else:
+            im.putpixel((j, i), (255,255,255))  # (255,255,255) 表示白色
+
+im.save('a.jpg')
+im.close()
+```
+
 
 2021/8/9  
