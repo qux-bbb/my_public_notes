@@ -43,7 +43,7 @@ inetsim --conf inetsim.conf
 ```
 
 win7(受监控机器)网络设置如下：  
-```
+```r
 ip: win7ip
 子网掩码: 255.255.255.0
 默认网关: ubuntu ip
@@ -81,7 +81,7 @@ sudo service systemd-resolved stop
 启动Burpsuite  `BurpSuiteCommunity`  
 Proxy->Intercept，点击`Intercept is on`，切换为`Intercept is off`，这样就不会拦截请求了  
 Proxy->Options，添加listener，如下配置：  
-```
+```r
 Binding tab
     Bind to port: 443
     Bind to address: all interfaces
@@ -91,7 +91,7 @@ Request handling tab:
 Check Support invisible proxying
 ```
 继续添加listener(该listener只是为了下载证书，用完了就可以删掉)：  
-```
+```r
 Binding tab
     Bind to port: 8080
     Bind to address: all interfaces
@@ -113,7 +113,8 @@ win7(被监控的机器)如果用的是firefox，需要这样信任证书：
 
 win7(被监控的机器)如果用的是IE，需要将burp.crt安装到受信任的根证书列表里，这样IE访问https网站不会提示证书错误  
 
-&&&&&&& 按现在的配置，inetsim貌似不支持ip直接访问网页，看看能不能解决  
+确认inetsim不支持任意ip直接访问网页  
+
 
 ## 参考链接
 1. https://www.freebuf.com/articles/system/177601.html （下面链接的翻译）  
