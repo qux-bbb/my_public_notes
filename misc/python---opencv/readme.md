@@ -5,6 +5,24 @@
 pip install opencv-python opencv-contrib-python
 ```
 
+读写文件、像素：  
+```python
+# coding:utf8
+
+import cv2
+
+# 读文件
+img = cv2.imread('steg.png')
+# 行数、列数、每个点有几个数
+print(img.shape)
+# 读像素
+print(img[3, 4])
+# 写像素
+img[150,200] = [1,1,1]
+# 写文件
+cv2.imwrite('new.png', img)
+```
+
 将彩色图片转为灰白图片：  
 ```python
 # coding:utf8
