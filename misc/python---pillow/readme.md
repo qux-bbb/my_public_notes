@@ -75,7 +75,7 @@ from PIL import Image
 
 im = Image.open('test.gif')
 im.seek(0)
-im2 = im.convert('RGB')
+im2 = im.convert('RGB')  # png如果想获取RGB形式的数据，也需要这样转换
 pix1 = im2.getpixel((1,1))
 print(pix1)
 im.close()
