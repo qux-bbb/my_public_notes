@@ -1,14 +1,11 @@
 # CTF---图片相关
 
-
-## `0 前言`
 CTF中，有一类题和图片相关，各种转换，这里记一些图片的玩法  
 
-
-## `1 jpg图片属性`
+## `jpg图片属性`
 正常的jpg图片，选中右键查看属性，在详细信息一栏会发现有很多属性可以修改，简单的题目可以在这里隐藏信息  
 
-## `2 图种`
+## `图种`
 图种就是图片后面再放点信息进去，压缩包、txt文档、或者再来一张图片，要隐藏的信息完全没有限制，cmd举例如下：  
 ```bat
 :: /b表示二进制方式
@@ -18,6 +15,8 @@ copy a.jpg/b+b.jpg/b c.jpg
 ```
 得到的c.jpg就是图种了  
 
+经测试jpg、png、bmp均可。  
+
 还原也比较简单，整理几种方法：  
 1. 使用工具分离，比较好用的工具有binwalk和foremost，binwalk建议使用这样的命令: `binwalk -eM <file_path>`，foremost直接跟文件路径就好了，一般foremost效果要好一些，可以都试一下
 2. 在16进制编辑器打开然后手动分离，这种方式比较考验对文件格式的熟悉程度，需要对常见的文件类型开头结尾比较熟悉，16进制编辑器选择自己熟悉的就好，010Editor、WinHex、HxD都是比较成熟的软件，我会用rehex
@@ -26,7 +25,7 @@ copy a.jpg/b+b.jpg/b c.jpg
 注：有些图片后隐藏图片的情况，可能会把第二张图片头给去掉，然后把两张图片合在一起，由于特征没了，提取工具就没用了，使用手动分离的方法：16进制编辑器打开，找第一张图片的尾部，然后把第二张图片的头给加一下，这样就正常了  
   
 
-## `3 图层里的秘密 LSB`
+## `图层里的秘密 LSB`
 LSB, Least Significant Bit, 最低有效位，指图片像素的低位数据，因为低位对图片显示影响不大，所以可以用来隐藏数据  
 stegsolve是一个比较有名的查看图片LSB隐写的工具，一般有2种使用方法：  
 1. 把图片打开，点下面的箭头切换图层，可能会显示一些隐藏信息，如二维码图片
@@ -35,13 +34,13 @@ stegsolve是一个比较有名的查看图片LSB隐写的工具，一般有2种�
 有一个隐藏，检测，恢复的网站：http://incoherency.co.uk/image-steganography/  
 
 
-## `4  图片头损坏`
+## `图片头损坏`
 有些图片会被故意修改前几个字节，导致无法显示  
 还原很简单，找一个类型相同的文件，在16进制编辑器里照着改回来就能正常打开了  
 pdf或其它有很明显固定文件头的文件也可以这么做  
 
 
-## `5 图片的高度`
+## `图片的高度`
 用16进制编辑器调低png、jpg图片的高度，会只显示图片的上面一部分，下面的部分就被隐藏了，是个藏东西的好办法  
 bmp和png、jpg相反，缩小图片高度后，会隐藏图片上部  
 
@@ -50,7 +49,7 @@ bmp和png、jpg相反，缩小图片高度后，会隐藏图片上部
 注：试过改宽度，效果不好，高度很好掌握  
 
 
-## `6 图片隐写工具`
+## `图片隐写工具`
 图片隐写工具很多，慢慢补充，先写几个，以后再补  
 
 ### `oursecret`
@@ -59,7 +58,8 @@ bmp和png、jpg相反，缩小图片高度后，会隐藏图片上部
 
 ### `Outguess`
 支持3种用来隐藏信息的文件格式: PPM(Portable Pixel Map)、PNM(Portable Any Map)、jpg，不支持png，需要密码  
-下载地址：[https://github.com/resurrecting-open-source-projects/outguess](https://github.com/resurrecting-open-source-projects/outguess)  
+详情看这篇笔记: [outguess隐写](../outguess隐写/readme.md)  
+下载地址：https://github.com/resurrecting-open-source-projects/outguess  
 看着readme自己编译一下，使用方法如下：  
 ```sh
 # 隐藏
@@ -70,7 +70,7 @@ outguess -k "my secret key" -r out.jpg hidden.txt
 ```
 
 ### `steghide`
-steghide可以在图片和音频文件中隐藏各种数据，windows和linux系统都支持  
+steghide可以在图片和音频文件中隐藏各种文件且保存原文件名，windows和linux系统都支持  
 支持jpg、bmp，不支持png，密码可选  
 
 sourceforge和github地址：  
@@ -89,7 +89,8 @@ steghide extract -sf stg.jpg
 ```
 
 ### `F5`
-F5隐写是java编写的隐写工具，支持bmp、gif、jpg图像文件，不支持png，需要密码  
+F5隐写是java编写的隐写工具，不会保存隐藏的文件名  
+支持bmp、gif、jpg图像文件，不支持png，需要密码  
 github地址: https://github.com/matthewgao/F5-steganography  
 
 简单使用方法：  
@@ -101,7 +102,7 @@ java Extract lopez.jpg -p helloworld
 ```
 
 ### `stegdetect`
-stegdetect 用于检测图片隐写方式，只支持jpg  
+stegdetect 用于检测图片隐写方式，只支持jpg，无法正确检测F5和steghide隐写  
 详情看这篇笔记: [stegdetect](../stegdetect/readme.md)  
 
 github的版本只能在linux下编译使用: https://github.com/abeluck/stegdetect  
@@ -114,4 +115,5 @@ https://web.archive.org/web/20150415220609/http://www.outguess.org/download.php
 windows版本下载地址：https://web.archive.org/web/20150415220609/http://www.outguess.org/stegdetect-0.4.zip  
 
 
+---
 2017/5/8  
