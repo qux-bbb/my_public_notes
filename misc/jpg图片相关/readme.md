@@ -1,5 +1,7 @@
 # jpg图片相关
 
+keywords: jpg相关  
+
 jpg, jpeg: Joint Photographic Experts Group, 联合图像专家组  
 jpg是一种有损压缩的图片格式  
 
@@ -7,7 +9,7 @@ FFD8 开头
 FFD9 结尾  
 
 一般前12字节有明显的特征，但不一定完全一样，举例：  
-```
+```r
 FF D8 FF E0 00 10 4A 46 49 46 00 01
  .  .  .  .  .  .  J  F  I  F  .  .
 
