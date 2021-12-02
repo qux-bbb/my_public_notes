@@ -14,5 +14,7 @@ least significant bit, 最低有效位
 隐藏信息的图片  
 ![隐藏信息的图片](files/steg_lsb.bmp)  
 
+载体bmp、png可以，jpg不可以，因为jpg默认是有损压缩  
+
 
 2021/8/15  
