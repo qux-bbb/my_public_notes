@@ -53,7 +53,8 @@ bmp和png、jpg相反，缩小图片高度后，会隐藏图片上部
 图片隐写工具很多，慢慢补充，先写几个，以后再补  
 
 ### `oursecret`
-这工具很强大，什么文件都能用来隐藏，完全没有限制  
+这工具很强大，什么文件都能用来隐藏，完全没有限制，需要密码  
+只是把加密内容放在文件末尾，测试载体文件可以是jpg、png、zip等  
 本来下载地址应该是: http://www.securekit.net/oursecret.htm, 但已经404了，随便搜一个在虚拟机里临时用一下吧  
 
 ### `Outguess`
@@ -100,6 +101,14 @@ java Embed lopez.bmp lopez.jpg -c "comment hellowor.." -e hello.txt -p helloworl
 # 提取数据
 java Extract lopez.jpg -p helloworld
 ```
+
+### `JPHS`
+JPHS包括了JPHIDE、JPSEEK，JPHIDE用来隐藏信息，JPSEEK用来提取信息  
+只支持jpg，需要密码  
+介绍页面: http://linux01.gwdg.de/~alatham/stego.html  
+下载: https://ftp.gwdg.de/pub/linux/misc/ppdd/jphs_05.zip  
+
+Jphswin.exe是图形界面版本，方便操作  
 
 ### `stegdetect`
 stegdetect 用于检测图片隐写方式，只支持jpg，无法正确检测F5和steghide隐写  
