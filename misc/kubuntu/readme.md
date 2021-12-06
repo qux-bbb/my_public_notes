@@ -29,5 +29,10 @@ krita-l10n/impish,impish 1:4.4.8+dfsg-1ubuntu1 all
 执行命令安装: `sudo apt install krita-l10n`  
 这样再打开krita就是中文界面了  
 
+### 登陆界面不是中文
+查看locale配置文件: `cat /etc/default/locale`, 发现LANG是英文配置  
+执行这条命令，重启就好了: `localectl set-locale LANG=zh_CN.UTF-8`  
 
+
+---
 2021/5/15  
