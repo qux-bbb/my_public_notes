@@ -7,17 +7,18 @@ Outguess是一种通用的隐写工具，允许将隐藏信息插入数据源的
 原github地址，已不维护: https://github.com/crorvick/outguess  
 现在维护的地址: https://github.com/resurrecting-open-source-projects/outguess  
 
-安装需要的工具：  
+下载编译：  
 ```r
+# 下载源码
+git clone https://github.com/resurrecting-open-source-projects/outguess.git
+# 安装需要的工具
 sudo apt install autoconf g++ make
-```
-
-根据说明编译：  
-```r
+# 根据说明编译
+cd outguess
 ./autogen.sh
 ./configure --with-generic-jconfig
 make
-make install
+sudo make install  # 如果只是临时用，不需要这步，outguess在src文件夹
 ```
 
 google找到的使用方法：  
