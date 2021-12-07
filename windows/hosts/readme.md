@@ -1,5 +1,7 @@
 # hosts
 
+keywords: hosts dns解析 流量  
+
 windows下的hosts文件可以指定域名解析的ip地址，优先级最高，且访问相关域名不会产生dns流量。  
 
 ## 位置和形式
