@@ -4,7 +4,7 @@
 
 这是因为在 Windows 上，大多数 DNS 查询是由托管在 svchost.exe 中的 DNS 客户端服务进行的，所以通过 DNS 请求无法定位到相应进程。  
 
-```
+```r
 服务名称 Dnscache
 显示名称 DNS Client
 启动类型 自动
