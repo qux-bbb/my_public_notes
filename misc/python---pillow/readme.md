@@ -13,9 +13,9 @@ Pillow是PIL的延续，后者已经很久不维护了，PIL是Python Imaging Li
 
 
 ## 简单操作
-新建一张256x256的红色图片：  
+新建一张20x30(宽20高30)的红色图片：  
 ```python
-im = Image.new('RGB', (256, 256), (255,0,0))
+im = Image.new('RGB', (20, 30), (255,0,0))  # 通道顺序为 RGB，即 红绿蓝
 im.save('a.jpg')
 im.close()
 ```
@@ -29,7 +29,7 @@ im = Image.open('a.jpg')
 ```python
 im = Image.open('a.jpg')
 # 读像素
-r, g, b = im.getpixel((1, 2))
+r, g, b = im.getpixel((1, 2))  # 第1列第2行(行列都从0算起)，即距左端为1、距顶端为2
 # 写像素
 im.putpixel((1, 2), (r, g, 255))
 im.save('new.jpg')
@@ -85,7 +85,7 @@ im2.close()
 数字矩阵转黑白图片：  
 ```python
 # 注意点：
-# aa[i][j] 应该放到 (j, i) 位置
+# aa[i][j] 应该放到 (j, i) 位置，(j, i)指的是距左j，距上i
 from PIL import Image
 
 aa = [
