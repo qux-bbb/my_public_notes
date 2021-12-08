@@ -31,7 +31,8 @@ krita-l10n/impish,impish 1:4.4.8+dfsg-1ubuntu1 all
 
 ### 登陆界面不是中文
 查看locale配置文件: `cat /etc/default/locale`, 发现LANG是英文配置  
-执行这条命令，重启就好了: `localectl set-locale LANG=zh_CN.UTF-8`  
+修改LANG项为 `LANG=zh_CN.UTF-8` 重启即可  
+locale命令显示的和 /etc/default/locale 不一定一样，还不知道为什么，但改文件肯定是正确的  
 
 
 ---
