@@ -21,13 +21,13 @@ sample.dll可以提供日志输出，该dll生成无需IDE。
 sample.mc内容见：[files/sources/sample.mc](files/sources/sample.mc)  
 
 需要找到mc.exe，rc.exe，link.exe，我想构建的是64位系统下的x86程序，所以选了这3个：  
-```
+```r
 "D:\Windows Kits\10\bin\10.0.19041.0\x86\mc.exe"
 "D:\Windows Kits\10\bin\10.0.19041.0\x86\rc.exe"
 "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\bin\Hostx64\x86\link.exe"
 ```
 官方提供原始命令为：  
-```
+```r
 mc -U sample.mc
 rc -r sample.rc
 link -dll -noentry -out:sample.dll sample.res
@@ -74,48 +74,48 @@ SvcControl.exe可以在类似这样的路径下找到：D:\files\vs2019\sources\
 
 首先配置Sample.dll相关的注册表项：  
 for_sample.reg如下，双击执行即可：  
-```reg
+```r
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\EventLog\Application\SvcName]
 
 "TypesSupported"=dword:00000007
-"EventMessageFile"="‪C:\\Users\\hello\\Desktop\\sample.dll"
+"EventMessageFile"="C:\\Users\\hello\\Desktop\\sample.dll"
 ```
 
 然后Win+R，输入`services.msc`，打开服务窗口用于观察（每执行一条命令，就F5刷新观察变化，当服务安装后，可单击选中服务然后按F5，这样刷新比较快）  
 
 接着管理员权限打开命令行窗口，做如下操作测试：  
 安装服务：  
-```
+```r
 svc install
 ```
 启动服务：  
-```
+```r
 svccontrol start SvcName
 ```
 更新服务描述：  
-```
+```r
 svcconfig describe SvcName
 ```
 查看服务配置：  
-```
+```r
 svcconfig query SvcName
 ```
 修改服务DACL：  
-```
+```r
 svccontrol dacl SvcName
 ```
 禁用服务：  
-```
+```r
 svcconfig disable SvcName
 ```
 启用服务（非启动）：  
-```
+```r
 svcconfig enable SvcName
 ```
 停止服务：  
-```
+```r
 svccontrol stop SvcName
 ```
 
