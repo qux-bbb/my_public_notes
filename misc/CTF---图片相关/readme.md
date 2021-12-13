@@ -110,6 +110,31 @@ JPHS包括了JPHIDE、JPSEEK，JPHIDE用来隐藏信息，JPSEEK用来提取信�
 
 Jphswin.exe是图形界面版本，方便操作  
 
+### `jsteg`
+只支持jpg  
+从这里查看下载: https://github.com/lukechampine/jsteg  
+
+用法：  
+```r
+Commands:
+    jsteg hide in.jpg [FILE] [out.jpg]
+    jsteg reveal in.jpg [FILE]
+```
+
+### `stegpy`
+支持文件类型: PNG/BMP/GIF/WebP/WAV, 暂不支持jpg，密码可选  
+加密的信息可以是文本或者文件，如果是文件，解密后会在文件前添加一个下划线  
+项目地址: https://github.com/dhsdshdhk/stegpy  
+安装: `pip3 install stegpy`  
+
+用法示例：  
+```r
+# 加密，生成 _stegpy_raw.png
+stegpy "flag{hide_the_msg}" stegpy_raw.png -p
+# 解密，如果加密使用了-p，解密必须使用-p，否则出错
+stegpy _stegpy_raw.png -p
+```
+
 ### `stegdetect`
 stegdetect 用于检测图片隐写方式，只支持jpg，无法正确检测F5和steghide隐写  
 详情看这篇笔记: [stegdetect](../stegdetect/readme.md)  
