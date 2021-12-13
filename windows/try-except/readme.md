@@ -1,6 +1,6 @@
 # try-except
 
-try-except 异常处理  
+try-except 微软自有的对c、c++的异常处理，也是SEH。    
 
 ```cpp
 // exceptions_try_except_Statement.cpp
@@ -48,6 +48,16 @@ caught AV as expected.
 in except
 world
 ```
+
+IDA查看，和SEH相关的部分：  
+```r
+.text:00401045 push    offset stru_4122E8
+.text:0040104A push    offset __except_handler4
+.text:0040104F mov     eax, large fs:0
+.text:00401055 push    eax
+```
+stru_4122E8结构包含了处理异常的函数地址  
+
 
 原链接: https://docs.microsoft.com/en-us/cpp/cpp/try-except-statement?view=msvc-170  
 
