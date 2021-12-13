@@ -14,11 +14,12 @@ sc create myserver binpath= "c:\windows\Sc\myserver.exe"
 sc config myserver start= auto
 sc start myserver
 ```
+命令行的提示很全，想做别的操作可以看看  
 
 在可以查看所有服务的界面只能更改服务属性而不能删除服务，查看服务属性会看到`服务名称`和`显示名称`，要想删除服务，需要用到`服务名称`  
 
 管理员权限打开cmd，删除服务：  
-```
+```r
 sc delete myserver
 ```
 
@@ -55,6 +56,11 @@ SetServiceStatus()
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\ServicesPipeTimeout
 DWORD
 60*60*24*1000=86400000
+```
+
+驱动也是以服务的方式运行的，这样可以创建一个  
+```r
+sc create driver_test binPath= "C:\Windows\System32\drivers\driver_test.sys" type= kernel start= demand DisplayName= "driver_test display"
 ```
 
 
