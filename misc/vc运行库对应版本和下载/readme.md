@@ -2,6 +2,9 @@
 
 keywords: 运行时 runtime VCRUNTIME  
 
+弹窗提示: `无法启动此程序，因为计算机中丢失 VCRUNTIME140.dll。尝试重新安装该程序以解决此问题`  
+需要安装VC运行时库  
+
 msvcp、msvcr、vcomp140.dll属于VC++2015版  
 msvcp、msvcr、vcomp120.dll属于VC++2013版  
 msvcp、msvcr、vcomp110.dll属于VC++2012版  
