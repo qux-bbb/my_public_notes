@@ -33,3 +33,21 @@ fn main() {
     println!("Hello, world!");
 }
 ```
+
+
+## c#
+```c#
+using System;
+
+namespace CSharpConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            Console.ReadKey();
+        }
+    }
+}
+```
