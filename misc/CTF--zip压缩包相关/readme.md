@@ -4,7 +4,7 @@ ctf里，压缩包很常出现，这里记一些处理zip压缩包的思路。
 
 ## `伪加密`
 原理就是把表示是否加密的位设为1  
-可以使用脚本处理，参照: https://github.com/qux-bbb/de-zip  
+可以使用脚本处理，参照: https://github.com/qux-bbb/zip-fake-password  
 
 
 ## `归档明文攻击`
