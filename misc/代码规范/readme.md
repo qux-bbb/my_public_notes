@@ -20,6 +20,9 @@ google代码规范: https://google.github.io/styleguide/
 
 ## python
 变量：下划线式  
+空行：顶级定义之间空两行, 方法定义之间空一行  
+- 顶级定义之间空两行, 比如函数或者类定义. 
+- 方法定义, 类定义与第一个方法之间, 都应该空一行. 函数或方法中, 某些地方要是你觉得合适, 就空一行.
 
 
 参考链接: https://blog.csdn.net/freeking101/article/details/78930381  
