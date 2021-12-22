@@ -7,7 +7,7 @@
 
 两个工具：  
 - VBA Password Bypasser
-- Excel DNATools, 这个工具需要.NET4.0依赖
+- Excel DNATools, 这个工具需要.NET4.0依赖: https://www.cnblogs.com/Charltsing/p/DNATools.html
 
 
 2020/5/29  
