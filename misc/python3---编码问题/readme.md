@@ -18,7 +18,7 @@ str 与 bytes 之间的转换可以用 encode 和从decode 方法
 +-----+                       +-------+
 ```
 
-encode 负责字符到字节的编码转换。默认使用 UTF-8 编码准换。  
+encode 负责字符到字节的编码转换。默认使用 UTF-8 编码转换。  
 ```r
 >>> s = "Python之禅"
 >>> s.encode()
