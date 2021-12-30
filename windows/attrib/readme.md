@@ -9,7 +9,7 @@ attrib +h +s hello.exe
 ```
 
 `attrib /?`的输出：  
-```
+```r
 ATTRIB [+R | -R] [+A | -A ] [+S | -S] [+H | -H] [+I | -I]
        [drive:][path][filename] [/S [/D] [/L]]
   + 设置属性。

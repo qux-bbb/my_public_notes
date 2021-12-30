@@ -12,7 +12,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execu
 
 这样设置之后，当 powershell.exe 被调用时，调试器就会自动附加并断下  
 举个例子: powershell.reg  
-```reg
+```r
 Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\powershell.exe]
