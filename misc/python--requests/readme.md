@@ -1,3 +1,5 @@
+# python--requests
+
 ## 0x00 扯
 一些关于requests的使用，基本上把官方说明文档的简单用法搬了过来，
 官方说明文档的地址，[点击跳转](http://docs.python-requests.org/zh_CN/latest/user/quickstart.html)
@@ -115,10 +117,10 @@ print r.text
 ```python
 import requests
 
-proxy = '127.0.0.1:10809'
+proxy = 'http://127.0.0.1:10809'
 proxies={
-    'http':'http://{}'.format(proxy),
-    'https':'http://{}'.format(proxy),
+    'http': proxy,
+    'https': proxy,
 }
 
 res = requests.get('http://www.baidu.com', proxies=proxies)
