@@ -3,6 +3,9 @@
 查看所有的环境变量: `env`  
 查看单个环境变量举例: `echo $PATH`  
 
+临时设置环境变量: `export HELLO=WORLD`  
+临时删除环境变量: `unset HELLO`  
+
 下面是一些环境变量含义解释  
 
 ### PATH
