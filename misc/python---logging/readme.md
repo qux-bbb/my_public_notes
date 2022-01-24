@@ -1,3 +1,7 @@
+# python---logging
+
+python的日志模块logging简单使用。  
+
 最初级用法，直接输出到控制台  
 ```python
 # coding:utf8
