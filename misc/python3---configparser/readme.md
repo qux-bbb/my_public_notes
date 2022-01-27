@@ -41,5 +41,7 @@ read_conf()
 change_conf()
 ```
 
+如果配置文件中有中文，读取时需要指定encoding参数，比如 `encoding='utf8'`  
+
 
 2022/1/24  
