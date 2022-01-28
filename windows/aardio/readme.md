@@ -1,6 +1,6 @@
 # aardio
 
-aardio，一种动态语言，原名aauto，没有完全开源。  
+aardio，一种动态语言，原名aauto，没有完全开源，IDA不能直接看到字符串。  
 
 官网: https://www.aardio.com  
 
