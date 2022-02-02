@@ -26,10 +26,12 @@ https://www.bilibili.com/video/BV15b411t7zh
 
 导出视频  
 点击上方的"输出"，  
-我选这个预设"H.264 Baseline Profile"，  
+我选这个预设"H.264 High Profile"，  
 加快导出速度：右边勾选"使用硬件编码器"，点击"配置"->"检测"，点"高级"，勾选"并行处理"，  
 点"输出文件"，设置文件名之后，在右上角会出现任务面板，等进度条走完，就导出视频了  
 
+预设中H.264的3个配置: BaseLine/High/Main, High适合保存影片，而且占用体积小，详情见该链接：  
+https://blog.csdn.net/yangzhenhui/article/details/104298335  
 
 ## 快捷键
 ```
