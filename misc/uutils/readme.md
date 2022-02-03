@@ -10,7 +10,7 @@ cargo安装使用：
 ```r
 cargo install coreutils
 # 使用ls
-cargo coreutils ls
+coreutils ls
 ```
 
 
