@@ -6,6 +6,7 @@
 
 字幕组一般用Aegisub做字幕，这是一个开源的工具，但最新一次release是在2014年，可以制作高级字幕，可以导出字幕。  
 github地址: https://github.com/Aegisub/Aegisub  
+便携版只有英文，安装版可以切换各种语言。  
 
 
 2022/1/7  
