@@ -41,10 +41,11 @@ cpp文件：https://docs.microsoft.com/zh-cn/windows/win32/services/svc-cpp
 
 Svc.exe是一个简单的服务示例，这里使用VS2019构建。  
 
+创建命令行项目Svc，添加Sample.h头文件，修改Svc.cpp内容  
 Sample.h内容见：[files/sources/Sample.h](files/sources/Sample.h)  
 Svc.cpp内容见：[files/sources/Svc.cpp](files/sources/Svc.cpp)  
 
-将Sample.h和Svc.cpp内容准备好，然后解决方案配置为：Release x86，生成解决方案即可  
+解决方案配置为：Release x86，生成解决方案即可  
 Svc.exe可以在类似这样的路径下找到：D:\files\vs2019\sources\Svc\Release  
 
 ### 2.3 构建SvcConfig.exe
