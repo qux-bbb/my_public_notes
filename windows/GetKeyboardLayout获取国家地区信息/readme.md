@@ -4,10 +4,10 @@
 The return value is the input locale identifier for the thread. The low word contains a Language Identifier for the input language and the high word contains a device handle to the physical layout of the keyboard.  
 
 ```r
-+---------------+-------------------------+-------------------------+
-| device handle |     SubLanguage ID      |   Primary Language ID   |
-+---------------+-------------------------+-------------------------+
-31              15                    10  9                         0   bit
++---------------+----------------+---------------------+
+| device handle | SubLanguage ID | Primary Language ID |
++---------------+----------------+---------------------+
+31           16 15           10  9                     0   bit
 ```
 
 举例：  
