@@ -5,7 +5,10 @@ pefile可以解析、读取或修改PE文件。
 github地址: https://github.com/erocarrera/pefile/  
 一些示例地址: https://github.com/erocarrera/pefile/blob/wiki/UsageExamples.md  
 
-简单使用之修改PE：  
+安装: `pip3 install pefile`  
+
+## 简单使用
+修改PE：  
 ```python
 # coding:utf8
 
@@ -26,7 +29,7 @@ exe_sample.write(filename='new_test.exe')
 exe_sample.close()
 ```
 
-简单使用之获取.data数据：  
+获取.data数据：  
 ```python
 # coding:utf8
 
@@ -42,5 +45,35 @@ def get_data(the_path):
     return None
 ```
 
+获取特定资源数据：  
+```python
+import pefile
 
+def get_resource_data(the_path):
+    the_pe = pefile.PE(the_path)
+
+    if hasattr(the_pe, 'DIRECTORY_ENTRY_RESOURCE'):
+        rt_rcdata_resource_type_id = pefile.RESOURCE_TYPE['RT_RCDATA']
+
+        for resource_entry in the_pe.DIRECTORY_ENTRY_RESOURCE.entries:
+            if resource_entry.id != rt_rcdata_resource_type_id:
+                continue
+            for rt_rcdata_entry in resource_entry.directory.entries:
+                if rt_rcdata_entry.name.string != b'SETTINGS':
+                    continue
+                settings_entry = rt_rcdata_entry.directory.entries[0]
+
+                data_rva = settings_entry.data.struct.OffsetToData
+                size = settings_entry.data.struct.Size
+                data = the_pe.get_memory_mapped_image()[data_rva:data_rva+size]
+
+                the_pe.close()
+                return data
+    
+    the_pe.close()
+    return
+```
+
+
+---
 2019/10/30  
