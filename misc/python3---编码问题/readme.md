@@ -8,13 +8,13 @@ bytes: Python3 中，在字符引号前加‘b’，明确表示这是一个 byt
 
 str 与 bytes 类型的数据不能执行 + 操作，尽管在py2中是可行的  
 
-str 与 bytes 之间的转换可以用 encode 和从decode 方法  
+str 与 bytes 之间的转换可以用 encode 和 decode 方法  
 ```r
 # python3.x
 +-----+                       +-------+
-|     | +-----decode--------> |       |
+|     | +-----encode--------> |       |
 | str |    ascii,utf-8,gbk... | bytes |
-|     | <-----encode--------+ |       |
+|     | <-----decode--------+ |       |
 +-----+                       +-------+
 ```
 
