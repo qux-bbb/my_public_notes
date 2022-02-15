@@ -1,5 +1,7 @@
 # lux
 
+keywords: B站视频下载  
+
 Lux是一款使用Go构建的快速简单的视频下载器，可以下载各种网站的视频，具体支持的网站见github地址。  
 
 github地址: https://github.com/iawia002/lux  
