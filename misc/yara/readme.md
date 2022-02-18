@@ -68,3 +68,10 @@ rules = yara.compile(filepaths=yara_dict)
 
 result = rules.match(sample_path)
 ```
+
+
+## 比较多的yara规则
+https://github.com/Neo23x0/signature-base/tree/master/yara  
+https://github.com/kevoreilly/CAPEv2/tree/master/data/yara/CAPE  
+
+CAPEv2是一个基于cuckoo改进的沙箱  
