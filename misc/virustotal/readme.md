@@ -1,9 +1,10 @@
-# virustotal的api使用
+# virustotal
 
-virustotal集成了大部分静态杀毒引擎和一些沙箱，可以快速检测文件、ip、域名等信息。  
+virustotal集成了大部分静态杀毒引擎和一些沙箱，可以快速检测文件、ip、域名等信息，现为谷歌旗下产品。  
 
 官网: https://www.virustotal.com  
 
+## api使用
 网站提供的api使得自动化和大批量操作成为可能，这里简单记录一下api使用经验。  
 
 官方提供了各种api说明，可以在这里查看: https://developers.virustotal.com/reference/overview  
@@ -22,5 +23,9 @@ https://github.com/VirusTotal/vt-py
 
 如果找不到要请求的url，在页面打开相关内容，删除url的前半部分"https://www.virustotal.com/gui", 剩下的就是要请求的url  
 
+## 其它
+搜索yara规则匹配的样本: `crowdsourced_yara_rule:hello`  
 
+
+---
 2022/2/14  
