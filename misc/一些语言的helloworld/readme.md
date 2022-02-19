@@ -1,6 +1,6 @@
 # 一些语言的helloworld
 
-keywords: hello world example  
+keywords: hello world example 各种helloworld  
 
 记一些语言的helloworld，直接拿来用  
 
