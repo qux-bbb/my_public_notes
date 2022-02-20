@@ -39,6 +39,12 @@ class MainActivity : AppCompatActivity() {
 
 nativa-lib.cpp  
 ```c++
+/*
+Native函数有两种定义方法，
+第一种是按照类名函数名静态声明并导出，
+第二种是在JNI_OnLoad里调用vm->GetEnv->RegisterNatives动态声明 这种比较隐蔽 
+这里使用的第一种
+*/
 #include <jni.h>
 #include <string>
 
