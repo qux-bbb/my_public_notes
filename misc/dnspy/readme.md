@@ -1,8 +1,10 @@
+# dnspy
+
 ## 简介
 反编译，调试.NET，很强大  
 
 github地址: https://github.com/0xd4d/dnSpy  
-
+dnspy原项目不再开发了，有人fork了项目继续开发: https://github.com/dnSpyEx/dnSpy  
 
 ## 调试
 如果要调试，注意:  
