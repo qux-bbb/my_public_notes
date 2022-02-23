@@ -7,7 +7,7 @@ keywords: python 命令行程序 自动化 交互
 用脚本调用want_right.py，并自动输出  'Rignt!'，使用 subprocess 实现: [main.py](files/main.py)  
 
 执行 `python main.py`, 输出：  
-```
+```r
 input 5:
 '5'
 input 0:
