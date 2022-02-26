@@ -73,7 +73,7 @@ d = subprocess.Popen(['ls', '-l'])
 print "d: \n" + str(d)
 ```
 结果：  
-```
+```r
 λ python a.py
 -----------------------------------------------
 total 2

@@ -1,3 +1,5 @@
+# python---magic识别文件类型
+
 ## 介绍
 magic是一个识别文件类型的python模块  
 原项目地址：  
@@ -12,7 +14,7 @@ https://github.com/julian-r/python-magic
 
 ## 简单使用
 方法1  
-```sh
+```python
 >>> import magic
 >>> magic.from_file("testdata/test.pdf")
 'PDF document, version 1.2'
@@ -23,7 +25,7 @@ https://github.com/julian-r/python-magic
 ```
 
 方法2  
-```sh
+```python
 >>> f = magic.Magic(uncompress=True)
 >>> f.from_file('testdata/test.gz')
 'ASCII text (gzip compressed data, was "test", last modified: Sat Jun 28 21:32:52 2008, from Unix)'
