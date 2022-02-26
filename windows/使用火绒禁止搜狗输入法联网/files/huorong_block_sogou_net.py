@@ -32,19 +32,18 @@ import os
 import json
 
 
-def get_special_files(folder_name, ext_list):
+def get_special_filepaths(folder_path, the_ext):
     '''
-    获取某一文件夹下所有文件
-    :param folder_name: 使用绝对路径的文件夹名，例如：D:\games
-    :return: 所有文件名(绝对路径形式)list
+    获取某一文件夹下指定后缀的所有文件路径
+    :return: 特定后缀的文件路径列表
     '''
-    all_files = []
-    for root, dir, files in os.walk(folder_name + '\\', True):
-        if files:
-            for file in files:
-                if file.endswith(ext_list):
-                    all_files.append(root + '\\' + file)
-    return all_files
+    special_filepaths = []
+    for dirpath, dirnames, filenames in os.walk(folder_path):
+        for filename in filenames:
+            if filename.endswith(the_ext):
+                special_filepath = os.path.join(dirpath, filename)
+                special_filepaths.append(special_filepath)
+    return special_filepaths
 
 
 def main(group_name, folder_path, ext_list):
@@ -53,7 +52,7 @@ def main(group_name, folder_path, ext_list):
         "tag":"ipproto",
         "data":[]
     }
-    file_paths = get_special_files(folder_path, ext_list)
+    file_paths = get_special_filepaths(folder_path, ext_list)
     for file_path in file_paths:
         rule_name = '{}-{}'.format(group_name, file_path.split('\\')[-1])
         rule = {
