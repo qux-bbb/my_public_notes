@@ -23,5 +23,7 @@ https://support.microsoft.com/zh-cn/help/2977003/the-latest-supported-visual-c-d
 这是一个国外比较出名的网站，把VC运行库整理到了一起: all-in-one-runtimes  
 https://www.computerbase.de/downloads/systemtools/all-in-one-runtimes/  
 
+单个安装可能还是会提示丢失dll文件，OpenArk提供的vc2015~2019可以直接装一下，装完大概率就没有问题了  
+
 
 参考: https://zhidao.baidu.com/question/1577810098422037180.html  
