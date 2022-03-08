@@ -1,5 +1,7 @@
 # bat文件相关
 
+keywords: bat脚本  
+
 Batch File，批处理文件，后缀为`.bat`的文件，windows下执行简单逻辑的脚本，和linux的shell脚本类似。  
 
 简单举例  
