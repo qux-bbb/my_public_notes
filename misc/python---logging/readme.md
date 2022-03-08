@@ -32,8 +32,8 @@ log = logging.getLogger('AppName')
 # 指定logger输出格式 -8s: 指定宽度为8，减号表示左对齐
 formatter = logging.Formatter('%(asctime)s %(levelname)-8s: %(message)s')
 
-# 文件日志
-file_handler = logging.FileHandler('AppName.log')
+# 文件日志，指定编码可以防止"UnicodeEncodeError"错误
+file_handler = logging.FileHandler('AppName.log', encoding='utf8')
 file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
 
 # 控制台日志
@@ -71,5 +71,6 @@ warn被弃用，建议使用warning
 
 
 参考：  
-https://www.cnblogs.com/CJOKER/p/8295272.html  
-https://blog.csdn.net/hallo_ween/article/details/64906838  
+1. https://www.cnblogs.com/CJOKER/p/8295272.html
+2. https://blog.csdn.net/hallo_ween/article/details/64906838
+3. https://stackoverflow.com/questions/52896485/python3-logger-unicodeencodeerror
