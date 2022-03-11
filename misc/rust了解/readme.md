@@ -7,6 +7,7 @@
 
 安装方式去官网找一些，针对不同平台介绍的比较清楚  
 不要用这种 `sudo apt install cargo` 的方式，会有问题  
+安装后可使用 `rustc --version` 确认是否安装成功  
 
 编译器：rustc  
 自动格式化工具：rustfmt  
