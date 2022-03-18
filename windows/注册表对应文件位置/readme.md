@@ -12,7 +12,13 @@ HKEY_USERS\.Default             %WINDIR%\system32\config\default
 ```
 
 获取这些文件的方式：  
-开机情况下是不能复制这些文件的，需要关机状态下通过其它工具获取  
+开机情况下是不能直接复制这些文件，管理员权限下可以使用reg命令保存文件：  
+```r
+reg save HKLM\System System.hiv
+reg save HKU\.Default dot_Default.hiv
+```
+
+关机状态下通过其它工具获取  
 1. 如果用的是vmware虚拟机，可以用WinImage打开vmdk文件提取
 2. 普通情况可以在关机情况下使用PE盘启动，复制文件出来(&&&&&&& 未测试)
 
