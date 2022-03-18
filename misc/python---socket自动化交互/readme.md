@@ -1,5 +1,7 @@
 # python---socket自动化交互
 
+keywords: python socket tcp  
+
 socket自动化交互就是简单的socket编程  
 
 假设服务端运行程序为: [server.py](files/server.py)  
