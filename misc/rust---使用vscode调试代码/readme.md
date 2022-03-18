@@ -19,5 +19,7 @@ Mac或Linux上选择 `LLDB: Custom Launch`
 
 参考链接: https://www.forrestthewoods.com/blog/how-to-debug-rust-with-visual-studio-code  
 
+rust-analyzer 比 Rust 扩展更好用，参数类型提示效果较好，调试不需要手动修改json配置文件。  
+
 
 2022/2/19  
