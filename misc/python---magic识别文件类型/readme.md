@@ -57,3 +57,8 @@ for a_zip_name in zipnames:
             with azip.open(filenames[i], pwd='zippassword') as afile:
                 print m.from_buffer(afile.read())
 ```
+
+
+## 问题
+1. magic.from_file不支持中文文件名
+2. apk只能识别成zip
