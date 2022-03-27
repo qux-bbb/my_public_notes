@@ -45,7 +45,7 @@ void HelloWorld()
 如果头文件里只是简单的函数声明而没有`extern __declspec(dllexport)`前缀, 那还可以使用.def文件来导出函数  
 
 SampleDLL.def  
-```
+```r
 LIBRARY "SampleDLL"
 
 EXPORTS
@@ -53,7 +53,7 @@ EXPORTS
 ```
 
 上方的形式是按函数名导出，还可以设置其他形式：  
-```
+```r
 # 按序号导出
    HelloWorld @2
 
