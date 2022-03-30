@@ -34,7 +34,13 @@ decode 负责字节到字符的解码转换，通用使用 UTF-8 编码格式进
 'Python之禅'
 ```
 
-原链接: https://www.cnblogs.com/mzc1997/p/7755135.html  
+支持的所有编码方法：  
+https://docs.python.org/3.7/library/codecs.html#standard-encodings  
+
+
+参考链接：  
+1. https://www.cnblogs.com/mzc1997/p/7755135.html
+2. https://docs.python.org/3.7/library/stdtypes.html#str.encode
 
 
 2019/12/1  
