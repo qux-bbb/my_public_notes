@@ -59,4 +59,24 @@ http.request.method == "POST"
 2. 只捕获1.2.3.4 ip的流量: `host 1.2.3.4`
 
 
+## 各种示例流量包
+https://wiki.wireshark.org/SampleCaptures  
+
+
+## wireshark找不到网卡
+win10的系统，打开wireshark之后只有3个USB接口，各种尝试无果  
+最后才知道是权限问题，只要管理员权限启动就好了，可能感谢lb吧  
+
+
+## Wireshark解析https流量
+可以通过设置本地环境变量和Wireshark的解析方式，解密本地捕获到的加密流量。  
+
+1. 在本地系统环境变量中添加`SSLKEYLOGFILE`项，值可设为`D:\key.log`
+2. Wireshark中选择 `编辑>首选项>Protocols>SSL>(Pre)-Master-Secret log filename`项，填写刚刚设的值(即`D:\key.log`)
+3. 重新启动浏览器，Wireshark就可以解析捕获到的SSL加密流量(同时会生成`debug.log`和`debug.file`文件，不用关注，之后删掉即可)。
+
+原链接：http://bobao.360.cn/learning/detail/249.html  
+
+
+---
 2017/9/2  
