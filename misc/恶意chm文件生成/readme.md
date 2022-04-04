@@ -50,7 +50,10 @@ File->Compile... 或者 点击第3个图标，即可生成chm文件
 打开新生成的chm文件，计算器就会被打开。  
 
 
-原链接: https://bbs.pediy.com/thread-267038.htm  
+## 参考链接
+1. https://bbs.pediy.com/thread-267038.htm
+2. https://www.cnblogs.com/sjsmyy/p/9959343.html
 
 
+---
 2021/10/18  
