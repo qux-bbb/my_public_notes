@@ -3,7 +3,8 @@
 据说和C++一样快，但更安全  
 
 官网：https://www.rust-lang.org  
-官方文档: https://doc.rust-lang.org/book/  
+官方文档: https://doc.rust-lang.org/book  
+中文社区对官方文档的翻译: https://kaisery.github.io/trpl-zh-cn  
 
 安装方式去官网找一些，针对不同平台介绍的比较清楚  
 不要用这种 `sudo apt install cargo` 的方式，会有问题  
