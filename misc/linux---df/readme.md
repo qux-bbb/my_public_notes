@@ -1,7 +1,11 @@
+# linux---df
+
+keywords: 磁盘大小 硬盘大小  
+
 df, disk free, 查看磁盘剩余空间，可显示总容量和已用空间  
 
 一次执行如下：  
-```
+```r
 hello@hello-PC:~/Desktop$ df -h
 文件系统                   容量  已用  可用 已用% 挂载点
 udev                       1.9G     0  1.9G    0% /dev
