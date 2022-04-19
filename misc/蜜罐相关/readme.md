@@ -2,7 +2,7 @@
 
 对蜜罐了解不多，暂时先记一些信息。  
 
-可能用到的工具: docer, suricata  
+可能用到的工具: docker, suricata  
 
 
 2021/5/16  
