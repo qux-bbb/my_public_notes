@@ -31,11 +31,11 @@ rule hello_world {
     strings:
         $hello = "Hello World"
     condition:
-        pe.is_pe() and $hello
+        pe.is_pe and $hello
 }
 ```
 
-`pe.is_pe()` 和 `uint16(0) == 0x5A4D` 等价，python暂时还不支持前者，如果需要判断是否为PE文件，可使用下面的逻辑  
+`pe.is_pe` 和 `uint16(0) == 0x5A4D` 等价，如果需要判断是否为`MZ...PE`，可使用下面的逻辑  
 ```r
 rule IsPE
 {
