@@ -20,6 +20,24 @@ int main() {
 }
 ```
 
+先分配可执行内存copy一次，确保有可执行权限：  
+```cpp
+#include <Windows.h>
+#include <stdio.h>
+
+int main() {
+	unsigned char buf[] = "\x11\x22";
+
+	LPVOID memory = VirtualAlloc(NULL, sizeof(buf), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
+	if (memory == NULL)
+		return 1;
+	memcpy(memory, buf, sizeof(buf));
+	((void(*)())memory)();
+
+	return 0;
+}
+```
+
 
 ## 使用CreateThread
 ```cpp
@@ -98,6 +116,7 @@ int main()
 1. https://0xpat.github.io/Malware_development_part_1
 2. 初九_9 https://www.bilibili.com/video/BV1Km4y1Z73g
 3. APC介绍: https://docs.microsoft.com/en-us/windows/win32/sync/asynchronous-procedure-calls
+4. https://www.bilibili.com/video/BV1GS4y1U7EN
 
 
 ---
