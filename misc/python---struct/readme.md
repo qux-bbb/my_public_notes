@@ -6,7 +6,28 @@ https://docs.python.org/3/library/struct.html
 
 二进制数据和各种类型数据的转换  
 
-文档里写的很详细了，这里可以复制一些简单的例子过来  
+因为不同平台默认大小端不同，所以如果是多个字节最好指定一下大小端  
+```r
+<   小端
+>   大端
+```
+
+常用的长度符号表示，小写表示有符号，大写表示无符号  
+```r
+b   1   signed char
+h   2   short
+i   4   int
+l   4   long
+q   8   long long
+
+B   1   unsigned char
+H   2   unsigned short
+I   4   unsigned int
+L   4   unsigned long
+Q   8   unsigned long long
+```
+
+文档里写得很详细了，这里可以复制一些简单的例子过来  
 
 ```python
 import binascii
