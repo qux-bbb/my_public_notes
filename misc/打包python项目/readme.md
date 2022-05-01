@@ -5,14 +5,11 @@ keywords: python 模块 库 打包
 打包python项目：  
 https://packaging.python.org/tutorials/packaging-projects/  
 
-安装必要的工具：  
+在 https://pypi.org 注册账号  
+
+安装打包需要的工具：  
 ```r
 python -m pip install --user --upgrade setuptools wheel
-```
-
-生成发布包：  
-```r
-python setup.py sdist bdist_wheel
 ```
 
 安装上传包需要的工具：  
@@ -20,7 +17,10 @@ python setup.py sdist bdist_wheel
 python -m pip install --user --upgrade twine
 ```
 
-在 https://pypi.org 注册账号  
+生成发布包：  
+```r
+python setup.py sdist bdist_wheel
+```
 
 上传自己的包：  
 ```r
