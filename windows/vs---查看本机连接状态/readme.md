@@ -19,32 +19,59 @@ int main() {
 
 	printf("state\tnum\tmeaning\n");
 	// 可能是几种状态的结合，所以不能用双等号判断
-	if (state & INTERNET_CONNECTION_CONFIGURED) {
-		printf("INTERNET_CONNECTION_CONFIGURED\t0x40\tLocal system has a valid connection to the Internet, but it might or might not be currently connected.\n");
-	}
-	if (state & INTERNET_CONNECTION_LAN) {
-		printf("INTERNET_CONNECTION_LAN\t0x02\tLocal system uses a local area network to connect to the Internet.\n");
-	}
-	if (state & INTERNET_CONNECTION_MODEM) {
-		printf("INTERNET_CONNECTION_MODEM\t0x01\tLocal system uses a modem to connect to the Internet.\n");
-	}
-	if (state & INTERNET_CONNECTION_MODEM_BUSY) {
-		printf("INTERNET_CONNECTION_MODEM_BUSY\t0x08\tNo longer used.\n");
-	}
-	if (state & INTERNET_CONNECTION_OFFLINE) {
-		printf("INTERNET_CONNECTION_OFFLINE\t0x20\tLocal system is in offline mode.\n");
-	}
-	if (state & INTERNET_CONNECTION_PROXY) {
-		printf("INTERNET_CONNECTION_PROXY\t0x04\tLocal system uses a proxy server to connect to the Internet.\n");
-	}
-	if (state & INTERNET_RAS_INSTALLED) {
-		printf("INTERNET_RAS_INSTALLED\t0x10\tLocal system has RAS installed.\n");
-	}
+	if (state & INTERNET_CONNECTION_CONFIGURED)
+		printf("%s\t%s\t%s\n",
+			"INTERNET_CONNECTION_CONFIGURED",
+			"0x40",
+			"Local system has a valid connection to the Internet, but it might or might not be currently connected."
+		);
+	if (state & INTERNET_CONNECTION_LAN)
+		printf("%s\t%s\t%s\n",
+			"INTERNET_CONNECTION_LAN",
+			"0x02",
+			"Local system uses a local area network to connect to the Internet."
+		);
+	if (state & INTERNET_CONNECTION_MODEM)
+		printf("%s\t%s\t%s\n",
+			"INTERNET_CONNECTION_MODEM",
+			"0x01",
+			"Local system uses a modem to connect to the Internet."
+		);
+	if (state & INTERNET_CONNECTION_MODEM_BUSY)
+		printf("%s\t%s\t%s\n",
+			"INTERNET_CONNECTION_MODEM_BUSY",
+			"0x08",
+			"No longer used."
+		);
+	if (state & INTERNET_CONNECTION_OFFLINE)
+		printf("%s\t%s\t%s\n",
+			"INTERNET_CONNECTION_OFFLINE",
+			"0x20",
+			"Local system is in offline mode."
+		);
+	if (state & INTERNET_CONNECTION_PROXY)
+		printf("%s\t%s\t%s\n",
+			"INTERNET_CONNECTION_PROXY",
+			"0x04",
+			"Local system uses a proxy server to connect to the Internet."
+		);
+	if (state & INTERNET_RAS_INSTALLED)
+		printf("%s\t%s\t%s\n",
+			"INTERNET_RAS_INSTALLED",
+			"0x10",
+			"Local system has RAS installed."
+		);
 
 	getchar();
 	return 0;
 }
 ```
+
+没懂原理，在reactos搜索  
+InternetGetConnectedState 执行了 `TRACE("(%p, 0x%08x)\n", lpdwStatus, dwReserved);` 调用 InternetGetConnectedStateExW  
+InternetGetConnectedStateExW 执行了 `TRACE("(%p, %p, %d, 0x%08x)\n", lpdwStatus, lpszConnectionName, dwNameLen, dwReserved);` 就有结果了  
+不懂  
+
 
 参考链接：  
 1. https://docs.microsoft.com/en-us/windows/win32/api/wininet/nf-wininet-internetgetconnectedstate
