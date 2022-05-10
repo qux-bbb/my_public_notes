@@ -1,6 +1,6 @@
 # 活跃的恶意样本网站
 
-keywords: 恶意软件 样本 下载  
+keywords: 恶意软件 样本 家族 下载  
 
 https://bazaar.abuse.ch/browse/  
 可以用twitter账号登录  
