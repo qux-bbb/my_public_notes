@@ -16,5 +16,9 @@ EventID: 1149 网络连接
 除去21和25相应日志，作为失败日志
 ```
 
+相关事件ID参考链接：  
+https://ponderthebits.com/2018/02/windows-rdp-related-event-logs-identification-tracking-and-investigation/  
+https://jpcertcc.github.io/ToolAnalysisResultSheet/details/mstsc.htm  
+
 
 2022/5/10  
