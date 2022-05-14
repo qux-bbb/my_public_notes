@@ -1,5 +1,7 @@
 # windbg---获取powershell反混淆脚本
 
+这方法太繁琐而且效果不好，更好的方法参考笔记 `# 获取powershell反混淆脚本`  
+
 使用 windbg 配合 SOS 调试扩展可以得到相对比较少混淆的 powershell 脚本，如果是多层混淆的脚本，可以节省好几层处理  
 原理：iex 执行时有一个参数是 powershell 脚本内容，可以直接拿出来  
 
