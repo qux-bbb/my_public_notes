@@ -1,12 +1,12 @@
 # linux---cron
 linux用于实现定时任务，精确级最小为分钟，适用于24小时运行的机器，关机则不能按预期执行，大概和windows的 `任务计划` 类似  
 
-cron，词源：chronological， 按时间顺序的  
+cron，源于希腊语chronos，表示时间，另一说法为 `Command Run On` 的缩写  
 是linux的一个守护进程，会解析指定文件的cron指令并按时执行  
 
 
 ## crontab和配置文件
-crontab，用于编辑管理包含cron指令的文件  
+crontab, cron table, 用于编辑管理包含cron指令的文件  
 ```bash
 # 创建并编辑
 crontab -e
@@ -102,4 +102,7 @@ https://www.xmodulo.com/add-cron-job-linux.html
 gnome-schedule 和 kcron 都没装上，以后试一下  
 
 
-参考：https://www.cnblogs.com/zhoul/p/9931664.html  
+## 参考
+1. https://www.cnblogs.com/zhoul/p/9931664.html
+2. https://en.wikipedia.org/wiki/Cron
+3. https://acronyms.thefreedictionary.com/CRON
