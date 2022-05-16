@@ -19,22 +19,32 @@ vscode有一个`代码片段`功能, 类似pycharm的代码模板(code Templates
 			"",
 			"",
 			"def main():",
-			"    print('${0:Hello World}')",
+			"    print(\"${0:Hello World}\")",
 			"",
 			"",
-			"if __name__ == '__main__':",
-			"    main()"
+			"if __name__ == \"__main__\":",
+			"    main()",
+			""
 		],
 		"description": "Write a python Hello World"
 	},
-	"Python open file": {
-		"prefix": "open",
+	"Python open file read": {
+		"prefix": "openr",
 		"body": [
-			"the_file = open('${0:hello.txt}', 'r')",
+			"the_file = open(\"${0:hello.txt}\", \"r\")",
 			"the_content = the_file.read()",
 			"the_file.close()"
 		],
-		"description": "Write a python Hello World"
+		"description": "Python open file read"
+	},
+	"Python open file write": {
+		"prefix": "openw",
+		"body": [
+			"the_file = open(\"${1:hello.txt}\", \"w\")",
+			"the_file.write(${0:the_content})",
+			"the_file.close()"
+		],
+		"description": "Python open file write"
 	}
 ```
 
