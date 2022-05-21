@@ -5,9 +5,12 @@
 %SystemRoot%\System32\Winevt\Logs\
 ```
 
-Windows的事件查看器可以查看各种日志，对应的可执行程序是 eventvwr.exe  
+Windows的事件查看器可以查看各种日志，对应的可执行程序是 eventvwr.exe。  
+相应的命令行工具为 wevtutil.exe，功能较少，过滤不方便。  
 
 可以筛选一个时间段内的日志  
+
+可以把日志导出为各种格式，支持的有: evtx/xml/txt/csv  
 
 可以通过事件ID筛选某种类型的日志，一些事件ID如下：  
 ```r
@@ -82,8 +85,6 @@ https://www.ultimatewindowssecurity.com/securitylog/quickref/downloads/quickref.
 
 完整的事件ID描述列表：  
 https://www.ultimatewindowssecurity.com/securitylog/encyclopedia  
-
-可以把日志导出为各种格式，支持的有: evtx/xml/txt/csv  
 
 
 2021/7/9  
