@@ -4,7 +4,7 @@ keywords: bat脚本
 
 Batch File，批处理文件，后缀为`.bat`的文件，windows下执行简单逻辑的脚本，和linux的shell脚本类似。  
 
-系统学习可以参考该链接: https://www.tutorialspoint.com/batch_script/index.htm  
+完整学习可以参考该链接: https://www.tutorialspoint.com/batch_script/index.htm  
 
 简单举例  
 ```bat
