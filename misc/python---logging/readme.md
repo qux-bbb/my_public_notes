@@ -23,22 +23,29 @@ logging.critical('this is a loggging critical message')
 ```python
 # coding:utf8
 
-import logging
+import os
 import sys
+import logging
+
+current_py_dir = os.path.dirname(os.path.abspath(__file__)) + '/'
+
+app_name = 'AppName'
 
 # 获取logger实例，如果参数为空则返回root logger
-log = logging.getLogger('AppName')
+log = logging.getLogger(app_name)
 
 # 指定logger输出格式 -8s: 指定宽度为8，减号表示左对齐
 formatter = logging.Formatter('%(asctime)s %(levelname)-8s: %(message)s')
 
 # 文件日志，指定编码可以防止"UnicodeEncodeError"错误
-file_handler = logging.FileHandler('AppName.log', encoding='utf8')
-file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
+log_path = os.path.join(current_py_dir, f'{app_name}.log')
+file_handler = logging.FileHandler(log_path, encoding='utf8')
+file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
 
 # 控制台日志
 console_handler = logging.StreamHandler(sys.stdout)
-console_handler.formatter = formatter  # 也可以直接给fomatter赋值
+console_handler.setFormatter(formatter)
+# console_handler.formatter = formatter  # 也可以直接给fomatter赋值
 
 # 为logger添加日志处理器，可以自定义日志处理器让其输出到其他地方
 log.addHandler(file_handler)
