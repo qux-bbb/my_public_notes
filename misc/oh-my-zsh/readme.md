@@ -21,6 +21,7 @@ gnzh
 plugins=(
     git
     zsh-autosuggestions  # 自动预测命令
+    z  # 路径跳转，oh-my-zsh自带，启用即可，不需要安装
 )
 ```
 

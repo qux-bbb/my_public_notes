@@ -2,6 +2,7 @@
 
 z, 和autojump功能类似，输入简单字符，跳转到想去的路径  
 支持bash、zsh  
+oh-my-zsh自带，启用即可  
 
 github地址: https://github.com/rupa/z  
 

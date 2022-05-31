@@ -14,5 +14,7 @@ cd autojump
 
 可执行该脚本卸载: `./uninstall.py`  
 
+oh-my-zsh自带z，和autojump功能类似，所以如果用oh-my-zsh，直接用z就好了  
+
 
 2019/11/06  
