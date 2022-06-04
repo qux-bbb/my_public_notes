@@ -12,6 +12,18 @@ def try_decode(argument):
 print(try_decode('\xb5\xb1\xc7\xb0\xcf\xd4\xca\xbe\xa3\xba'))
 ```
 
+```python
+def try_decode(argument, decode_type="gbk"):
+    # u'\xb5\xb1\xc7\xb0\xcf\xd4\xca\xbe\xa3\xba'
+    try:
+        return argument.encode("unicode-escape").decode("string-escape").decode(decode_type)
+    except:
+        print('[!] decoding failure: %r' % argument)
+        return argument
+
+print(try_decode(u'\xb5\xb1\xc7\xb0\xcf\xd4\xca\xbe\xa3\xba'))
+```
+
 可能会是别的编码方式  
 
 
