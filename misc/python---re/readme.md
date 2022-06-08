@@ -10,7 +10,7 @@ import re
 
 str1 = 'gdfd,good'
 results = re.findall(r'g..d', str1)
-print results
+print(results)
 ```
 
 ## `re.compile`
@@ -21,7 +21,7 @@ import re
 reobj = re.compile(r'g..d')
 str1 = 'gdfd,good'
 results = reobj.findall(str1)
-print results
+print(results)
 ```
 
 ## `re.match & re.search`
@@ -34,14 +34,14 @@ import re
 str1 = 'gdfd,good'
 m = re.match(r'gdfd', str1)
 if m:
-    print m.group(0)
+    print(m.group(0))
 else:
-    print 'Not found'
+    print('Not found')
 m = re.match(r'good', str1)
 if m:
-    print m.group(0)
+    print(m.group(0))
 else:
-    print 'Not found'
+    print('Not found')
 ```
 结果:  
 ```r
@@ -56,14 +56,14 @@ import re
 str1 = 'gdfd,good'
 s = re.search(r'gdfd', str1)
 if s:
-    print s.group(0)
+    print(s.group(0))
 else:
-    print 'Not found'
+    print('Not found')
 s = re.search(r'good', str1)
 if s:
-    print s.group(0)
+    print(s.group(0))
 else:
-    print 'Not found'
+    print('Not found')
 ```
 结果:  
 ```r
