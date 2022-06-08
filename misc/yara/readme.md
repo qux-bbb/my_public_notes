@@ -69,6 +69,22 @@ rules = yara.compile(filepaths=yara_dict)
 result = rules.match(sample_path)
 ```
 
+## 精确偏移字符串匹配
+https://yara.readthedocs.io/en/stable/writingrules.html#string-offsets-or-virtual-addresses  
+```r
+rule AtExample
+{
+    strings:
+        $a = "dummy1"
+        $b = "dummy2"
+
+    condition:
+        $a at 100 and $b at 200
+}
+```
+
+不能直接把字符串写在condition里  
+
 
 ## 比较多的yara规则
 https://github.com/Neo23x0/signature-base/tree/master/yara  
