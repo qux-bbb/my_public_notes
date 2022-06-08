@@ -119,6 +119,60 @@ print(result)
 ```
 
 
+# flag使用示例
+可以给正则字符串添加一些标记，实现不同的功能。  
+```r
+re.I
+re.IGNORECASE
+进行忽略大小写匹配
+
+re.S
+re.DOTALL
+让 '.' 特殊字符匹配任何字符，包括换行符；如果没有这个标记，'.' 就匹配除了换行符的其他任意字符。对应内联标记 (?s)
+
+re.X
+re.VERBOSE
+这个标记允许你编写更具可读性更友好的正则表达式。通过分段和添加注释。空白符号会被忽略。当一个行内有 `#` 不在字符集和转义序列，那么它之后的所有字符都是注释。
+```
+
+一个匹配数字的示例：  
+```r
+.text:00401032 68 62 04 00 00    push    462h
+.text:00401037 68 8C 7A 41 00    push    offset _Format  ; "%d\n"
+.text:0040103C E8 C5 FF FF FF    call    _printf
+.text:00401041 59                pop     ecx
+.text:00401042 59                pop     ecx
+.text:00401043 33 C0             xor     eax, eax
+.text:00401045 C3                retn
+```
+
+```python
+import re
+import struct
+
+num_re = re.compile(
+    rb"""\x68(.{4})
+         \x68.{4}
+         \xE8.{4}
+         \x59
+         \x59
+         \x33\xC0
+         \xC3""",
+    re.DOTALL | re.VERBOSE,
+)
+
+the_file = open("Hello.exe", "rb")
+the_content = the_file.read()
+the_file.close()
+
+raw_data_list = num_re.findall(the_content)
+for raw_data in raw_data_list:
+    num = struct.unpack("<L", raw_data)[0]
+    print(hex(num))
+# 0x462
+```
+
+
 ## `参考链接`
 1. https://www.runoob.com/python/python-reg-expressions.html  
 2. https://docs.python.org/zh-cn/3/library/re.html  
