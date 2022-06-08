@@ -12,7 +12,7 @@ github地址: https://github.com/VirusTotal/yara/
 
 ## 安装
 我主要用python，所以用pip安装  
-```
+```r
 pip install yara-python
 ```
 
@@ -54,7 +54,9 @@ import yara
 yara_rule_path = 'hello.yar'
 rules = yara.compile(filepath=yara_rule_path)
 
+sample_path = 'hello.txt'
 result = rules.match(sample_path)
+print(result)
 ```
 
 加载多个yara文件的情况  
@@ -66,7 +68,9 @@ for yara_name in yara_names:
     yara_dict[yara_name] = yara_path
 rules = yara.compile(filepaths=yara_dict)
 
+sample_path = 'hello.txt'
 result = rules.match(sample_path)
+print(result)
 ```
 
 ## 精确偏移字符串匹配
