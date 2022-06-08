@@ -48,10 +48,34 @@ func main() {
 原链接: https://gowebexamples.com/hello-world/  
 
 
-## 安装模块示例  
+## 下载添加包和依赖
+下载添加或升级到最新版：  
+```r
+go get example.com/pkg
 ```
-go get github.com/yuin/gopher-lua
+
+下载添加或修改为指定版本(升级或降级)：  
+```r
+go get example.com/pkg@v1.2.3
+```
+
+移除包或依赖：  
+```r
+go get example.com/pkg@none
 ```
 
 
+## 编译添加程序和依赖
+编译安装最新版本：  
+```r
+go install golang.org/x/tools/gopls@latest
+```
+
+根据当前目录下的 `go.mod` 编译安装相应版本：  
+```r
+go install golang.org/x/tools/gopls
+```
+
+
+---
 2020/11/23  
