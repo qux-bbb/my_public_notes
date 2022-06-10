@@ -28,6 +28,7 @@ https://docs.microsoft.com/zh-cn/windows-hardware/drivers/gettingstarted/writing
 ## 一些缩写
 UMDF, User Mode Driver Framework, 用户模式驱动程序框架  
 KMDF, Kernel Mode Driver Framework, 内核模式驱动程序框架  
+PnP, Plug and Play, 即插即用  
 
 
 ---
