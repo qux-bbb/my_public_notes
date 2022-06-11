@@ -2,6 +2,9 @@
 
 nginx的反向代理，我现在理解就是把别的网站的内容给请求过来，然后返回给客户端  
 
+nginx官网: http://nginx.org/  
+nginx官方文档: http://nginx.org/en/docs/  
+
 安装nginx  
 ```r
 apt install nginx
