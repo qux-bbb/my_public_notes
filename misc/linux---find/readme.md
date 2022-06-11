@@ -8,6 +8,8 @@ find命令可以根据各种条件搜索文件。
 find
 # 搜索根目录下所有文件名包含"hello"的文件
 find /* -name *hello*
+# 找到最近7天修改的文件
+find /* -type f -daystart -mtime -7 | grep --invert-match "Permission denied"
 ```
 
 
