@@ -4,7 +4,7 @@
 # 查看登录成功记录
 last
 # 查看登录失败记录
-lastd
+lastb
 # 查看历史执行命令
 history
 
