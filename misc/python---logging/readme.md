@@ -12,8 +12,8 @@ import logging
 logging.basicConfig(level=logging.DEBUG,
                     format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
 
-logging.info('this is a loggging info message')
 logging.debug('this is a loggging debug message')
+logging.info('this is a loggging info message')
 logging.warning('this is loggging a warning message')
 logging.error('this is an loggging error message')
 logging.critical('this is a loggging critical message')
@@ -40,7 +40,7 @@ formatter = logging.Formatter('%(asctime)s %(levelname)-8s: %(message)s')
 # 文件日志，指定编码可以防止"UnicodeEncodeError"错误
 log_path = os.path.join(current_py_dir, f'{app_name}.log')
 file_handler = logging.FileHandler(log_path, encoding='utf8')
-file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
+file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
 
 # 控制台日志
 console_handler = logging.StreamHandler(sys.stdout)
@@ -64,7 +64,6 @@ log.critical('this is critical message')
 
 # 移除一些日志处理器
 log.removeHandler(file_handler)
-
 ```
 
 如果要记录异常信息，可以在不同级别的log中加入参数：exc_info=1，如：  
