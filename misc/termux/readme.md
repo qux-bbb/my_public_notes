@@ -32,3 +32,13 @@ sv-enable sshd
 # 禁止开机启动
 sv-disable sshd
 ```
+
+## cron
+cron需要安装启用  
+```r
+pkg install cronie termux-services
+sv-enable crond
+```
+然后就和正常linux发行版一样了  
+
+原链接: https://www.reddit.com/r/termux/comments/i27szk/how_do_i_crontab_on_termux/  
