@@ -37,6 +37,13 @@ decode 负责字节到字符的解码转换，通用使用 UTF-8 编码格式进
 支持的所有编码方法：  
 https://docs.python.org/3.7/library/codecs.html#standard-encodings  
 
+普通字符串转宽字节：  
+```python
+a = "hello".encode("utf_16_le")
+print(a)
+# b'h\x00e\x00l\x00l\x00o\x00'
+```
+
 
 参考链接：  
 1. https://www.cnblogs.com/mzc1997/p/7755135.html
