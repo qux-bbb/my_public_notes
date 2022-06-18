@@ -23,13 +23,13 @@ git config --list
 ```
 
 
-## 设置全局身份
+## 设置身份
 右键打开Git Bash  
 ```r
-git config --global user.name "Tony"
-git config --global user.email "tony@email.com"
+git config user.name "Tony"
+git config user.email "tony@email.com"
 ```
-不加`--global`就是只设置该仓库的身份  
+如果要设置全局，添加 `--global` 选项即可，不加 `--global` 就是只设置该仓库的身份  
 去掉最后的名字和邮箱可用来查看信息  
 
 取消设置 user.name  
@@ -241,18 +241,19 @@ git clone -b branch_name --single-branch https://github.com/example/test.git
 有时候`git clone`比较慢，加个代理  
 ```r
 # 设置代理
-git config --global http.proxy http://127.0.0.1:1080
-git config --global https.proxy http://127.0.0.1:1080
+git config http.proxy http://127.0.0.1:1080
+git config https.proxy http://127.0.0.1:1080
 
 # 取消代理
-git config --global --unset http.proxy
-git config --global --unset https.proxy
+git config --unset http.proxy
+git config --unset https.proxy
 
 # 查看是否设置代理
-git config --global --get http.proxy
-git config --global --get https.proxy
+git config --get http.proxy
+git config --get https.proxy
 ```
 github的地址虽然看起来是https，我设置了http才生效  
+如果要设置全局，添加 `--global` 选项即可  
 
 
 ## 将本地git仓库传到github或gitlab或其它的位置
