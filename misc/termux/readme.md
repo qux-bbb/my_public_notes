@@ -41,3 +41,6 @@ sv-enable crond
 然后就和正常linux发行版一样了  
 
 原链接: https://www.reddit.com/r/termux/comments/i27szk/how_do_i_crontab_on_termux/  
+
+## Tasker
+Tasker插件不能用来定时执行任务  
