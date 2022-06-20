@@ -1,5 +1,7 @@
 # 搭建域名服务器
 
+keywords: 自建dns服务器  
+
 服务器版本ubuntu22，使用软件bind9  
 
 ## 安装
