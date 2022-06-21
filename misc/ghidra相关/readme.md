@@ -29,5 +29,14 @@ Ghidra的汇编指令窗口是`Listing:<文件名>`
 IDA有一个入口函数叫 start，Ghidra的入口函数叫 entry  
 
 
+## 数据类型转换
+```
+b   Byte -> Word -> DoubleWord -> QuadWord -> Byte
+'   Ascii -> String -> Unicode -> Ascii
+f   Float -> Double -> Float
+c   清除数据类型
+```
+
+
 ---
 20190925
