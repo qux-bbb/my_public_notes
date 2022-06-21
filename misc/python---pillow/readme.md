@@ -82,6 +82,22 @@ im.close()
 im2.close()
 ```
 
+GIF保存所有帧：  
+```python
+import os
+from PIL import Image
+
+os.makedirs('frames')
+
+im = Image.open('test.gif')
+
+n_frames = im.n_frames
+for i in range(n_frames):
+    im.seek(i)
+    im.save(f'frames/{i}.png')
+```
+
+
 数字矩阵转黑白图片：  
 ```python
 # 注意点：
