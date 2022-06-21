@@ -125,4 +125,20 @@ im.close()
 ```
 
 
+比较两张图片是否相同(像素级)：  
+```python
+from PIL import Image
+from PIL import ImageChops
+
+image_one = Image.open(img_path1)
+image_two = Image.open(img_path2)
+diff = ImageChops.difference(image_one, image_two)
+if diff.getbbox():
+    print('diff images')
+else:
+    print('same images')
+```
+
+
+---
 2021/8/9  
