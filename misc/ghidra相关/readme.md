@@ -37,6 +37,13 @@ f   Float -> Double -> Float
 c   清除数据类型
 ```
 
+## 字体调整
+`tool options`，在下方的 filter 搜索 `font`，地方比较多，所有都改为 Consola 11  
+
+
+## 高亮同名变量
+默认 鼠标中键 高亮同名变量，可以修改  
+
 
 ---
 20190925
