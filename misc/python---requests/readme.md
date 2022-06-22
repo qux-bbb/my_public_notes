@@ -1,4 +1,4 @@
-# python--requests
+# python---requests
 
 ## 0x00 扯
 一些关于requests的使用，基本上把官方说明文档的简单用法搬了过来，
@@ -109,7 +109,7 @@ import requests
 url = 'http://httpbin.org/post'
 files = {'file': open('report.xls', 'rb')}
 r = requests.post(url, files=files)
-print r.text
+print(r.text)
 ```
 
 ## 0x09 使用代理
