@@ -19,7 +19,7 @@ func main() {
 		log.Fatal(err)
 	}
 	body, err := io.ReadAll(res.Body)
-	res.Body.Close() // 一定要关掉以免造成内存泄漏
+	res.Body.Close()
 	if res.StatusCode > 299 {
 		log.Fatalf("Response failed with status code: %d and\nbody: %s\n", res.StatusCode, body)
 	}
