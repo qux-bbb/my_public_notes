@@ -1,16 +1,19 @@
+# Cutter相关
+
 ## 简介
-Cutter is the official UI for radare2 for Linux, macOS and Windows, it's written in C++ and uses the Qt.  
 
 官网: https://cutter.re/  
 github地址: https://github.com/rizinorg/cutter/  
 
-简而言之，radare2 的 UI  
+简而言之，Rizin 的 UI  
 感觉反编译还不错，可以用r2dec和Ghidra，各有特色  
 调试体验不太好  
 可以通过拖拽窗口自定义视图，很好  
 可以通过x64dbgcutter插件和x64dbg符号转换  
 
 支持多平台: Windows/Linux/macOS  
+
+没有保存部分内存数据的方法  
 
 
 ## x64dbgcutter
