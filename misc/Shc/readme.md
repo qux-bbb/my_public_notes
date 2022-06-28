@@ -1,6 +1,9 @@
 # Shc
 
 Shc, Shell Script Compiler, 把shell脚本转成elf可执行文件，其实只是做了一层包裹，运行时会把脚本解密执行。  
+算法是rc4，但每次生成key都不一样。  
+
+github地址: https://github.com/neurobin/shc  
 
 ## 安装
 ubuntu下安装shc：  
