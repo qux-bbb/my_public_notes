@@ -49,13 +49,18 @@ apt-get install -d openssh-server
 
 
 ## 0x03 apt
-感觉apt和apt-get没什么太大区别，把apt当成apt-get用就可以，比如：  
+apt专为交互式使用而设计，提高了可用性，一般操作把apt当成apt-get用就可以，比如：  
 `apt install aa`  
 
-更推荐用apt，自带进度条，而且不用敲那么多呀，哈  
+日常使用更推荐apt，自带进度条，不用敲那么多  
+如果在脚本或shell管道中，还是应该使用apt-get  
 
 
 ## 0x04 尾
 我的经验，  
 apt-get是用来安装那些源里有的软件，dpkg用来安装下载好的.deb安装包  
 apt-get安装一般不用担心依赖问题  
+
+
+## 0x05 参考链接
+https://www.linuxprobe.com/aptyum-dnfpkg-diff.html  
