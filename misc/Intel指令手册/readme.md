@@ -1,6 +1,6 @@
 # Intel指令手册
 
-keywords: 操作码 opcode 指令 intel手册  
+keywords: 机器码 操作码 opcode 指令 intel手册  
 
 逆向的时候如果要看指令码相关的内容，可以参考官方手册：  
 ```r
