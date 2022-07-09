@@ -1,6 +1,9 @@
-# pyinstaller---python转exe
+# PyInstaller---python转独立可执行文件
 
 ## 简单信息
+PyInstaller可以打包python脚本和解释器，生成独立的可执行文件，使他人在不安装python的情况下运行程序。  
+支持平台: Windows, MacOS X, Linux  
+各平台程序只能在相应平台打包生成。  
 
 pyinstaller官网: http://www.pyinstaller.org/  
 在线文档：https://pyinstaller.readthedocs.io/en/stable/  
