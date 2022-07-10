@@ -1,5 +1,7 @@
 # PyInstaller---python转独立可执行文件
 
+keywords: python转exe  
+
 ## 简单信息
 PyInstaller可以打包python脚本和解释器，生成独立的可执行文件，使他人在不安装python的情况下运行程序。  
 支持平台: Windows, MacOS X, Linux  
@@ -9,11 +11,11 @@ pyinstaller官网: http://www.pyinstaller.org/
 在线文档：https://pyinstaller.readthedocs.io/en/stable/  
 
 注意版本问题：  
-官网首页写的是：  
-PyInstaller works with Python 3.5—3.7  
+随着更新，pyinstaller对python版本的支持会变化，python3的可能会一直变，从这里点进每个版本，会有详细版本支持说明：  
+https://pypi.org/project/pyinstaller/#history  
 
-文档写的是：  
-> Finally, this version drops support for Python 2.7, which is end-of-life since January 2020.. The minimum required version is now Python 3.5. The last version supporting Python 2.7 was PyInstaller 3.6.  
+关于python2.7，文档写的是：  
+> The last version supporting Python 2.7 was PyInstaller 3.6.  
 
 安装:  
 ```r
