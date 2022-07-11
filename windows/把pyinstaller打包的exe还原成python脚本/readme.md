@@ -4,7 +4,8 @@ keywords: pyinstaller 反编译
 
 下面自己写的脚本作废，直接用这个项目：  
 https://github.com/extremecoders-re/pyinstxtractor  
-用之前先用16进制编辑器看看python版本，用对应版本去还原，这样不容易出问题  
+用之前先用16进制编辑器看看python版本(或者xanalyzer)，用对应版本去还原，这样不容易出问题  
+一个可执行文件可能有多个有用的pyc，缺了东西就用uncompyle6反编译其它的  
 
 有一点要注意：  
 项目的脚本是根据当前运行python版本获取pyc magic 的，所以可能不对，需要自己根据 解出来的 python dll 确定到底应该是什么 magic  
