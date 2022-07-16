@@ -10,7 +10,7 @@ crontab, cron table, 用于编辑管理包含cron指令的文件
 ```bash
 # 创建并编辑
 crontab -e
-# 列出当前用户的cron配置
+# 列出当前用户的cron配置，只能看当前用户使用 `crontab -e` 创建的任务，不能看全部的
 crontab -l
 # 删除当前用户的cron配置
 crontab -r
