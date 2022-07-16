@@ -6,8 +6,16 @@ cron一般用来设置周期性执行任务，把时间指定为 `@reboot` 即�
 详见: [linux---cron](../linux---cron/readme.md)  
 
 相关配置文件或文件夹：  
-`/etc/crontab`  
-`/var/spool/cron/crontabs`  
+```r
+/var/spool/cron/crontabs
+/etc/crontab
+/etc/cron.d
+/etc/cron.daily
+/etc/cron.hourly
+/etc/cron.monthly
+/etc/cron.weekly
+```
+
 
 ## 自启动服务
 服务一般用来做后台长时间运行的任务  
@@ -24,8 +32,11 @@ cron一般用来设置周期性执行任务，把时间指定为 `@reboot` 即�
 
 对应配置文件目录: `~/.config/autostart/`  
 
-
 参考链接: https://linuxconfig.org/how-to-autostart-applications-on-ubuntu-20-04-focal-fossa-linux  
 
+## 其它
+如果实在找不到自启动项了，可能是持续被攻击  
 
+
+---
 2021/4/11  
