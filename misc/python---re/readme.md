@@ -151,13 +151,15 @@ import re
 import struct
 
 num_re = re.compile(
-    rb"""\x68(.{4})
-         \x68.{4}
-         \xE8.{4}
-         \x59
-         \x59
-         \x33\xC0
-         \xC3""",
+    rb"""
+    \x68(.{4})  # 68 62 04 00 00    push    462h
+    \x68.{4}    # 68 8C 7A 41 00    push    offset _Format  ; "%d\n"
+    \xE8.{4}    # E8 C5 FF FF FF    call    _printf
+    \x59        # 59                pop     ecx
+    \x59        # 59                pop     ecx
+    \x33\xC0    # 33 C0             xor     eax, eax
+    \xC3        # C3                retn
+    """,
     re.DOTALL | re.VERBOSE,
 )
 
