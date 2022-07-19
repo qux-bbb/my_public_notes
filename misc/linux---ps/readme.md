@@ -4,12 +4,14 @@ ps，process status，显示进程状态
 
 部分选项解释：  
 ```r
--e  所有用户
+# 虽然 A 和 e 的描述一样，但实测 A 看到的更多，不会漏掉
+-e  所有进程
+-A  所有进程
 -f  格式化输出，可以看到进程所属用户名和启动时间
 -F  比 -f 选项更详细一点
 ```
 
-`ps -aux` 和 `ps aux` 的区别（摘自 man 手册，其实不用管，直接用 `ps -ef` 吧）：  
+`ps -aux` 和 `ps aux` 的区别（摘自 man 手册，其实不用管，直接用 `ps -Af` 吧）：  
 ```r
 Note that "ps -aux" is distinct from "ps aux".  The POSIX and UNIX standards require that "ps -aux" print all processes owned by a user named "x", as well as printing all processes that would be selected by the -a option.  If the user named "x" does not exist, this ps may interpret the command as "ps aux" instead and print a warning.  This behavior is intended to aid in transitioning old scripts and habits.  It is fragile, subject to change, and thus should not be relied upon.
 
