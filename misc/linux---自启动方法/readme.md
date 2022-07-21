@@ -34,8 +34,9 @@ cron一般用来设置周期性执行任务，把时间指定为 `@reboot` 即�
 
 参考链接: https://linuxconfig.org/how-to-autostart-applications-on-ubuntu-20-04-focal-fossa-linux  
 
-## 其它
-如果实在找不到自启动项了，可能是持续被攻击  
+## 不正常的启动方式
+1. 持续被攻击
+2. 正常命令被替换
 
 
 ---
