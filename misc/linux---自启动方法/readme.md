@@ -7,8 +7,12 @@ cron一般用来设置周期性执行任务，把时间指定为 `@reboot` 即�
 
 相关配置文件或文件夹：  
 ```r
-/var/spool/cron/crontabs
+# 文件
 /etc/crontab
+
+# 文件夹
+/var/spool/cron  # centos系
+/var/spool/cron/crontabs  # debian系
 /etc/cron.d
 /etc/cron.daily
 /etc/cron.hourly
