@@ -1,5 +1,7 @@
 # 发布vscodium扩展
 
+keywords: 发布扩展  
+
 vscodium 扩展: https://open-vsx.org/  
 
 为保证安全性，发布 vscodium 扩展稍微繁琐一点，简单整理一下，具体操作步骤见参考链接。  
