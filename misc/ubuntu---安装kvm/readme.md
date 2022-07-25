@@ -1,6 +1,6 @@
 # ubuntu---安装kvm
 
-keywords: kvm 界面  
+keywords: kvm 界面 ubuntu14.04  
 
 KVM：Kernel-based Virtual Machine  
 
