@@ -10,7 +10,7 @@ api-ms-win-crt-runtime-l1-1-0.dll
 1. 安装 VS2015。
     https://www.microsoft.com/en-in/download/details.aspx?id=48145
 
-2. 去官网上下载 此项更新 ：https://support.microsoft.com/zh-cn/kb/2999226 重启，就OK
+2. 去官网上下载 此项更新 ：https://support.microsoft.com/zh-cn/kb/2999226 重启，就OK
 --------------------- 
 作者：k91191 
 来源：CSDN 

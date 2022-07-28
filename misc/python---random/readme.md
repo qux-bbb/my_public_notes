@@ -9,7 +9,7 @@ import random
 base_str = "0123456789abcdefghijklmnopqrstuvwxyz"
 rand_str = ""
 for i in range(5):
-    rand_str += random.choice(base_str)
+    rand_str += random.choice(base_str)
 print(rand_str)
 
 # 随机整数

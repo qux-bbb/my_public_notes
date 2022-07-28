@@ -45,7 +45,7 @@ file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格�
 # 控制台日志
 console_handler = logging.StreamHandler(sys.stdout)
 console_handler.setFormatter(formatter)
-# console_handler.formatter = formatter  # 也可以直接给fomatter赋值
+# console_handler.formatter = formatter  # 也可以直接给fomatter赋值
 
 # 为logger添加日志处理器，可以自定义日志处理器让其输出到其他地方
 log.addHandler(file_handler)

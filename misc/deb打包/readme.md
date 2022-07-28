@@ -21,7 +21,7 @@ gcc -o hello hello.c
 ```
 the_hello
 ├── DEBIAN
-│   └── control
+│   └── control
 └── usr
     └── bin
         └── hello
