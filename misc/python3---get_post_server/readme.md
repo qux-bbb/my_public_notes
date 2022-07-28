@@ -1,6 +1,6 @@
 # python3---get_post_server
 
-keywords: http请求 http响应  
+keywords: http请求 http响应 http服务  
 
 接收任意get、post请求。  
 
@@ -16,7 +16,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from sys import argv
 
 class S(BaseHTTPRequestHandler):
-    def _set_response(self):
+    def send_headers(self):
         self.protocol_version = 'HTTP/1.1'
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
@@ -28,34 +28,41 @@ class S(BaseHTTPRequestHandler):
         print('Path: {}'.format(self.path))
         print('Headers:')
         print(self.headers)
-        self._set_response()
-        self.wfile.write('GET request for {}'.format(self.path).encode('utf-8'))
+
+        self.send_headers()
+        self.wfile.write('GET request for {}\r\n\r\n'.format(self.path).encode('utf-8'))
         print('=={:=<80}'.format('end'))
         print()
 
     def do_POST(self):
         print('=={:=<80}'.format('begin'))
         content_length = int(self.headers.get('Content-Length', '0')) # <--- Gets the size of data
-        post_data = self.rfile.read(content_length) # <--- Gets the data itself
-        want_len = 300
-        if len(post_data) > want_len:
-            print_data = post_data[:want_len]
+        if content_length == 0:
+            print_data = b''
         else:
-            print_data = post_data
+            post_data = self.rfile.read(content_length) # <--- Gets the data itself
+            want_len = 300
+            if len(post_data) > want_len:
+                print_data = post_data[:want_len]
+            else:
+                print_data = post_data
         print('POST request,')
         print('Path: {}'.format(self.path))
         print('Headers:')
         print(self.headers)
         print('Body(part):')
         try:
-            print(print_data.decode('utf8'))
+            if print_data:
+                print(print_data.decode('utf8'))
+            else:
+                print('[!] No data')
         except:
             print(print_data)
         print()
         print()
 
-        self._set_response()
-        self.wfile.write('POST request for {}'.format(self.path).encode('utf-8'))
+        self.send_headers()
+        self.wfile.write('POST request for {}\r\n\r\n'.format(self.path).encode('utf-8'))
         print('=={:=<80}'.format('end'))
         print()
 
