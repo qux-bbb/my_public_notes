@@ -19,6 +19,7 @@ cron一般用来设置周期性执行任务，把时间指定为 `@reboot` 即�
 /etc/cron.monthly
 /etc/cron.weekly
 ```
+这是一个检查cron自启动相关文件的脚本: [check_cron.sh](files/check_cron.sh)  
 
 
 ## 自启动服务
