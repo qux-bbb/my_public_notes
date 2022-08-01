@@ -45,6 +45,7 @@ echo 3
 
 set -o errexit
 
+# 变量名和等号之间不能有空格
 the_path="/home/hello/Desktop/log.txt"
 
 date >> $the_path
