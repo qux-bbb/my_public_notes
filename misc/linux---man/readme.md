@@ -28,7 +28,8 @@ int execve(const char *pathname, char *const argv[],
 
 ## 网站
 man7.org  
-估计是网站所有者叫Michael Kerrisk，都是7位，所以申请了这样的域名  
+因为Michael Kerrisk给man-pages的第7章写了大量内容，所以申请了这样的域名  
+https://man7.org/tlpi/faq/index.html#why_man7  
 
 这里是man-pages主页：  
 https://man7.org/linux/man-pages/index.html  
