@@ -23,40 +23,37 @@ for i in progress(range(1000)):
 
 
 ## `rich`
+超级好看  
+
+github地址: https://github.com/Textualize/rich  
+官方文档: https://rich.readthedocs.io/en/stable/introduction.html  
+
+简单的rich例子1  
 ```python
-from rich.progress import track
-import  time
-
-for step in track(range(30)):
-    time.sleep(0.5)
-```
-rich 超级好看  
-
-简单的rich例子  
-```python
-# coding:utf8
-
 import time
 from rich.progress import track
 
+for i in track(range(20), description="Processing..."):
+    time.sleep(1)  # Simulate work being done
+```
 
-class Test:
-    a = 0
-    def add_and_sleep(self, total):
-        while self.a < total:
-            # 这里可以写具体的逻辑
-            # 用 a 值当作进度
-            time.sleep(0.1)
-            yield self.a
-            self.a += 1
+简单的rich例子2  
+```python
+import time
 
+from rich.progress import Progress
 
-    def show_progress(self):
-        total = 100
-        for step in track(self.add_and_sleep(total), total=total):
-            _ = 1
+with Progress() as progress:
 
-Test().show_progress()
+    task1 = progress.add_task("[red]Downloading...", total=1000)
+    task2 = progress.add_task("[green]Processing...", total=1000)
+    task3 = progress.add_task("[cyan]Cooking...", total=1000)
+
+    while not progress.finished:
+        progress.update(task1, advance=0.5)
+        progress.update(task2, advance=0.3)
+        progress.update(task3, advance=0.9)
+        time.sleep(0.02)
 ```
 
 
