@@ -2,11 +2,14 @@
 
 临时生效：  
 ```r
-# 方法1
+# 方法1(必须使用root账户)
 echo 1 > /proc/sys/net/ipv4/ip_forward
+# 方法1变种(有sudo权限即可)
+echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
 # 方法2
 sysctl -w net.ipv4.ip_forward=1
 ```
+方法1和方法2效果一样  
 
 永久生效：  
 修改 `/etc/sysctl.conf` 文件，将 `net.ipv4.ip_forward=1` 注释去掉即可  
