@@ -66,3 +66,15 @@ greet World
 ```
 
 参考链接: https://opensource.com/article/21/3/input-output-bash  
+
+## 必须有sudo权限才执行
+不一定是root用户执行，这里指的是root权限，只要有sudo权限就可以  
+```bash
+# check if start with root
+if [ "$EUID" -ne 0 ]; then
+   echo 'This script must be run as root'
+   exit 1
+fi
+```
+
+参考链接: https://github.com/doomedraven/Tools/blob/master/Virtualization/kvm-qemu.sh  
