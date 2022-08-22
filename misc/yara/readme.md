@@ -89,6 +89,19 @@ rule AtExample
 
 不能直接把字符串写在condition里  
 
+## 字符串计数
+https://yara.readthedocs.io/en/stable/writingrules.html#counting-strings  
+```r
+rule CountExample
+{
+    strings:
+        $a = "dummy1"
+        $b = "dummy2"
+
+    condition:
+        #a == 6 and #b > 10
+}
+```
 
 ## 比较多的yara规则
 https://github.com/Neo23x0/signature-base/tree/master/yara  
