@@ -12,9 +12,12 @@ sysctl -w net.ipv4.ip_forward=1
 方法1和方法2效果一样  
 
 永久生效：  
-修改 `/etc/sysctl.conf` 文件，将 `net.ipv4.ip_forward=1` 注释去掉即可  
+修改 `/etc/sysctl.conf` 文件，将 `net.ipv4.ip_forward=1` 注释去掉，重启机器或执行如下命令生效：  
+```r
+sysctl -p
+```
 
-可以通过iptables设置具体的转发规则，比如：  
+允许流量转发之后，可以通过iptables设置具体的转发规则，比如：  
 ```r
 sudo iptables -t nat -A POSTROUTING -o eth0 -s 192.168.56.0/24 -j MASQUERADE
 ```
