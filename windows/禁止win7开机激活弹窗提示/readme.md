@@ -20,6 +20,12 @@ Manual      3
 Disabled    4
 ```
 
+命令行操作方法：  
+```bat
+REM disable Software Protection service
+sc stop sppsvc
+sc config sppsvc start= disabled
+```
 
 
 原链接:  
