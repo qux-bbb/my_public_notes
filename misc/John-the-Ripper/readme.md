@@ -15,7 +15,7 @@ john --show hello.hash
 
 爆破7z示例：  
 ```r
-# 722john不是自带的，需要下载
+# 7z2john不是自带的，需要下载
 wget https://github.com/truongkma/ctf-tools/blob/master/John/run/7z2john.py
 # 提取hash，注意该脚本只支持python2
 python 7z2john.py hello.7z > hello.hash
