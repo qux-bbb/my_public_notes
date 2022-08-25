@@ -1,5 +1,7 @@
 # python3---configparser
 
+keywords: python 配置文件  
+
 和python2相比，ConfigParser变成了configparser。写入的值必须是字符串，如"True"。  
 
 3.7的官方文档: https://docs.python.org/3.7/library/configparser.html  

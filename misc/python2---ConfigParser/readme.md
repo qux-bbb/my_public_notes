@@ -1,5 +1,7 @@
 # python2---ConfigParser
 
+keywords: python 配置文件  
+
 ## 官方文档
 https://docs.python.org/2/library/configparser.html  
 
