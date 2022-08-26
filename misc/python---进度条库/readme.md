@@ -37,7 +37,7 @@ for i in track(range(20), description="Processing..."):
     time.sleep(1)  # Simulate work being done
 ```
 
-简单的rich例子2  
+简单的rich例子2(多任务)  
 ```python
 import time
 
@@ -56,8 +56,35 @@ with Progress() as progress:
         time.sleep(0.02)
 ```
 
+简单的例子3(选择展示列)  
+```python
+import time
 
-原链接：  
+from rich.progress import (
+    Progress,
+    TextColumn,
+    BarColumn,
+    TaskProgressColumn,
+    TimeRemainingColumn,
+)
+
+with Progress(
+    TextColumn("[progress.description]{task.description}"),
+    BarColumn(),
+    TaskProgressColumn(),
+    TimeRemainingColumn(elapsed_when_finished=True),  # 结束后显示经过时间
+) as progress:
+
+    task1 = progress.add_task("[red]Downloading...", total=100)
+
+    while not progress.finished:
+        progress.update(task1, advance=1)
+        time.sleep(0.2)
+```
+https://rich.readthedocs.io/en/stable/progress.html#columns  
+
+
+## 原链接
 1. https://www.cnblogs.com/huma/p/12198386.html  
 2. https://zhuanlan.zhihu.com/p/145568973  
 
