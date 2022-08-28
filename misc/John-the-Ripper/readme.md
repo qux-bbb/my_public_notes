@@ -25,6 +25,11 @@ john --wordlist pass.txt hello.hash
 john --show hello.hash
 ```
 
+john支持400多种的hash爆破，但也有些算法不支持，如yescrypt，查看支持的算法命令如下：  
+```r
+john --list=formats
+```
+
 
 参考链接：  
 1. https://dfir.science/2014/07/how-to-cracking-zip-and-rar-protected.html
