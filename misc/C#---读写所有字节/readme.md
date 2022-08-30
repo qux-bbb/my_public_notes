@@ -1,5 +1,7 @@
 # C#---读写所有字节
 
+keywords: C# 读写文件  
+
 ```c#
 using System;
 using System.IO;
