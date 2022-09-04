@@ -26,7 +26,7 @@ sc delete myserver
 有一个方便的命令行GUI设置服务工具: nssm  
 网站: http://nssm.cc/  
 
-所有的服务都可以在`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services`注册表项下找到，这意味着可以直接设置注册表项来添加服务，重启生效，举例如下：  
+所有的服务都可以在`HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services`注册表项下找到，这意味着可以直接设置注册表项来添加服务，重启生效，举例如下：  
 ```r
 Windows Registry Editor Version 5.00
 
@@ -67,5 +67,3 @@ sc create driver_test binPath= "C:\Windows\System32\drivers\driver_test.sys" typ
 参考:  
 1. https://zhidao.baidu.com/question/1882836776116195108.html
 2. https://stackoverflow.com/questions/3582108/create-windows-service-from-executable
-
-
