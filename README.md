@@ -4,7 +4,7 @@ notes_dir
     first_note_dir
         images_dir
         files_dir
-        first_note.md
+        readme.md
     ...
 ```
 
