@@ -19,6 +19,18 @@ Lazarus默认的各个窗口是分离的，没有简单的切换整合窗口的�
 
 https://blog.csdn.net/uijjuh_21/article/details/107883217  
 
+## 简单的命令行程序示例
+```r
+program HelloWorld;
+uses crt;
+
+(* 主程序块开始 *)
+begin
+  writeln('Hello, World!');
+  readkey;
+end.
+```
+
 ## 简单的图形化程序示例
 ```r
 unit Unit1;
