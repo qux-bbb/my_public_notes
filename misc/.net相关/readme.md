@@ -11,7 +11,7 @@
 
 
 ## 反编译工具
-https://github.com/dnSpy/dnSpy  
+https://github.com/dnSpyEx/dnSpy  
 
 dnspy除了反编译，也可以调试。  
 
