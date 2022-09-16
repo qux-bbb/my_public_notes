@@ -42,6 +42,7 @@ def get_data(the_path):
             data = section.get_data()
             the_pe.close()
             return data
+    the_pe.close()
     return None
 ```
 
