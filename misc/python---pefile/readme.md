@@ -16,6 +16,9 @@ import pefile
 
 exe_sample = pefile.PE('test.exe')
 
+# 输出基址，如: 0x400000
+print(exe_sample.NT_HEADERS.OPTIONAL_HEADER.ImageBase)
+
 # 输出一个导入表项的函数名
 print(exe_sample.DIRECTORY_ENTRY_IMPORT[1].imports[0].name)
 
