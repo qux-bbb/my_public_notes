@@ -126,6 +126,17 @@ proxies={
 res = requests.get('http://www.baidu.com', proxies=proxies)
 ```
 
+## 0x0A 流模式
+大文件可以使用流模式，方便传输  
+```python
+res = requests.request("GET", url, headers=headers, stream=True)
+if res.status_code == 200:
+    the_file = open(hash_value, "wb")
+    for chunk in res.iter_content(chunk_size=1024 * 1024):  # 接受1M就保存
+        if chunk:
+            the_file.write(chunk)
+    the_file.close()
+```
 
 ## 0x10 尾
 官方文档和搜索引擎都是比较好的学习方式  
