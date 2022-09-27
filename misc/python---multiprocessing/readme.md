@@ -43,4 +43,28 @@ if __name__ == '__main__':
 ```
 
 
+## 进程间同步
+使用锁确保进程间同步，执行完一个再执行另一个  
+
+```python
+from multiprocessing import Process, Lock
+
+
+def f(lock, i):
+    lock.acquire()
+    try:
+        print("hello world", i)
+        print("hello world", i)
+    finally:
+        lock.release()
+
+
+if __name__ == "__main__":
+    lock = Lock()
+
+    for num in range(10):
+        Process(target=f, args=(lock, num)).start()
+```
+
+
 原链接: https://docs.python.org/zh-cn/3/library/multiprocessing.html  
