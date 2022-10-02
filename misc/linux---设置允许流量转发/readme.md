@@ -7,7 +7,7 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 # 方法1变种(有sudo权限即可)
 echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
 # 方法2
-sysctl -w net.ipv4.ip_forward=1
+sudo sysctl -w net.ipv4.ip_forward=1
 ```
 方法1和方法2效果一样  
 
