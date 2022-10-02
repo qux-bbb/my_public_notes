@@ -4,15 +4,17 @@
 
 ## linux使用
 安装
-```
+```r
 sudo apt-get install mongodb
 ```
 
-如果失败，可以参考这个来手动安装   https://www.runoob.com/mongodb/mongodb-linux-install.html  
+如果失败，可以参考这些链接安装：  
+https://techviewleo.com/install-mongodb-on-ubuntu-linux/  
+https://www.mongodb.com/docs/manual/administration/install-on-linux/  
 
 
 简单命令
-```sh
+```r
 # 进入mongo
 mongo
 
@@ -40,7 +42,7 @@ exit
 python有一个pymongo模块  
 
 安装  
-```
+```r
 pip install pymongo
 ```
 
