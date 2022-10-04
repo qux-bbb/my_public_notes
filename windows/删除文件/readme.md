@@ -25,7 +25,7 @@ DeleteFile api不能删除自身，因为被占用，但用ShellExecuteA执行�
 
 int main() {
 
-	// 获取当前程序名称
+	// 获取当前程序绝对路径
 	char exeFilePath[100 + 1] = { 0 };
 	GetModuleFileNameA(GetModuleHandle(NULL), exeFilePath, 100);
 
