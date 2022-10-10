@@ -1,3 +1,5 @@
+# linux---du
+
 du, disk usage, 用来递归查看文件夹下所有文件的大小  
 
 ```sh
