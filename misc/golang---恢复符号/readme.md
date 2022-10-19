@@ -17,6 +17,10 @@ https://github.com/sibears/IDAGolangHelper
 https://rednaga.io/2016/09/21/reversing_go_binaries_like_a_pro/  
 https://github.com/strazzere/golang_loader_assist/  
 
+3. go_parser
+https://github.com/0xjiayu/go_parser  
+IDA加载go_parser.py即可，效果很好，如果有问题注意文件或者项目路径不包含中文试试  
+
 
 ## for Ghidra
 使用步骤稍微多一点：  
