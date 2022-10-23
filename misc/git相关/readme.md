@@ -180,6 +180,7 @@ git stash -m "hello"
 # 恢复
 git stash pop
 ```
+当pull出现冲突时，可以先stash，pull之后再pop，手动解决冲突，然后再提交代码  
 
 
 ## 忽略文件的文件名
