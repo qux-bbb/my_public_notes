@@ -8,6 +8,8 @@ apt-get install p7zip-full
 压缩文件  
 ```r
 7z a hello.7z hello.txt
+# 使用密码
+7z a hello.7z hello.txt -p
 ```
 
 查看压缩文件信息  
