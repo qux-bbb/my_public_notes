@@ -1,13 +1,13 @@
 # golang---恢复符号
 
 这样编译go程序，可以去除符号，加大逆向人员分析难度  
-```bash
+```r
 go build -o hello -ldflags '-s' hello.go
 ```
 不过符号并不是真的删掉了，可以通过一些脚本恢复回来  
 
 ## for IDA
-有2个好用的工具，可以都试试  
+有好用的工具，可以都试试  
 都是下载好直接用IDA加载脚本就好了，不需要放在插件文件夹里  
 
 1. IDAGolangHelper  
