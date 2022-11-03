@@ -24,7 +24,9 @@ IDA加载go_parser.py即可，效果很好，如果有问题注意文件或者�
 
 ## for Ghidra
 使用步骤稍微多一点：  
-复制脚本到 ghidra_scripts 目录(默认: `<HomeDirectory>/ghidra_scripts`). 用脚本管理器来加载脚本  
+如果是python脚本，复制到 Ghidra\Features\Python\ghidra_scripts 目录  
+Window -> Script Manager, 搜索脚本名称，选中一个，点击右上图标"Run Script"即可  
+注意一次只能运行一个脚本  
 
 效果挺好的  
 
