@@ -50,6 +50,10 @@ http.request.method == "POST"
 1. 追踪流，"Show data as"选择"原始数据"，另存为，这样就可以保存原始数据
 2. 使用HxD打开保存的文件，根据Content-Length等字段确定文件大小和起始位置，右键选择范围，复制粘贴到新文件即可
 
+或者使用chaosreader(perl脚本)，可以提取文件，效果很好，但没有关联文件名  
+https://www.brendangregg.com/chaosreader.html  
+最好在单独的文件夹内操作，会生成大量文件，浏览器打开index.html查看  
+
 
 ## 追踪流
 追踪流可以更直观地查看一些交互流量  
