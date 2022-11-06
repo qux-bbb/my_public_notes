@@ -1,6 +1,7 @@
 # Ghidra
 
 Ghidra是NSA开发的逆向平台，有反编译和调试功能，类似IDA。  
+发音大概是: `[giˈdræ]`, 只是前半部分不太确定，相关链接: https://bbs.pediy.com/thread-249900.htm  
 
 官网: https://www.ghidra-sre.org/  
 github地址: https://github.com/NationalSecurityAgency/ghidra  
