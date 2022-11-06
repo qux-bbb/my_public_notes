@@ -1,5 +1,5 @@
 该仓库用作公开笔记存储，基本结构为：  
-```
+```r
 notes_dir
     first_note_dir
         images_dir
