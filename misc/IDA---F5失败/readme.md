@@ -39,6 +39,9 @@ Decompilation failure:
 .text:004022CB                 call    sub_402700
 .text:004022D0                 call    sub_403070
 ```
+如果还有问题，大概率是函数参数个数设置有问题，尝试分析后手动调整参数个数(先复制一份函数声明，改错了还可以改回来)。  
+参考链接: https://www.likecs.com/show-1019881.html  
+
 
 ---
 2020/5/23  
