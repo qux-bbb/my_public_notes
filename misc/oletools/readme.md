@@ -10,6 +10,8 @@ oletools是一个python工具包，用于分析Microsoft OLE2文件，如Microso
 ```r
 # 扫描单个文件
 olevba file.doc
+# 扫描单个文件 只显示VBA代码，不分析
+olevba file.doc -c
 # 扫描单个文件 显示解码之后的混淆字符串
 olevba file.doc --decode
 # 扫描单个文件 显示经过字符串反混淆之后的VBA宏代码
