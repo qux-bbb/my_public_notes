@@ -21,6 +21,23 @@ https://github.com/strazzere/golang_loader_assist/
 https://github.com/0xjiayu/go_parser  
 IDA加载go_parser.py即可，效果很好，如果有问题注意文件或者项目路径不包含中文试试  
 
+相关文章：  
+```r
+Go二进制文件逆向分析从基础到进阶——综述
+https://www.anquanke.com/post/id/214940
+
+Go二进制文件逆向分析从基础到进阶——MetaInfo、函数符号和源码文件路径列表
+https://www.anquanke.com/post/id/215419
+
+Go二进制文件逆向分析从基础到进阶——数据类型
+https://www.anquanke.com/post/id/215820
+
+Go二进制文件逆向分析从基础到进阶——itab和strings
+https://www.anquanke.com/post/id/218377
+
+Go二进制文件逆向分析从基础到进阶——Tips与实战案例
+https://www.anquanke.com/post/id/218674
+```
 
 ## for Ghidra
 使用步骤稍微多一点：  
