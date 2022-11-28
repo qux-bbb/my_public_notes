@@ -66,5 +66,22 @@ if __name__ == "__main__":
         Process(target=f, args=(lock, num)).start()
 ```
 
+错误情况：  
+```r
+RuntimeError: Lock objects should only be shared between processes through inheritance
+```
+解决方法：  
+```r
+from multiprocessing import Manager
 
-原链接: https://docs.python.org/zh-cn/3/library/multiprocessing.html  
+lock = Manager.lock()
+...
+lock.acquire()
+...
+lock.release()
+```
+解决方法原链接: https://zhuanlan.zhihu.com/p/22223656  
+
+
+---
+参考链接: https://docs.python.org/zh-cn/3/library/multiprocessing.html  
