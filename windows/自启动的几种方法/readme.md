@@ -18,3 +18,5 @@
    `sc.exe`是用来与服务控制管理器和服务进行通信的命令行程序，可以查看、创建、删除服务  
 
 如果实在找不到自启动项了，可能是持续被其它机器攻击  
+
+win7 win10 打开StartUp文件夹可以使用该路径: `%appdata%\Microsoft\Windows\Start Menu\Programs\Startup`  
