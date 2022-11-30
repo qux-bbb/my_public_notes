@@ -2,7 +2,16 @@
 
 这样编译go程序，可以去除符号，加大逆向人员分析难度  
 ```r
-go build -o hello -ldflags '-s' hello.go
+go build -o hello -ldflags '-s -w' hello.go
+```
+
+2个标志位含义(Omit是删除)：  
+```r
+-s
+	Omit the symbol table and debug information.
+-w
+	Omit the DWARF symbol table.
+# 所有标志位含义: https://pkg.go.dev/cmd/link
 ```
 不过符号并不是真的删掉了，可以通过一些脚本恢复回来  
 
@@ -19,7 +28,7 @@ https://github.com/strazzere/golang_loader_assist/
 
 3. go_parser
 https://github.com/0xjiayu/go_parser  
-IDA加载go_parser.py即可，效果很好，如果有问题注意文件或者项目路径不包含中文试试  
+克隆仓库，IDA加载go_parser.py即可，效果很好，如果有问题注意文件或者项目路径不包含中文试试  
 
 相关文章：  
 ```r
