@@ -1,0 +1,4 @@
+[+] key generated: public.key private.key.
+[+] rawfile written: raw.txt.
+[+] file encrypted: raw.enc.
+[+] file decrypted: raw.dec.
