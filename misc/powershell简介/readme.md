@@ -3,8 +3,19 @@
 PowerShell 是一种跨平台的任务自动化解决方案，由命令行 shell、脚本语言和配置管理框架组成。  
 PowerShell 可以在 Windows、Linux 和 macOS 上运行。  
 
+
+## 注释
+```ps1
+# 单行注释
+
+<# 多行注释
+多行注释
+#>
+```
+
+
 ## 流程控制
-```r
+```ps1
 # foreach
 $ComputerName = 'DC01', 'WEB01'
 foreach ($Computer in $ComputerName) {
@@ -76,7 +87,7 @@ foreach ($n in $number) {
 
 
 ## 函数
-```r
+```ps1
 # 普通函数
 function Get-PSVersion {
     $PSVersionTable.PSVersion
@@ -109,6 +120,7 @@ function Test-MrDefaultParameter {
 ## 原链接
 1. https://learn.microsoft.com/zh-cn/powershell/scripting/overview
 2. https://learn.microsoft.com/zh-cn/powershell/scripting/learn/ps101/00-introduction
+3. https://learn.microsoft.com/en-us/powershell/scripting/developer/help/syntax-of-comment-based-help?view=powershell-7.3
 
 
 ---
