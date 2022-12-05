@@ -3,6 +3,8 @@
 John the Ripper 是一个hash爆破工具。  
 官网: https://www.openwall.com/john/  
 
+爆破结果会保存在: `~/.john` 目录下  
+
 爆破zip示例：  
 ```r
 # 提取hash
