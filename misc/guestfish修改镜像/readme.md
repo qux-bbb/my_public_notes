@@ -2,6 +2,13 @@
 
 keywords: img qcow2  
 
+安装：  
+```r
+sudo yum install libguestfs-tools      # Fedora/RHEL/CentOS
+sudo apt-get install libguestfs-tools  # Debian/Ubuntu
+```
+
+简单使用：  
 ```r
 # Mount
 guestfish --rw -a centos63_desktop.img
