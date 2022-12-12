@@ -15,5 +15,8 @@ https://github.com/jgraph/drawio-desktop
 缺点是图标比较少，可以从这里搜索图标然后复制粘贴使用：  
 https://www.iconfinder.com/  
 
+官方也有些图标补充，把xml拖进去软件就好了  
+https://github.com/jgraph/drawio-libs  
+
 
 2020/12/6  
