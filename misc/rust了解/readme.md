@@ -26,5 +26,16 @@ fn main() {
 
 编译: `rustc hello.rs`, 执行即可生成可执行文件  
 
+64位windows编译32位程序  
+```r
+# 查看支持生成的目标列表
+rustc --print target-list
+# 安装编译需要的工具
+rustup target add i686-pc-windows-msvc
+# 指定目标平台进行编译
+cargo build --target=i686-pc-windows-msvc
+```
+原链接: https://www.reddit.com/r/rust/comments/78vpxg/help_cross_compiling_for_32_bit_on_windows/  
 
-20201123
+
+20201123  
