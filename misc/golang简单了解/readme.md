@@ -18,13 +18,16 @@ func main() {
 ```
 
 运行  
-```
+```r
 go run test.go
 ```
 
 构建可执行文件  
-```
+```r
 go build test.go
+
+# 在linux下构建windows下32位程序(windows不支持这样构建) 参考: https://www.cnblogs.com/52why/p/15479283.html
+GOOS=windows GOARCH=386 go build hello.go
 ```
 
 
