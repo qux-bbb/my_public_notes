@@ -1,6 +1,8 @@
 # golang简单了解
 
-官网：https://go.dev/  
+官网: https://go.dev/  
+官方文档: https://go.dev/doc/  
+
 据说好写并且速度快。  
 查看版本: `go version`  
 
