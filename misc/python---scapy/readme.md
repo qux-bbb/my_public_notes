@@ -1,6 +1,6 @@
 # python---scapy
 
-scapy可发送、捕获、解析流量包。  
+scapy可构造、发送、捕获、解析、修改流量包。  
 
 官网: https://scapy.net/  
 官方文档: https://scapy.readthedocs.io/  
@@ -37,13 +37,15 @@ for cap in caps:
 print(flag)
 ```
 
-示例3，保存caps  
+示例3，构造package并保存  
 ```python
 # coding:utf8
 
-from scapy.all import wrpcap
+from scapy.all import IP, UDP, DNS, DNSQR, wrpcap
 
-wrpcap('want_caps.pcapng', caps)
+dns_query1 = IP(dst="8.8.8.8") / UDP(dport=53) / DNS(rd=1, qd=DNSQR(qname="null.co.in"))
+dns_query2 = IP(dst="8.8.8.8") / UDP(dport=53) / DNS(rd=1, qd=DNSQR(qname="www.baidu.com"))
+wrpcap("want_caps.pcapng", [dns_query1, dns_query2])
 ```
 
 一些点：  
