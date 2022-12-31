@@ -10,6 +10,7 @@
 不要用这种 `sudo apt install cargo` 的方式，会有问题  
 安装后可使用 `rustc --version` 确认是否安装成功  
 安装后可以在本地查看入门文档: `rustup doc --book`  
+如果觉得学会了可以装这个试试改错(建议linux): https://github.com/rust-lang/rustlings  
 
 编译器：rustc  
 自动格式化工具：rustfmt  
