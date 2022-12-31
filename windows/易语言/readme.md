@@ -24,6 +24,11 @@ VC98linker.rar
 4. 运行 -> 运行，可以看到程序效果  
 5. 编译 -> 静态编译，可以生成单独的exe  
 
+## 逆向相关
+没试过，先记一下  
+一些特征: https://bbs.pediy.com/thread-274503.htm  
+辅助分析的IDA插件: https://github.com/fjqisba/E-Decompiler  
+
 ## 参考链接
 下载试用 https://www.52pojie.cn/thread-941077-1-1.html
 弹窗 https://jingyan.baidu.com/article/7908e85c8cad37af481ad28c.html
