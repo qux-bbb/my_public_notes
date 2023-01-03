@@ -1,8 +1,10 @@
 # PowerToys
 
-github地址: https://github.com/microsoft/PowerToys  
+keywords: 文件夹占用无法删除  
 
 PowerToys是微软开源的增强Windows使用效率的工具。  
+
+github地址: https://github.com/microsoft/PowerToys  
 
 一些感觉好用的功能：  
 1. 图片尺寸调整
