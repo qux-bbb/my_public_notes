@@ -28,6 +28,7 @@ Windows主机入侵痕迹排查办法：https://www.freebuf.com/articles/system/
 
 
 其他资料：  
+应急响应实战笔记 https://bypass007.github.io/Emergency-Response-Notes/  
 应急响应之Linux入侵排查 https://www.freebuf.com/vuls/255852.html  
 应急响应之Windows入侵排查 https://www.freebuf.com/vuls/255600.html  
 
