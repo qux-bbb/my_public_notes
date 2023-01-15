@@ -18,6 +18,9 @@ https://thezoo.morirt.com/
 恶意样本库，可以下载md5文件进行查询，使用种子文件下载样本  
 https://vx-underground.org/samples.html  
 
+这里有一些恶意软件的源代码  
+https://github.com/vxunderground/MalwareSourceCode  
+
 ## malshare.com
 提供样本查询下载，需要注册，使用脚本操作，官方在github提供了脚本  
 https://malshare.com/  
