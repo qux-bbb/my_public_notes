@@ -1,6 +1,6 @@
 # Ghidra
 
-Ghidra是NSA开发的逆向平台，有反编译和调试功能，类似IDA。  
+Ghidra是NSA开发的逆向工具，有反编译和调试功能，类似IDA。  
 发音是: `[giˈdræ]`, 相关链接：  
 https://bbs.pediy.com/thread-249900.htm  
 https://www.youtube.com/watch?v=08DW8gEMjpQ  
@@ -46,6 +46,23 @@ c   清除数据类型
 
 ## 高亮同名变量
 默认 鼠标中键 高亮同名变量，可以修改  
+
+## 设置快捷键
+方法1：  
+Edit -> Tool Options... -> Key Bindings  
+然后可以搜索功能设置快捷键  
+
+方法2(简单快捷)：  
+光标放在相应功能上，按 F4，此时可以在弹出的窗口内设置相应快捷键  
+举例：光标放在一个函数上，右键 -> References -> Find References to xxx，按 F4，设置快捷键为"x"  
+
+
+## 不同格式复制数据
+选择部分数据，右键 -> Copy Special... 然后可以选择不同格式  
+
+
+## 官方CheatSheet
+https://ghidra-sre.org/CheatSheet.html  
 
 
 ---
