@@ -1,5 +1,11 @@
 # shell脚本相关
+
+keywords: bash脚本  
+
 shell脚本，可以直接在linux下执行的脚本，因为linux应该都有shell。  
+shell有很多种，这里只记一些Bash相关的脚本信息。  
+
+官方文档: https://www.gnu.org/software/bash/manual/bash.html  
 
 
 ## 简单示例
