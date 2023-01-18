@@ -1,11 +1,9 @@
-# shell脚本相关
+# Bash脚本相关
 
-keywords: bash脚本  
-
-shell脚本，可以直接在linux下执行的脚本，因为linux应该都有shell。  
+shell脚本是可以直接在linux下执行的脚本，因为linux应该都有shell。  
 shell有很多种，这里只记一些Bash相关的脚本信息。  
 
-官方文档: https://www.gnu.org/software/bash/manual/bash.html  
+Bash脚本官方文档: https://www.gnu.org/software/bash/manual/bash.html  
 
 
 ## 简单示例
@@ -76,6 +74,7 @@ greet World
 ## 必须有sudo权限才执行
 不一定是root用户执行，这里指的是root权限，只要有sudo权限就可以  
 ```bash
+#!/bin/bash
 # check if start with root
 if [ "$EUID" -ne 0 ]; then
    echo 'This script must be run as root'
