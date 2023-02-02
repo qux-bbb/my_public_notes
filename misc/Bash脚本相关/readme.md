@@ -83,3 +83,20 @@ fi
 ```
 
 参考链接: https://github.com/doomedraven/Tools/blob/master/Virtualization/kvm-qemu.sh  
+
+## 使用IFS拆分内容
+用python拆分内容(或者说拆分字符串)很容易，Bash需要用到 IFS 环境变量  
+IFS, Internal Field Separator, 内部字段分隔符  
+
+`in` 后面必须是变量或语句，不能直接是字符串  
+```bash
+#!/bin/bash
+the_str="morning,afternoon,evening"
+IFS=$','
+for word in $the_str
+do
+    echo $word
+done
+```
+
+参考链接: https://blog.csdn.net/laoding1993/article/details/50764478  
