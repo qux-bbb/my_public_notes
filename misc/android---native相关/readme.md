@@ -1,3 +1,5 @@
+# android---native相关
+
 android一般是用java或者kotlin写的，这两种语言生成的逻辑用虚拟机执行，效率较低，而且很容易被反编译到源码级别，这个时候就出现了native层。  
 native层用C或C++编写。  
 
@@ -69,6 +71,7 @@ Java_com_example_nativetest_MainActivity_add(
 可以发现调用的时候，前2个参数是固定的，逆向的时候可以用到  
 IDA里，打开.so文件，找到一个方法，选择第1个参数，右键 `Set lvar type`, 设置为 `JNIEnv*`, 就能看到很多api的名字了，方便理解逻辑  
 这叫 还原JNI函数方法名  
+JNI, Java Native Interface  
 
 
 参考：  
