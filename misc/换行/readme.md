@@ -3,8 +3,8 @@
 keywords: 回车  
 
 电传打字机相关  
-LF, Line Feed, 将打印纸向上推动一行  
-CR, Carriage Return, 小车回位，将打印头小车推回行首  
+LF, Line Feed, 将打印纸向上推动一行, \n, 0A, 10  
+CR, Carriage Return, 小车回位，将打印头小车推回行首, \r, 0D, 13  
 
 HTTP协议用的就是CRLF(\r\n)  
 
