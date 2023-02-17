@@ -16,7 +16,7 @@ makeself.sh /home/joe/mysoft mysoft.sh "Joe's Nice Software Package" ./setup
 makeself.sh --notemp makeself makeself.run "Makeself by Stephane Peter" echo "Makeself has extracted itself"
 ```
 
-如果想提取文件，找到明文差不多最后的 `exit $res`，`0A` 之后就是文件了，可能是压缩包什么的，可以根据开头的hash验证  
+如果想提取文件，找到明文差不多最后的 b'exit $res\x0A` 之后就是文件了，可能是压缩包什么的，可以根据开头的hash验证  
 
 
 2023/2/13  
