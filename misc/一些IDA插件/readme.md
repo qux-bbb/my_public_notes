@@ -58,4 +58,10 @@ https://github.com/x64dbg/x64dbgida
 安装方法：x64dbgida.py放在plugins文件夹即可，去release下载，注意版本  
 
 
+## Finger
+https://github.com/aliyunav/Finger  
+听说可以恢复一些符号，需要联网，有机会试试  
+
+
+---
 2019/7/11  
