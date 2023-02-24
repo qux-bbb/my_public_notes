@@ -16,6 +16,8 @@ pipx ensurepath
 ```r
 # 安装pycowsay
 pipx install pycowsay
+# 指定pip参数安装
+pipx install pycowsay --pip-args="-i https://pypi.mirrors.ustc.edu.cn/simple"
 # 运行(如果添加了path变量，可以直接pycowsay)
 pipx run pycowsay "Hello"
 ```
