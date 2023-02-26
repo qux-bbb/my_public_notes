@@ -6,8 +6,8 @@ https://github.com/AUTOMATIC1111/stable-diffusion-webui
 秋叶大佬的介绍  
 https://www.bilibili.com/video/BV17d4y1C73R  
 
-秋叶大佬提供的NovelAI最终版整合包  
-https://pan.baidu.com/s/1tCprxK_CUdwEn80AFpLoIw?pwd=u612  
+秋叶大佬提供的NovelAI最终版整合包，密码要看视频简介私信获取  
+https://pan.baidu.com/s/1tCprxK_CUdwEn80AFpLoIw  
 
 LoRA, Low-Rank Adaptation, 一种微调模型，需要配合主模型使用  
 
