@@ -34,7 +34,7 @@ IntelliJ IDEA自带maven，也可以在设置中改成自己安装的maven。
 
 有时会遇到依赖无法下载的问题，原因是maven默认的库在国外，国内网络不好，可以把设置成国内的库  
 File -> Settings -> Build, Execution, Deployment -> Build Tools -> Maven -> User settings file  
-勾选后面的"Override"，然后编辑对应的文件，在mirrors节点下添加如下内容保存即可：  
+勾选后面的"Override"，然后编辑对应的文件，在mirrors节点下添加如下内容保存即可(如果没有该文件直接创建文件把内容粘进去也行)：  
 ```xml
 <mirror>
     <id>alimaven</id>
