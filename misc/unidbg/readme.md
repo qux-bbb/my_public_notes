@@ -17,6 +17,16 @@ File -> Settings -> Build, Execution, Deployment -> Build Tools -> Maven -> User
 </mirror>
 ```
 
+maven构建完成后，在一些测试文件里的类声明处或者主函数处的左边会有绿色的执行箭头，点击执行可以查看效果  
+举例: unidbg-android/src/test/java/com/bytedance/frameworks/core/encrypt/TTEncrypt.java  
+```r
+...
+00E0: A0 E0 3B 4D AE 2A F5 B0 C8 EB BB 3C 83 53 99 61    ..;M.*.....<.S.a
+00F0: 17 2B 04 7E BA 77 D6 26 E1 69 14 63 55 21 0C 7D    .+.~.w.&.i.cU!.}
+^-----------------------------------------------------------------------------^
+Find native function Java_com_bytedance_frameworks_core_encrypt_TTEncryptUtils_ttEncrypt => RX@0x40000f19[libttEncrypt.so]0xf19
+```
+
 就先简单记一下，后面补充细节  
 
 
