@@ -16,7 +16,8 @@ lora路径: extensions\sd-webui-additional-networks\models\lora
 
 下载模型和图片: https://civitai.com/  
 
-标签非常重要  
+标签非常重要，这里有标签含义和和风格标签集合：  
+http://tomxlysplay.com.cn/  
 
 好看的图片：  
 ![https://civitai.com/gallery/153941](images/pink_girl.jpg)  
