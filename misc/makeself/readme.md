@@ -39,7 +39,7 @@ done
 
 打包命令：  
 ```r
-./makeself.sh /home/hello/Desktop/test_folder pack_test.sh "Just a descrition" ./test.sh
+./makeself.sh /home/hello/Desktop/test_folder pack_test.sh "Just a description" ./test.sh
 ```
 
 生成pack_test.sh之后执行就可以运行test.sh了  
