@@ -7,7 +7,7 @@ keywords: 浏览器 扩展 插件 firefox chrome
 
 ## 火狐
 
-**AdBlocker Ultimate**  
+**uBlock Origin**  
 拦截广告  
 
 **Country Flags & IP Whois**  
@@ -25,20 +25,14 @@ keywords: 浏览器 扩展 插件 firefox chrome
 **Proxy SwitchyOmega**  
 切换代理  
 
-**Edge Translate**  
-翻译网页或选中单词  
-
 **Wappalyzer**  
 分析搭建网站使用技术  
 
 
 ## 谷歌
 
-**AdBlocker Ultimate**  
+**uBlock Origin**  
 拦截广告  
-
-**Google翻译**  
-翻译网页或选中单词  
 
 **IP域国家国旗**  
 展示访问网站的ip和区域  
