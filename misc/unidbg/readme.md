@@ -27,7 +27,5 @@ maven构建完成后，在一些测试文件里的类声明处或者主函数处
 Find native function Java_com_bytedance_frameworks_core_encrypt_TTEncryptUtils_ttEncrypt => RX@0x40000f19[libttEncrypt.so]0xf19
 ```
 
-就先简单记一下，后面补充细节  
-
 
 2023/2/12  
