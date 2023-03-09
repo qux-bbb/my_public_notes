@@ -1,13 +1,25 @@
 # Ghidra
 
 Ghidra是NSA开发的逆向工具，有反编译和调试功能，类似IDA。  
-发音是: `Gee-druh /ˈɡiːdrə/`, 相关链接：  
-https://github.com/NationalSecurityAgency/ghidra/wiki/Frequently-asked-questions#how-do-you-pronounce-ghidra  
-https://en.wikipedia.org/wiki/Ghidra  
 
 官网: https://www.ghidra-sre.org/  
 github地址: https://github.com/NationalSecurityAgency/ghidra  
 安装文档: https://www.ghidra-sre.org/InstallationGuide.html  
+
+发音是: `Gee-druh /ˈɡiːdrə/`, 相关链接：  
+https://github.com/NationalSecurityAgency/ghidra/wiki/Frequently-asked-questions#how-do-you-pronounce-ghidra  
+https://en.wikipedia.org/wiki/Ghidra  
+
+最初含义是日本的田中智之幻想的怪兽(哥斯拉也由他创造)，NSA的扩展解释是：  
+```r
+Generic
+Hexidecimal
+Integrated
+Decompiling
+Reverse-engineering
+Architecture
+```
+https://github.com/NationalSecurityAgency/ghidra/wiki/files/recon2019.pdf  
 
 
 ## 调试相关
