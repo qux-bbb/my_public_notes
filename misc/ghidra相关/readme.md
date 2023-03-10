@@ -57,6 +57,12 @@ c   清除数据类型
 ```
 
 
+## 栈字符串
+Ghidra现在不能很好地处理栈字符串，有2个脚本可以添加相关注释，第1个效果还可以，第2个会猜测所有匹配情况效果不好  
+https://github.com/0x6d696368/ghidra_scripts/blob/master/SimpleStackStrings.md  
+https://github.com/0x6d696368/ghidra_scripts/blob/master/SearchSimpleStackStrings.md  
+
+
 ## 字体调整
 `tool options`，在下方的 filter 搜索 `font`，地方比较多，所有都改为 Consola 11  
 
