@@ -6,10 +6,14 @@ Ghidra是NSA开发的逆向工具，有反编译和调试功能，类似IDA。
 github地址: https://github.com/NationalSecurityAgency/ghidra  
 安装文档: https://www.ghidra-sre.org/InstallationGuide.html  
 
+
+## 发音
 发音是: `Gee-druh /ˈɡiːdrə/`, 相关链接：  
 https://github.com/NationalSecurityAgency/ghidra/wiki/Frequently-asked-questions#how-do-you-pronounce-ghidra  
 https://en.wikipedia.org/wiki/Ghidra  
 
+
+## 含义
 最初含义是日本的田中智之幻想的怪兽(哥斯拉也由他创造)，NSA的扩展解释是：  
 ```r
 Generic
@@ -52,12 +56,14 @@ f   Float -> Double -> Float
 c   清除数据类型
 ```
 
+
 ## 字体调整
 `tool options`，在下方的 filter 搜索 `font`，地方比较多，所有都改为 Consola 11  
 
 
 ## 高亮同名变量
 默认 鼠标中键 高亮同名变量，可以修改  
+
 
 ## 设置快捷键
 方法1：  
