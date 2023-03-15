@@ -22,7 +22,7 @@
 1. 放虚拟机里，用火绒剑、PCHunter监控，管理员权限打开程序，看一下对应进程组的信息，读写文件，读写注册表，网络交互之类的信息
 2. 收集运行过程生成的文件，留待后续分析
 
-如果DIE/ExeInfoPE/PEiD监测到不是普通的PE，比如autoit、vb，可通过相应工具（exe2autoit、
+如果DIE/ExeInfoPE/PEiD检测到不是普通的PE，比如autoit、vb，可通过相应工具（exe2autoit、
 vb decompiler）处理之后再分析  
 
 IDA和其他动态调试器结合，定位一下动态看到的行为  
