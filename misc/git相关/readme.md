@@ -246,8 +246,8 @@ git config --global http.proxy http://127.0.0.1:10809
 git config --global https.proxy http://127.0.0.1:10809
 
 # 取消代理
-git config --unset http.proxy
-git config --unset https.proxy
+git config --global --unset http.proxy
+git config --global --unset https.proxy
 
 # 查看是否设置代理
 git config --get http.proxy
