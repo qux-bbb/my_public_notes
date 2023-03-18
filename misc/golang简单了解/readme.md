@@ -1,5 +1,7 @@
 # golang简单了解
 
+keywords: go相关 golang相关  
+
 官网: https://go.dev/  
 官方文档: https://go.dev/doc/  
 
@@ -10,12 +12,18 @@
 ## hello world 例子  
 test.go  
 ```go
+// https://stackoverflow.com/questions/14094190/function-similar-to-getchar/17278730#17278730
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "os"
+)
 
 func main() {
     fmt.Println("Hello, World!")
+    content := make([]byte, 1)
+    os.Stdin.Read(content)
 }
 ```
 
