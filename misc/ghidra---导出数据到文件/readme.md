@@ -1,9 +1,9 @@
 # ghidra---导出数据到文件
 
 Ghidra里，没有比较方便的方法直接导出数据到文件，可以执行python脚本实现。  
-写了一个Ghidra用的脚本: https://github.com/qux-bbb/ghidra-scripts/blob/master/export_data_to_file.py, 可以复制直接用了  
+写了一个Ghidra用的脚本: https://github.com/qux-bbb/ghidra-scripts/blob/master/export_data_to_file.py, 可以复制直接用了，下面内容可以不看  
 
-核心就是指定数据起始位置和长度，这里根据使用场景给出4个示例，用的时候直接复制修改变量使用即可。  
+核心就是指定数据起始位置和长度，这里根据使用场景给出4个代码示例。  
 
 指定数据起始位置、长度：  
 ```python
