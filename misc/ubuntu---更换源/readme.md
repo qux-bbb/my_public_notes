@@ -35,6 +35,7 @@ deb https://mirrors.ustc.edu.cn/ubuntu/ xenial-backports main restricted univers
 中科大的源比较快  
 
 20可以把 xenial 替换成 focal  
+22可以把 xenial 替换成 jammy  
 
 
 20201122  
