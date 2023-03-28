@@ -50,6 +50,9 @@ int main()
 
 	free(pBuf);
 
+	InternetCloseHandle(hInternet2);
+	InternetCloseHandle(hInternet1);
+
 	getchar();
 
 	return 0;
