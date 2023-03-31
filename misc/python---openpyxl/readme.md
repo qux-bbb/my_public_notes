@@ -1,6 +1,14 @@
+# python---openpyxl
+
 openpyxl可以操作xlsx表格  
 官方文档: http://openpyxl.readthedocs.io/en/stable/index.html  
 
+安装：  
+```r
+pip install openpyxl
+```
+
+示例：  
 ```python
 # coding:utf8
 
