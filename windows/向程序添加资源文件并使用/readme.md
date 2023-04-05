@@ -2,6 +2,19 @@
 
 向程序添加自定义类型的资源文件，取出使用  
 
+解释一下FindResource的参数含义：  
+```cpp
+HRSRC FindResource(
+  HMODULE hModule,        // 模块句柄
+  LPCWSTR lpName,         // 资源名称
+  LPCWSTR lpType          // 资源类型
+);
+
+// hModule：指定包含资源的模块的句柄。如果该参数为NULL，则默认搜索当前应用程序的模块。
+// lpName：指定资源的名称。可以是一个整数ID，也可以是一个指向以NULL结尾的字符串的指针。
+// lpType：指定资源的类型。可以是一个整数ID，也可以是一个指向以NULL结尾的字符串的指针。常见的资源类型包括RT_ICON、RT_BITMAP、RT_STRING等。
+```
+
 
 ## 步骤
 准备资源文件 greet.txt  
@@ -24,13 +37,14 @@ Good Morning!
 int main() {
 	// 参考: https://blog.csdn.net/weixin_30378623/article/details/98292897
 	// 参数: 模块句柄, 资源ID, 资源类型
-	HRSRC hResource = FindResource(GetModuleHandle(NULL), MAKEINTRESOURCE(IDR_HELLO1), L"HELLO");
+	HMODULE hModule = GetModuleHandle(NULL);
+	HRSRC hResource = FindResource(hModule, MAKEINTRESOURCE(IDR_STRING1), L"STRING");
 	//加载资源
-	HGLOBAL hg = LoadResource(GetModuleHandle(NULL), hResource);
+	HGLOBAL hg = LoadResource(hModule, hResource);
 	//锁定资源
 	LPVOID pData = LockResource(hg);
 	//获取资源大小
-	DWORD dwSize = SizeofResource(GetModuleHandle(NULL), hResource);
+	DWORD dwSize = SizeofResource(hModule, hResource);
 
 	printf("%s\n", pData);
 
@@ -39,8 +53,6 @@ int main() {
 ```
 
 编译执行就可以输出文件内容了  
-
-不过这只是试出来的，不知道标准步骤是什么，暂时能用就行  
 
 
 ## 其它
