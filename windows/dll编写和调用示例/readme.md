@@ -1,5 +1,7 @@
 # dll编写和调用示例
 
+keywords: 写dll  
+
 ## SampleDLL Project
 
 SampleDLL.h  
