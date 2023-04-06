@@ -63,7 +63,7 @@ EXPORTS
    HelloWorld @3 NONAME
 ```
 
-注意：只有def文件声明的导出才能用rundll32.exe调用  
+注意：一般只有def文件声明的导出才能用rundll32.exe调用  
 测试执行命令：  
 ```bat
 :: ","后可以有空格
@@ -131,8 +131,16 @@ int main()
 
 直接看这个好了，是一个总的导入导出用法链接： https://docs.microsoft.com/en-us/cpp/build/importing-and-exporting?view=vs-2019  
 
+## 指定dll入口点
+项目 -> 属性 -> 配置属性 -> 链接器 -> 所有选项 -> 入口点  
+在这里设置函数名可以将任意函数设置为dll的入口点  
+也可以通过命令行参数指定：  
+```r
+cl /LD /ENTRY:HelloWorld ...
+```
+来自ChatGPT  
 
-参考资料:  
+## 参考资料
 1. http://www.tutorialspoint.com/dll/dll_writing.htm
 2. https://docs.microsoft.com/en-us/cpp/build/walkthrough-creating-and-using-a-dynamic-link-library-cpp?view=vs-2019
 3. https://docs.microsoft.com/en-us/cpp/build/exporting-from-a-dll-using-def-files?view=vs-2019
