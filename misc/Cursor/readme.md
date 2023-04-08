@@ -5,7 +5,7 @@
 官网: https://www.cursor.so/  
 github地址: https://github.com/getcursor/cursor  
 
-在右边的"More"标签下，可以输入回答总是需要遵循的指示，如"使用中文回答"  
+在右边的"MORE"标签下，可以输入回答总是需要遵循的指示，如"使用中文回答"  
 
 
 2023/4/8  
