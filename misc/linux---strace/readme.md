@@ -1,5 +1,7 @@
 # linux---strace
 
+keywords: linux监控api  
+
 strace, the linux syscall tracer.  
 
 官网: https://strace.io/  
