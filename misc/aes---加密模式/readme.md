@@ -1,5 +1,8 @@
 # AES---加密模式
 
+除了ECB，其它都需要IV。  
+IV, Initialization Vector, 初始化向量。它是一个与明文一起输入加密算法的随机数，用于增加加密过程的随机性，从而提高加密安全性。  
+
 ## 模式和英文
 1. 电码本模式（Electronic Codebook Book (ECB)）；  
 2. 密码分组链接模式（Cipher Block Chaining (CBC)）；  
@@ -25,6 +28,6 @@
     这种模式较复杂。  
 
 
-原链接: https://www.cnblogs.com/starwolf/p/3365834.html#undefined  
+原链接: https://www.cnblogs.com/starwolf/p/3365834.html  
 
 用 CBC 模式好了  
