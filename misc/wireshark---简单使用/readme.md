@@ -1,5 +1,7 @@
 # wireshark---简单使用
 
+keywords: pcapng  
+
 官网: https://www.wireshark.org/  
 
 wireshark是一个很好用的流量捕获和解析工具。这里写一些简单用法。  
@@ -53,6 +55,10 @@ http.request.method == "POST"
 或者使用chaosreader(perl脚本)，可以提取文件，效果很好，但没有关联文件名  
 https://www.brendangregg.com/chaosreader.html  
 最好在单独的文件夹内操作，会生成大量文件，浏览器打开index.html查看  
+
+或者使用NetworkMiner，提取文件效果很好  
+https://www.netresec.com/?page=NetworkMiner  
+提取完成后，切换到"Files"选项窗口，选择一行右键"Open folder"，即可查看提取的文件  
 
 
 ## 追踪流
