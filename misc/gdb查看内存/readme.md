@@ -32,6 +32,8 @@ x/24d 0x400c90
 ```
 显示0x400c90到0x400c90+24的内容，显示的格式为整数d，这个命令常用于检查输出数组的内容  
 
+gdb本身不提供hexdump功能，可以安装pwndbg插件使用hexdump功能。  
+
 
 原链接：https://www.cnblogs.com/adamwong/p/10538019.html  
 
