@@ -4,6 +4,7 @@ gdb脚本可批量执行命令，自动化控制调试过程
 
 新建文件a.gdb, 内容如下:  
 ```r
+# This is a comment.
 file a.out
 start
 break *0x55555555502E
