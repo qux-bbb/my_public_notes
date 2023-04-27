@@ -18,17 +18,17 @@ def get_all_partition():
     return exist_partitions
 
 
-def get_files(folder_name):
+def get_files(folder_path):
     '''
     获取某一文件夹下所有文件
-    :param folder_name: 使用绝对路径的文件夹名，例如：D:\games
+    :param folder_path: 使用绝对路径的文件夹路径，例如：D:\games
     :return: 所有文件名(绝对路径形式)list
     '''
     all_files = []
-    for root, dir, files in os.walk(folder_name + '\\', True):
-        if files:
-            for file in files:
-                all_files.append(root + '\\' + file)
+    for root, dirs, files in os.walk(folder_path):
+        for file in files:
+            a_file = os.path.join(root, file)
+            all_files.append(a_file)
     return all_files
 
 
