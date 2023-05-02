@@ -62,8 +62,12 @@ Set oShell = WScript.CreateObject ("WScript.Shell")
 oShell.Run ".\venv\Scripts\python.exe test.py", 0, True
 Set oShell = Nothing
 ```
+Run的第2个参数intWindowStyle，0表示隐藏窗口  
+Run的第3个参数bWaitOnReturn，True表示等待程序运行结束再返回  
 
-来源: chatgpt  
+参考来源：  
+1. chatgpt
+2. https://www.vbsedit.com/html/6f28899c-d653-4555-8a59-49640b0e32ea.asp
 
 
 2023/4/24  
