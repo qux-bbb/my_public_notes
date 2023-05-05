@@ -1,19 +1,33 @@
-# ClamAV-linux版本简单使用
+# ClamAV
 
 ClamAV，Clam AntiVirus，是免费开源的防毒软件。  
 
 官网：https://www.clamav.net/  
-
-github相关：  
-1. 项目地址：https://github.com/Cisco-Talos/clamav-devel  
-2. 问答地址：https://github.com/Cisco-Talos/clamav-faq  
-
-关于文档，应该看最新的 https://github.com/Cisco-Talos/clamav-devel/blob/dev/0.101/docs/UserManual.md  
+官方文档: https://docs.clamav.net/  
+github地址: https://github.com/Cisco-Talos/clamav  
 
 提交未检测到的病毒：https://www.clamav.net/reports/malware  
 提交误报文件：https://www.clamav.net/reports/fp  
 
-官网只有命令行版本的，有公司做了图形界面，被思科收购了，不大好用。  
+
+## 配置
+按官方文档操作: https://docs.clamav.net/manual/Usage/Configuration.html  
+复制配置文件之后，将文件中的 "Example" 行添加注释即可  
+
+
+## 实时检测功能
+Linux平台可配置实时检测  
+Windows平台本身不支持实时监测，Immunet封装了ClamAV，提供实时检测功能，不开源  
+
+
+## Windows图形界面程序
+官网只有命令行版本的。  
+
+Immunet有图形界面和实时检测功能，不开源，不需要单独安装ClamAV。  
+https://www.immunet.com/  
+
+ClamWin有图形界面，没有实时检测功能，开源，不需要单独安装ClamAV。  
+https://clamwin.com/  
 
 
 ## ClamAV中各个程序的功能介绍
@@ -22,13 +36,13 @@ github相关：
 是一个多线程守护进程，它使用 libclav 扫描文件中的病毒，以监听模式工作。  
 
 ### clamdscan
-是一个简单的 clamd 的客户端，在许多情况下，可以把它作为一个“clamscan”的替代品。  
+是一个简单的 clamd 的客户端，和 clamscan 相比，只需要加载一次特征库。  
 
 ### clamdtop
 是监视一个或多个clamd实例的工具。它有一个有颜色显示的接口，可以展示clamd队列中的作业、内存使用情况以及有关加载的特征库的信息。  
 
 ### clamscan
-是ClamAV的命令行病毒扫描器。它可用于扫描文件或目录中的病毒。为了使扫描正常工作，必须将ClamAV病毒数据库文件下载到电脑上。  
+是ClamAV的命令行病毒扫描器。它可用于扫描文件或目录中的病毒。为了使扫描正常工作，必须将ClamAV病毒数据库文件下载到电脑上，每次都需要加载特征库。  
 
 ### clambc
 是ClamAV字节码测试工具。它可以用来测试包含字节码的文件。  
