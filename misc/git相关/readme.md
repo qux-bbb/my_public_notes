@@ -292,8 +292,16 @@ git config --global --get-regexp alias
 git不跟踪空文件夹，解决办法是在空文件夹里建一个空文件  
 
 
+## 命令行显示汉字
+部分情况下命令行执行结果的中文显示为8进制串，这样设置可以显示为中文：  
+```r
+git config --global core.quotepath false
+```
+
+
 ## 参考链接
 1. https://blog.csdn.net/wq6ylg08/article/details/88798254  
 2. https://blog.csdn.net/logan_lg/article/details/81531796  
 3. http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html  
 4. https://baijiahao.baidu.com/s?id=1606573801465636505  
+5. https://blog.csdn.net/u012145252/article/details/81775362  
