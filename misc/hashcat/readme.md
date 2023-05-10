@@ -31,12 +31,34 @@ hash字符串或hash文件均可，掩码或字典文件均可
 ````
 一般使用掩码选择 `-a 3`, 使用字典文件选择 `-a 0`  
 
-`-m` 选项表示hash类型，太多了  
+`-m` 选项表示hash类型，太多了，列几个：  
+```r
+  0 = MD5
+  100 = SHA1
+  1000 = NTLM
+  1400 = SHA256
+```
+
+`?a?a?a?a?a?a` 表示6位可显示字符，其它字符集如下：  
+```r
+  ?l = abcdefghijklmnopqrstuvwxyz
+  ?u = ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  ?d = 0123456789
+  ?h = 0123456789abcdef
+  ?H = 0123456789ABCDEF
+  ?s =  !"#$%&'()*+,-./:;<=>?@[]^_`{|}~
+  ?a = ?l?u?d?s
+  ?b = 0x00 - 0xff
+```
 
 如果已经爆破出结果，在结尾加 `--show` 可以直接显示结果  
-默认结果会存在这个文件里: `~/.hashcat/hashcat.potfile`  
+默认结果可能会存在这些文件里：  
+```
+~/.hashcat/hashcat.potfile
+~/.local/share/hashcat/hashcat.potfile
+```
 
-不会用的时候直接 `hashcat --help` 看一遍就好了，下面举些实际使用的例子  
+不会用的时候直接 `hashcat --help` 或者 `man hashcat` 看一遍就好了，下面举些实际使用的例子  
 
 ## `md5爆破`
 ```r
