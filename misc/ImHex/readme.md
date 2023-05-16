@@ -25,10 +25,15 @@ struct SECTION
     u32 z;
 };
 
-HEAD head @ 0x00;
-char info[48] @ addressof(head)+sizeof(head);
-// 结构体作为数组时，需要显式设置数量，sizeof($) 表示已加载的数据长度
-SECTION section[(sizeof($)-sizeof(head)-sizeof(info))/16] @ addressof(info)+sizeof(info);
+struct THE_FILE
+{
+    HEAD head;
+    char info[48];
+    // 结构体作为数组时，需要显式设置数量，sizeof($) 表示已加载的数据长度
+    SECTION section[(sizeof($)-sizeof(head)-sizeof(info))/16];
+};
+
+THE_FILE the_file @ 0x00;
 ```
 
 
