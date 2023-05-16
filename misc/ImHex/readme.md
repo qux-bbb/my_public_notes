@@ -36,5 +36,13 @@ struct THE_FILE
 THE_FILE the_file @ 0x00;
 ```
 
+输出信息：  
+```r
+#include <std/io.pat>
+
+std::print("data len: {}", sizeof($));
+std::print("data len: 0x{:0x}", sizeof($));
+```
+
 
 2022/8/8  
