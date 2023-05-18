@@ -26,6 +26,11 @@ Architecture
 https://github.com/NationalSecurityAgency/ghidra/wiki/files/recon2019.pdf  
 
 
+## Sleigh
+发音是: `slay /sleɪ/`, 原意是雪橇，在Ghidra里Sleigh是一种基于规则的语言和引擎，用于描述和解码处理器指令集。  
+通过使用Sleigh，Ghidra可以支持各种不同的处理器体系结构和指令集。  
+
+
 ## 调试相关
 Ghidra10.0版本增加了调试器  
 GADP: Ghidra Asynchronous Debug Protocol, Ghidra异步调试协议  
