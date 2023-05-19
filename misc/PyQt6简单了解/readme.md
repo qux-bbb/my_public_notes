@@ -40,5 +40,9 @@ if __name__ == "__main__":
     main()
 ```
 
+QT官网明确表示QT6不支持Win7、Win8。  
+https://stackoverflow.com/questions/71742121/windows7-64-bit-pyside6-pyqt6-importerror-dll-load-failed-while-importing-qt  
+https://www.qt.io/blog/qt6-development-hosts-and-targets  
+
 
 2023/4/23  
