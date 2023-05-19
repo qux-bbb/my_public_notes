@@ -7,7 +7,7 @@ snort是一个开源的IPS/IPS。
 IPS, Intrusion Prevention System, 入侵防御系统  
 IPD, Intrusion Detection System, 入侵检测系统  
 
-现在有2.x和3.x版本，2.x安装比较方便，支持windows，这里记录一下windows安装使用。  
+现在有2.x和3.x版本，2.x安装比较方便，支持windows。  
 
 
 ## snort规则
