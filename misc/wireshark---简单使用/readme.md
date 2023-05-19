@@ -60,6 +60,8 @@ https://www.brendangregg.com/chaosreader.html
 https://www.netresec.com/?page=NetworkMiner  
 提取完成后，切换到"Files"选项窗口，选择一行右键"Open folder"，即可查看提取的文件  
 
+由于pcap报文的复杂性，上述工具提取文件时或多或少都会缺失一些，暂时没有好的办法。  
+
 
 ## 追踪流
 追踪流可以更直观地查看一些交互流量  
