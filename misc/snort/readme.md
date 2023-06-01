@@ -3,9 +3,9 @@
 官网: https://www.snort.org  
 官方文档: https://www.snort.org/documents  
 
-snort是一个开源的IPS/IPS。  
+snort是一个开源的IPS/IDS。  
 IPS, Intrusion Prevention System, 入侵防御系统  
-IPD, Intrusion Detection System, 入侵检测系统  
+IDS, Intrusion Detection System, 入侵检测系统  
 
 现在有2.x和3.x版本，2.x安装比较方便，支持windows。  
 
