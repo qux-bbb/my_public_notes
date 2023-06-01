@@ -36,14 +36,13 @@ etc文件夹下的snort.conf是需要自己调整的配置文件(调整前做备
 
 ### ping示例
 1. 创建规则文件，如my.rules，写好规则后，把规则文件放在rules文件夹下  
-2. 在snort.conf中添加一行`include $RULE_PATH/snort.rules`  
+2. 在snort.conf中添加一行`include $RULE_PATH/test.rules`  
 3. 执行命令: `snort -c c:\snort\etc\snort.conf`
 4. 随便ping一个地址
 
 这样就可以在log目录下的alert.ids文件里看到命中的记录了  
 如果想让命中记录既保存在alert.ids文件又显示在命令行中，可以添加选项 `-A console -A full`  
-如果在命令行中只想看到命令记录，可以添加选项 `-q`，表示安静一点  
-&&&&&&& snort匹配windows下抓的包有些问题，请求包匹配不了，不清楚原因  
+如果在命令行中只想看到命令记录，可以添加选项 `-q`，让输出少一点  
 
 ### pcap包读取  
 ```r
@@ -52,10 +51,20 @@ snort -c c:\snort\etc\snort.conf -A console -A full -r ping.pcap
 
 
 ## 在ubuntu安装使用
-ubuntu安装snort比较复杂，参考该链接即可：  
-https://upcloud.com/community/tutorials/install-snort-ubuntu/  
+```r
+sudo apt install snort
+```
 
 配置调整也是和windows类似的思路，指定配置执行，直到不出错: `/etc/snort/snort.conf`  
+测试命令：  
+```r
+sudo snort -T -c /etc/snort/snort.conf
+sudo snort -c /etc/snort/snort.conf -A console -A full -r ping.pcap
+```
+命中记录文件: /var/log/snort/alert  
+
+从源码安装snort比较复杂，如果需要，参考该链接即可：  
+https://upcloud.com/community/tutorials/install-snort-ubuntu/  
 
 
 ---
