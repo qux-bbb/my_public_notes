@@ -110,6 +110,8 @@ rule CountExample
 ```
 
 ## 未匹配规则时输出匹配字段信息
+yara未匹配时，输出已匹配字段可以缩小排查范围  
+
 ```python
 import yara
 
