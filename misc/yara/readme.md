@@ -55,22 +55,28 @@ yara_rule_path = 'hello.yar'
 rules = yara.compile(filepath=yara_rule_path)
 
 sample_path = 'hello.txt'
-result = rules.match(sample_path)
-print(result)
+matches = rules.match(sample_path)
+print(sample_path, matches)
 ```
 
 加载多个yara文件的情况  
 ```python
-yara_names = os.listdir(yara_rule_dir_path)
+import os
+import yara
+
+yara_rule_folder_path = "rules"
+
+yara_filenames = os.listdir(yara_rule_folder_path)
 yara_dict = {}
-for yara_name in yara_names:
-    yara_path = os.path.join(yara_rule_dir_path, yara_name)
-    yara_dict[yara_name] = yara_path
+for yara_filename in yara_filenames:
+    yara_path = os.path.join(yara_rule_folder_path, yara_filename)
+    yara_dict[yara_filename] = yara_path
 rules = yara.compile(filepaths=yara_dict)
 
 sample_path = 'hello.txt'
-result = rules.match(sample_path)
-print(result)
+matches = rules.match(sample_path)
+print(matches)
+print(matches[0].rule, matches[0].strings)
 ```
 
 ## 精确偏移字符串匹配
@@ -101,6 +107,26 @@ rule CountExample
     condition:
         #a == 6 and #b > 10
 }
+```
+
+## 未匹配规则时输出匹配字段信息
+```python
+import yara
+
+
+def mycallback(data):
+    rule_name = data['rule']
+    matched_string_names = data['strings']
+    print(f"rule_name: {rule_name}, matched_string_names: {matched_string_names}")
+    return yara.CALLBACK_CONTINUE
+
+
+yara_rule_path = 'hello.yar'
+rules = yara.compile(filepath=yara_rule_path)
+
+sample_path = 'hello.txt'
+matches = rules.match(sample_path, callback=mycallback, which_callbacks=yara.CALLBACK_NON_MATCHES)
+print(sample_path, matches)
 ```
 
 ## 比较多的yara规则
