@@ -13,6 +13,7 @@ qt5-tools designer
 
 一般选择"Main Window"模板慢慢改。  
 多个元素组合，合理使用"水平布局"和"垂直布局"，通过"Horizontal Spacer"和"Vertical Spacer"可以快速调整出整齐的界面。  
+一些元素自带布局属性，如"Group Box"、"Scroll Area"，这时不需要额外的布局组件。  
 objectName命名有2种风格，比如: `pushButton_hello` 或者 `hello_pushButton`, 选一种风格保持统一即可。  
 窗体 -> 预览, 可以查看效果。  
 最后保存为.ui文件  
