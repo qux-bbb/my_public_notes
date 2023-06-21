@@ -15,6 +15,10 @@ ls -l | grep "hello"
 # 也可以直接从文件查找
 grep "hello" a.txt
 
+# 不区分大小写
+grep -i "hello" .
+# --ignore-case
+
 # 当前目录递归查找
 grep -r "hello" .
 # --recursive
