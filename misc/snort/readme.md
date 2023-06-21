@@ -22,6 +22,14 @@ IDS, Intrusion Detection System, 入侵检测系统
 alert icmp any any -> any any (msg:"ICMP Test"; sid:6; rev:1;)
 ```
 
+```r
+offset      用于指定要匹配的数据相对于报文起始位置的偏移量。
+distance    用于指定要匹配的数据相对于Offset字段所指定位置的距离。
+depth       用于限制在数据中进行匹配的最大长度。
+within      用于限制匹配数据在指定范围内进行。
+```
+&&&&&&& 还没搞懂depth和within有什么区别  
+
 
 ## 在windows安装使用
 下载安装包，直接安装就好了，snort.exe在bin文件夹下，为方便使用，可以把bin文件夹路径添加到path。  
