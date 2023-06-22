@@ -1,3 +1,5 @@
+# 电脑ssh连接android手机
+
 将电脑和手机连到同一WiFi，手机安装termux  
 
 在termux中操作如下：  
