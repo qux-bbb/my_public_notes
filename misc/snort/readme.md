@@ -27,8 +27,10 @@ offset      用于指定要匹配的数据相对于报文起始位置的偏移�
 distance    用于指定要匹配的数据相对于Offset字段所指定位置的距离。
 depth       用于限制在数据中进行匹配的最大长度。
 within      用于限制匹配数据在指定范围内进行。
+
+offset和depth配对使用，offset可以没有，表示从偏移0开始匹配，"offset 4; depth 8"表示匹配范围[4,12]的内容
+distance和within配对使用，distance可以没有，表示和上次匹配内容距离为0
 ```
-&&&&&&& 还没搞懂depth和within有什么区别  
 
 
 ## 在windows安装使用
