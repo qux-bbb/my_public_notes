@@ -78,6 +78,50 @@ def get_resource_data(the_path):
     return
 ```
 
+删除一个节区：  
+```python
+# https://stackoverflow.com/questions/23169302/python-deleting-a-section-from-a-pe-file
+def remove(self, index):
+    """Removes a section of the section table.
+       Deletes the section header in the section table, the data of the section
+       in the file, removes the section in the sections list of pefile and adjusts
+       the sizes in the optional header.
+    """
+
+    # Checking if the section list is long enough to actually remove index.
+    if (self.pe.FILE_HEADER.NumberOfSections > index
+        and self.pe.FILE_HEADER.NumberOfSections == len(self.pe.sections)):
+
+        # Stripping the data of the section from the file.
+        if self.pe.sections[index].SizeOfRawData != 0:
+            self.pe.__data__ = 
+                (self.pe.__data__[:self.pe.sections[index].PointerToRawData] +
+                 self.pe.__data__[self.pe.sections[index].PointerToRawData +
+                 self.pe.sections[index].SizeOfRawData:])
+
+        # Overwriting the section header in the binary with nulls.
+        # Getting the address of the section table and manually overwriting
+        # the header with nulls unfortunally didn't work out.
+        self.pe.sections[index].Name = '\x00'*8
+        self.pe.sections[index].Misc_VirtualSize = 0x00000000
+        self.pe.sections[index].VirtualAddress = 0x00000000
+        self.pe.sections[index].SizeOfRawData = 0x00000000
+        self.pe.sections[index].PointerToRawData = 0x00000000
+        self.pe.sections[index].PointerToRelocations = 0x00000000
+        self.pe.sections[index].PointerToLinenumbers = 0x00000000
+        self.pe.sections[index].NumberOfRelocations = 0x0000
+        self.pe.sections[index].NumberOfLinenumbers = 0x0000
+        self.pe.sections[index].Characteristics = 0x00000000
+
+        del self.pe.sections[index]
+
+        self.pe.FILE_HEADER.NumberOfSections -= 1
+
+        # self.__adjust_optional_header()
+    else:
+        raise SectionDoublePError("There's no section to remove.")
+```
+
 
 ---
 2019/10/30  
