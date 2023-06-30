@@ -132,7 +132,7 @@ res = requests.get('http://www.baidu.com', proxies=proxies)
 res = requests.request("GET", url, headers=headers, stream=True)
 if res.status_code == 200:
     the_file = open(hash_value, "wb")
-    for chunk in res.iter_content(chunk_size=1024 * 1024):  # 接受1M就保存
+    for chunk in res.iter_content(chunk_size=1024 * 1024):  # 接收1M就保存
         if chunk:
             the_file.write(chunk)
     the_file.close()
