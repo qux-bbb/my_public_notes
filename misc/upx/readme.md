@@ -44,3 +44,7 @@ upx -k -d hello_upx.exe
 NotCompressibleException 错误原因: UPX无法处理40Kb以下的二进制文件。  
 
 原链接: https://blog.csdn.net/whatday/article/details/104045395  
+
+
+## 注意
+UPX压缩的程序解压之后会丢失一些不关键的数据，不影响程序运行，但无法恢复到原程序。  
