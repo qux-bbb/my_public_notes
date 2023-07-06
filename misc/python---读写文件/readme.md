@@ -1,5 +1,7 @@
 # python---读写文件
 
+keywords: 文件打开方式  
+
 ```python
 # coding:utf8
 
