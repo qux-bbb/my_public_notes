@@ -10,5 +10,8 @@ https://capesandbox.com
 github地址: https://github.com/kevoreilly/CAPEv2  
 官方文档: https://capev2.readthedocs.io/en/latest  
 
+大部分signature在这里：  
+https://github.com/CAPESandbox/community/tree/master/modules/signatures  
+
 
 2022/3/7  
