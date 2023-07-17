@@ -34,36 +34,49 @@ app_name = 'AppName'
 # 获取logger实例，如果参数为空则返回root logger
 log = logging.getLogger(app_name)
 
-# 指定logger输出格式 -8s: 指定宽度为8，减号表示左对齐
-formatter = logging.Formatter('%(asctime)s %(levelname)-8s: %(message)s')
 
-# 文件日志，指定编码可以防止"UnicodeEncodeError"错误
-log_path = os.path.join(current_py_dir, f'{app_name}.log')
-file_handler = logging.FileHandler(log_path, encoding='utf8')
-file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
+def init_log():
+    # 指定logger输出格式 -8s: 指定宽度为8，减号表示左对齐
+    formatter = logging.Formatter('%(asctime)s %(levelname)-8s: %(message)s')
 
-# 控制台日志
-console_handler = logging.StreamHandler(sys.stdout)
-console_handler.setFormatter(formatter)
-# console_handler.formatter = formatter  # 也可以直接给fomatter赋值
+    # 文件日志，指定编码可以防止"UnicodeEncodeError"错误
+    log_path = os.path.join(current_py_dir, f'{app_name}.log')
+    file_handler = logging.FileHandler(log_path, encoding='utf8')
+    file_handler.setFormatter(formatter)  # 可以通过setFormatter指定输出格式
 
-# 为logger添加日志处理器，可以自定义日志处理器让其输出到其他地方
-log.addHandler(file_handler)
-log.addHandler(console_handler)
+    # 控制台日志
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(formatter)
+    # console_handler.formatter = formatter  # 也可以直接给fomatter赋值
 
-# 指定日志的最低输出级别，默认为WARNING级别
-log.setLevel(logging.INFO)
+    # 为logger添加日志处理器，可以自定义日志处理器让其输出到其他地方
+    log.addHandler(file_handler)
+    log.addHandler(console_handler)
 
-# 输出不同级别的log
-log.debug('this is debug info')
-log.info('this is information')
-log.warning('this is warning message')
-log.error('this is error message')
-log.fatal('this is fatal message, it is same as log.critical')
-log.critical('this is critical message')
+    # 指定日志的最低输出级别，默认为WARNING级别
+    log.setLevel(logging.INFO)
 
-# 移除一些日志处理器
-log.removeHandler(file_handler)
+    # # 移除一些日志处理器
+    # log.removeHandler(file_handler)
+
+
+def main():
+    if len(sys.argv) != 2:
+        print("usage: ...")
+        return
+
+    init_log()
+
+    # 输出不同级别的log
+    log.debug('this is debug info')
+    log.info('this is information')
+    log.warning('this is warning message')
+    log.error('this is error message')
+    log.fatal('this is fatal message, it is same as log.critical')
+    log.critical('this is critical message')
+
+if __name__ == '__main__':
+    main()
 ```
 
 如果要记录异常信息，可以在不同级别的log中加入参数：exc_info=1，如：  
