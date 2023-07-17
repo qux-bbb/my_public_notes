@@ -1,5 +1,7 @@
 # capstone相关
 
+keywords: keystone  
+
 官网介绍：  
 Capstone是一个轻量级的多平台，多架构的反汇编框架。 我们的目标是使 Capstone 成为安全社区中用于二进制分析和逆向的终极反汇编引擎。
   
