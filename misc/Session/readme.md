@@ -1,5 +1,10 @@
 # Session
 
+keywords: im 即时通讯  
+
+官网介绍：  
+Session是一款端到端加密的消息发送工具，可最大限度地减少敏感元数据，专为那些想要绝对隐私和免受任何形式监视的人设计和构建。  
+
 从 signal fork 的项目，支持跨平台，去除了使用手机号注册的限制。  
 
 官网: https://getsession.org/  
