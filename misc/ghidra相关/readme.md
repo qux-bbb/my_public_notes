@@ -4,7 +4,7 @@ Ghidra是NSA开发的逆向工具，有反编译和调试功能，类似IDA。
 
 官网: https://www.ghidra-sre.org/  
 github地址: https://github.com/NationalSecurityAgency/ghidra  
-安装文档: https://www.ghidra-sre.org/InstallationGuide.html  
+安装流程: https://github.com/NationalSecurityAgency/ghidra#install  
 
 
 ## 发音
