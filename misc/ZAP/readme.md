@@ -7,7 +7,7 @@ keywords: https流量
 OWASP Zed Attack Proxy(ZAP), 网络应用扫描器，类似burp  
 
 Fuzz功能相当于burp的Intruder  
-安装之前需要先装jdk  
+安装之前需要先装jdk: https://adoptium.net/zh-CN/temurin/releases/  
 
 
 ## HUD
