@@ -1,6 +1,6 @@
 # mitmproxy
 
-keywords: https明文  
+keywords: https明文 https解密  
 
 mitmproxy是一个开源交互式HTTPS代理，由于使用了python3.9，不支持win7。  
 
