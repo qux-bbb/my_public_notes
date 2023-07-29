@@ -19,6 +19,9 @@ svn status
 # 添加文件到版本控制中
 svn add readme.txt
 
+# 移动文件/改名/重命名
+svn move hello.txt world.txt
+
 # 提交更改, -m 为注释信息，为本次提交添加说明
 svn commit -m "一次提交"
 
