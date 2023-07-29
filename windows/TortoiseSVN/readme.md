@@ -5,6 +5,12 @@ TortoiseSVN 是一个开源的有图形化界面的SVN操作工具，操作和�
 官网: https://tortoisesvn.net/  
 
 ```
+创建本地仓库
+在一个空文件夹里，右键->TortoiseSVN->Create repository here
+1. Create folder structure, 可以创建一个本地的仓库
+2. Start Repobrowser, 查看仓库内容，复制URL可以在其它地方checkout
+
+
 重命名
 选择文件，右键->TortoiseSVN->Rename 即可
 
