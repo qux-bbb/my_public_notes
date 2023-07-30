@@ -3,10 +3,11 @@
 日志分析相关的工具集合。  
 
 官网: https://www.elastic.co/  
+安装流程: https://www.elastic.co/guide/en/elastic-stack/current/installing-elastic-stack.html  
 
 ElasticSearch, 一个分布式、RESTful 风格的搜索和数据分析引擎  
+Kibana, 为 ElasticSearch 提供的日志分析友好的 Web 界面，可以帮助汇总、分析和搜索重要数据日志  
 Logstash, 一个具有实时流水线功能的数据收集引擎  
-Kibana, 为 Logstash 和 ElasticSearch 提供的日志分析友好的 Web 界面，可以帮助汇总、分析和搜索重要数据日志  
 
 https://www.elastic.co/cn/elasticsearch/  
 https://www.elastic.co/cn/logstash/  
