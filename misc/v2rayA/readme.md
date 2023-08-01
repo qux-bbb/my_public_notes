@@ -1,9 +1,19 @@
 # v2rayA
 
 Qv2ray不维护了，发现了v2rayA。  
-一个易用而强大的，专注于 Linux 的 V2Ray 客户端。  
+一个易用而强大的，跨平台的 V2Ray 客户端。  
 
-https://v2raya.org/  
+官网: https://v2raya.org/  
+
+
+## Windows安装
+在这里下载名称类似 installer_windows_inno_x64_*.exe，执行即可按步骤安装  
+https://github.com/v2rayA/v2rayA/releases  
+
+安装后通过运行桌面快捷方式或直接访问 http://127.0.0.1:2017 打开管理页面  
+创建账号、导入节点、启动服务，开始使用  
+可以新增出站(即新分组)，便于分组使用，每组可以选择多个节点，实现负载均衡  
+
 
 ## kubuntu安装
 安装V2Ray：  
