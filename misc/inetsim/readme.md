@@ -30,18 +30,19 @@ init.d配置文件: /etc/default/inetsim
 ## 简单使用
 官方说明比较简洁，看一遍好了。  
 
-使用还是挺简单的，使用默认配置，指定 绑定地址  
+默认会启动服务，可以这样控制：  
+```bash
+* Usage: /etc/init.d/inetsim {start|stop|restart|force-reload|status}
+```
+
+手动执行，使用默认配置，指定 绑定地址  
 ```bash
 inetsim --bind-address=127.0.0.1
 ```
-指定配置  
+手动执行，指定配置  
 ```bash
 # 最简单修改：将`service_bind_address`和`dns_default_ip`取消注释，值改成本机ip  
 inetsim --conf inetsim.conf
-```
-重启  
-```bash
-/etc/init.d/inetsim restart
 ```
 
 win7(受监控机器)网络设置如下：  
