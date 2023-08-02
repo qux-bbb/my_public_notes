@@ -53,8 +53,9 @@ def main():
     )
     parser.add_argument("action", choices=["all", "download", "extract", "statistic"])
     parser.add_argument("src_path", type=valid_path, help="the source path")
+    # "-"开头为可选项，可通过"required=True"设置为必选项
     parser.add_argument(
-        "-d", "--dst_path", type=str, required=False, default="result_fodler", help="the result folder"
+        "-d", "--dst_path", type=str, default="result_fodler", help="the result folder"
     )
     parser.add_argument("-v", "--verbose", action="store_true", help="print more info")
 
