@@ -9,5 +9,10 @@ VirtualBox是一个开源的虚拟机，功能和VMWare类似。
 
 从6.0开始有了 `file manager`, 可以比较方便地在虚机和主机之间传文件。  
 
+ubuntu查看增强功能版本：  
+```bash
+/usr/bin/VBoxClient --version
+```
+
 
 2022/1/29  
