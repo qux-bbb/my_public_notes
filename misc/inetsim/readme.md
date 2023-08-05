@@ -2,17 +2,18 @@
 
 keywords: https明文 https解密  
 
-## 简介
 官网：https://www.inetsim.org/  
 
 INetSim是一个软件套件，用于在实验环境中模拟常见的Internet服务，例如用于分析未知恶意软件样本的网络行为。  
 是用Perl写的。  
 
+inetsim的各种服务需要root权限，burpsuite绑定443端口时需要root权限(端口小于1024就需要)  
+全程使用root用户操作即可(sudo su)  
+
 
 ## 安装
 ubuntu安装（不推荐按官方文档手动逐个依赖安装，依赖东西有点多）：  
 ```bash
-su
 echo "deb http://www.inetsim.org/debian/ binary/" > /etc/apt/sources.list.d/inetsim.list
 wget -O - http://www.inetsim.org/inetsim-archive-signing-key.asc | apt-key add -
 apt update
@@ -30,19 +31,11 @@ init.d配置文件: /etc/default/inetsim
 ## 简单使用
 官方说明比较简洁，看一遍好了。  
 
-默认会启动服务，可以这样控制：  
+配置并重启inetsim服务  
 ```bash
-* Usage: /etc/init.d/inetsim {start|stop|restart|force-reload|status}
-```
-
-手动执行，使用默认配置，指定 绑定地址  
-```bash
-inetsim --bind-address=127.0.0.1
-```
-手动执行，指定配置  
-```bash
-# 最简单修改：将`service_bind_address`和`dns_default_ip`取消注释，值改成本机ip  
-inetsim --conf inetsim.conf
+cp /etc/inetsim/inetsim.conf /etc/inetsim/inetsim.conf.bak
+# 修改/etc/inetsim/inetsim.conf，将`service_bind_address`和`dns_default_ip`取消注释，值改成本机ip
+systemctl restart inetsim
 ```
 
 win7(受监控机器)网络设置如下：  
@@ -59,29 +52,26 @@ ubuntu会记录win7的网络请求，停止后会保存到一个report文件里�
 
 
 ## 支持https
-下载安装burp社区版: https://portswigger.net/burp/freedownload/  
-执行下载的脚本即可  
-
-准备自己数据的目录(也可以直接用系统默认的，这个不重要)  
-```bash
-mkdir -p analysis/test-analysis
-cp /etc/inetsim/inetsim.conf analysis/test-analysis
-sudo cp -r /var/lib/inetsim analysis/test-analysis/data
-cd analysis/test-analysis
-sudo chmod -R 777 data
-```
 
 禁止dns服务  
 ```bash
-sudo systemctl disable systemd-resolved.service
-sudo service systemd-resolved stop
+systemctl disable systemd-resolved.service
+service systemd-resolved stop
 ```
 
-更新配置analysis/test-analysis/inetsim.conf的https端口为8443: `https_bind_port 8443`  
+更新配置/etc/inetsim/inetsim.conf的https端口为8443: `https_bind_port 8443`  
+重启inetsim服务  
+```bash
+systemctl restart inetsim
+```
 
-启动inetsim: `inetsim --data data --conf inetsim.conf`  
+下载安装burp社区版: https://portswigger.net/burp/freedownload/  
+执行下载的脚本即可  
 
-启动Burpsuite  `BurpSuiteCommunity`  
+启动Burpsuite  
+```bash
+BurpSuiteCommunity
+```
 Proxy->Intercept，点击`Intercept is on`，切换为`Intercept is off`，这样就不会拦截请求了  
 Proxy->Options，添加listener，如下配置：  
 ```r
@@ -116,7 +106,25 @@ win7(被监控的机器)如果用的是firefox，需要这样信任证书：
 
 win7(被监控的机器)如果用的是IE，需要将burp.crt安装到受信任的根证书列表里，这样IE访问https网站不会提示证书错误  
 
+&&&&&&& 现在按上面的操作，firefox会显示SEC_ERROR_BAD_SIGNATURE错误，IE会提示证书错误，还不知道怎么解决  
+
 确认inetsim不支持任意ip直接访问网页  
+
+
+## 自定义数据和配置路径，手动执行
+停止并禁用服务  
+```bash
+systemctl stop inetsim
+systemctl disable inetsim
+```
+
+手动执行，指定配置和数据  
+```bash
+cp -r /var/lib/inetsim data
+cp /etc/inetsim/inetsim.conf inetsim.conf
+# 可以任意修改数据和配置文件
+inetsim --data data --conf inetsim.conf
+```
 
 
 ## 参考链接
@@ -127,4 +135,4 @@ win7(被监控的机器)如果用的是IE，需要将burp.crt安装到受信任�
 
 20201216  
 20201220 补充安装方式  
-20201221 补充inetsim配置简单修改    
+20201221 补充inetsim配置简单修改  
