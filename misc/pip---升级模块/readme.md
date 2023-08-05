@@ -1,7 +1,8 @@
 # pip---升级模块
 
 ```bash
-pip install --update pwntools
+pip install -U requests
+pip install --upgrade requests
 ```
 
 
