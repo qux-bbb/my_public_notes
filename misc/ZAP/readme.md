@@ -1,6 +1,6 @@
 # ZAP
 
-keywords: https流量 https明文 https解密  
+keywords: https流量 https明文 https解密 端口转发  
 
 官网: https://www.zaproxy.org/  
 
@@ -23,6 +23,25 @@ HUD: Head Up Display
 挺有意思的  
 
 
+## linux安装使用
+下载解压jdk tar.gz到合适位置：  
+https://adoptium.net/temurin/releases/  
+编辑 `/etc/profile` 末尾添加 `export PATH=$PATH:/root/jdk-17.0.8+7/bin`  
+执行 `source /etc/profile` 使当前环境生效  
+
+下载安装ZAP：  
+https://www.zaproxy.org/download/  
+```r
+chmod +x ZAP*.sh
+./ZAP*.sh
+```
+
+启动ZAP：  
+```bash
+zap.sh
+```
+
+
 ## 中文是问号块的问题  
 换个字体，电脑默认的字体是微软雅黑（Microsoft Yahei），换成这个就挺好的，当然也可以自己换成其他的  
 
@@ -42,6 +61,22 @@ Tools -> Options -> Dynamic SSL Certificates -> Save
 然后上方菜单："报告"->"将信息导出到文件中..."，即可成功保存  
 
 记录可以通过请求方法、url关键字等进行简单的筛选，无法通过请求响应内容筛选。  
+
+
+## 端口流量转发
+ZAP不支持端口流量转发，暂时只知道能用Burpsuite  
+
+
+## 使用代理
+2.12.0之前：  
+连接 -> Use Proxy Chain, 勾选"Use an outgoing proxy server"，填写地址端口即可  
+
+2.12.0及以后：  
+网络 -> 连接, HTTP代理 或 SOCKS代理，启用并填写地址端口即可  
+
+相关链接：  
+https://groups.google.com/g/zaproxy-users/c/7d1z7nDANHw  
+https://www.zaproxy.org/docs/desktop/releases/2.12.0/  
 
 
 ---
