@@ -47,7 +47,7 @@ ip: win7ip
 DNS服务器: ubuntu ip
 ```
 
-然后在win7发起网络请求，ubuntu就会返回虚假结果。  
+确保win7可以ping通ubuntu，然后在win7发起网络请求，ubuntu就会返回虚假结果。  
 ubuntu会记录win7的网络请求，停止后会保存到一个report文件里，如果中途要查看，可以看`/var/log/inetsim/service.log`  
 
 
