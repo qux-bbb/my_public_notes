@@ -1,5 +1,7 @@
 # oledump
 
+keywords: oletools  
+
 oledump可以直接解析office文档，获取宏代码  
 
 下载: https://blog.didierstevens.com/programs/oledump-py/  
