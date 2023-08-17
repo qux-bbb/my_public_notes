@@ -15,22 +15,36 @@
 
 
 ## 断点日志
-x64dbg的断点记录比较丰富，这里是一个输出举例，可以很方便看到一些输出字符串之类的  
-```
+x64dbg的断点记录比较丰富，log命令参数建议用双引号包裹  
+https://help.x64dbg.com/en/latest/commands/script/log.html  
+这里是一些参数格式和示例：  
+https://help.x64dbg.com/en/latest/introduction/Formatting.html  
+
+一个输出举例，可以很方便看到一些输出字符串之类的  
+```r
 {utf16@[esp+4]}
 {utf16@arg.get(0)}
 ```
 
 断点命中次数和寄存器所指地址的字符串  
-```
+```r
 {$breakpointcounter}:{ascii@rcx}
 {$breakpointcounter}:{utf16@rcx}
 ```
 
+指定内存的指定大小数据  
 {mem;size@address} will print the size bytes starting at address in hex.  
-举例：  
-0032B378地址的4个字节  
-`{mem;4@0032B378}`  
+举例，0032B378地址的4个字节  
+```r
+{mem;4@0032B378}
+```
+
+模块名、标签、注释  
+```r
+{modname@address}
+{label@address}
+{comment@address}
+```
 
 
 ## 暂停条件或日志条件
