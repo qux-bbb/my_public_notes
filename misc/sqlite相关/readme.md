@@ -89,7 +89,7 @@ conn.close()
 ## 参考链接
 1. https://www.runoob.com/sqlite/sqlite-tutorial.html
 2. https://www.runoob.com/sqlite/sqlite-python.html
-3. https://www.runoob.com/sqlite/sqlite-python.html
+3. https://docs.python.org/3/library/sqlite3.html
 
 
 ---
