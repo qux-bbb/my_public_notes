@@ -53,7 +53,10 @@ https://help.x64dbg.com/en/latest/introduction/Formatting.html
 
 
 ## 断点命令
-在断点处可以执行命令, 下方命令为: 将bl的值设为dl的值, 然后继续运行  
+断下后可以执行各种各样的命令  
+https://help.x64dbg.com/en/latest/commands/index.html  
+
+下方命令为: 将bl的值设为dl的值, 然后继续运行  
 `set bl, dl; go`  
 ![断点命令](images/2.png)  
 勾选"不输出日志"可以不输出断点被触发时的提示信息  
@@ -69,6 +72,14 @@ log记录某值到日志
 
 休眠，16进制，单位为毫秒  
 `doSleep 3e8`  
+
+注意：断点命令为多条时，想运行一段时间再执行另外一条是不行的  
+如：  
+```r
+StepOut; log "{{label@eax}}"
+# 原意是想运行到ret指令，然后输出eax的标签
+# 这里的问题是后面的命令不会等待前面执行到ret再运行，所以想输出eax的标签就很随机而且很可能出错
+```
 
 
 ## 给调用某一个api的所有位置下断点
@@ -88,4 +99,5 @@ x64dbg没有类似OD的bpx命令(有，但是功能不一样)
 二进制编辑 --> 编辑 --> 复制数据 即可  
 
 
+---
 2020/7/13  
