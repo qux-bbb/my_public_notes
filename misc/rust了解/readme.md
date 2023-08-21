@@ -33,6 +33,10 @@ fn main() {
 rustc --print target-list
 # 安装编译需要的工具
 rustup target add i686-pc-windows-msvc
+# 生成一个初始项目，默认会生成src/main.rs, 写了helloworld
+cargo new hello
+# 进入相关文件夹
+cd hello
 # 指定目标平台进行编译
 cargo build --target=i686-pc-windows-msvc
 ```
