@@ -53,7 +53,7 @@ python -m pip install yara-python==3.11.0
 
 ## x64dbgida
 https://github.com/x64dbg/x64dbgida  
-可以把IDA里的符号等信息导入x64dbg  
+可以把IDA和x64dbg的符号等信息互相导入  
 
 安装方法：x64dbgida.py放在plugins文件夹即可，去release下载，注意版本  
 
