@@ -75,6 +75,8 @@ https://github.com/0x6d696368/ghidra_scripts/blob/master/SearchSimpleStackString
 
 ## 高亮同名变量
 默认 鼠标中键 高亮同名变量，可以修改  
+Edit -> Tool Options -> Listing Fields -> Cursor Text Highlight -> Mouse Button To Activate, 可以修改为鼠标的左中右键  
+Edit -> Tool Options -> Listing Fields -> Selection Colors -> Highlight Color, 可以修改高亮颜色  
 
 
 ## 设置快捷键
