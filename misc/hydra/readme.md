@@ -13,7 +13,7 @@ hydra -L user.txt -P pass.txt -P ftp://127.0.0.1
 hydra -L user.txt -P pass.txt -P ssh://127.0.0.1
 # 破解SMB
 hydra -L user.txt -P pass.txt -P smb://127.0.0.1
-# 破解FMSSQL
+# 破解MSSQL
 hydra -L user.txt -P pass.txt -P mssql://127.0.0.1
 ```
 固定一个用户名或密码则选项小写，举例：  
