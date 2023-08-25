@@ -43,4 +43,5 @@ cargo build --target=i686-pc-windows-msvc
 原链接: https://www.reddit.com/r/rust/comments/78vpxg/help_cross_compiling_for_32_bit_on_windows/  
 
 
+---
 20201123  
