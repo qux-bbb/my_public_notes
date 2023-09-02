@@ -1,21 +1,30 @@
 # IDApython相关
 
-按字母顺序排列的api:  
-https://www.hex-rays.com/products/ida/support/idadoc/162.shtml  
+可以用python操作IDA，实现一些自动化处理功能(添加数据、获取数据、自动分析等)。  
 
 idapython文档:  
 https://www.hex-rays.com/wp-content/static/products/ida/support/idapython_docs/  
 
+按字母顺序排列的api:  
+https://www.hex-rays.com/products/ida/support/idadoc/162.shtml  
+
 github地址:  
 https://github.com/idapython  
 
+一个人总结的常用功能：  
+https://github.com/inforion/idapython-cheatsheet  
+
 一些技巧：  
 1. 尽量用python风格的函数，比如: `get_byte` 函数
-2. 在写脚本时，可以把脚本放在 `idaapi.py` 目录下，写起来更方便，写完可以移出来用
+2. 在写脚本时，可以把脚本放在 `idaapi.py` 所在目录下，写起来更方便，写完可以移出来用
+
+脚本执行方法：  
+方法1：把脚本内容复制到界面下方"python"后面框内，回车执行即可  
+方法2：File->Script file..., 选择脚本执行即可  
 
 
 一个博客的简单总结:  
-```
+```r
 IDAPython 由三个分离的模块组成,
 他们分别是 idc,idautils 和 idaapi。
 
@@ -79,10 +88,6 @@ for i in range(0x00,0x50):
     decoded_byte = b ^ 0x55
     patch_byte(sea+i,decoded_byte)
 ```
-
-
-一个人总结的常用功能：  
-https://github.com/inforion/idapython-cheatsheet  
 
 
 2020/4/1  
