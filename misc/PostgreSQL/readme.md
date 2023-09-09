@@ -17,17 +17,19 @@ psql
 
 简单用法：  
 ```r
-# list databases
+# 列出所有库
 \l
-# connect to new database (currently "postgres")
+# 查看当前连接库
 \c
-# list tables, views, and sequences
+# 连接到新库
+\c <database_name>
+# 列出tables、views、sequences信息
 \d
-# 查看表格信息，参数是表格名
-\d <tablename>
-# 查看数据
+# 查看表详细信息，参数是表名
+\d <table_name>
+# 查看表数据
 SELECT * FROM table_name;
-# quit psql
+# 退出psql
 \q
 ```
 
