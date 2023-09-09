@@ -21,7 +21,7 @@ psql
 \l
 # 查看当前连接库
 \c
-# 连接到新库
+# 连接到指定库
 \c <database_name>
 # 列出tables、views、sequences信息
 \d
