@@ -1,3 +1,5 @@
+# linux---交叉编译windows可执行文件
+
 安装编译工具:  
 ```sh
 sudo apt install mingw-w64
@@ -21,7 +23,7 @@ x86_64-w64-mingw32-gcc -m64 -shared -s -o TemplateDll_x64.dll TemplateDll.c Temp
 ```
 
 部分选项解释:  
-```
+```r
 # 指定位数
 -m32
 -m64
@@ -34,7 +36,6 @@ Remove all symbol table and relocation information from the executable.
 -shared
 Produce a shared object which can then be linked with other objects to form an executable. Not all systems support this option. For predictable results, you must also specify the same set of options used for compilation (-fpic, -fPIC, or model suboptions) when you specify this linker option.[1]
 ```
-
 
 
 参考资料:  
