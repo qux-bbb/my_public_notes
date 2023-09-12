@@ -31,8 +31,11 @@ Ctrl + K + Enter
 ## `选择颜色主题`
 Ctrl + K + T  
 
-## `调整文字大小`
-Ctrl + Shift + 鼠标滚轮  
+## `缩放界面`
+Ctrl + "+/-"  
+
+## `只调整编辑文字大小`
+设置中勾选"Mouse Wheel Zoom"，然后可以 Ctrl + 鼠标滚轮 调整  
 
 ## `显示命令托盘`
 Ctrl + Shift + P  
