@@ -1,6 +1,6 @@
 # 下载谷歌商店的apk安装包
 
-keywords: googleplay  
+keywords: googleplay twitter  
 
 国内手机不太好下到谷歌商店的apk，可以用以下方法：  
 1. 打开网页版的谷歌商店 https://play.google.com/store
