@@ -13,8 +13,13 @@ import ida_search
 print("脚本开始执行")
 
 # "push ebp" 的机器码是 55
-# "mov ebp, esp" 的机器码是 8B EC
-combined_pattern = "55 8B EC"
+# "mov ebp, esp" 的机器码是 8B EC 或者 89 E5
+patterns = [
+    "55 8B EC",
+    # 4029f9fcba1c53d86f2c59f07d5657930bd5ee64cca4c5929cbd3142484e815a
+    # https://malware.news/t/api-hashing-in-the-zloader-malware/40695
+    "55 89 E5",
+]
 
 # 遍历所有的代码段
 for seg_ea in idautils.Segments():
@@ -30,32 +35,33 @@ for seg_ea in idautils.Segments():
     # 获取段的结束地址
     seg_end = idc.get_segm_end(seg_ea)
 
-    not_found = True  # 用于跟踪是否找到目标模式
+    for pattern in patterns:
+        not_found = True  # 用于跟踪是否找到目标模式
 
-    # 在该段内搜索
-    ea = seg_ea
-    while ea < seg_end:
-        # 使用 ida_search.find_binary 搜索组合的指令模式
-        ea = ida_search.find_binary(ea, seg_end, combined_pattern, 16, idc.SEARCH_DOWN)
-        if ea == idaapi.BADADDR:
-            if not_found:
-                print(f"在代码段 {seg_name} 中未找到目标模式")
-            break  # 未找到
+        # 在该段内搜索
+        ea = seg_ea
+        while ea < seg_end:
+            # 使用 ida_search.find_binary 搜索组合的指令模式
+            ea = ida_search.find_binary(ea, seg_end, pattern, 16, idc.SEARCH_DOWN)
+            if ea == idaapi.BADADDR:
+                if not_found:
+                    print(f"在代码段 {seg_name} 中未找到模式 {pattern}")
+                break  # 未找到
 
-        not_found = False  # 找到了目标模式
+            not_found = False  # 找到了目标模式
 
-        # 检查是否已经是一个函数
-        if idaapi.get_func(ea):
-            print(f"地址 0x{ea:X} 已经是一个函数，跳过")
-        else:
-            # 如果找到匹配，尝试创建函数
-            if not idaapi.add_func(ea):
-                print(f"在代码段 {seg_name} 的 0x{ea:X} 位置无法创建函数")
+            # 检查是否已经是一个函数
+            if idaapi.get_func(ea):
+                print(f"地址 0x{ea:X} 已经是一个函数，跳过")
             else:
-                print(f"在代码段 {seg_name} 的 0x{ea:X} 位置成功创建函数")
+                # 如果找到匹配，尝试创建函数
+                if not idaapi.add_func(ea):
+                    print(f"在代码段 {seg_name} 的 0x{ea:X} 位置无法创建函数")
+                else:
+                    print(f"在代码段 {seg_name} 的 0x{ea:X} 位置成功创建函数")
 
-        # 更新地址以继续搜索
-        ea = idc.next_head(ea, seg_end)
+            # 更新地址以继续搜索
+            ea = idc.next_head(ea, seg_end)
 
 print("脚本执行完毕")
 
