@@ -51,10 +51,10 @@ rule IsPE
 ```python
 import yara
 
-yara_rule_path = 'hello.yar'
+yara_rule_path = "hello.yar"
 rules = yara.compile(filepath=yara_rule_path)
 
-sample_path = 'hello.txt'
+sample_path = "hello.txt"
 matches = rules.match(sample_path)
 print(sample_path, matches)
 ```
@@ -73,7 +73,7 @@ for yara_filename in yara_filenames:
     yara_dict[yara_filename] = yara_path
 rules = yara.compile(filepaths=yara_dict)
 
-sample_path = 'hello.txt'
+sample_path = "hello.txt"
 matches = rules.match(sample_path)
 print(matches)
 print(matches[0].rule, matches[0].strings)
@@ -117,16 +117,16 @@ import yara
 
 
 def mycallback(data):
-    rule_name = data['rule']
-    matched_string_names = data['strings']
+    rule_name = data["rule"]
+    matched_string_names = data["strings"]
     print(f"rule_name: {rule_name}, matched_string_names: {matched_string_names}")
     return yara.CALLBACK_CONTINUE
 
 
-yara_rule_path = 'hello.yar'
+yara_rule_path = "hello.yar"
 rules = yara.compile(filepath=yara_rule_path)
 
-sample_path = 'hello.txt'
+sample_path = "hello.txt"
 matches = rules.match(sample_path, callback=mycallback, which_callbacks=yara.CALLBACK_NON_MATCHES)
 print(sample_path, matches)
 ```
