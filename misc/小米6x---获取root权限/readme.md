@@ -27,3 +27,18 @@ fastboot flash recovery twrp.img
 据说是驱动的问题，但不知道怎么解决  
 
 2022/2/27  
+
+
+取消解锁  
+切记操作前保存数据  
+1. 升级到最新官方系统或刷入官方MIUI
+2. 手机关机
+3. 手机按"音量减 + 电源键"进入fastboot（BootLoader）
+4. USB线连接手机
+5. 在解锁工具目录下执行命令: fastboot oem lock (没有反应可以试试运行MiUsbDriver.exe安装驱动)
+
+这样手机会上锁并重置系统，需要重新配置  
+
+参考链接: https://zhidao.baidu.com/question/139095658331101245.html  
+
+2023/10/14  
