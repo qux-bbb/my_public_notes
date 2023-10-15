@@ -13,5 +13,11 @@ github地址: https://github.com/kevoreilly/CAPEv2
 大部分signature在这里：  
 https://github.com/CAPESandbox/community/tree/master/modules/signatures  
 
+loader.exe源码位置：  
+https://github.com/kevoreilly/capemon/tree/capemon/loader/loader  
+
+PPLinject.exe源码位置：  
+https://github.com/splunk/PPLinject  
+
 
 2022/3/7  
