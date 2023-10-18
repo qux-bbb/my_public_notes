@@ -23,8 +23,8 @@ RSA
 
 注意：加密时选择填充方式 BCRYPT_PAD_PKCS1，不填充的话，只能加密很小的部分，具体见 social.msdn.microsoft.com 的参考链接
 ```
-RSA示例: [CNG_RSA_TEST.cpp](files/CNG_RSA_TEST.cpp)  
-RSA示例输出: [CNG_RSA_TEST_output.txt](files/CNG_RSA_TEST_output.txt)  
+RSA示例: [CNG_RSA_TEST.cpp](files/RSA_files/CNG_RSA_TEST.cpp)  
+RSA示例输出: [CNG_RSA_TEST_output.txt](files/RSA_files/CNG_RSA_TEST_output.txt)  
 
 
 参考链接：  
