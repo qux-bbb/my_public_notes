@@ -1,5 +1,11 @@
 # SystemParametersInfoA设置壁纸
 
+SystemParametersInfoA可以设置壁纸，原理是设置注册表项：  
+```r
+HKEY_CURRENT_USER\Control Panel\Desktop\Wallpaper
+```
+
+代码：  
 ```cpp
 #include <Windows.h>
 #include <iostream>
@@ -10,6 +16,7 @@ int main() {
     const char* wallpaperPath = "C:\\path\\to\\your\\wallpaper.jpg";
 
     // Call the SystemParametersInfo function to set the wallpaper
+    // SPIF_UPDATEINIFILE 标志会使更改永久保存，而 SPIF_SENDCHANGE 标志则会发送系统消息通知所有顶级窗口
     if (SystemParametersInfoA(SPI_SETDESKWALLPAPER, 0, (PVOID)wallpaperPath, SPIF_UPDATEINIFILE | SPIF_SENDCHANGE)) {
         std::cout << "Wallpaper set successfully!\n";
     }
