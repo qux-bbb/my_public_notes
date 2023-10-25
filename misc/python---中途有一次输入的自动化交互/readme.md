@@ -13,6 +13,21 @@ result = p.communicate(input=input)
 print(result)
 ```
 
+可以用在需要按任意键结束的场景：  
+```python
+import subprocess
+
+p = subprocess.Popen(
+    ["de4dot/de4dot.exe", "test.py"],
+    stdin=subprocess.PIPE,
+    stdout=subprocess.PIPE,
+    stderr=subprocess.PIPE,
+)
+p.communicate(input=b"a")
+p.wait()
+print("hello")
+```
+
 参考：https://jingyan.baidu.com/article/e52e361578d8c540c60c513a.html  
 
 
