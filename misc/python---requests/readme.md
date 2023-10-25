@@ -2,7 +2,7 @@
 
 ## 0x00 前言
 一些关于requests的使用，基本上把官方说明文档的简单用法搬了过来，  
-官方说明文档的地址: http://docs.python-requests.org/zh_CN/latest/user/quickstart.html  
+官方说明文档的地址: https://requests.readthedocs.io/en/latest/user/quickstart/  
 
 ## 0x01 基本get，post
 最常用的get和post方法  
