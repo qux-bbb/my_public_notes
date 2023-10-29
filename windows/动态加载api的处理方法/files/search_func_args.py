@@ -45,7 +45,7 @@ for xref in idautils.XrefsTo(func_ea):
             break
 
     # 使用你提供的输出格式
-    if len(args) >= 2:
+    if len(args) >= max_args:
         args_str = f"({hex(args[0])}"
         for arg in args[1:]:
             args_str += f", {hex(arg)}"
