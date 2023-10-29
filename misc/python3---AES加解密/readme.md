@@ -17,7 +17,7 @@ pip install pycryptodome
 >>> obj2.decrypt(ciphertext)
 'The answer is no'
 ```
-obj不能用2次，会出错，我也不知道为什么  
+对同一内容连续用2次obj产生结果不同，因为密钥流发生了变化  
 
 整理一下：  
 ```python
