@@ -35,13 +35,13 @@
 sub_30A3170 是获取api的函数
 在sub_30A3170函数的结尾准备返回位置 0x030A3301 下断点，编辑断点：
 暂停条件: 0
-日志文本: 0x{[esp]-5}:"{modname@eax}.{label@eax}"
+日志文本: 0x{[esp]-5}: "{modname@eax}.{label@eax}",
 
 运行，整理去重后，部分结果如下：
-0x309A57F:'kernel32.dll.LoadLibraryA'
-0x309A5E6:'kernel32.dll.GetProcAddress'
-0x309F5CB:'kernel32.dll.GetProcessHeap'
-0x3092138:'ws2_32.dll.WSAStartup'
+0x309A57F: "kernel32.dll.LoadLibraryA",
+0x309A5E6: "kernel32.dll.GetProcAddress",
+0x309F5CB: "kernel32.dll.GetProcessHeap",
+0x3092138: "ws2_32.dll.WSAStartup",
 ```
 IDA汇编视图设置注释: [set_comments.py](./files/set_comments.py)  
 直接粘代码到底部的python输入框回车执行即可  
@@ -53,7 +53,7 @@ IDA反编译视图(伪代码视图)里设置注释更方便查看: [set_comments
 #### python调用获取  
 首先需要收集参数: [search_func_args.py](./files/search_func_args.py)  
 将收集的参数整理去重，x64dbg运行脚本获取api信息: [x64dbg_get_api_info.py](./files/x64dbg_get_api_info.py)  
-最后把结果写到IDA里: [set_comments_from_x64dbg_in_pseudocode_view.py](./files/set_comments_in_pseudocode_view_from_x64dbg.py)  
+最后把结果写到IDA里: [set_comments_from_x64dbg_in_pseudocode_view.py](./files/set_comments_from_x64dbg_in_pseudocode_view.py)  
 
 缺点：动态生成参数的地方就获取不到，比如 0x03091CCD 第2个参数是 0x07A85C71 api应该是 user32.MessageBoxA  
 
