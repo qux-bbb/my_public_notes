@@ -12,6 +12,7 @@ x64dbgpy 是一个插件，可以使用 python 脚本自动化调试过程
     x64dbgpy_8c0538a\x32\plugins -> snapshot_2023-09-21_00-53\release\x32\plugins  
     如果已经安装了其它插件，需要把plugins里的文件复制到相应同名目录下  
 
+
 ## 示例脚本
 大部分函数都可以在 x64dbg/release/x32/plugins/x64dbgpy/x64dbgpy/pluginsdk/x64dbg.py 找到  
 
@@ -102,11 +103,19 @@ while True:
 
 ```
 
+
+## 运行脚本方法
+### 方法1
+插件 -> x64dbgpy  
+然后可以根据实际情况选择"Open GUI Script.."或"Open Async Script.."，加载python脚本执行  
+
+### 方法2
+在右下角将命令方式更换为"Python"，将脚本内容粘贴到命令行内回车执行  
+
+
 ## MISC
 函数在 x64dbg.py 里，scriptapi.pyd 也可以用，但写代码时提示不友好  
 函数名可以整个文件夹搜，这样比较快  
-
-如果出错了，调试器里还有 python 交互窗口，在里面 import 试一下  
 
 建议在 x64dbg\release\x32\plugins\x64dbgpy 文件夹里写脚本，这样不会出现引用错误，整个文件夹在 vscode 打开，写脚本和搜索api都很方便  
 
