@@ -8,6 +8,13 @@ termux是一个Android平台的Linux终端环境程序。
 ## 获取手机存储访问权限
 获取手机存储访问权限，执行命令: `termux-setup-storage`  
 
+## 安装配置zsh
+```bash
+pkg install zsh
+```
+使用 Oh My Zsh 配置zsh很方便， [Oh My Zsh](../oh-my-zsh/readme.md)  
+主题使用 bira 可以避免字符渲染错误  
+
 ## 更新出现403错误
 更新可以用 apt 或者 pkg  
 
