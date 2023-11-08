@@ -1,5 +1,7 @@
 # python---socket编程
 
+keywords: python server tcp udp  
+
 如果不用 pwntools， 可以自己用 socket 和服务器交互  
 
 主要内容看这个网页就可以了  
