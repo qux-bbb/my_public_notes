@@ -69,7 +69,7 @@ def get_resource_data(the_path):
 
                 data_rva = settings_entry.data.struct.OffsetToData
                 size = settings_entry.data.struct.Size
-                data = the_pe.get_memory_mapped_image()[data_rva:data_rva+size]
+                data = the_pe.get_data(data_rva, size)
 
                 the_pe.close()
                 return data
