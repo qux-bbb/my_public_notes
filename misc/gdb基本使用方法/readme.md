@@ -2,6 +2,9 @@
 
 gdb, GNU Debugger, linux下调试程序  
 
+官网: https://www.sourceware.org/gdb/  
+官方文档: https://www.sourceware.org/gdb/documentation/  
+
 ```r
 gdb             # 进入gdb
 gdb 程序名      # 直接加载程序
