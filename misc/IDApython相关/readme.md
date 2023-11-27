@@ -3,7 +3,7 @@
 可以用python操作IDA，实现一些自动化处理功能(添加数据、获取数据、自动分析等)。  
 
 idapython文档:  
-https://www.hex-rays.com/wp-content/static/products/ida/support/idapython_docs/  
+https://www.hex-rays.com/products/ida/support/idapython_docs/  
 
 按字母顺序排列的api:  
 https://www.hex-rays.com/products/ida/support/idadoc/162.shtml  
