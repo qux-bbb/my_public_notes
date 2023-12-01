@@ -2,6 +2,7 @@
 
 官网: https://www.snort.org  
 官方文档: https://www.snort.org/documents  
+有详细的规则字段介绍: https://docs.snort.org/welcome  
 
 snort是一个开源的IPS/IDS。  
 IPS, Intrusion Prevention System, 入侵防御系统  
