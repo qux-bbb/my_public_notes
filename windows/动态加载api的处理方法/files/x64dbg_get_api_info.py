@@ -1,7 +1,10 @@
 # coding:utf8
 # python2
 
+import ctypes
 from x64dbgpy.pluginsdk import x64dbg
+
+MAX_SIZE = 256
 
 args_tuple = (
     (0x0, 0x13B274),
@@ -149,7 +152,16 @@ for args in args_tuple:
     x64dbg.StepOver()
 
     # log "<args_str>: \"{modname@eax}.{label@eax}\""
-    x64dbg.DbgScriptCmdExec('log "' + args_str + '":\ ' + '\\"{modname@eax}.{label@eax}\\"\,')
+    # x64dbg.DbgScriptCmdExec('log "' + args_str + '":\ ' + '\\"{modname@eax}.{label@eax}\\"\,')
+    eax = x64dbg.GetEAX()
+
+    module_text = ctypes.create_string_buffer(MAX_SIZE)
+    x64dbg.DbgGetModuleAt(eax, module_text)
+
+    label_text = ctypes.create_string_buffer(MAX_SIZE)
+    x64dbg.DbgGetLabelAt(eax, x64dbg.SEG_DEFAULT, label_text)
+
+    print('{}: "{}.{}",'.format(args_str, module_text.value, label_text.value))
 
     x64dbg.SetEIP(0x03091D88)  # push参数的位置
 
