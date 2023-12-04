@@ -51,9 +51,12 @@ IDA反编译视图(伪代码视图)里设置注释更方便查看: [set_comments
 缺点：没有调用的地方就获取不到，比如 0x03091CAC 应该是 kernel32.ExitProcess  
 
 #### python调用获取  
-首先需要收集参数: [search_func_args.py](./files/search_func_args.py)  
-将收集的参数整理去重，x64dbg运行脚本获取api信息: [x64dbg_get_api_info.py](./files/x64dbg_get_api_info.py)  
-最后把结果写到IDA里: [set_comments_from_x64dbg_in_pseudocode_view.py](./files/set_comments_from_x64dbg_in_pseudocode_view.py)  
+前提：x64dbg安装x64dbgpy插件  
+
+获取步骤：  
+1. 需要在IDA里收集参数: [search_func_args.py](./files/search_func_args.py)
+2. 将收集的参数整理去重，x64dbg运行脚本获取api信息: [x64dbg_get_api_info.py](./files/x64dbg_get_api_info.py)
+3. 最后把结果写到IDA里: [set_comments_from_x64dbg_in_pseudocode_view.py](./files/set_comments_from_x64dbg_in_pseudocode_view.py)
 
 缺点：动态生成参数的地方就获取不到，比如 0x03091CCD 第2个参数是 0x07A85C71 api应该是 user32.MessageBoxA  
 
