@@ -2,7 +2,7 @@
 
 keywords: 文件夹大小  
 
-du, directory usage, 用来递归查看文件夹下所有文件的大小  
+du, disk usage, 用来递归查看文件夹下所有文件的大小  
 
 ```sh
 # 递归查看
