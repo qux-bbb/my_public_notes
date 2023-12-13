@@ -6,7 +6,7 @@ klogg 是一个基于glogg项目的非常快的日志查看器，可以打开超
 github地址: https://github.com/variar/klogg  
 
 
-参考链接: https://mp.weixin.qq.com/s/TqohADEoreiiCJ-WKDdjUQ  
+参考链接: https://www.zhihu.com/answer/2313306540  
 
 
 2023/2/5  
