@@ -37,6 +37,7 @@ set $eip = 0x401008       # 设置eip寄存器的值
 set *((char*)($ebp-0xc)) = 1    # 修改某内存的值
 x /x $ebp-0xc           # 查看某内存位置的值 (Examine memory)
 x /3xw 0xffffd25c       # 16进制方式按word查看3个word长度的内容
+x /s 0xffffd25c         # 以字符串方式查看指定地址的内容
 x /4i 0xffffd3fc        # 查看4条指令
 i func                  # 显示所有函数名，可以加正则表达式 全 info function
 i r                     # 查看所有寄存器的值 全 info registers	
