@@ -2,7 +2,7 @@
 
 gdb脚本可批量执行命令，自动化控制调试过程  
 
-新建文件a.gdb, 内容如下:  
+新建文件a.gdb(后缀不重要), 内容如下:  
 ```r
 # This is a comment.
 file a.out
@@ -19,6 +19,8 @@ delete *
 ```r
 gdb -x a.gdb
 ```
+
+相关链接: https://sourceware.org/gdb/current/onlinedocs/gdb.html/File-Options.html#File-Options  
 
 
 2019/11/1  
