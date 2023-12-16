@@ -22,9 +22,9 @@ gdb.execute("dump memory /root/memory.dump $ebx $ebx+0x100")
 source ./test.py
 ```
 
-也可以把命令写到gdb脚本 test.gdb 中，启动时指定脚本启动  
+或者直接启动时指定脚本  
 ```r
-gdb -x test.gdb
+gdb -x test.py
 ```
 
 
