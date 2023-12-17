@@ -12,12 +12,19 @@ echo $0
 echo $SHELL
 ```
 
+查看所有可用终端：  
+```r
+cat /etc/shells
+```
+
 设置默认终端，重启生效：  
 ```r
 chsh -s /bin/zsh
 # 修改指定用户的默认终端
 chsh -s /bin/zsh username
 ```
+
+参考链接: https://zhuanlan.zhihu.com/p/672097191  
 
 
 2020/12/1  
