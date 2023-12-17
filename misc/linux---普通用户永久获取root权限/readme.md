@@ -27,19 +27,15 @@ usermod -aG sudo alice
 
 
 ## 设置方法2：修改sudoers文件
-切换到root帐户：  
+建议通过visudo修改 /etc/sudoers 文件  
 ```bash
+# 切换到root帐户
 su -
-```
-
-使用nano或visudo或其它编辑器打开 /etc/sudoers  
-```bash
-nano /etc/sudoers
+# 执行visudo命令
 visudo
-vim /etc/sudoers
 ```
 
-修改 `/etc/sudoers`, 在root下添加一行，如下：  
+在root下添加一行，如下：  
 ```conf
 # User privilege specification
 root    ALL=(ALL:ALL) ALL
