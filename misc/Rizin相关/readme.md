@@ -35,6 +35,8 @@ q               quit
 ```r
 # 保存0x100字节到文件
 pr 0x100 > the_key_data
+# 保存0x00006c10地址处的32字节到文件 https://github.com/rizinorg/rizin/issues/2744
+pr 32 @ 0x00006c10 > /tmp/bytes_here
 ```
 
 
