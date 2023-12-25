@@ -13,7 +13,7 @@ github地址: https://github.com/rizinorg/cutter/
 
 支持多平台: Windows/Linux/macOS  
 
-没有保存部分内存数据的方法  
+集成的Console没有重定向功能，暂时没有保存部分内存数据的方法  
 
 
 ## x64dbgcutter
