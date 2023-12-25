@@ -15,6 +15,8 @@ iaito, いあいと, 居合刀的意思，一种用于居合道（iaido）训练
 wtf hello.dat 20
 # 指定从地址0x8048300开始，写20字节到hello.dat文件
 wtf hello.dat 20 @ 0x8048300
+# iaito的Console支持重定向，所以这样也是没问题的
+pr 20 @ 0x8048300 > hello.dat
 ```
 
 
