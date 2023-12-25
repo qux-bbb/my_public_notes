@@ -25,6 +25,13 @@ oh-my-fish和oh-my-zsh类似，提供主题和插件管理功能
 (autojump插件装完还得自己设置，这个更方便一点，一条命令搞定)  
 
 
+## 添加命令别名
+编辑 ~/.config/fish/config.fish, 在最后添加类似内容：  
+```r
+alias lll='ls -lha'
+```
+
+
 ## 参考链接
 https://kxcblog.com/post/terminal/1.fish-tutorial/  
 
