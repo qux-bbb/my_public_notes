@@ -13,7 +13,10 @@ github地址: https://github.com/rizinorg/cutter/
 
 支持多平台: Windows/Linux/macOS  
 
-集成的Console没有重定向功能，暂时没有保存部分内存数据的方法  
+集成的Console没有重定向功能，在linux上暂时可以借助dd命令保存部分内存数据：  
+```r
+pr 32 @ 0x00006c10 | dd of=/tmp/bytes_here
+```
 
 
 ## x64dbgcutter
