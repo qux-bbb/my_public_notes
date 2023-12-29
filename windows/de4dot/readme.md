@@ -6,7 +6,7 @@ github地址: https://github.com/de4dot/de4dot
 
 
 ## 获取可执行文件方法
-fork代码，在 .github/workflows/build.yml 添加"workflow_dispatch"，前后对比如下：  
+fork项目，在 .github/workflows/build.yml 添加"workflow_dispatch"，前后对比如下：  
 ```r
 name: GitHub CI
 on:
@@ -59,6 +59,12 @@ de4dot.exe -d file1
 # 可以处理变量名是一堆中文字符的情况
 de4dot.exe --un-name "^[a-zA-Z_<{$][a-zA-Z_0-9<>{}$.`-]*$" file1
 ```
+
+
+## mobile46/de4dot
+mobile46给de4dot添加了一些自动反混淆的功能，效果不错，但可能自动运行代码，所以最好在虚拟机中运行  
+
+github地址: https://github.com/mobile46/de4dot  
 
 
 ---
