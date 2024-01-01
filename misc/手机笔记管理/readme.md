@@ -2,7 +2,7 @@
 
 termux结合markor，不是那么方便，勉强可用。  
 
-shell用了zsh，所以在 ~/.zshrc 最后加了这样的命令别名，方便切换目录和更新  
+shell用了fishshell，所以在 ~/.config/fish/config.fish 最后加了这样的命令别名，方便切换目录和更新  
 ```r
 # for note
 alias n='cd /data/data/com.termux/files/home/storage/shared/termux_share/my-public-notes'
