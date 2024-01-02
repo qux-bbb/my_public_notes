@@ -2,6 +2,7 @@
 
 gkd 是一个基于 无障碍 + 高级选择器 + 订阅规则 的自定义屏幕点击 Android APP。  
 
+官网: https://gkd.li/  
 github地址: https://github.com/gkd-kit/gkd  
 
 github介绍功能：  
