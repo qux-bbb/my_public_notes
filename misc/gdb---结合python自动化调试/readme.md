@@ -2,6 +2,9 @@
 
 gdb支持通过python自动化调试，实现循环、读写内存、保存内容等复杂逻辑，不需要安装模块。  
 
+官方文档: https://sourceware.org/gdb/current/onlinedocs/gdb.html/Python.html  
+官方文档直接看不太容易理解，可以结合chatgpt、文心一言等工具使用。  
+
 
 ## 简单使用
 核心函数：  
