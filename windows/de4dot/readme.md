@@ -1,6 +1,7 @@
 # de4dot
 
 de4dot是一个.NET程序反混淆工具，已经很久不维护了。  
+官网说可能会有执行风险，所以如果解混淆的是恶意程序，最好在隔离环境中操作。  
 
 github地址: https://github.com/de4dot/de4dot  
 
