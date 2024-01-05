@@ -61,10 +61,10 @@ de4dot.exe --un-name "^[a-zA-Z_<{$][a-zA-Z_0-9<>{}$.`-]*$" file1
 ```
 
 
-## mobile46/de4dot
-mobile46给de4dot添加了一些自动反混淆的功能，效果不错，但可能自动运行代码，所以最好在虚拟机中运行  
+## ViRb3/de4dot-cex
+ViRb3给de4dot添加了vanilla ConfuserEx的支持，看起来可以简化大量无用流程，还没试过效果  
 
-github地址: https://github.com/mobile46/de4dot  
+github地址: https://github.com/ViRb3/de4dot-cex  
 
 
 ---
