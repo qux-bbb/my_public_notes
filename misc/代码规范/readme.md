@@ -1,6 +1,6 @@
 # 代码规范
 
-keywords: 项目风格 语言规范 编码规范 命名规范  
+keywords: 项目风格 代码风格 语言规范 编码规范 命名规范  
 
 google代码规范: https://google.github.io/styleguide/  
 国人维护的中文版: https://zh-google-styleguide.readthedocs.io/en/latest/  
