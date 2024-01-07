@@ -6,6 +6,9 @@ github地址: https://github.com/keepassxreboot/keepassxc
 KeePassXC 是一个开源的、跨平台的密码管理器，支持Windows、macOS和Linux。  
 默认支持中文，更易用。  
 
+如果不想每次打开输完数据库密码后还弹出输入其它密码窗口，可以这样设置：  
+工具 -> 设置 -> 安全, 取消勾选"启用数据库快速解锁（Touch ID / Windows Hello）"  
+
 
 ## 发展和名称可能的含义
 KeePass是最原始的项目  
