@@ -9,6 +9,7 @@ keywords: 浏览器 扩展 插件 firefox chrome
 
 **uBlock Origin**  
 拦截广告  
+https://github.com/gorhill/uBlock  
 
 **Country Flags & IP Whois**  
 展示访问网站的ip和区域  
@@ -42,6 +43,7 @@ keywords: 浏览器 扩展 插件 firefox chrome
 
 **Proxy SwitchyOmega**  
 切换代理  
+https://github.com/FelisCatus/SwitchyOmega  
 
 **Tampermonkey BETA**  
 油猴，可以安装解除网页复制限制、获取百度网盘直接下载链接的脚本  
