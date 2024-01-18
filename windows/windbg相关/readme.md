@@ -52,7 +52,7 @@ Ctrl+F10 or F7: Run to Cursor
 
 - - - -
 ## 实践
-```
+```r
 # 输出ecx指向地址处的ascii字符串
 da ecx
 
@@ -62,7 +62,7 @@ du ecx
 # 给某个函数下断点，不区分大小写  
 bp KERNELBASE!CreateProcessW
 
-# 给某个函数下未加载模块断点，也不区分大小写  
+# 给某个函数下未加载模块断点，也不区分大小写，"u"是"unresolved"的意思
 bu Shell32!ShellexecuteA
 
 # 触发断点时执行"du eax"命令
