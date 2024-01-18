@@ -3,6 +3,13 @@
 WinDbg 是包含在 Windows 调试工具中的内核模式和用户模式调试器。  
 
 - - - -
+## 安装
+安装WDK时会默认安装，不过这里的windbg界面更现代一点  
+https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/  
+遇到"解析应用包时出错"可参考该链接解决  
+https://github.com/microsoftfeedback/WinDbg-Feedback/issues/159  
+
+- - - -
 ## 手册
 debugger.chm  
 windbg.chm  
