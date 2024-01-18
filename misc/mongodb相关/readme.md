@@ -16,8 +16,10 @@ https://www.mongodb.com/docs/manual/administration/install-on-linux/
 
 简单命令
 ```r
-# 进入mongo
-mongo
+# 进入mongodb shell
+# 原来命令是"mongo"，在5.0废弃了
+# https://www.helenjoscott.com/2022/01/29/mongod-mongo-mongosh-mongos-what-now/
+mongosh
 
 # 帮助
 help
