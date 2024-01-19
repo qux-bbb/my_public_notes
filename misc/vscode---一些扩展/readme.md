@@ -22,6 +22,9 @@
 ## `Project Manager`
 相当于一些常用文件夹的快捷方式，打开很方便  
 
+## `vscode-mindmap`
+在vscode里写脑图，比较方便，推荐下载 eightHundreds 的，更新一点  
+
 ## `Text Utils`
 自己开发的插件，描述是 "Simple Text Utils"，一些常用的文本处理功能  
 
