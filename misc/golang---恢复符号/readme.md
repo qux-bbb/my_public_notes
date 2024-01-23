@@ -51,6 +51,8 @@ https://www.anquanke.com/post/id/218674
 ## for Ghidra
 使用步骤稍微多一点：  
 如果是python脚本，复制到 Ghidra\Features\Python\ghidra_scripts 目录  
+或者自己任意创建一个文件夹放脚本，在Ghidra脚本管理器里添加相应文件夹路径  
+刷新就可以看到新的脚本，不需要重启Ghidra  
 Window -> Script Manager, 搜索脚本名称，选中一个，点击右上图标"Run Script"即可  
 注意一次只能运行一个脚本  
 
