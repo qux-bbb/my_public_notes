@@ -2,6 +2,9 @@
 
 Stellarium 是一款开源的天象模拟软件，以3D形式展示星空。  
 
+发音: /ˈsteləriəm/  
+
+
 官网: https://stellarium.org/  
 github地址: https://github.com/Stellarium/stellarium  
 
