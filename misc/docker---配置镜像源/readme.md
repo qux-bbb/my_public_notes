@@ -2,6 +2,9 @@
 
 docker拉取镜像比较慢，可以自己配置镜像源，虽然也不会多快，可以尝试一下。  
 
+公开源都不太行，参照这里的步骤获取私人阿里镜像加速器地址，效果好很多  
+https://developer.aliyun.com/article/1113403  
+
 编辑配置文件
 ```r
 sudo vim /etc/docker/daemon.json
