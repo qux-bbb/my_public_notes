@@ -34,6 +34,12 @@ docker-compose version
 docker compose pull
 # 创建并启动容器
 docker compose up
+# 停止相关容器
+docker compose stop
+# 启动相关容器
+docker compose start
+# 停止并删除相关容器
+docker compose down
 ```
 
 
