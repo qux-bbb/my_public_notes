@@ -32,6 +32,9 @@ grep -zoP 'fingerprint": \[\n' hello.json
 # -z, --null-data           a data line ends in 0 byte, not newline
 # -o, --only-matching       show only the part of a line matching PATTERN
 # -P, --perl-regexp         PATTERN is a Perl regular expression
+
+# 将错误输出如"Permission denied"使用重定向丢弃(2>/dev/null)
+grep -r helloworld / 2>/dev/null
 ```
 
 
