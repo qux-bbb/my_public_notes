@@ -2,6 +2,9 @@
 
 Celestia是一个实时3D可视化宇宙模拟软件，支持Windows、Linux、macOS、iOS 和 Android。  
 
+发音: /səˈlestiə/  
+
+
 官网: https://celestiaproject.space/  
 github地址: https://github.com/CelestiaProject/Celestia  
 
