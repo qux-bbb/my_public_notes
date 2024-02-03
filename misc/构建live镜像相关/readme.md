@@ -3,7 +3,7 @@
 ## 安装工具和依赖
 ```bash
 sudo apt-get update
-sudo apt-get install live-build firmware-linux
+sudo apt-get install live-build
 ```
 
 ## 构建默认镜像
@@ -15,12 +15,6 @@ mkdir tutorial1 ; cd tutorial1 ; lb config
 切换到root  
 ```bash
 sudo su
-```
-
-chroot切换根目录(chroot chroot)之后安装依赖，装完之后再退出来(exit)  
-```bash
-apt update
-apt install linux-image-amd64  # 需要根据架构安装相应的包
 ```
 
 构建  
