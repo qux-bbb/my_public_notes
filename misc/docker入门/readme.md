@@ -86,6 +86,15 @@ docker inspect 2b1 | grep IPAddress
 
 # 从Dockerfile创建镜像
 docker build -t hello:v1.1 -f /whatever/Dockerfile
+
+# 保存一个镜像保存到文件
+docker save -o <输出文件路径>.tar <镜像名称>:<标签>
+
+# 保存多个镜像保存到文件
+docker save -o multiple_images.tar image1:image1tag image2:image2tag
+
+# 从文件加载镜像
+docker load -i <文件路径>.tar
 ```
 
 
