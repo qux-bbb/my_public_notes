@@ -28,10 +28,20 @@ lb build 2>&1 | tee build.log
 ```bash
 echo "task-lxde-desktop firefox-esr" >> config/package-lists/my.list.chroot
 ```
+在Debian12下构建成功  
 
 
 ## 一些问题解决
-### 问题1
+### 问题
+```r
+E: Failed getting release file http://archive.ubuntu.com/ubuntu/dists/precise/Release
+```
+
+解决方法：  
+precise是ubuntu12的代号，太老了，可以全局搜索"precise"替换成ubuntu22的代号"jammy"  
+
+
+### 问题2
 ```r
 E: Package 'firmware-linux' has no installation candidate
 ```
@@ -41,7 +51,7 @@ E: Package 'firmware-linux' has no installation candidate
 sudo apt install firmware-linux
 ```
 
-### 问题2
+### 问题3
 ```r
 cp: cannot stat 'chroot/boot/vmlinuz-*': No such file or directory
 E: An unexpected failure occurred, exiting...
