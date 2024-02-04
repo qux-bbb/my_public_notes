@@ -9,6 +9,7 @@ sudo apt-get update
 sudo apt-get install live-build
 ```
 
+
 ## 构建默认镜像
 配置  
 ```bash
@@ -34,14 +35,13 @@ echo "task-lxde-desktop firefox-esr" >> config/package-lists/my.list.chroot
 
 
 ## 一些问题解决
-### 问题
+### 问题1
 ```r
 E: Failed getting release file http://archive.ubuntu.com/ubuntu/dists/precise/Release
 ```
 
 解决方法：  
 precise是ubuntu12的代号，太老了，可以全局搜索"precise"替换成ubuntu22的代号"jammy"  
-
 
 ### 问题2
 ```r
