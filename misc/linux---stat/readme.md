@@ -1,6 +1,6 @@
 # linux---stat
 
-keywords: 文件属性 文件详细属性  
+keywords: 文件属性 文件详细属性 attribute  
 
 stat, status, 获取文件/文件夹的信息，如文件大小/创建时间/修改时间等。  
 
