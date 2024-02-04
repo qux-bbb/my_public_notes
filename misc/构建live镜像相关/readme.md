@@ -1,5 +1,8 @@
 # 构建live镜像相关
 
+在Debian12下构建成功  
+
+
 ## 安装工具和依赖
 ```bash
 sudo apt-get update
@@ -28,7 +31,6 @@ lb build 2>&1 | tee build.log
 ```bash
 echo "task-lxde-desktop firefox-esr" >> config/package-lists/my.list.chroot
 ```
-在Debian12下构建成功  
 
 
 ## 一些问题解决
