@@ -66,12 +66,6 @@ docker ps -a
 # 查看镜像
 docker images
 
-# 将容器导出到一个tar文件
-docker export 21b -o testCTFd.tar
-
-# 从tar文件恢复一个镜像
-cat testCTFd.tar | docker import - test/ubuntu
-
 # 复制容器内文件到本机(文件夹也可以)
 docker cp 03091bf3d393:/root/a.txt ./
 
