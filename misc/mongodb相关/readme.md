@@ -1,7 +1,10 @@
 # MongoDB相关
 
 官网: https://www.mongodb.com/  
+官方文档: https://www.mongodb.com/docs/manual/  
+
 一个非关系型数据库  
+
 
 ## linux使用
 安装
@@ -80,3 +83,9 @@ myclient.close()
 ```
 
 参考链接: https://www.runoob.com/python3/python-mongodb.html  
+
+
+## Compass
+Compass 是一款免费的图形化跨平台交互式工具，用于查询、优化和分析 MongoDB 数据。  
+
+地址: https://www.mongodb.com/products/tools/compass  
