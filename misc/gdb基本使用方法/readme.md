@@ -1,5 +1,7 @@
 # gdb基本使用方法
 
+keywords: gdb相关  
+
 gdb, GNU Debugger, linux下调试程序  
 
 官网: https://www.sourceware.org/gdb/  
