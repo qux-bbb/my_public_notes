@@ -2,6 +2,7 @@
 
 pwndbg（/poʊndbæg/）是一个GDB插件，它可以降低使用GDB进行调试的难度，提供硬件黑客、逆向工程师和漏洞开发人员所需的功能。  
 
+官网: https://pwndbg.re/  
 github地址: https://github.com/pwndbg/pwndbg  
 
 安装：  
