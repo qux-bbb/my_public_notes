@@ -1,5 +1,7 @@
 # linux---ncdu
 
+keywords: 文件夹大小  
+
 ncdu, NCurses Disk Usage, 一个可交互的文件夹占用空间统计工具，NCurses版本的du。  
 
 官网: https://dev.yorhel.nl/ncdu  
