@@ -1,5 +1,8 @@
 # vim简单使用
 
+VIM - Vi IMproved, 一个编辑器  
+vi - visual interface, 一个编辑器  
+
 可以执行命令 `vimtutor` 练习基本的操作，下面记一些之前用到的  
 
 ```
