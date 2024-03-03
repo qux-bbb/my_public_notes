@@ -46,6 +46,13 @@ i r                     # 查看所有寄存器的值 全 info registers
 p $eip                  # 输出寄存器值 全 print
 p *0x400123@12          # 输出长度12的某个地址处的数组
 
+bt                      # 栈回溯 全 backtrace
+i threads               # 查看所有线程 全 info threads
+thread 2                # 切换到线程2
+thread apply 2 bt       # 对线程2执行bt命令
+thread apply 2 3 bt       # 对线程2、3执行bt命令
+thread apply all bt     # 对所有线程执行bt命令
+
 q   # 退出调试 全 quit
 
 set follow-fork-mode parent # 设置有fork进程时也调试父进程
@@ -54,6 +61,7 @@ set follow-fork-mode parent # 设置有fork进程时也调试父进程
 参考链接：  
 1. GDB十分钟教程 http://blog.csdn.net/liigo/article/details/582231/
 2. GDB查看、修改内存 http://jiangyingji1.blog.163.com/blog/static/171630340201122283017414/
+3. chatgpt
 
 &&&&&&& 有时候修改eflags不生效，比较奇怪  
 
