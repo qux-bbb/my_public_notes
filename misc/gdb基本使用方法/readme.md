@@ -9,16 +9,16 @@ gdb, GNU Debugger, linux下调试程序
 
 ```r
 gdb             # 进入gdb
-gdb 程序名      # 直接加载程序
+gdb the_path    # 直接加载程序
 
 进入gdb之后
-file 程序名     # 加载程序
+file the_path   # 加载程序
 disas main      # 显示main函数的汇编代码，其他函数类似 全 disassemble
 disas $rip      # 显示当前地址附近的汇编代码
 disas 0x012345  # 显示某个地址处的汇编代码
 
 b *0x08048bee   # 对某个地址下断点，退出之后所有断点消失 全 break
-b 函数名        # 对某个函数下断点
+b func_name     # 对某个函数下断点
 i b	            # 查看所有断点 全 info breakpoints
 d 4             # 删除标号为4的断点 全 delete
 d               # 删除所有断点
@@ -35,7 +35,7 @@ finish          # 执行完当前函数并返回
 
 set args 1122   # 设置可执行文件需要的参数
 set args "`cat a.txt`"  # 设置可执行文件需要的参数，适用于有时参数不能显示的情况
-set $eip = 0x401008       # 设置eip寄存器的值
+set $eip = 0x401008     # 设置eip寄存器的值
 set *((char*)($ebp-0xc)) = 1    # 修改某内存的值
 x /x $ebp-0xc           # 查看某内存位置的值 (Examine memory)
 x /3xw 0xffffd25c       # 16进制方式按word查看3个word长度的内容
@@ -50,7 +50,7 @@ bt                      # 栈回溯 全 backtrace
 i threads               # 查看所有线程 全 info threads
 thread 2                # 切换到线程2
 thread apply 2 bt       # 对线程2执行bt命令
-thread apply 2 3 bt       # 对线程2、3执行bt命令
+thread apply 2 3 bt     # 对线程2、3执行bt命令
 thread apply all bt     # 对所有线程执行bt命令
 
 q   # 退出调试 全 quit
