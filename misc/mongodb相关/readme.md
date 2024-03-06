@@ -46,6 +46,9 @@ exit
 
 ## python使用
 python有一个pymongo模块  
+pypi地址: https://pypi.org/project/pymongo/  
+官方文档: https://pymongo.readthedocs.io/en/stable/  
+github地址: https://github.com/mongodb/mongo-python-driver  
 
 安装  
 ```r
