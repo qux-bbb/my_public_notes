@@ -23,6 +23,7 @@ https://github.com/vxunderground/MalwareSourceCode
 
 ## malshare.com
 提供样本查询下载，需要注册，使用脚本操作，官方在github提供了脚本  
+也可以上传样本  
 https://malshare.com/  
 
 ## virusshare.com
