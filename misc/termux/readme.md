@@ -60,3 +60,13 @@ sv-enable crond
 
 ## Tasker
 Tasker插件不能用来定时执行任务  
+
+## signal 9
+如果安装了nethunter，启动桌面环境，Termux进入后台，Android大概率会杀死这个占用CPU太高的进程，Termux就会报如下错误：  
+```r
+[Process completed (signal 9) - press Enter]
+```
+
+可以把Termux设置小窗悬浮，可以避免一段时间的这个问题，并不完全有效。  
+
+参考链接: https://www.bilibili.com/read/cv20060713/  
