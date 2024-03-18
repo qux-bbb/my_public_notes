@@ -10,8 +10,11 @@ https://github.com/extremecoders-re/pyinstxtractor
 有一点要注意：  
 项目的脚本是根据当前运行python版本获取pyc magic 的，所以可能不对，需要自己根据 解出来的 python dll 确定到底应该是什么 magic  
 
-这里是现在可能的 pyc magic：  
-https://github.com/google/pytype/blob/master/pytype/pyc/magic.py  
+这里有很多 pyc magic：  
+https://github.com/rocky/python-xdis/blob/master/xdis/magics.py  
+pyc文件的前2个字节是magic，没有换算关系，只能映射，比如：  
+'\x03\xf3' 0xF303 python27  
+'\xee\x0c' 0x0CEE python34  
 
 ```python
 # coding:utf8
