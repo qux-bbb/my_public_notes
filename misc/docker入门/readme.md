@@ -92,13 +92,13 @@ docker load -i <文件路径>.tar
 ```
 
 
-## image和container的区别
+## image和container的关系
 Image可以理解为一个系统镜像，  
-Container是Image在运行时的一个状态。  
+Container是根据Image创建的实例。  
 
 如果拿虚拟机作一个比喻的话，  
-Image就是关机状态下的磁盘文件，  
-Container就是虚拟机运行时的磁盘文件，包括内存数据。  
+Image就是iso镜像文件，  
+Container就是根据镜像创建的虚拟机(这个虚拟机可以被启动、停止，但没有创建快照的功能)。  
 
 
 ---
