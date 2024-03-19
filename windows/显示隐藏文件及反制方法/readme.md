@@ -18,6 +18,8 @@ Windows的文件管理器默认不会显示设置了隐藏属性的文件。
 打开命令行，切换到相应目录  
 `dir /a` 命令可列出隐藏文件  
 `attrib *` 命令可列出文件属性，显示更清晰  
+`attrib -h <file_path>` 命令可以取消隐藏属性，attrib具体用法见 [attrib](../attrib/readme.md)  
 
 
+---
 2021/10/11  
