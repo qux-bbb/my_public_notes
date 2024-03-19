@@ -1,5 +1,7 @@
 # javascript混淆工具
 
+keywords: javascript js 混淆  
+
 javascript混淆工具，面目全非，完全看不懂。  
 
 github地址: https://github.com/javascript-obfuscator/javascript-obfuscator  
