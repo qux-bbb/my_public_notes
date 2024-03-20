@@ -29,6 +29,9 @@ C-v     Next screen
 M-<     Beginning of buffer
 M->     End of buffer
 
+保存
+C-x C-s     save
+
 退出
 C-x C-c     close
 ```
