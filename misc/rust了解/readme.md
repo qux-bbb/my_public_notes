@@ -9,7 +9,9 @@
 安装方式去官网找一些，针对不同平台介绍的比较清楚  
 不要用这种 `sudo apt install cargo` 的方式，会有问题  
 安装后可使用 `rustc --version` 确认是否安装成功  
+
 安装后可以在本地查看入门文档: `rustup doc --book`  
+也可以通过例子来学习Rust: https://doc.rust-lang.org/rust-by-example/  
 如果觉得学会了可以装这个试试改错(建议linux): https://github.com/rust-lang/rustlings  
 
 编译器：rustc  
