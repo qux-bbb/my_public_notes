@@ -50,6 +50,12 @@ sudo systemctl enable v2raya.service
 然后可以访问: http://localhost:2017  
 创建账号、导入节点、启动服务，开始使用  
 
+如果忘记了密码，可以执行命令重置密码：  
+```r
+sudo systemctl stop v2raya
+sudo v2raya --reset-password
+sudo systemctl start v2raya
+```
 
 参考链接：  
 1. https://v2raya.org/docs/prologue/installation/debian/
