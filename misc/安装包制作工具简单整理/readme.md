@@ -16,6 +16,9 @@ java相关的安装包制作工具
 ## Inno Setup Installer
 和NSIS类似  
 
+## msi
+microsoft installer，windows使用的一种安装包文件  
+
 ## 其他
 上面这些应该是常见的,还有其他的遇到再记  
 
