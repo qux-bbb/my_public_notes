@@ -1,6 +1,7 @@
 # NSIS
 
 NSIS, Nullsoft Scriptable Install System, Windows下做安装包的工具  
+安装包格式为exe  
 
 地址：  
 https://nsis.sourceforge.io 或者 https://sourceforge.net/projects/nsis/  
