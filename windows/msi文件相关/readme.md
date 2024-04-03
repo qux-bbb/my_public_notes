@@ -1,6 +1,7 @@
 # msi文件相关
 
 msi, microsoft installer，windows使用的一种安装包文件  
+安装包格式(后缀名)为msi  
 
 这是官方文档: https://docs.microsoft.com/en-us/windows/win32/msi/windows-installer-portal  
 虽然目录看起来很好，但其实并没有一个完整的示例  
