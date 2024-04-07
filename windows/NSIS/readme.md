@@ -17,4 +17,8 @@ http://hmne.sourceforge.net/
 建议使用方式是，用HM NIS EDIT先搭一个初始脚本，然后自己慢慢调整脚本  
 
 
+解包工具: https://github.com/myfreeer/7z-build-nsis/releases  
+信息来源: https://www.52pojie.cn/thread-751608-1-1.html  
+
+
 2019/3/21  
