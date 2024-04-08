@@ -6,6 +6,7 @@ gdb, GNU Debugger, linux下调试程序
 
 官网: https://www.sourceware.org/gdb/  
 官方文档: https://www.sourceware.org/gdb/documentation/  
+html版本文档: https://sourceware.org/gdb/current/onlinedocs/gdb.html/  
 
 ```r
 gdb             # 进入gdb
