@@ -1,41 +1,43 @@
 # gdb查看内存
 
-x, Examine memory, gdb查看内存的命令  
+x, Examine memory, gdb查看内存的命令。  
 
-首先使用`gdb [YourFileName].c`进入gdb界面  
+官方文档: https://sourceware.org/gdb/current/onlinedocs/gdb.html/Memory.html#Memory  
 
-使用`examine`命令，字母缩写为`x`查看内存地址的值。`x`命令语法  
+gdb里 `help x` 结果：  
 ```r
-x/[number][format] <addr>
+Examine memory: x/FMT ADDRESS.
+ADDRESS is an expression for the memory address to examine.
+FMT is a repeat count followed by a format letter and a size letter.
+Format letters are o(octal), x(hex), d(decimal), u(unsigned decimal),
+  t(binary), f(float), a(address), i(instruction), c(char), s(string)
+  and z(hex, zero padded on the left).
+Size letters are b(byte), h(halfword), w(word), g(giant, 8 bytes).
+The specified number of objects of the specified size are printed
+according to the format.  If a negative number is specified, memory is
+examined backward from the address.
+
+Defaults for format and size letters are those previously used.
+Default count is 1.  Default address is following last thing printed
+with this command or "print".
 ```
-其中number,format和u都是可选参数, addr为查看变量的内存地址  
 
-number: 一个正整数，表示从当前地址向后显示几个地址的内容。如  
+一些示例：  
 ```r
+# 查看0x400c90到向后0x400c90+24的内容  
 x/24 0x400c90
-```
-表示查看0x400c90到向后0x400c90+24的内容  
 
-format：显示的格式不是查看的格式。和c语言中的格式缩写一样，如  
-```r
-d:整数integer
-s:字符串string
-c:字符char
-u:无符号整数 unsigned integer
-o:八进制格式显示变量
-x:十六进制格式
-f: 浮点数格式float
-......
-```
-```r
+# 显示0x400c90到0x400c90+24的内容，显示的格式为整数d，这个命令常用于检查输出数组的内容  
 x/24d 0x400c90
+
+# 显示3组数据，hex形式，每组为一个word(4个字节)
+x/3xw 0x400c90
 ```
-显示0x400c90到0x400c90+24的内容，显示的格式为整数d，这个命令常用于检查输出数组的内容  
 
 gdb本身不提供hexdump功能，可以安装pwndbg插件使用hexdump功能。  
 
 
-原链接：https://www.cnblogs.com/adamwong/p/10538019.html  
+参考链接：https://www.cnblogs.com/adamwong/p/10538019.html  
 
 
 2020/12/1  
