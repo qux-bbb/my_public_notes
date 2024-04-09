@@ -1,6 +1,7 @@
 # 堆相关
 
-先写一个用堆的例子：  
+
+## 使用堆的例子
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -22,12 +23,20 @@ int main(){
 
 malloc函数不是真正与系统交互的函数，分配小内存用brk函数，大内存用mmap函数  
 
-以后慢慢补充  
+
+## 相关缩写和含义
+```r
+ptmalloc  pthreads malloc, 一个堆分配器，p指POSIX
+malloc  memory allocate, 用于分配内存
+brk  break
+sbrk  segment break
+```
 
 
-参考链接: 
+## 参考链接
 1. https://blog.csdn.net/weixin_39662462/article/details/111269792
 2. https://ctf-wiki.org/pwn/linux/glibc-heap/heap_overview/
 
 
+---
 20210403  
