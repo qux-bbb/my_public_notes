@@ -33,6 +33,19 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo docker run hello-world
 ```
 
+非root用户管理docker  
+https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user  
+```r
+# Create the docker group.
+sudo groupadd docker
+# Add your user to the docker group.
+sudo usermod -aG docker $USER
+# 重启或使用该命令生效:
+newgrp docker
+# run hello-world to verify
+docker run hello-world
+```
+
 
 ## 一些命令
 ```bash
