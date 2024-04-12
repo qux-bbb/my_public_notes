@@ -2,6 +2,16 @@
 
 一个脚本，可以用来检测程序是否开启了部分保护  
 https://github.com/slimm609/checksec.sh  
+
+可以直接下载checksec文件执行  
+```r
+wget https://raw.githubusercontent.com/slimm609/checksec.sh/main/checksec
+chmod +x checksec
+./checksec --file=the_program
+```
+
+但输出格式不太好看，推荐pwndbg的checksec功能，加载程序后执行 `checksec` 即可  
+
 输出的信息有以下几行：  
 ```r
 Arch:       i386-32-little      # 架构: 32位程序
