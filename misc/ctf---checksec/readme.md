@@ -22,7 +22,7 @@ PIE:        No PIE (0x8048000)  # Position-Independent Executables 位置独立�
 RWX:        Has RWX segments    # 读写执行段
 ```
 **Arch**  
-这个不用多说，就是程序运行在什么平台，位数是多少，数据格式是大端还是小端，本例中为i386平台，32位，小端    
+程序运行在什么平台，位数是多少，数据格式是大端还是小端，本例中为i386平台，32位，小端  
 
 **RELRO**  
 重定向只读，本例中为`Partial RELRO`，部分开启，这样就表示GOT(Global Offset Table)是可写的，如果值为`Full RELRO`，GOT就是只读了  
