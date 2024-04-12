@@ -30,6 +30,7 @@ ptmalloc  pthreads malloc, 一个堆分配器，p指POSIX
 malloc  memory allocate, 用于分配内存
 brk  break
 sbrk  segment break
+tcache  thread local cache
 ```
 
 
