@@ -14,7 +14,7 @@ https://en.wikipedia.org/wiki/Ghidra
 
 
 ## 含义
-最初含义是日本的田中智之幻想的怪兽(哥斯拉也由他创造)，NSA的扩展解释是：  
+最初含义是日本的田中友幸幻想的怪兽(哥斯拉也由他创造)，NSA的扩展解释是：  
 ```r
 Generic
 Hexidecimal
@@ -23,7 +23,8 @@ Decompiling
 Reverse-engineering
 Architecture
 ```
-https://github.com/NationalSecurityAgency/ghidra/wiki/files/recon2019.pdf  
+https://en.wikipedia.org/wiki/Tomoyuki_Tanaka  
+https://github.com/NationalSecurityAgency/ghidra/wiki/files/blackhat2019.pdf  
 
 
 ## Sleigh
