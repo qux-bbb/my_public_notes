@@ -25,6 +25,7 @@ Architecture
 ```
 https://en.wikipedia.org/wiki/Tomoyuki_Tanaka  
 https://github.com/NationalSecurityAgency/ghidra/wiki/files/blackhat2019.pdf  
+https://www.youtube.com/watch?v=kx2xp7IQNSc  
 
 
 ## Sleigh
