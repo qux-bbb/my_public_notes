@@ -1,5 +1,7 @@
 # ubuntu发行版信息
 
+keywords: ubuntu 发行 版本  
+
 https://wiki.ubuntu.com/Releases  
 
 这个网页有各发行版的发行时间、代号等信息。  
