@@ -14,8 +14,8 @@ github地址: https://github.com/Gallopsled/pwntools
 
 安装命令：  
 ```r
-apt-get update
-apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
+sudo apt-get update
+sudo apt-get install python3 python3-pip python3-dev git libssl-dev libffi-dev build-essential
 python3 -m pip install --upgrade pip
 python3 -m pip install --upgrade pwntools
 ```
@@ -74,7 +74,7 @@ sock.interactive()               #  进入交互模式
 ```python
 # coding:utf8
 
-from pwn import  *
+from pwn import *
 
 conn = remote('pwnable.kr',9000)
 #conn = process("./bof")                   # 这样可以本地调试
@@ -113,7 +113,7 @@ bash.sendline('whoami')
 ```
 
 ### 区分本地调试或远程利用
-如果执行脚本参数有"REMOTE"，就会连接远程服务器，好像跟上面是一个意思
+如果执行脚本参数有"REMOTE"，进行远程利用，否则本地调试  
 ```python
 if args['REMOTE']:
     io = remote('exploitme.com', 4141)
