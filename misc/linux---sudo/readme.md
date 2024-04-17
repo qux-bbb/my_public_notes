@@ -1,5 +1,7 @@
 # linux---sudo
 
+keywords: root sudo 时间  
+
 ## 简介
 sudo, superuser do, 以系统管理者 root 的身份执行指令  
 
