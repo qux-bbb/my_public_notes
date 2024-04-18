@@ -91,8 +91,10 @@ docker rename a b
 # 查看容器配置参数并找出ip地址
 docker inspect 2b1 | grep IPAddress
 
-# 从Dockerfile创建镜像
-docker build -t hello:v1.1 -f /whatever/Dockerfile
+# 从Dockerfile创建镜像，指定tag和Dockerfile路径
+docker build -t hello:v1.1 -f /whatever/Dockerfile .
+# 可以什么参数都不指定，默认读取当前目录下的Dockerfile
+docker build .
 
 # 保存一个镜像保存到文件
 docker save -o <输出文件路径>.tar <镜像名称>:<标签>
