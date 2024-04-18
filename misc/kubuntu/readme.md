@@ -34,6 +34,11 @@ krita-l10n/impish,impish 1:4.4.8+dfsg-1ubuntu1 all
 修改LANG项为 `LANG=zh_CN.UTF-8` 重启即可  
 locale命令显示的和 /etc/default/locale 不一定一样，还不知道为什么，但改文件肯定是正确的  
 
+### 安装中文拼音输入法
+在Discover里搜索"Pinyin"安装即可(就是ibus-pinyin)，重启或重新登陆生效  
+默认只启用了英语，可以在设置里添加拼音  
+默认的输入法切换快捷键是"Super+空格"(Windows上的Super是"田"字键)，之后可以用Shift键切换中英文  
+
 
 ---
 2021/5/15  
