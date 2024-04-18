@@ -1,5 +1,11 @@
 # 一个Dockerfile示例
 
+官方文档: https://docs.docker.com/reference/dockerfile/  
+
+
+文件名一般是 Dockerfile  
+
+文件内容：  
 ```dockerfile
 # MinerDetect
 
