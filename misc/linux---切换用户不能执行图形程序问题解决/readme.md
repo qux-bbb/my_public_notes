@@ -1,5 +1,7 @@
 # linux---切换用户不能执行图形程序问题解决
 
+keywords: vscode 打不开 图形界面  
+
 使用su命令切换到其他用户，执行图形程序，会报如下错误：  
 ```r
 alice@alice-machine:~$ sudo su bob
