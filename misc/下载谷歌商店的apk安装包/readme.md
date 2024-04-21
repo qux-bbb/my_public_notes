@@ -11,6 +11,8 @@ keywords: googleplay twitter
 下载的xapk可以解压，拿对应的apk使用，手机一般都是armabi-v7  
 下载的apk不保证是原版，可以做测试使用  
 
+吐槽一下，apkpure的广告太多了  
+
 原链接: https://zhuanlan.zhihu.com/p/60045176  
 
 
