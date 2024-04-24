@@ -17,7 +17,7 @@ from LibcSearcher import LibcSearcher
 
 exe = ELF("ret2libc3")
 context.binary = exe
-if args.DEBUG:
+if args.D:
     context.log_level = "DEBUG"
 else:
     context.log_level = "INFO"
