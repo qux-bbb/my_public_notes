@@ -6,8 +6,18 @@
 ## arch
 官网: https://archlinux.org/  
 
-安装有点复杂，现在有一个`archinstall`可以自己配一些安装选项然后自动安装，不过虚拟机还不能用。  
-暂时不体验了。  
+手动安装有点复杂，现在有一个`archinstall`可以自己配置一些安装选项然后自动安装。  
+执行archinstall命令后，关键的选项如下：  
+```r
+Profile: Desktop Kde
+Audio: Pipewire
+Network configuration: Use NetworkManager
+```
+
+VirtualBox装完arch之后需要设置以解决登陆后黑屏问题：  
+设置 -> 显示 -> 屏幕 -> 显卡控制器 -> 扩展特性，勾选"启用3D加速"  
+也可以把显卡控制器切换成"VBoxSVGA"  
+https://bbs.archlinux.org/viewtopic.php?id=293824  
 
 
 ## kubuntu
