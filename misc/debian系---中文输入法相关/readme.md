@@ -3,12 +3,11 @@
 安装中文拼音输入法：（随便选一种就好了）  
 1.  
 ```r
-apt-get install ibus ibus-pinyin
+sudo apt-get install ibus ibus-pinyin
 ```
 2.  
 ```r
-apt-get install fcitx
-apt-get install fcitx-googlepinyin
+suodo apt-get install fcitx fcitx-googlepinyin
 ```
 
 感觉第1种要好用一点  
