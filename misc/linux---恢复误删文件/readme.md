@@ -1,5 +1,7 @@
 # linux---恢复误删文件
 
+keywords: 删除文件  
+
 基本思路是先把硬盘断开(umount或者直接关机)，然后使用工具尝试提取文件。  
 
 提取文件工具 Ext4magic https://ext4magic.sourceforge.net/ext4magic_en.html  
