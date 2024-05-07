@@ -11,6 +11,7 @@ E:\$Extend\$RmMetadata\$Txf:$I30:$INDEX_ALLOCATION
 ```
 
 在移动硬盘鼠标右键查看属性，取消勾选"除了文件属性外，还允许索引此驱动器上文件的内容"  
+关闭所有文件管理器  
 
 还无法移除时，使用PowerToys里的File Locksmith工具看是否有文件占用  
 
