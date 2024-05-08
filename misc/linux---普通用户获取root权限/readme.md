@@ -1,4 +1,4 @@
-# linux---普通用户永久获取root权限
+# linux---普通用户获取root权限
 
 keywords: 获取sudo权限  
 
