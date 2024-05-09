@@ -15,8 +15,8 @@ https://datalake.abuse.ch/malware-bazaar/hourly/
 https://thezoo.morirt.com/  
 
 ## vx-underground.org
-恶意样本库，可以下载md5文件进行查询，使用种子文件下载样本  
-https://vx-underground.org/samples.html  
+可以下一些样本，改版了不太好用  
+https://vx-underground.org/  
 
 这里有一些恶意软件的源代码  
 https://github.com/vxunderground/MalwareSourceCode  
