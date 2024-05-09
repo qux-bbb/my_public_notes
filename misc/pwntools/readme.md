@@ -168,5 +168,11 @@ get_shell = ELF('./challenge-binary').sym['getshell']
 flat(['a' * 0x70, pop_eax_ret_addr, 0xb, pop_edx_ecx_ebx_ret_addr, 0, 0, bin_sh_addr, int_addr])
 ```
 
+### 接收数据换行问题
+对于recvuntil、sendlineafter这样的需要接收到指定数据再执行后续操作的函数，  
+如果想接收的数据没有换行，可能会因为接收不到数据而卡死  
+如: https://github.com/ctfs/write-ups-2014/tree/master/hack-lu-ctf-2014/oreo  
 
+
+---
 2017/9/2  
