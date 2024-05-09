@@ -36,3 +36,7 @@ x64dbg32位加载update.dll，查看.text段内存，我这里起始地址是0x0
 1. 在0x00231000下内存执行断点
 2. 在VirtualProtect下断点，执行断下后，发现VirtualProtect操作的内存段以0x00231000开头时，Ctrl+F9执行完VirtualProtect，重新在0x00231000下内存执行断点
 3. 触发内存执行断点后，程序就会停在OEP的位置，保存脱壳后的dll进行分析即可
+
+
+---
+2024/5/9  
