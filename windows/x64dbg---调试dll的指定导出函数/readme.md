@@ -6,7 +6,7 @@ rundll32 hello.dll,runme
 ```
 
 根据这个思路，我们从rundll32开始调试就好了  
-1. x64dbg打开rundll32.exe
+1. x64dbg打开"C:\Windows\System32\rundll32.exe"
 2. 文件->改变命令行，补充dll路径和导出函数名
 3. 选项->选项->事件(当以下事件发生时暂停:)，勾选"用户DLL入口"
 
