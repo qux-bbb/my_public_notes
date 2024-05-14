@@ -1,5 +1,7 @@
 # 构建live镜像相关
 
+keywords: 创建iso 自定义iso  
+
 在Debian12下构建成功  
 
 
