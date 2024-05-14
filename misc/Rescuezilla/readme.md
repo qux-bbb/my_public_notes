@@ -6,5 +6,7 @@ Rescuezilla是一个易于使用的磁盘复制(克隆)应用，和Clonezilla完
 
 github地址: https://github.com/rescuezilla/rescuezilla  
 
+信息来源: https://www.bilibili.com/video/BV1Py411e7pc  
+
 
 2024/5/14  
