@@ -13,6 +13,8 @@ rundll32 hello.dll,runme
 运行到要调试的dll入口时，切换到"符号"窗口，选择要调试的dll，在相应的导出函数下断点，  
 继续运行即可在指定的导出函数开始处断下  
 
+如果调试的dll要访问额外的文件，注意当前文件夹是rundll32.exe所在的文件夹  
+
 
 原链接: https://blog.securitybreak.io/reverse-engineering-tip-analyzing-a-dll-in-x64dbg-b3005d516049  
 
