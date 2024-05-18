@@ -3,6 +3,7 @@
 XVolkolak可用于检测和脱壳。  
 
 发布站点: https://horsicq.github.io/#xvolkolak  
+下载压缩包名称示例: xvlk_win32_public_0.22.zip  
 
 支持以下壳和其他可能的壳：  
 ```r
