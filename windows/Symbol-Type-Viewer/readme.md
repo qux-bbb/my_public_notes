@@ -3,7 +3,7 @@
 keywords: pdb  
 
 Symbol Type Viewer是一个可以下载和查看符号的工具，还没用过，先记一下。  
-不是开源的，而且很老了。  
+不是开源的，而且很老了，C#写的。  
 
 官方下载: https://www.laboskopia.com/php/outils.php  
 某人github下载: https://github.com/send010/SymbolTypeViewer_HanHua  
