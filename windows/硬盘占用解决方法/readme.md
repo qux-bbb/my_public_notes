@@ -2,6 +2,8 @@
 
 keywords: U盘 移动硬盘 文件 占用  
 
+只是记一下相关信息，还没找到彻底解决的方法  
+
 移除移动硬盘时弹出消息显示以下文件被占用：  
 ```r
 E:\$Extend\$RmMetadata\$TxfLog\$TxfLog.blf
