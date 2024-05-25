@@ -5,7 +5,7 @@
 
 安装frida  
 ```r
-$ pip install frida-tools
+pip install frida-tools
 ```
 
 在这里下载合适的frida-server: [releases page](https://github.com/frida/frida/releases)  
@@ -13,20 +13,20 @@ $ pip install frida-tools
 
 在设备运行frida-server  
 ```r
-$ adb root # might be required
-$ adb push frida-server /data/local/tmp/ 
-$ adb shell "chmod 755 /data/local/tmp/frida-server"
-$ adb shell "/data/local/tmp/frida-server &"
+adb root # might be required
+adb push frida-server /data/local/tmp/ 
+adb shell "chmod 755 /data/local/tmp/frida-server"
+adb shell "/data/local/tmp/frida-server &"
 ```
 
 确保可以看到设备  
 ```r
-$ adb devices -l
+adb devices -l
 ```
 
 列出当前进程  
 ```r
-$ frida-ps -U
+frida-ps -U
 ```
 
 监控某个应用  
