@@ -1,19 +1,19 @@
 # frida
 
 ## 简单信息
-官网：  
-https://frida.re/  
+官网: https://frida.re/  
+github地址: https://github.com/frida/frida  
 
 轻量级的hook框架，python和js结合  
 
 安装：  
-```
+```r
 pip install frida-tools
 ```
 
 ## 附加进程记录api
 使用frida-trace附加目标进程记录一些api调用：  
-```
+```r
 frida-trace -i "CreateFileW" notepad.exe
 ```
 
