@@ -26,15 +26,29 @@ adb devices -l
 
 列出当前进程  
 ```r
+# -U, --usb             connect to USB device
 frida-ps -U
 ```
 
 监控某个应用  
 ```r
+# -U, --usb             connect to USB device
+# -i FUNCTION, --include FUNCTION
+#                       include [MODULE!]FUNCTION
 frida-trace -U -i open com.google.android.calendar
 ```
 
 打开日历就能看到一些操作记录  
+
+
+## 一些常用命令
+```r
+# 创建新进程
+frida -U -l hook.js -f 程序名称
+
+# 附加到进程
+frida -U -l hook.js 进程名
+```
 
 
 ## 实例
