@@ -24,7 +24,7 @@ adb shell "/data/local/tmp/frida-server &"
 adb devices -l
 ```
 
-列出当前进程  
+列出进程  
 ```r
 # -U, --usb             connect to USB device
 frida-ps -U
@@ -43,6 +43,14 @@ frida-trace -U -i open com.google.android.calendar
 
 ## 一些常用命令
 ```r
+# 列出进程，只显示应用
+# -a, --applications    list only applications
+frida-ps -U -a
+
+# 列出安装的应用，包含未运行的
+# -i, --installed       include all installed applications, 必须和-a一起用
+frida-ps -U -a -i
+
 # 创建新进程
 frida -U -l hook.js -f 程序名称
 
