@@ -30,6 +30,7 @@ setImmediate(main);
 
 setImmediate是为了防止超时  
 
+api地址: https://frida.re/docs/javascript-api/  
 
 内容来源: https://www.52pojie.cn/thread-1823118-1-1.html  
 
