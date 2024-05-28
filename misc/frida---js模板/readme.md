@@ -34,5 +34,8 @@ api地址: https://frida.re/docs/javascript-api/
 
 内容来源: https://www.52pojie.cn/thread-1823118-1-1.html  
 
+使用该仓库写typescript代码可以自动补全，方便写脚本  
+https://github.com/oleavr/frida-agent-example  
+
 
 2024/5/26  
