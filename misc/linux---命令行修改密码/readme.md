@@ -2,7 +2,7 @@
 
 ```r
 # 修改自己的密码，之后按提示输入就好了
-password
+passwd
 
 # 修改test用户的密码
 passwd test
