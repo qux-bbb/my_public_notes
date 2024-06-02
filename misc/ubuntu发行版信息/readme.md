@@ -1,6 +1,6 @@
 # ubuntu发行版信息
 
-keywords: ubuntu 发行 版本  
+keywords: ubuntu 发行 版本 名称 别名 源  
 
 https://wiki.ubuntu.com/Releases  
 
@@ -13,6 +13,7 @@ https://wiki.ubuntu.com/Releases
 | Ubuntu 18 | Bionic Beaver   |
 | Ubuntu 20 | Focal Fossa     |
 | Ubuntu 22 | Jammy Jellyfish |
+| Ubuntu 24 | Noble Numbat    |
 
 代号的第一个单词会用在源里。  
 
