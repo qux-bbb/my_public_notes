@@ -28,6 +28,7 @@ https://github.com/gorhill/uBlock
 
 **Wappalyzer**  
 分析搭建网站使用技术  
+https://www.wappalyzer.com/apps/  
 
 
 ## 谷歌
