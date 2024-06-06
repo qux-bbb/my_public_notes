@@ -1,5 +1,7 @@
 # ubuntu20服务器---设置静态ip
 
+keywords: 配置ip 设置ip  
+
 在 `/etc/netplan` 下找到类似这样的yaml文件：  
 ```r
 /etc/netplan/99_config.yaml
