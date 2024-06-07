@@ -12,7 +12,7 @@ sudo apt install lua5.3
 sudo apt install luarocks
 ```
 
-简单用法：  
+简单写法：  
 ```lua
 -- 单行注释
 --[[
@@ -37,6 +37,11 @@ print(mytable)
 function sayhello(name)
     print("hello, "..name)
 end
+```
+
+执行：  
+```bash
+lua ./test.lua
 ```
 
 参考链接: https://zhuanlan.zhihu.com/p/582750739  
