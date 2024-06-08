@@ -2,11 +2,11 @@
 
 keywords: drawio draw.io diagrams  
 
-开源绘制流程图软件  
-https://github.com/jgraph/drawio  
+drawio是一个开源的绘制流程图的软件  
 
-这里是桌面版  
-https://github.com/jgraph/drawio-desktop  
+官网: https://www.drawio.com/  
+github地址: https://github.com/jgraph/drawio  
+桌面版github地址: https://github.com/jgraph/drawio-desktop  
 
 在箭头上双击可以添加文字(不要在蓝点上双击就可以了)  
 
