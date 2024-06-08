@@ -1,5 +1,7 @@
 # 调整图片尺寸
 
+keywords: 照片调整尺寸  
+
 可以使用ImageMagick调整图片尺寸。  
 
 ```sh
