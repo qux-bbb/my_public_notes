@@ -1,6 +1,7 @@
 # frida---typescript
 
 如果要使用JavaScript API，官方建议使用TypeScript，这样可以使用代码完成、类型检查、行内文档、重构工具等功能。  
+还不会用，只是简单记一下。  
 
 安装好frida环境后，按该仓库的步骤配置TypeScript环境：  
 https://github.com/oleavr/frida-agent-example  
