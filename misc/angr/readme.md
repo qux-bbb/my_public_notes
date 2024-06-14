@@ -5,6 +5,8 @@ angr is a python framework for analyzing binaries. It combines both static and d
 angr 是一个用于分析二进制文件的 python 框架。它结合了静态和动态符号（"concolic"）分析，适用于各种任务。  
 
 官网：http://angr.io/  
+github地址: https://github.com/angr/angr  
+图形化界面地址(可以当反编译工具用): https://github.com/angr/angr-management  
 
 从这里开始看 angr 的方法：  
 https://docs.angr.io/core-concepts/toplevel  
