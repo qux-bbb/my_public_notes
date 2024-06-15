@@ -5,7 +5,8 @@
 虽然不太准确，但可以这么理解：  
 32 位系统的系统调用指令为 `int 80`，64 位系统的系统调用指令为 `syscall`  
 
-具体看这个文件: linux系统调用表.xlsx  
+具体看这个文件: [linux系统调用表.xlsx](./files/linux系统调用表.xlsx)  
+还有这个网站: https://syscall.sh/  
 
 
 参考链接：  
