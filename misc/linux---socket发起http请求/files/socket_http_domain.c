@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <netdb.h>
 #include <sys/socket.h>
+#include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h>
 #include <string.h>
@@ -13,7 +14,7 @@ int main(int argc, char const *argv[])
 	struct hostent* host;
 	struct sockaddr_in serv_addr;
 
-	if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
+	if ((sock = socket(AF_INET, SOCK_STREAM, IPPROTO_IP)) < 0)
 	{
 		printf("\n Socket creation error \n");
 		return -1;
