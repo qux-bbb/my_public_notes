@@ -2,6 +2,7 @@
 
 ImHex是一个开源的多平台十六进制编辑器，可以解析PE/ELF等类型文件，和010Editor功能类似，支持Windows、MacOS、Linux。  
 
+发音: /ˈɪmhɛks/ https://itinerarium.github.io/phoneme-synthesis/?w=/%27%CB%88%C9%AAmh%C9%9Bks/  
 Im 是因为用了 https://github.com/ocornut/imgui, immediate, 即时渲染的意思。  
 
 官网地址: https://imhex.werwolv.net/  
