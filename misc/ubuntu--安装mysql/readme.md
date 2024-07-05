@@ -26,5 +26,8 @@ create user 'your_name'@'localhost' identified by 'your_pass';
 grant all privileges on your_database.* to 'your_name'@'localhost';
 ```
 
+新版本的MySQL还需要修改配置才能远程访问  
+编辑 /etc/mysql/mysql.conf.d/mysqld.cnf, 将 `bind-address          = 127.0.0.1` 的 `127.0.0.1` 改为 `0.0.0.0`，重启mysql服务  
+
 
 2020/12/19  
