@@ -1,6 +1,6 @@
 # Fort
 
-Fort是Windows下一个开源的防火墙程序，能以程序路径、文件夹路径阻止程序联网，可以统计流量。  
+Fort是一个开源的Windows平台的防火墙程序，能以程序路径、文件夹路径阻止程序联网，可以统计流量。  
 
 github地址: https://github.com/tnodir/fort  
 
