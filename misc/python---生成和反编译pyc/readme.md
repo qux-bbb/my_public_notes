@@ -25,6 +25,14 @@ uncompyle6 a.pyc
 ### pycdc
 项目地址: https://github.com/zrax/pycdc  
 需要自己编译，如果在linux下编译，需要安装cmake、g++  
+编译安装示例：  
+```bash
+sudo apt install cmake g++
+cd pycdc
+cmake .
+make
+sudo make install
+```
 
 
 ## opcode
