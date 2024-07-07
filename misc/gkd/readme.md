@@ -9,8 +9,11 @@ github介绍功能：
 - 点击跳过任意开屏广告/点击关闭应用内部任意弹窗广告, 如关闭百度贴吧帖子广告卡片/知乎回答底部推荐广告卡片
 - 一些快捷操作, 如微信电脑登录自动同意/微信扫描登录自动同意/微信自动领取红包
 
-
 类似李跳跳的手机自动点击工具，而且是开源的，很好用。  
+
+官方不维护订阅，有一些第三方订阅：  
+https://github.com/topics/gkd-subscription  
+我用的AIsouler订阅: https://github.com/AIsouler/GKD_subscription  
 
 
 信息来源: https://www.bilibili.com/video/BV1X94y1E7k8  
