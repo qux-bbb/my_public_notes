@@ -1,5 +1,7 @@
 # python---生成pyd文件
 
+pyd一方面可以加快执行速度，另一方面可以保护关键代码逻辑  
+
 安装 Cython  
 ```r
 pip install cython
