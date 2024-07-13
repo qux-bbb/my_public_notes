@@ -1,6 +1,6 @@
 # ipv4特殊用途地址
 
-keywords: 非普通ip 非公网ip  
+keywords: 非普通ip 非公网ip 内网ip  
 
 ```r
 0.0.0.0/8                       "This network"
