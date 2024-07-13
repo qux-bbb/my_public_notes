@@ -34,7 +34,7 @@ e = long(pub.e)
 # p = 28596...
 # q = 30400...
 
-if not p an not q:
+if not p or not q:
     print 'Need get p,q'
     exit(0)
 
