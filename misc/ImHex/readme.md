@@ -36,7 +36,7 @@ struct THE_FILE
     SECTION section[(sizeof($)-sizeof(head)-sizeof(info))/16];
 };
 
-THE_FILE the_file @ 0x00;
+THE_FILE the_file @ 0;
 ```
 
 输出信息：  
