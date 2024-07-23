@@ -34,6 +34,8 @@ make
 sudo make install
 ```
 
+注意：如果有元素互换，反编译逻辑可能会出错，需要特别注意  
+
 
 ## opcode
 C:\Python27\Lib\opcode.py  
