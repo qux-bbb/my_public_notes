@@ -8,12 +8,12 @@
 ]]--
 
 -- 变量声明
-hello = 'hello'  -- 也可以是双引号 "hello"
-print(hello)
-len = string.len(hello)
-print(len)
-bar = 1 + 2
-print(bar)
+the_str = 'hello'  -- 也可以是双引号 "hello"
+print(the_str)
+the_len = string.len(the_str)
+print(the_len)
+the_num = 1 + 2
+print(the_num)
 
 -- 没有数组，只有table
 mytable = {}
@@ -25,6 +25,8 @@ print(mytable)
 function sayhello(name)
     print("hello, "..name)
 end
+
+sayhello("alice")
 ```
 
 
