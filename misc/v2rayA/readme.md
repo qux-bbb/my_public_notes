@@ -5,6 +5,8 @@ Qv2ray不维护了，发现了v2rayA。
 
 官网: https://v2raya.org/  
 
+不要费心思去设置别人不知道的密码，因为是本地服务，不重要，容易记就可以。
+
 
 ## Windows安装
 在这里下载名称类似 installer_windows_inno_x64_*.exe，执行即可按步骤安装  
