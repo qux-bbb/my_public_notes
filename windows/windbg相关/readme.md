@@ -9,6 +9,16 @@ https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/
 遇到"解析应用包时出错"可参考该链接解决  
 https://github.com/microsoftfeedback/WinDbg-Feedback/issues/159  
 
+离线安装WinDbg
+```r
+https://aka.ms/windbg/download
+得到windbg.appinstaller(如果403，换个地区，多试几次)
+使用vscode打开windbg.appinstaller，找到windbg.msixbundle相关的url，下载得到windbg.msixbundle
+离线正常安装windbg.msixbundle即可
+如果报错"此应用包不支持通过应用安装程序安装，因为它使用了某些受限制的功能"，在powershell下使用如下命令安装：
+Add-AppxPackage -Path .\windbg.msixbundle
+```
+
 - - - -
 ## 手册
 debugger.chm  
