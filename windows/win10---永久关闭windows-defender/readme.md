@@ -1,5 +1,8 @@
 # win10---永久关闭windows defender
 
+自己操作比较麻烦，修改注册表项也有点多，直接用 Defender Control 吧，简单快捷。
+
+---
 修改安全中心设置配合修改组策略配置可以永久关闭windows defender  
 
 
