@@ -1,8 +1,8 @@
 # windbg相关
 
-WinDbg 是包含在 Windows 调试工具中的内核模式和用户模式调试器。  
+WinDbg是Windows官方提供的内核模式和用户模式调试器。  
 
-- - - -
+
 ## 安装
 安装WDK时会默认安装，不过这里的windbg界面更现代一点  
 https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/  
@@ -19,24 +19,26 @@ https://aka.ms/windbg/download
 Add-AppxPackage -Path .\windbg.msixbundle
 ```
 
-- - - -
+
 ## 手册
 debugger.chm  
 windbg.chm  
 用everthing搜一下就好了  
 也可以打开windbg，F1 或者点帮助  
   
-手册一开始的 `Getting Started with Windows Debugging` 真的很好  
+手册一开始的 `Getting Started with Windows Debugging` 很友好  
 
-- - - -
+官方学习资料: https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg  
+
+
 ## 简单的快捷键
 F5: Go  
 F11 or F8: Step Into  
 F10: Step Over  
 Ctrl+F10 or F7: Run to Cursor  
 
-- - - -
-## WinDbg基本指令(来源: 逆向工程)
+
+## WinDbg基本指令(来源: 逆向工程核心原理)
 
 | 指 令 | 说 明             | 应 用                                          |
 | ----- | ----------------- | ---------------------------------------------- |
@@ -67,7 +69,7 @@ Ctrl+F10 or F7: Run to Cursor
 
 以'!'开头的命令为扩展命令  
 
-- - - -
+
 ## 实践
 ```r
 # 输出ecx指向地址处的ascii字符串
@@ -143,7 +145,7 @@ dt _TEB
 # 清屏
 .cls
 ```
-- - - -
+
 ## 搜索内存举例
 ```
 # 下面3个都是搜索 "Hello"
@@ -153,7 +155,7 @@ dt _TEB
 ```
 从 0012ff40 开始，搜索 20 行，搜的目标是 ascii 形式的 "Hello"  
 
-- - - -
+
 ## 设置symbol file path
 File-->Settings-->Debugging settings-->Symbol path  
 ```sh
@@ -162,14 +164,11 @@ C:\Symbols;SRV*C:\Symbols*http://msdl.microsoft.com/downloads/symbols
 不行的话，可以试试 https  
 如果不想让windbg去网站获取pdb文件，直接把path设成本地的文件夹就好了（因为有时候太卡了，）  
 
-- - - -
+
 ## 找不到依赖的文件
 可以在打开程序时设置 `Start directory`  
 
-- - - -
-## 官方学习资料
-https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/getting-started-with-windbg  
 
-- - - -
+---
 2018/9/29  
 2021/6/2  
