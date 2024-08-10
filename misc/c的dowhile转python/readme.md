@@ -1,6 +1,6 @@
 # c的dowhile转python
 
-python没有dowhile，可以用WhileTrue模拟，保持结构的一致性，避免转换出错。
+python没有dowhile，可以用whileTrue模拟，保持结构的一致性，避免转换出错。
 
 C语言代码：
 ```c
