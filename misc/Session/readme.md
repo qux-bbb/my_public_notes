@@ -9,6 +9,7 @@ Session是一款端到端加密的消息发送工具，可最大限度地减少�
 
 官网: https://getsession.org/  
 github地址: https://github.com/oxen-io  
+可以帮忙翻译的地址: https://crowdin.com/project/session-crossplatform-strings  
 
 我的安装更新方式：  
 ```r
