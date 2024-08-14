@@ -1,4 +1,4 @@
-# CyberChef 
+# CyberChef
 
 https://github.com/gchq/CyberChef  
 
