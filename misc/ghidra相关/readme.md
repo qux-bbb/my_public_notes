@@ -70,6 +70,11 @@ https://github.com/0x6d696368/ghidra_scripts/blob/master/SimpleStackStrings.md
 https://github.com/0x6d696368/ghidra_scripts/blob/master/SearchSimpleStackStrings.md  
 
 
+## 中文字符串
+在数据开头，鼠标右键 -> Data -> Default Settings.../Settings... -> Charset，改为"GBK"或其他合适的编码  
+Default Settings 会改所有默认的设置，Settings 只改当前数据的设置  
+
+
 ## 字体调整
 `tool options`，在下方的 filter 搜索 `font`，地方比较多，所有都改为 Consola 11  
 也可以创建新的Theme，导出之后修改font相关配置并保存，再导入修改后的Theme，还是有点麻烦  
