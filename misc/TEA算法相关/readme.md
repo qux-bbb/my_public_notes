@@ -63,44 +63,111 @@ void decipher(unsigned int num_rounds, uint32_t v[2], uint32_t const key[4]) {
 ## XXTEA
 XXTEA, Corrected Block TEA  
 ```c
-#include <stdint.h>
+#include <stdio.h>  
+#include <stdlib.h>  
+#include <stdint.h>  
+#include <string.h>  
+
 #define DELTA 0x9e3779b9
 #define MX (((z>>5^y<<2) + (y>>3^z<<4)) ^ ((sum^y) + (key[(p&3)^e] ^ z)))
 
-void btea(uint32_t *v, int n, uint32_t const key[4]) {
+void btea(uint32_t* v, int n, uint32_t const key[4]) {
     uint32_t y, z, sum;
     unsigned p, rounds, e;
     if (n > 1) {          /* Coding Part */
-        rounds = 6 + 52/n;
+        rounds = 6 + 52 / n;
         sum = 0;
-        z = v[n-1];
+        z = v[n - 1];
         do {
             sum += DELTA;
             e = (sum >> 2) & 3;
-            for (p=0; p<n-1; p++) {
-                y = v[p+1]; 
+            for (p = 0; p < n - 1; p++) {
+                y = v[p + 1];
                 z = v[p] += MX;
             }
             y = v[0];
-            z = v[n-1] += MX;
+            z = v[n - 1] += MX;
         } while (--rounds);
-    } else if (n < -1) {  /* Decoding Part */
+    }
+    else if (n < -1) {  /* Decoding Part */
         n = -n;
-        rounds = 6 + 52/n;
-        sum = rounds*DELTA;
+        rounds = 6 + 52 / n;
+        sum = rounds * DELTA;
         y = v[0];
         do {
             e = (sum >> 2) & 3;
-            for (p=n-1; p>0; p--) {
-                z = v[p-1];
+            for (p = n - 1; p > 0; p--) {
+                z = v[p - 1];
                 y = v[p] -= MX;
             }
-            z = v[n-1];
+            z = v[n - 1];
             y = v[0] -= MX;
             sum -= DELTA;
         } while (--rounds);
     }
 }
+
+int main() {
+    char text[] = "Improve the world!";
+    char key[] = "Just do it.";
+
+    // 1. 新分配空间，用空字节填充text至4的倍数，最后使用4字节保存明文长度
+    int text_len = strlen(text);
+    int text_size = (text_len + 3) / 4 * 4 + 4;
+    char* padded_text = (char*)malloc(text_size);
+    memset(padded_text, 0, text_size);
+    memcpy(padded_text, text, text_len);
+    *(uint32_t*)(padded_text + text_size - 4) = text_len;
+
+    // 2. 新分配空间，用空字节填充key为16个字节
+    int key_len = strlen(key);
+    //int key_size = (key_len + 3) / 4 * 4;
+    int key_size = 16;
+    char* padded_key = (char*)malloc(key_size);
+    memset(padded_key, 0, key_size);
+    memcpy(padded_key, key, key_len);
+
+    // 3. 加密，输出加密后的内容
+    uint32_t* text_uint32 = (uint32_t*)padded_text;
+    uint32_t* key_uint32 = (uint32_t*)padded_key;
+    btea(text_uint32, text_size / 4, key_uint32);
+    printf("encrypted:\n");
+    for (int i = 0; i < text_size / 4; i++) {
+        printf("0x%08x,", text_uint32[i]);
+    }
+    printf("\n");
+    for (int i = 0; i < text_size / 4; i++) {
+        unsigned char bytes[4];
+        memcpy(bytes, &text_uint32[i], 4); // 将uint32_t值复制到字节数组中
+        for (int j = 0; j < 4; j++) {
+            printf("%02x", bytes[j]);
+            if (j < 3) {
+                printf(" "); // 在字节之间添加空格，除了最后一个字节
+            }
+        }
+        if (i < text_size - 1) {
+            printf(" "); // 在每个uint32_t之间添加空格，除了最后一个
+        }
+    }
+    printf("\n");
+
+    // 4. 解密，输出解密后的内容
+    btea(text_uint32, -text_size / 4, key_uint32);
+    int original_len = *(uint32_t*)(text_uint32 + text_size / 4 - 1);
+    printf("decrypted:\n%.*s\n", original_len, text_uint32);
+
+    free(padded_text);
+    free(padded_key);
+
+    return 0;
+}
+/*
+encrypted:
+0x90f08367,0x9c5c4986,0x8f86feb4,0x2b85edd6,0x67b79425,0xdaf04cd4,
+67 83 f0 90 86 49 5c 9c b4 fe 86 8f d6 ed 85 2b 25 94 b7 67 d4 4c f0 da
+decrypted:
+Improve the world!
+*/
 ```
 
 ## 其它
