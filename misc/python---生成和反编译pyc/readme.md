@@ -27,7 +27,9 @@ uncompyle6 a.pyc
 需要自己编译，如果在linux下编译，需要安装cmake、g++  
 编译安装示例：  
 ```bash
-sudo apt install cmake g++
+sudo apt update
+sudo apt install cmake g++ git
+git clone https://github.com/zrax/pycdc.git
 cd pycdc
 cmake .
 make
