@@ -14,10 +14,11 @@ python -m a.py
 
 ### uncompyle6
 项目地址: https://github.com/rocky/python-uncompyle6  
-pip安装  
-`pip install uncompyle6`  
-使用  
 ```r
+# pip安装  
+pip install uncompyle6
+
+# 简单使用  
 # 可使用 -o 选项指定反编译结果的文件名
 uncompyle6 a.pyc
 ```
