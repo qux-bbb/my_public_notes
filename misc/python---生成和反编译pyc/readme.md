@@ -22,6 +22,17 @@ pip安装
 uncompyle6 a.pyc
 ```
 
+### decompyle3
+项目地址: https://github.com/rocky/python-decompile3/  
+根据uncompyle6重构的工具，解决了一些问题，适用于3.7-3.8的python字节码反编译  
+```r
+# 安装
+pip install decompyle3
+
+# 简单使用
+decompyle3 a.pyc
+```
+
 ### pycdc
 项目地址: https://github.com/zrax/pycdc  
 需要自己编译，如果在linux下编译，需要安装cmake、g++  
