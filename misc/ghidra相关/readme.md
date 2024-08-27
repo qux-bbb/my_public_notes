@@ -108,6 +108,15 @@ File -> Export Program..., Format选择"Original File"，可以保存修改后�
 如果想保存原始程序，可以在"Options..."里取消勾选"Export User Byte Modifications"  
 
 
+## 将bat固定在开始屏幕
+Windows下可以把bat固定在开始屏幕，方便打开  
+ghidraRun.bat右键发送到桌面快捷方式，可以根据自己喜好修改名称，如"ghidraRun"，将快捷方式剪切到以下文件夹：  
+```r
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+```
+Win键，搜索"ghidraRun"，右键选择 `固定到“开始”屏幕`  
+
+
 ## 官方CheatSheet
 https://ghidra-sre.org/CheatSheet.html  
 
