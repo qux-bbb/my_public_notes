@@ -100,6 +100,14 @@ Edit -> Tool Options... -> Key Bindings
 选择部分数据，右键 -> Copy Special... 然后可以选择不同格式  
 
 
+## 修改并导出程序
+在"Listing"窗口，指令上右键选择"Patch Instrucion"可以修改指令，数据上右键选择"Patch Data"可以修改数据  
+在"Bytes"窗口，点击右上角的铅笔图标可以切换允许编辑字节  
+
+File -> Export Program..., Format选择"Original File"，可以保存修改后的程序  
+如果想保存原始程序，可以在"Options..."里取消勾选"Export User Byte Modifications"  
+
+
 ## 官方CheatSheet
 https://ghidra-sre.org/CheatSheet.html  
 
