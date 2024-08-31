@@ -1,5 +1,7 @@
 # OpenArk
 
+现在只更新可执行程序，2021年就不更新源代码了。  
+
 OpenArk是一个针对Windows的开源反rookit（ARK）工具。Ark是Anti-Rootkit的缩写，它的目标是逆向/编程助手，用户还可以发现操作系统中隐藏的恶意软件。  
 
 官网: https://openark.blackint3.com/  
