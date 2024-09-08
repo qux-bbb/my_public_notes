@@ -19,4 +19,23 @@ https://github.com/topics/gkd-subscription
 信息来源: https://www.bilibili.com/video/BV1X94y1E7k8  
 
 
+## 自己写订阅
+
+写订阅前先把官方文档通读一遍，  
+https://gkd.li/guide/what-is-gkd  
+
+根据该仓库步骤搭建环境、写规则  
+https://github.com/gkd-kit/subscription-template  
+
+大概过程是：  
+1. 搭建环境
+2. 获取广告相关快照
+3. 使用审查工具分析快照: https://i.gkd.li/
+4. 写规则
+5. 发布订阅
+
+写规则可以参考其他第三方订阅。  
+
+
+---
 2023/12/7  
