@@ -24,8 +24,10 @@ hello = 'hello'  -- 也可以是双引号 "hello"
 print(hello)
 len = string.len(hello)
 print(len)
-bar = 1 + 2
-print(bar)
+the_num = 1 + 2
+print(the_num)
+float_num = 3.14
+print(float_num)
 
 -- 没有数组，只有table
 mytable = {}
