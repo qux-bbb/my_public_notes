@@ -18,7 +18,7 @@ d: $e^{-1}  \mod (p-1)(q-1)$
 $c \equiv m^e \mod n$  
 
 **解密**  
-$e \equiv c^d \mod n$  
+$m \equiv c^d \mod n$  
 
 
 ## 图片版
