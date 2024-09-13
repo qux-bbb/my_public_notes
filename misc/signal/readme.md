@@ -1,5 +1,7 @@
 # signal
 
+keywords: 即时通讯  
+
 和telegram类似的工具，斯诺登在用。  
 
 官网：  

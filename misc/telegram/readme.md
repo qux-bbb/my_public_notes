@@ -1,4 +1,7 @@
 ## 简介
+
+keywords: 即时通讯  
+
 telegram是一个聊天应用，默认不启用端到端加密，可手动开始一个端到端加密会话。  
 官网: https://telegram.org/  
 
