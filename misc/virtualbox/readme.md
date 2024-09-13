@@ -21,6 +21,7 @@ svn co https://www.virtualbox.org/svn/vbox/trunk vbox
 注意: 管理->全局设定->代理，在这里设置的代理仅用于VirtualBox下载增强功能包、检查更新，和虚拟机的网络没有关系。  
 
 从6.0开始有了 `file manager`, 可以比较方便地在虚机和主机之间传文件。  
+从7.1.0开始有了 `Clipboard File Transfers`, 启用就可以在虚机和主机之间复制粘贴文件了。  
 
 ubuntu查看增强功能版本：  
 ```bash
