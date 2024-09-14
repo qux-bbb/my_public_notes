@@ -1,10 +1,9 @@
 # Ghidra---使用python脚本
 
-1. 下载脚本，放在一个文件夹里，如"D:\Ghidra_scripts"，建议是一个相对固定的文件夹，不要放在Ghidra目录下，删除旧版本时可能会被删掉
+1. 下载脚本，放在一个文件夹里，如"D:\Ghidra_scripts"，建议不要放在Ghidra目录下，删除旧版本时可能会被删掉
 2. Ghidra随便打开一个程序，即"CodeBrowser"窗口
-3. 点击 Window -> Script Manager, 打开"Script Manager"窗口
-4. 右键选择"Script Directories"，打开"Bundle Manager"窗口
-5. 右键选择"Add bundle(s)"，添加包含脚本的文件夹
+3. 点击 Window -> Bundle Manager, 打开"Bundle Manager"窗口
+4. 右键选择"Add bundle(s)"，添加包含脚本的文件夹
 
 示例文件夹如下：  
 ```r
@@ -28,6 +27,7 @@ D:/Ghidra_scripts/Ghidra_go_scripts
 D:/Ghidra_scripts/misc_scripts
 ```
 
+在"CodeBrowser"窗口点击 Window -> Script Manager, 打开"Script Manager"窗口  
 在"Script Manager"窗口搜索相关脚本，右键选择"Run Script"即可执行  
 如果脚本中包含"@menupath"，勾选脚本相应行最前面的可选框，就可以在相应菜单项执行脚本  
 还可以右键选择"Assign Key Binding"，给脚本设置快捷键  
