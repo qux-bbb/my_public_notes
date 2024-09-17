@@ -39,6 +39,8 @@ print(mytable)
 function sayhello(name)
     print("hello, "..name)
 end
+
+sayhello("Alice")
 ```
 
 执行：  
