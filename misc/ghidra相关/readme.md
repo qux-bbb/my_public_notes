@@ -76,8 +76,9 @@ Default Settings 会改所有默认的设置，Settings 只改当前数据的设
 
 
 ## 字体调整
-`tool options`，在下方的 filter 搜索 `font`，地方比较多，所有都改为 Consola 11  
+`tool options`，在下方的 filter 搜索 `font`，地方比较多，所有都改为 Consola  
 也可以创建新的Theme，导出之后修改font相关配置并保存，再导入修改后的Theme，还是有点麻烦  
+只改汇编界面和反编译界面吧，简单一点  
 
 
 ## 高亮同名变量
