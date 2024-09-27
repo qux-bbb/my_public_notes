@@ -29,6 +29,8 @@ Windows Registry Editor Version 5.00
 
 原链接：https://www.52pojie.cn/thread-377450-1-1.html  
 
+&&&&&&& 通过注册表禁用ASLR貌似对64位程序无效  
+
 
 ---
 2019/6/19  
