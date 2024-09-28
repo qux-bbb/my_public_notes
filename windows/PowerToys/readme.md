@@ -16,6 +16,7 @@ github地址: https://github.com/microsoft/PowerToys
 7. 定位光标(晃动鼠标)
 8. host图形化编辑工具
 9. 任意位置文本识别提取
+10. 唤醒(在无法禁用定时息屏锁屏时非常有用)
 
 一些快捷键：  
 ```r
