@@ -11,7 +11,7 @@ sudo apt install zip
 zip all.zip file1 file2
 
 # 将非空文件夹递归压缩到folder.zip中
-zip  -r folder.zip my_folder
+zip -r folder.zip my_folder
 
 # -e选项可以设置密码
 ```
@@ -33,5 +33,5 @@ unzip a.zip b_folder/c.txt
 
 解压时使用密码(直接unzip可根据提示输入密码，不建议使用-P选项)：  
 ```bash
-unzip  -r -P infected folder.zip my_folder
+unzip -r -P infected folder.zip my_folder
 ```
