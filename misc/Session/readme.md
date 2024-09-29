@@ -26,5 +26,7 @@ https://getsession.org/apk
 会打开github的release页面，是apk，我选择session-*-universal.apk，需要手动下载更新，F-Droid仓库更新比较慢而且删了一些功能
 ```
 
+新设备既可以创建新账号，也可以登陆已有的帐号，建议使用已有的账号。  
+
 
 2022/11/27  
