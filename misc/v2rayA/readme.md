@@ -32,6 +32,13 @@ sudo apt update
 sudo apt install v2raya v2ray ## 也可以使用 xray 包
 ```
 
+建议就用方法一安装，方法二手动安装deb包会出现下面的错误，还不知道怎么解决
+```r
+failed to connect: failed to connect: geoip.dat or geosite.dat file does not exists
+
+Get "https://github.com/v2rayA/dist-v2ray-rules-dat/raw/202410012212/geosite.dat": dial tcp: lookup github.com on 127.0.0.53:53: server misbehaving
+```
+
 启动 v2rayA / 设置 v2rayA 自动启动  
 ```r
 # 启动 v2rayA
