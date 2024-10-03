@@ -33,7 +33,25 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo docker run hello-world
 ```
 
-非root用户管理docker  
+安装出错和处理方法：  
+错误信息：  
+```r
+Get:5 https://download.docker.com/linux/ubuntu jammy InRelease [48.8 kB]  
+Err:5 https://download.docker.com/linux/ubuntu jammy InRelease
+  The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 7EA0A9C3F273FCD8
+Reading package lists... Done
+W: GPG error: https://download.docker.com/linux/ubuntu jammy InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 7EA0A9C3F273FCD8
+E: The repository 'https://download.docker.com/linux/ubuntu jammy InRelease' is not signed.
+N: Updating from such a repository can't be done securely, and is therefore disabled by default.
+N: See apt-secure(8) manpage for repository creation and user configuration details.
+```
+处理方法：  
+```bash
+# https://blog.csdn.net/llovewz/article/details/123567632
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7EA0A9C3F273FCD8
+```
+
+## 非root用户管理docker  
 https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user  
 ```r
 # Create the docker group.
