@@ -19,6 +19,8 @@ https://github.com/v2rayA/v2rayA/releases
 
 
 ## kubuntu安装
+参考链接：https://v2raya.org/docs/prologue/installation/debian/  
+
 安装v2raya  
 ```r
 # 添加公钥
@@ -32,7 +34,7 @@ sudo apt update
 sudo apt install v2raya v2ray ## 也可以使用 xray 包
 ```
 
-建议就用方法一安装，方法二手动安装deb包会出现下面的错误，还不知道怎么解决
+注意!!!：建议就用方法一安装，方法二手动安装deb包会出现下面的错误，还不知道怎么解决
 ```r
 failed to connect: failed to connect: geoip.dat or geosite.dat file does not exists
 
@@ -56,8 +58,6 @@ sudo systemctl stop v2raya
 sudo v2raya --reset-password
 sudo systemctl start v2raya
 ```
-
-参考链接：https://v2raya.org/docs/prologue/installation/debian/  
 
 
 ---
