@@ -38,8 +38,8 @@ https://marketplace.visualstudio.com/manage/publishers
 
 安装vsce（"Visual Studio Code Extensions"，一个打包发布管理扩展的工具），打包：  
 ```sh
+npm install -g @vscode/vsce
 cd myExtension
-npm install vsce
 vsce package
 ```
 会生成一个vsix结尾的文件  
