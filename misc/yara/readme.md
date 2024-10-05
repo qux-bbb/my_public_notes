@@ -3,6 +3,10 @@
 ## 简单信息
 yara，适用于恶意软件研究人员（及其他所有人）的模式匹配瑞士军刀。  
 
+名称由来(作者这么解释的)：  
+https://x.com/plusvic/status/778983467627479040  
+YARA is an ancronym for: YARA: Another Recursive Ancronym, or Yet Another Ridiculous Acronym. Pick your choice.  
+
 官网: https://virustotal.github.io/yara/  
 github地址: https://github.com/VirusTotal/yara/  
 文档地址: https://yara.readthedocs.io/en/stable/  
