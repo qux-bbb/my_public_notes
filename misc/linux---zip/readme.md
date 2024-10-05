@@ -5,7 +5,7 @@ ubuntu安装命令：
 sudo apt install zip
 ```  
 
-压缩文件：
+压缩文件：  
 ```bash 
 # 将file1、file2压缩到all.zip中
 zip all.zip file1 file2
