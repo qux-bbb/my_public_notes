@@ -1,5 +1,7 @@
 # PyTorch识别MNIST手写数字
 
+识别自己写的数字时效果不好，可能还需要一些预处理。  
+
 ## 脚本
 [pytorch_MNIST_recognition.py](./files/pytorch_MNIST_recognition.py)  
 
