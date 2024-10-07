@@ -18,6 +18,7 @@ go build -o hello -ldflags '-s -w' hello.go
 ## for IDA
 有好用的工具，可以都试试  
 都是下载好直接用IDA加载脚本就好了，不需要放在插件文件夹里  
+现在效果最好的是 go_parser  
 
 1. IDAGolangHelper  
 https://github.com/sibears/IDAGolangHelper  
@@ -62,4 +63,5 @@ https://cujo.com/reverse-engineering-go-binaries-with-ghidra/
 https://github.com/getCUJO/ThreatIntel/tree/master/Scripts/Ghidra  
 
 
+---
 2021/9/5  
