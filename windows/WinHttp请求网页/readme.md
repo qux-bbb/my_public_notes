@@ -1,6 +1,6 @@
 # WinHttp请求网页
 
-keywords: windows 网络请求 访问百度 c  
+keywords: windows 网络请求 访问百度 请求百度 c  
 
 ```cpp
 #pragma comment(lib,"winhttp.lib")

@@ -1,6 +1,6 @@
 # linux---socket发起http请求
 
-keywords: 网络请求 访问百度  
+keywords: 网络请求 访问百度 请求百度  
 
 如果把发送的内容改成单纯的数据，那就是tcp了  
 如果再把 SOCK_STREAM 换成 SOCK_DGRAM，那就是udp了  
