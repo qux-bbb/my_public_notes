@@ -17,6 +17,7 @@ github地址: https://github.com/microsoft/PowerToys
 8. host图形化编辑工具
 9. 任意位置文本识别提取
 10. 唤醒(在无法禁用定时息屏锁屏时非常有用)
+11. 前端显示(Always On Top 强制将指定窗口置顶)
 
 一些快捷键：  
 ```r
