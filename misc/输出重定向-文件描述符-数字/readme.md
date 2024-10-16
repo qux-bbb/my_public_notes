@@ -9,9 +9,14 @@ Bourne shell 使用0、1、2作为输出重定向的文件描述符。
 2 : stderr(standard error)
 ```
 
-举例：  
-ls 一个不存在的文件夹: `ls hello 2>errfile`  
-即可将错误信息输出到errfile  
+`echo morning > greet.txt`  
+这里的 `>` 其实是 `1>`, 表示标准输出重定向，`1` 可以省略  
+
+`ls dont_exist 2> errfile`  
+dont_exist 不存在，这里的 `2>` 表示标准错误重定向， `2` 不能省略  
+
+
+参考链接: https://pwn.college/linux-luminarium/piping/  
 
 
 2018/4/6  
