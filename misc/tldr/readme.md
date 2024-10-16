@@ -9,7 +9,7 @@ tldr---Too Long; Didn't Read
 
 ## Tealdeer
 Tealdeer是tldr的Rust实现，把tldr的文档都下载到本地，所以实际用的时候速度很快  
-网站: https://dbrgn.github.io/tealdeer  
+网站: https://tealdeer-rs.github.io/tealdeer/  
 github地址: https://github.com/dbrgn/tealdeer  
 因为Tealdeer和tldr使用时候的命令都是一样的，所以把tldr卸了，然后用cargo安装Tealdeer  
 ```bash
