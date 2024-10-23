@@ -1,5 +1,7 @@
 # phoneme-synthesis
 
+keywords: 发音  
+
 将国际音标转为语音。  
 
 网站: https://itinerarium.github.io/phoneme-synthesis/  
