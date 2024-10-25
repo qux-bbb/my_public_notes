@@ -3,6 +3,9 @@
 John the Ripper 是一个hash爆破工具。  
 官网: https://www.openwall.com/john/  
 
+Johnny是John的图形化界面，让John更方便使用，但不能独立运行。  
+https://openwall.info/wiki/john/johnny  
+
 爆破结果会保存在: `~/.john` 目录下  
 
 爆破zip示例：  
@@ -31,6 +34,7 @@ john --show hello.hash
 ```r
 # shadow是linux存储密码hash的文件，把里面需要爆破的行复制出来存到新文件就可以爆破了，不需要unshadow之类的工具
 # 但由于各个系统采用的hash算法不同，可能不一定支持
+# --wordlist指定字典，也可以不指定，用john自带的字典
 john --wordlist=rockyou.txt shadow.txt
 john --show shadow.txt
 ```
