@@ -1,5 +1,7 @@
 # linux---保存标准输出和标准错误
 
+keywords: 重定向  
+
 示例程序：  
 ```c
 #include <stdio.h>
