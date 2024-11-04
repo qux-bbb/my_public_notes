@@ -15,6 +15,11 @@ pip install open-webui
 open-webui serve
 ```
 
+默认会监听 0.0.0.0, 如果不想让其他人使用，可以指定host：  
+```r
+open-webui serve --host 127.0.0.1
+```
+
 第一次运行有些依赖要下载，可能会报 `sentence-transformers/all-MiniLM-L6-v2` 相关的错，要挂代理运行一次，之后把代理关了就好了。  
 
 
