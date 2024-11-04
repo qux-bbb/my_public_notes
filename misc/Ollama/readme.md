@@ -32,5 +32,9 @@ ollama run llama3.2:3b
 可以用Open WebUI作为图形化界面。  
 
 
+## 信息来源
+https://www.bilibili.com/video/BV1JTSqYqErn  
+
+
 ---
 2024/11/3  
