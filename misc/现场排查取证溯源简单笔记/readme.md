@@ -6,7 +6,7 @@
 
 一些技巧：  
 1. 把隐藏文件设置显示，已知后缀设置显示
-2. `netstat -ano` 查看网络连接是否有异常，如有异常，用 `tasklist | findstr PID值` 查找对应程序 
+2. `netstat -ano` 查看网络连接是否有异常，如有异常，用 `wmic process where processid=<PID> get executablepath` 查找对应程序路径
 3. 借助外部工具确定网络信息和可疑文件（vt，微步）
 4. 用火绒剑看看，进程（可以设置看已退出进程）、启动项（很重要，各种不同启动方式）、服务、网络等
 5. windows的 事件查看器（暂时不知道重点看什么）
