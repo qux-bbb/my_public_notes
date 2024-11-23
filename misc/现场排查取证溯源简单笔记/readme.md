@@ -21,6 +21,10 @@
 4. SysInspector，类似火绒剑，可以按风险等级过滤，还可以
 5. OTL（OldTimer ListIt），扫描计算机获取各种信息，完全不好用
 
+如果怀疑可能是客户自己不小心操作的，可以排查以下项：  
+1. 浏览器下载记录
+2. 一般下载文件夹: %USERPROFILE%\Downloads
+3. 微信下载文件夹: %USERPROFILE%\Documents\WeChat Files
 
 参考链接：  
 Windows主机入侵痕迹排查办法：https://www.freebuf.com/articles/system/255107.html  
