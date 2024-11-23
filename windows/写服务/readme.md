@@ -125,6 +125,8 @@ svccontrol stop SvcName
 官方示例中的Svc.exe没有实质的动作，我们给它加一个写文件的操作，有点真实的感觉  
 Svc_modified.cpp内容见：[files/sources/Svc_modified.cpp](files/sources/Svc_modified.cpp)  
 
+如果想测试 Svc_modified.exe, 把 `svc install` 换成 `Svc_modified install` 即可  
+
 
 ## 4 调试服务
 服务的主体程序不能像普通程序那样直接调试，官方给了一些调试方法，可参照链接：  
