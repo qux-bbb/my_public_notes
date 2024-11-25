@@ -35,6 +35,10 @@ grep -zoP 'fingerprint": \[\n' hello.json
 
 # 将错误输出如"Permission denied"使用重定向丢弃(2>/dev/null)
 grep -r helloworld / 2>/dev/null
+
+# 排除proc文件夹，只能是文件夹名字，不能是文件夹路径
+# https://unix.stackexchange.com/questions/589347/grep-exclude-dir-that-contains-some-text-in-the-name
+grep -r --exclude-dir "proc" "hello" /
 ```
 
 
