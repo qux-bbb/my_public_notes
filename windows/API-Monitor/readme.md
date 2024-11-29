@@ -13,5 +13,19 @@
 api-monitor-v2r13-x86-x64.zip
 ```
 
+一些网络相关api
+```r
+WinHttpOpen
+WinHttpConnect
+WinHttpOpenRequest
+WinHttpSendRequest
+WinHttpReadData
+
+gethostbyname
+connect
+send
+recv
+```
+
 
 2019/1/2  
