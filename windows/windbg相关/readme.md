@@ -1,10 +1,10 @@
-# windbg相关
+# WinDbg相关
 
 WinDbg是Windows官方提供的内核模式和用户模式调试器。  
 
 
 ## 安装
-安装WDK时会默认安装，不过这里的windbg界面更现代一点  
+安装WDK时会默认安装，不过这里的WinDbg界面更现代一点  
 https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/  
 遇到"解析应用包时出错"可参考该链接解决  
 https://github.com/microsoftfeedback/WinDbg-Feedback/issues/159  
@@ -24,7 +24,7 @@ Add-AppxPackage -Path .\windbg.msixbundle
 debugger.chm  
 windbg.chm  
 用everthing搜一下就好了  
-也可以打开windbg，F1 或者点帮助  
+也可以打开WinDbg，F1 或者点帮助  
   
 手册一开始的 `Getting Started with Windows Debugging` 很友好  
 
@@ -162,7 +162,7 @@ File-->Settings-->Debugging settings-->Symbol path
 C:\Symbols;SRV*C:\Symbols*http://msdl.microsoft.com/downloads/symbols
 ```
 不行的话，可以试试 https  
-如果不想让windbg去网站获取pdb文件，直接把path设成本地的文件夹就好了（因为有时候太卡了，）  
+如果不想让WinDbg去网站获取pdb文件，直接把path设成本地的文件夹就好了（因为有时候太卡了，）  
 
 
 ## 找不到依赖的文件
