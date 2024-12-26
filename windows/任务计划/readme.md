@@ -20,3 +20,8 @@ schtasks /create /sc hourly /mo 5 /sd 03/01/2002 /tn My App /tr c:\apps\myapp.ex
 ```
 更多用法可以在命令行执行 `schtasks /?` 查看  
 或者参考该链接: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks  
+
+隐藏任务计划  
+打开该注册表项下具体任务计划的注册表项，修改Index为0，删除SD，可以隐藏计划任务  
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree  
+详见: https://cloud.tencent.com/developer/article/2377196  
