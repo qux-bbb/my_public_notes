@@ -1,6 +1,6 @@
 # git相关
 
-git是Linus开发的开源代码版本控制工具。  
+git是一个开源的代码版本控制工具，最初由Linus开发。  
 这里简单记自己会用到的命令和操作，系统的学习可以参考该链接：  
 https://git-scm.com/book/zh/v2    
 
