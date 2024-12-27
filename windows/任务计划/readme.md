@@ -23,11 +23,11 @@ schtasks /create /sc hourly /mo 5 /sd 03/01/2002 /tn My App /tr c:\apps\myapp.ex
 ## 信息存储位置
 win10下，在这两个注册表项下存有相关信息：  
 ```r
-计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree
-计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks
+```
 
 设置的任务计划会以文件的形式存到`C:\Windows\System32\Tasks`文件夹下，文件名为任务计划名称  
-```
 
 
 ## 隐藏任务计划  
