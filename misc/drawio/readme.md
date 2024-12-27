@@ -15,6 +15,7 @@ github地址: https://github.com/jgraph/drawio
 缺点是图标比较少，可以从这里搜索图标然后复制粘贴使用：  
 https://www.iconfinder.com/  
 https://openclipart.org/  
+https://simpleicons.org/ (开源SVG图标，信息来源: https://mp.weixin.qq.com/s/epCoS3T0qRiQv1lMFXfEnw)  
 
 官方也有些图标补充，把xml拖进去软件就好了  
 https://github.com/jgraph/drawio-libs  
