@@ -20,5 +20,8 @@ https://simpleicons.org/ (开源SVG图标，信息来源: https://mp.weixin.qq.c
 官方也有些图标补充，把xml拖进去软件就好了  
 https://github.com/jgraph/drawio-libs  
 
+在线版可以在左上角搜索更多图标，更方便  
+https://app.diagrams.net/  
+
 
 2020/12/6  
