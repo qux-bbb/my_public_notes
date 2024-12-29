@@ -23,7 +23,7 @@ https://github.com/v2rayA/v2rayA/releases
 
 安装v2raya  
 ```r
-# 添加公钥
+# 添加公钥，看到终端有公钥输出才算添加成功
 wget -qO - https://apt.v2raya.org/key/public-key.asc | sudo tee /etc/apt/keyrings/v2raya.asc
 
 # 添加 V2RayA 软件源
