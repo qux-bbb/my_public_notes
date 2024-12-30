@@ -6,7 +6,8 @@ Volatility是一个开源的内存取证工具。
 官网: https://www.volatilityfoundation.org/  
 github地址: https://github.com/volatilityfoundation/volatility  
 
-可以下载压缩包、python模块安装包、或者独立的可执行文件(比较方便)。  
+可以下载压缩包、python模块安装包、或者独立的可执行文件  
+!!!如果没有特殊需求，强烈推荐使用独立的可执行文件(下文的命令把“vol.py”换成“volatility_2.6_win64_standalone.exe”)，非常方便  
 
 hed(非官方)维护了一个python模块，可以这么安装：  
 ```r
