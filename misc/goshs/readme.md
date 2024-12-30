@@ -1,5 +1,7 @@
 # goshs
 
+keywords: 局域网 分享文件  
+
 goshs是一个Python的SimpleHTTPServer替代品，可以上传下载文件，支持https，支持认证。  
 使用go编写。  
 
