@@ -14,6 +14,11 @@ embeddable版本的python就是便携版的，但是没有带pip，可以使用g
 .\python.exe -m pip
 ```
 
+安装open-webui之后，如果复制到别的地方，需要用这种方式启动，不然会使用错误的python.exe路径
+```r
+.\python-3.11.9-embed-amd64\python.exe .\python-3.11.9-embed-amd64\Scripts\open-webui.exe serve --host 127.0.0.1
+```
+
 
 信息来源: https://stackoverflow.com/a/48906746  
 
