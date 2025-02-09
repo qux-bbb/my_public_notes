@@ -29,7 +29,7 @@ ollama run qwen2.5:7b
 ollama run llama3.2:3b
 ```
 
-可以用Open WebUI作为图形化界面。  
+可以用Cherry Studio作为图形化界面。  
 
 
 ## 信息来源
