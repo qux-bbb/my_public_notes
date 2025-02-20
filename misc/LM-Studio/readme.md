@@ -16,5 +16,8 @@ github地址: https://github.com/lmstudio-ai
 
 如果需要默认展示思考过程，可以在右上角，点击"聊天外观"，打开"Expand reasoning blocks by default"  
 
+缺点：  
+不支持知识库  
+
 
 2025/2/19  
