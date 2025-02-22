@@ -11,7 +11,7 @@ keywords: 真实地址
 对于一个段，实际地址和静态地址的偏移是固定的  
 
 例子：  
-```r
+```python
 # .text段静态起始地址
 text_static_start_addr = 0x140001000
 # .text段实际起始地址
