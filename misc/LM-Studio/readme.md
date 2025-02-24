@@ -2,6 +2,8 @@
 
 LM Studio可以帮助快速找到、下载和运行本地大模型，提供图形化界面和api服务，支持Windows、Mac和Linux系统。  
 
+LM Studio虽然有github地址，但不是开源的。  
+
 官网: https://lmstudio.ai/  
 github地址: https://github.com/lmstudio-ai  
 
