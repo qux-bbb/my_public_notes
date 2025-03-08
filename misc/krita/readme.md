@@ -1,8 +1,10 @@
 # krita
 
 ## 简介
-开源绘画程序  
-https://krita.org/  
+krita是一个开源的绘画程序，支持Windows、Linux、Mac  
+
+官网: https://krita.org/  
+代码地址: https://invent.kde.org/graphics/krita
 
 效果和 SAI PS 很像，比 gimp 顺滑一些  
 
