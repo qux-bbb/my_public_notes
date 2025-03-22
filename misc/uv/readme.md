@@ -1,6 +1,7 @@
 # uv
 
-uv是一个python包和项目管理工具，使用Rust编写。
+uv是一个python包和项目管理工具，使用Rust编写。  
+优势是快，可以很方便地管理多个python版本。
 
 官网: https://docs.astral.sh/uv/
 
