@@ -25,24 +25,26 @@ uv venv myenv
 uv venv myenv --python 3.9
 ```
 
-激活虚拟环境后，可以使用 `uv install requests` 这样的命令安装依赖
+激活虚拟环境后，可以使用 `uv pip install requests` 这样的命令安装依赖
 
 
 ## 创建一个项目
 使用本地默认的python版本或uv维护的最新的python版本创建一个项目
 ```bash
-uv venv myproject
+uv init myproject
 ```
 
 指定python版本创建一个项目
 ```bash
-uv venv myproject --python=3.7
+uv init myproject --python=3.7
 ```
+
+可以进入项目文件夹使用 `uv add requests` 这样的命令安装依赖
 
 
 ## 临时修改源
 ```bash
-uv venv myproject --python=3.9 --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+uv init myproject --python=3.9 --index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 
