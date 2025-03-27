@@ -32,6 +32,15 @@ x/24d 0x400c90
 
 # 显示3组数据，hex形式，每组为一个word(4个字节)
 x/3xw 0x400c90
+
+# hex形式查看某内存位置的值
+x/x $ebp-0xc
+
+# 字符串方式查看指定地址的内容
+x/s 0xffffd25c
+
+# 查看4条指令
+x/4i 0xffffd3fc
 ```
 
 gdb本身不提供hexdump功能，可以安装pwndbg插件使用hexdump功能。  
