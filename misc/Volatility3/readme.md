@@ -39,7 +39,7 @@ vol -f “/path/to/file” windows.pstree
 vol -f “/path/to/file” -o “/path/to/dir” windows.dumpfiles ‑‑pid <PID>
 
 # MEMDUMP
-vol -f “/path/to/file” -o “/path/to/dir” windows.memmap ‑‑dump ‑‑pid <PID>
+vol -f “/path/to/file” -o “/path/to/dir” windows.memmap.Memmap ‑‑dump ‑‑pid <PID>
 
 # HANDLES
 vol -f “/path/to/file” windows.handles ‑‑pid <PID>
