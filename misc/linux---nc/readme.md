@@ -1,12 +1,12 @@
 # linux---nc
 
-nc, 大概是 netcat 的缩写，可以通过网络连接读写数据  
+nc, netcat，可以通过网络连接读写数据  
 
 ```r
-# 监听某个端口
-nc -l port
+# 监听某个端口，某些版本必须使用 nc -l -p <port>
+nc -l <port>
 # 连接
-nc ip_address port
+nc <ip_addr> <port>
 ```
 
 
