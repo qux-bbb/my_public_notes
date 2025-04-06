@@ -5,7 +5,7 @@ github地址: https://github.com/open-webui/open-webui
 
 Open WebUI是一个可扩展、功能丰富、用户友好的自托管AI界面，完全离线操作。它支持各种LLM运行程序，包括Ollama和OpenAI兼容的API。  
 
-可使用pip安装：  
+可使用pip安装，注意使用Python 3.11以避免兼容性问题：  
 ```r
 pip install open-webui
 ```
