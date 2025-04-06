@@ -68,6 +68,9 @@ curl -H "Authorization: Bearer SECRET" http://localhost:8000/v1/models
 使用uv创建隔离python环境并进入
 ```bash
 # (Recommended) Create a new uv environment. Use `--seed` to install `pip` and `setuptools` in the environment.
+# 如果后续构建时出现这样的错误：
+# Could NOT find Python (missing: Python_INCLUDE_DIRS Interpreter Development.Module Development.SABIModule)
+# 可以把3.12改为3.12.0
 uv venv vllm --python 3.12 --seed
 source vllm/bin/activate
 ```
@@ -89,7 +92,7 @@ cd vllm_source
 ```bash
 pip install --upgrade pip
 pip install "cmake>=3.26" wheel packaging ninja "setuptools-scm>=8" numpy
-pip install -v -r requirements-cpu.txt --extra-index-url https://download.pytorch.org/whl/cpu
+pip install -v -r requirements/cpu.txt --extra-index-url https://download.pytorch.org/whl/cpu
 ```
 
 构建并安装
