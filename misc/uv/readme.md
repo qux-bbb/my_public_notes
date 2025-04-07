@@ -39,7 +39,7 @@ uv init myproject
 
 指定python版本创建一个项目
 ```bash
-uv init myproject --python=3.7
+uv init myproject --python 3.7
 ```
 
 可以进入项目文件夹使用 `uv add requests` 这样的命令安装依赖
@@ -47,7 +47,7 @@ uv init myproject --python=3.7
 
 ## 临时修改源
 ```bash
-uv init myproject --python=3.9 --index-url https://pypi.tuna.tsinghua.edu.cn/simple
+uv init myproject --python 3.9 --index-url https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 
 
