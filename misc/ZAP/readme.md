@@ -7,8 +7,11 @@ github地址: https://github.com/zaproxy/zaproxy
 
 OWASP Zed Attack Proxy(ZAP), 网络应用扫描器，类似burp  
 
-Fuzz功能相当于burp的Intruder  
 安装之前需要先装jdk: https://adoptium.net/zh-CN/temurin/releases/  
+
+工具 -> 选项 -> Selenium, 配置Chrome.exe和Firefox的路径之后，可以直接在ZAP中打开配置好代理的浏览器，不需要考虑代理和证书的问题了
+
+Fuzz功能相当于burp的Intruder  
 
 
 ## HUD
@@ -19,10 +22,6 @@ HUD: Head Up Display
 它的作用，就是把时速、导航等重要的行车信息，投影到驾驶员前面的风挡玻璃上，让驾驶员尽量做到不低头、不转头就能看到时速、导航等重要的驾驶信息。
 ```
 
-配好代理之后, 打开浏览器自动弹出教程, 用火狐能正常显示  
-
-挺有意思的  
-
 
 ## linux安装使用
 下载解压jdk tar.gz到合适位置：  
@@ -32,7 +31,7 @@ https://adoptium.net/temurin/releases/
 
 下载安装ZAP：  
 https://www.zaproxy.org/download/  
-```r
+```bash
 chmod +x ZAP*.sh
 ./ZAP*.sh
 ```
