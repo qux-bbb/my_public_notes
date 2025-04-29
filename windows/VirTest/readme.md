@@ -1,5 +1,7 @@
 # VirTest
 
+keywords: 免杀
+
 VirTest是一个特征码定位工具，没找到官网。  
 
 参考文章中说的VirTest5.0一些特点：  
