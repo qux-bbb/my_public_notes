@@ -22,6 +22,14 @@ Scanners (what Trivy can find there):
 - Software licenses
 
 
+```powershell
+# 默认会下载数据库，如果出错"failed to download vulnerability DB"，可以指定数据库地址下载
+.\trivy.exe filesystem --db-repository ghcr.io/aquasecurity/trivy-db --download-db-only
+# 扫文件夹
+.\trivy.exe filesystem D:\hello_projects
+```
+
+
 信息来源: https://b23.tv/lwJtifw
 
 
