@@ -1,5 +1,7 @@
 # Ghidra和x64dbg的地址配合
 
+keywords: 断点 真实地址
+
 有时候不方便关ASLR，可以用Ghidra和x64dbg的功能配合确定调试的实际地址。  
 
 Ghidra  
