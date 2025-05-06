@@ -1,5 +1,7 @@
 # LosslessCut
 
+keywords: 剪视频 剪音频
+
 官网: https://mifi.no/losslesscut/  
 github地址: https://github.com/mifi/lossless-cut  
 
