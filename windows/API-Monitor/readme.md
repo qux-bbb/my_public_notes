@@ -15,16 +15,24 @@ api-monitor-v2r13-x86-x64.zip
 
 一些网络相关api
 ```r
+# Winhttp.dll
 WinHttpOpen
 WinHttpConnect
 WinHttpOpenRequest
 WinHttpSendRequest
 WinHttpReadData
 
+# Ws2_32.dll
 gethostbyname
 connect
 send
 recv
+
+# Wininet.dll
+InternetOpenUrl
+inet_pton  # 文本ip地址转为二进制
+WSASend
+WSARecv
 ```
 
 
