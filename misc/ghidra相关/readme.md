@@ -118,6 +118,10 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs
 Win键，搜索"ghidraRun"，右键选择 `固定到“开始”屏幕`  
 
 
+## 修改ImageBase
+Window -> Memory Map, 点击右上角的小房子图标，可以设置 Base Image Address, 即基址
+
+
 ## 官方CheatSheet
 https://ghidra-sre.org/CheatSheet.html  
 
