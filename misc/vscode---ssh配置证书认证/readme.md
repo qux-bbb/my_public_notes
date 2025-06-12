@@ -1,5 +1,7 @@
 # vscode---ssh配置证书认证
 
+keywords: Remote - SSH remotessh
+
 生成证书：  
 ```r
 ssh-keygen -t rsa -b 4096
