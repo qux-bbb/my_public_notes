@@ -17,9 +17,14 @@ network:
 sudo chmod 600 wifi.yaml
 ```
 
-尝试并应用配置：
+生成配置(会验证格式是否正确)：
 ```bash
-sudo netplan try
+sudo netplan generate
+```
+
+应用配置：
+```bash
+sudo netplan apply
 ```
 
 等一会儿就能连上WiFi了
