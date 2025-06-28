@@ -1,5 +1,7 @@
 # NanaZip
 
+keywords: 7z
+
 在7-Zip的基础上做了一些界面、功能增强
 
 github地址: https://github.com/M2Team/NanaZip  
