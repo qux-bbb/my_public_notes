@@ -1,6 +1,6 @@
 # 7-Zip
 
-keywords: 7z
+keywords: 7z 7zip
 
 简洁强大的开源压缩软件，支持多平台  
 
