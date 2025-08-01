@@ -3,6 +3,7 @@
 RustDesk是一个开源的远程桌面访问软件，支持 Windows、macOS、Linux、iOS、Android、Web 等多个平台。  
 
 官网: https://rustdesk.com/  
+github地址: https://github.com/rustdesk/rustdesk
 
 ## 在ubuntu22自建服务器
 官方有免费的服务器，也可以自建服务器
