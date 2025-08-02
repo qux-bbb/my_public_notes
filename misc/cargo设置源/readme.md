@@ -2,7 +2,7 @@
 
 cargo默认源在国内有时候可能很慢，可以设置一下使用国内源。  
 
-创建 `~/.cargo/config` 文件，写入以下内容保存即可：  
+创建 `~/.cargo/config.toml` 文件，写入以下内容保存即可：  
 ```r
 [source.crates-io]
 registry = "https://github.com/rust-lang/crates.io-index"
@@ -17,6 +17,7 @@ registry = "git://mirrors.ustc.edu.cn/crates.io-index"
 
 
 原链接: https://www.cnblogs.com/qumogu/p/14167597.html  
+官方配置信息介绍: https://doc.rust-lang.org/cargo/reference/config.html
 
 
 2022/1/5  
