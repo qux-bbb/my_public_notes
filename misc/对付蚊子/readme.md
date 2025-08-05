@@ -10,5 +10,7 @@
 
 被咬的地方千万不要抓，越抓越痒，抓破会花挺长时间恢复  
 
+徒手拍蚊子可以上下夹击，命中率很高
 
-2020/6/30  
+1. https://www.bilibili.com/video/BV1Lv411J79F 这里有一份徒手灭蚊秘籍 请查收！【四象Vol.35】
+2. https://www.bilibili.com/video/BV1523uzAEk3 夏日灭蚊全攻略请查收：花露水只是入门级【四象Vol.192】
