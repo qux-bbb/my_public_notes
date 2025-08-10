@@ -17,6 +17,9 @@ https://aka.ms/windbg/download
 离线正常安装windbg.msixbundle即可
 如果报错"此应用包不支持通过应用安装程序安装，因为它使用了某些受限制的功能"，在powershell下使用如下命令安装：
 Add-AppxPackage -Path .\windbg.msixbundle
+
+如果需要免安装直接使用便携版，可以用7z打开windbg.msixbundle，找到对应平台的msix文件，再用7z解压，运行时直接执行DbgX.Shell.exe即可
+参考: https://mp.weixin.qq.com/s/O9H8jOiEexhKTgA5Zru8IA
 ```
 
 
