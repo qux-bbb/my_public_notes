@@ -7,6 +7,8 @@ Podman Desktop, 通过图形化界面构建、管理和部署容器。
 官网: https://podman-desktop.io/  
 github地址: https://github.com/podman-desktop/podman-desktop
 
+需要安装podman，不能管理已有的docker镜像、容器。
+
 
 信息来源: https://mp.weixin.qq.com/s/JiaDlcAk23QpROatMtJBWw
 
