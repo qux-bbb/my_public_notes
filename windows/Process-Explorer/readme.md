@@ -1,6 +1,6 @@
 # Process Explorer
 
-keywords: 窗口定位进程 spyxx  
+keywords: procexp.exe 窗口定位进程 spyxx  
 
 Process Explorer 是一个功能更强的任务管理器，在SysinternalsSuite套件中。  
 
