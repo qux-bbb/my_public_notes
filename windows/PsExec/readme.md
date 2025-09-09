@@ -28,6 +28,12 @@ PsExec.exe \\1.2.3.4 -u jack -i cmd
 PsExec.exe \\1.2.3.4 -u jack -i netstat -ano
 ```
 
+如果中文乱码，可以修改编码之后再使用psexec
+```bat
+:: 936表示GBK
+chcp 936
+```
+
 
 ---
 2025/9/8
