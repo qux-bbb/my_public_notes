@@ -1,5 +1,7 @@
 # lxmusic
 
+keywords: 音乐播放器
+
 lx music, 洛雪音乐助手，一个免费&开源的音乐查找工具，可以搜索、播放、下载。  
 
 官网: https://lxmusic.toside.cn/  
