@@ -11,7 +11,9 @@ github地址: https://github.com/zed-industries/zed
 https://github.com/zed-industries/zed/actions/workflows/release_nightly.yml  
 https://zed-nightly-host.nyc3.digitaloceanspaces.com/nightly/zed_editor_installer_x86_64.exe
 
-git功能还需要加强
+缺点：
+1. git功能还需要加强
+2. 只支持UTF-8编码的文件
 
 
 2025/4/27
