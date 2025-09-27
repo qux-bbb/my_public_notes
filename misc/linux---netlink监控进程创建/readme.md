@@ -1,9 +1,24 @@
 # linux---netlink监控进程创建
 
-使用 Linux 的 Netlink 套接字（`AF_NETLINK`）实现内核与用户空间的通信，具体通过 `NETLINK_CONNECTOR` 协议来监控进程事件。  
-利用 Linux 的 Connector 子系统和 PROC 事件机制（`CN_IDX_PROC`/`CN_VAL_PROC`）来订阅和捕获进程执行事件（`PROC_EVENT_EXEC`）。
+功能说明：
+- 使用Linux Netlink接口监控进程执行事件（exec）
+- 获取新创建进程的详细信息
+  - 进程ID (PID)
+  - 进程名
+  - 进程可执行文件路径
+  - 完整命令行
 
-[process_monitor.cpp](./files/process_monitor.cpp)
+代码: [process_monitor.cpp](./files/process_monitor.cpp)
+
+编译：
+```bash
+g++ -o process_monitor process_monitor.cpp
+```
+
+运行：
+```bash
+sudo ./process_monitor
+```
 
 
 2025/9/27
