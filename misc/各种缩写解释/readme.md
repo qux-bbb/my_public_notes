@@ -51,7 +51,7 @@ VirusTotal : : 查询样本属性网站, https://virustotal.com/
 Virtualization Technology : : 虚拟化技术  
 
 **IOC**  
-Indicators of Compromise : : 危险指标  
+Indicators of Compromise : : 失陷指标  
 
 **RCE**  
 Remote Code/Command Execution : : 远程代码/命令执行  
