@@ -8,7 +8,7 @@ PsExec 是一个可以远程连接其他Windows执行命令的工具，在Sysint
 
 
 ## 目标机器配置
-1. 高级安全 Windows Defender 防火墙 -> 入站规则 -> 文件和打印机共享（SMB-In）, 根据情况启用"域"或"专用，公用"的规则
+1. 高级安全 Windows Defender 防火墙 -> 入站规则 -> 文件和打印机共享（SMB-In）, 根据情况启用“域”或“专用，公用”的规则
 2. 以下内容保存为reg文件双击添加注册表项
 ```reg
 Windows Registry Editor Version 5.00
