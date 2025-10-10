@@ -12,7 +12,7 @@
 
 编译：
 ```bash
-g++ -o process_monitor process_monitor.cpp
+g++  -std=c++11 -o process_monitor process_monitor.cpp
 ```
 
 运行：
