@@ -60,6 +60,13 @@ sudo v2raya --reset-password
 sudo systemctl start v2raya
 ```
 
+仓库公钥过期临时解决
+```r
+- echo "deb [signed-by=/etc/apt/keyrings/v2raya.asc] https://apt.v2raya.org/ v2raya main" | sudo tee /etc/apt/sources.list.d/
++ echo "deb [trusted=yes] https://apt.v2raya.org/ v2raya main" | sudo tee /etc/apt/sources.list.d/
+```
+https://github.com/v2rayA/v2rayA/discussions/1745
+
 
 ---
 2021/12/30  
