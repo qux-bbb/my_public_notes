@@ -4,6 +4,7 @@ Qv2ray不维护了，发现了v2rayA。
 一个易用而强大的，跨平台的 V2Ray 客户端。  
 
 官网: https://v2raya.org/  
+github地址: https://github.com/v2rayA/v2rayA
 
 默认监听0.0.0.0:2017，设置密码时需要保证强度
 
