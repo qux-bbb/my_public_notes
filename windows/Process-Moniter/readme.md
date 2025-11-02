@@ -29,5 +29,15 @@ https://web.archive.org/web/20170804213208/https://download.sysinternals.com/fil
 
 
 ---
+Operation可以设置这几个，再按需调整：
+```r
+WriteFile
+RegSetValue
+Process Create
+TCP Connect
+UDP Connect
+```
+
+---
 2019/6/7  
 2021/6/3  
