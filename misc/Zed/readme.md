@@ -8,6 +8,7 @@ github地址: https://github.com/zed-industries/zed
 缺点：
 1. git功能还需要加强
 2. 只支持UTF-8编码的文件
+3. markdown预览不能选择复制内容
 
 
 2025/4/27
