@@ -7,3 +7,10 @@ keywords: 7z 7zip
 https://www.7-zip.org/
 
 2024-11-29，支持计算文件MD5
+
+安装包名称示例：
+```r
+7z2501-x64.exe
+7z2501.exe
+7z2501-arm64.exe
+```
