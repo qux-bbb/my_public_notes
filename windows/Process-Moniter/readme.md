@@ -32,6 +32,7 @@ https://web.archive.org/web/20170804213208/https://download.sysinternals.com/fil
 Operation可以设置这几个，再按需调整：
 ```r
 WriteFile
+SetRenameInformationFile
 RegSetValue
 Process Create
 TCP Connect
