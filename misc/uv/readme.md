@@ -42,7 +42,14 @@ uv init myproject
 uv init myproject --python 3.7
 ```
 
-可以进入项目文件夹使用 `uv add requests` 这样的命令安装依赖
+安装依赖：
+```bash
+cd myproject
+
+uv add requests
+# 指定源安装依赖
+uv add requests --default-index https://pypi.tuna.tsinghua.edu.cn/simple
+```
 
 
 ## 临时修改源
