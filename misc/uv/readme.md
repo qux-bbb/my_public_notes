@@ -3,10 +3,10 @@
 uv是一个python包和项目管理工具，使用Rust编写。  
 优势是快，可以很方便地管理多个python版本。
 
+官网: https://docs.astral.sh/uv/
+
 uv名称源于Ultra-Violet，紫外线，隐喻极快。  
 https://github.com/astral-sh/uv/issues/1349#issuecomment-1986451785
-
-官网: https://docs.astral.sh/uv/
 
 国内用pipx、pip安装比较方便：
 ```bash
