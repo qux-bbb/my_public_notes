@@ -22,10 +22,13 @@ Windows Registry Editor Version 5.00
 ```bat
 :: -i 是交互的意思
 :: 启动cmd
-PsExec.exe \\1.2.3.4 -u jack -i cmd
+.\PsExec.exe \\1.2.3.4 -u jack -i cmd
 
 :: 查看网络连接
-PsExec.exe \\1.2.3.4 -u jack -i netstat -ano
+.\PsExec.exe \\1.2.3.4 -u jack -i netstat -ano
+
+:: 查看进程路径
+.\PsExec.exe \\1.2.3.4 -u jack -i wmic process where processid=<PID> get executablepath
 ```
 
 如果中文乱码，可以修改编码之后再使用psexec
