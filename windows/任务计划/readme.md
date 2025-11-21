@@ -24,7 +24,19 @@ schtasks /create /sc hourly /mo 5 /sd 03/01/2002 /tn My App /tr c:\apps\myapp.ex
 win10下，在这两个注册表项下存有相关信息：  
 ```r
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tree
+    # Id(在Tasks注册表下以注册表项存在)
+    # Index
+    # SD
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks
+    # Actions(执行的命令)
+    # Author
+    # Description
+    # Dynamiclnfo
+    # Hash
+    # Path(在任务计划程序中的路径)
+    # Schema
+    # Triggers
+    # URI
 ```
 
 设置的任务计划会以文件的形式存到`C:\Windows\System32\Tasks`文件夹下，文件名为任务计划名称  
