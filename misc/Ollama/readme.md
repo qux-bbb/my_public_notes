@@ -80,6 +80,14 @@ curl http://服务器IP:11435/v1/chat/completions -H "Authorization: Bearer your
 配置方式来自DeepSeek
 
 
+## 在浏览器打开查看一些信息
+```
+http://localhost:11434/api/version
+http://localhost:11434/api/tags
+http://localhost:11434/api/ps
+```
+
+
 ## 信息来源
 https://www.bilibili.com/video/BV1JTSqYqErn  
 
