@@ -8,5 +8,7 @@ keywords: prompt
 
 可以搜索"吴恩达 prompt"看相关视频  
 
+同事提供的claude提出的提示词技巧 https://claude.com/blog/best-practices-for-prompt-engineering
+
 
 2024/11/27  
