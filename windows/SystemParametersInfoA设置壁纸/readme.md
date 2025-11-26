@@ -3,6 +3,8 @@
 SystemParametersInfoA可以设置壁纸，原理是设置注册表项：  
 ```r
 HKEY_CURRENT_USER\Control Panel\Desktop\Wallpaper
+
+# 手动查看时，注册表里先进入目录 HKEY_CURRENT_USER\Control Panel\Desktop 再查看 Wallpaper 项
 ```
 
 代码：  
