@@ -1,12 +1,14 @@
 # 开源思维导图软件---FreeMind和Freeplane
 
+keywords: xmind
+
+FreeMind 和 Freeplane 是2个开源的思维导图软件，简单体验了下，感觉都差不多。
+
 https://www.freeplane.org/wiki/index.php/Home  
 https://sourceforge.net/projects/freeplane/  
 
 http://freemind.sourceforge.net/wiki/index.php/Main_Page  
 https://sourceforge.net/projects/freemind/  
-
-FreeMind 和 Freeplane 是2个开源的思维导图软件，简单体验了下，感觉都差不多。  
 
 Freeplane是FreeMind的主创人员开发的新软件，比FreeMind发布更快，功能更多，未来可能会再次合并。这里有说明：  
 https://www.freeplane.org/wiki/index.php/Relationship_to_FreeMind  
