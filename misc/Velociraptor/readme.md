@@ -1,6 +1,6 @@
 # Velociraptor
 
-数字取证和事件响应工具
+数字取证和事件响应工具，可以本地或远程查看基本信息、文件、注册表，执行命令
 
 github地址: https://github.com/Velocidex/velociraptor  
 官方文档: https://docs.velociraptor.app/  
