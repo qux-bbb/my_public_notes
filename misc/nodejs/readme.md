@@ -4,7 +4,7 @@
 
 官网: https://nodejs.org/
 
-Linux可以用nvm(Node Version Manager)、(Fast Node Manager)安装，挺方便的。
+Linux可以用nvm(Node Version Manager)、fnm(Fast Node Manager)安装，挺方便的。
 
 
 2025/9/2
