@@ -11,6 +11,9 @@ https://github.com/AntSwordProject/antSword/
 
 Nodejs写的，开源的跨平台网站管理工具，第一次运行AntSword.exe时以管理员权限运行
 
+按这个步骤安装：  
+https://www.yuque.com/antswordproject/antsword/srruro
+
 文档：  
 https://www.yuque.com/antswordproject/antsword
 
