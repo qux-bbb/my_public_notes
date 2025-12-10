@@ -13,3 +13,8 @@ testssl.sh 是一个命令行工具，用于检查服务器在任意端口上对
 ```bash
 ./testssl.sh --nodns none https://1.2.3.4:1234
 ```
+
+如果只想检测支持的密钥交换算法，使用这样的命令
+```bash
+./testssl.sh --nodns none --cipher-per-proto https://1.2.3.4:1234
+```
