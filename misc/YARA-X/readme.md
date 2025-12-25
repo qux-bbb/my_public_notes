@@ -1,5 +1,7 @@
 # YARA-X
 
+keywords: yarax
+
 A rewrite of YARA in Rust.
 
 https://virustotal.github.io/yara-x/  
