@@ -1,5 +1,7 @@
 # 网络控制
 
+Portmaster可以覆盖下面的工具，直接用Portmaster吧。
+
 ```
 控制单个程序或者一个文件夹内的程序是否联网
 Fort: https://github.com/tnodir/fort
