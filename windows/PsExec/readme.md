@@ -1,6 +1,6 @@
 # PsExec
 
-keywords: PsTools
+keywords: PsTools 远程执行命令
 
 PsExec 是一个可以远程连接其他Windows执行命令的工具，在SysinternalsSuite套件中。
 
