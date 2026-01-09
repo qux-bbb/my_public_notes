@@ -2,10 +2,14 @@
 
 keywords: pyinstaller 反编译  
 
-自己写的脚本作废，直接用这个项目：  
-https://github.com/extremecoders-re/pyinstxtractor  
-用之前先用16进制编辑器或xanalyzer看看python版本，尽量用对应版本去还原，这样不容易出问题  
+自己写的脚本作废，直接用这个工具：  
+https://pyinstxtractor-web.netlify.app/
+
+~~https://github.com/extremecoders-re/pyinstxtractor~~  
+~~用之前先用16进制编辑器或xanalyzer看看python版本，尽量用对应版本去还原，这样不容易出问题~~  
+
 一个可执行文件可能有多个有用的pyc，用uncompyle6或pycdc反编译pyc  
+详情见 [python---生成和反编译pyc](../../misc/python---生成和反编译pyc/readme.md)
 
 ---
 有一点要注意：  
