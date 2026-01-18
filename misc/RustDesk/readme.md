@@ -36,7 +36,7 @@ docker logs hbbs
 
 如果有这样的错误，建议用这样的步骤：
 1. 安装干净的的ubuntu22，不要带docker
-2. 装v2raya代理，添加入方向规则：自定义TCP 2017端口，设置绕过大陆地址
+2. 装v2raya代理(注意设置强密码)，添加入方向规则：自定义TCP 2017端口，设置绕过大陆地址
 3. 安装docker，配置rustserver
     ```bash
     bash <(wget -qO- https://get.docker.com)
