@@ -2,14 +2,14 @@
 
 使用pipx可以在隔离环境安装运行python应用，避免依赖冲突问题。  
 
-网站: https://pypa.github.io/pipx/  
+网站: https://pipx.pypa.io/stable/  
 github地址: https://github.com/pypa/pipx  
 
 Windows安装：  
 ```r
 python -m pip install --user pipx
-# 确保可以直接在命令行中使用应用(不是自动补全，如果需要自动补全，需要把相应路径添加到path，如: C:\Users\hello\.local\bin)
-pipx ensurepath
+# 需要转到提示目录执行以下命令，确保可以直接在命令行中使用应用(不是自动补全，如果需要自动补全，需要把相应路径添加到path，如: C:\Users\hello\.local\bin)
+.\pipx.exe ensurepath
 ```
 
 简单使用：  
