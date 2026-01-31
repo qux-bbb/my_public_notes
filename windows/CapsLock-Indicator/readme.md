@@ -8,6 +8,9 @@ CapsLock Indicator, 可以提示 Num lock, Caps lock, Scroll lock 的状态，�
 官网: https://cli.jonaskohl.de/  
 github地址: https://github.com/jonaskohl/CapsLockIndicator  
 
+提了Mast light ico的PR，但一直没合并  
+https://github.com/jonaskohl/CLI_Icons/pull/7
+
 信息来源: https://www.zhihu.com/question/313605981/answer/2408278050  
 
 
