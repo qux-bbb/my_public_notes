@@ -2,6 +2,8 @@
 
 keywords: git 大文件  
 
+在github免费版限制比较多，不建议用
+
 官网: https://git-lfs.com/  
 github地址: https://github.com/git-lfs/git-lfs  
 
