@@ -1,6 +1,6 @@
 # Bruno
 
-Bruno 是一款全新且创新的 API 客户端，旨在颠覆 Postman 和其他类似工具。
+Bruno is a Git-friendly and offline-first open-source API client aimed at revolutionizing the status quo represented by tools like Postman and Insomnia.
 
 官网: https://www.usebruno.com/  
 github地址: https://github.com/usebruno/bruno  
