@@ -9,4 +9,6 @@ github地址: https://github.com/safing/portmaster
 Global Settings -> Secure DNS -> Servers -> DNS Servers  
 点击“Quick Settings”，切换不同的配置，或者在下方添加自定义的DNS服务器，直到域名能够正常解析即可
 
+默认会阻断连入的网络连接，会影响Localsend、Python的http.server，可以针对应用允许连入或允许全部连入。
+
 信息来源: https://mp.weixin.qq.com/s/EWt13kBJjBR4QGInO9ZvAA
