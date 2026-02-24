@@ -6,5 +6,7 @@
 
 Linux可以用nvm(Node Version Manager)、fnm(Fast Node Manager)安装，挺方便的。
 
+安装后自带Node.js默认包管理工具npm(Node Package Manager)
+
 
 2025/9/2
