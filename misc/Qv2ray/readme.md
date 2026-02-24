@@ -1,7 +1,11 @@
 # Qv2ray
 
-网站：https://qv2ray.net/  
 windows linux macos 代理，核心是V2ray  
+2021-08-17停止维护
+
+网站：https://qv2ray.net/  
+github地址: https://github.com/Qv2ray/Qv2ray
+
 
 ## windows安装
 1. 下载相应平台的程序
