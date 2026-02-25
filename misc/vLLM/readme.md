@@ -10,7 +10,8 @@ github地址: https://github.com/vllm-project/vllm
 2. Python: 3.9 – 3.12
 3. 至少8G内存
 
-对于NVIDIA GPU，可以直接使用pip安装，其他需要自己从源码编译
+对于NVIDIA GPU，可以直接使用pip安装  
+**其他需要[从源码安装](#从源码安装)**
 
 
 ## 快速开始
