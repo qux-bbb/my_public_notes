@@ -260,8 +260,8 @@ git clone -b branch_name --single-branch https://github.com/example/test.git
 有时候`git clone`比较慢，加个代理  
 ```r
 # 设置代理
-git config --global http.proxy http://127.0.0.1:10809
-git config --global https.proxy http://127.0.0.1:10809
+git config --global http.proxy http://127.0.0.1:10808
+git config --global https.proxy http://127.0.0.1:10808
 
 # 取消代理
 git config --global --unset http.proxy
