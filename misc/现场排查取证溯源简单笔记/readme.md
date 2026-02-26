@@ -7,6 +7,8 @@ keywords: 进程id 进程路径
 
 尽量断网排查，避免受攻击者干扰，也避免攻击者删除痕迹跑路。  
 
+排查前可以先看看有没有安全设备如防火墙、EDR的告警，给排查提供思路。
+
 一些技巧：  
 1. 把隐藏文件设置显示，已知后缀设置显示
 2. `netstat -ano` 查看网络连接是否有异常，如有异常，用 `wmic process where processid=<PID> get executablepath` 查找对应程序路径
