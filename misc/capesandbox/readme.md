@@ -14,6 +14,12 @@ github地址: https://github.com/kevoreilly/CAPEv2
 https://github.com/CAPESandbox/community/tree/master/modules/signatures
 大部分signature在这里
 
+https://github.com/CAPESandbox/CAPE-parsers
+cape-parsers模块里是一些家族配置解析脚本，如CobaltStrikeBeacon、CobaltStrikeStager
+注意是一个模块，可以这样查看位置 poetry env info
+cape_parsers位置举例如下
+/home/cape/.cache/pypoetry/virtualenvs/capev2-t2x27zRb-py3.12/lib/python3.12/site-packages/cape_parsers
+
 https://github.com/kevoreilly/capemon/tree/capemon/loader/loader
 loader.exe源码位置
 
