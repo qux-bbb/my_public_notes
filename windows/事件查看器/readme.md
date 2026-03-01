@@ -34,6 +34,11 @@ Windows的事件查看器可以查看各种日志，对应的可执行程序是 
 # Windows日志->系统
 6005 开机
 6006 关机
+
+# Windows日志->应用程序
+18456 SQL Server 数据库登录失败  # 登陆成功不记录
+15457 SQL Server 数据库配置变更  # 如 配置选项 'show advanced options' 已从 0 更改为 1。 | 配置选项 'xp_cmdshell' 已从 0 更改为 1
+
 ```
 https://ponderthebits.com/2018/02/windows-rdp-related-event-logs-identification-tracking-and-investigation/  
 https://jpcertcc.github.io/ToolAnalysisResultSheet/details/mstsc.htm  
