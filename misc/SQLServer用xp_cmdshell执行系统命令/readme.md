@@ -1,5 +1,7 @@
 # SQLServer用xp_cmdshell执行系统命令
 
+keywords: SQL Server
+
 启用 xp_cmdshell
 ```sql
 -- 1. 允许修改高级选项
