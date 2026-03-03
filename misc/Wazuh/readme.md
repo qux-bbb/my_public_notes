@@ -8,7 +8,8 @@ keywords: EDR
 不适合只通过服务端在客户端执行自定义脚本检查漏洞。
 
 官网: https://wazuh.com/  
-github地址: https://github.com/wazuh/wazuh
+github地址: https://github.com/wazuh/wazuh  
+各种部署方式(包含预构建虚机): https://documentation.wazuh.com/current/deployment-options/index.html
 
 
 ## Windows客户端的简单UI程序路径
