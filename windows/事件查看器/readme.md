@@ -92,6 +92,3 @@ https://www.ultimatewindowssecurity.com/securitylog/quickref/downloads/quickref.
 
 完整的事件ID描述列表：  
 https://www.ultimatewindowssecurity.com/securitylog/encyclopedia  
-
-
-2021/7/9  
