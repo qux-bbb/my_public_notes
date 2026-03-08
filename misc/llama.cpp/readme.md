@@ -2,11 +2,13 @@
 
 keywords: ollama
 
-LLM inference in C/C++
+llama.cpp是用C/C++实现的LLM推理工具，可以对话，提供API接口
 
 github地址: https://github.com/ggml-org/llama.cpp
 
-Windows安装
+github release太频繁了，所以不关注release了
+
+Windows安装，也可以用这条命令升级
 ```r
 winget install llama.cpp
 ```
