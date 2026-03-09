@@ -17,6 +17,8 @@ winget install llama.cpp
 ```bash
 llama-cli -hf ggml-org/gemma-3-1b-it-GGUF
 llama-cli -hf unsloth/Qwen3.5-9B-GGUF
+# https://huggingface.co/unsloth/Qwen3.5-9B-GGUF
+# https://www.modelscope.cn/models/unsloth/Qwen3.5-9B-GGUF
 ```
 
 设置环境变量从modelscope下载模型
