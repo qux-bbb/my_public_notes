@@ -1,5 +1,7 @@
 # linux---netlink监控进程创建
 
+keywords: procmon
+
 功能说明：
 - 使用Linux Netlink接口监控进程执行事件（exec）
 - 获取新创建进程的详细信息
