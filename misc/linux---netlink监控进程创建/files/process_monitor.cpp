@@ -13,6 +13,7 @@
 
 struct ProcessInfo {
     pid_t pid;
+    pid_t ppid;  // 父进程ID
     std::string process_name;
     std::string process_path;  // 进程可执行文件的完整路径
     std::string cmdline;
@@ -68,6 +69,7 @@ public:
                                 // 显示进程信息
                                 std::cout << "\n=== 检测到新进程 ===" << std::endl;
                                 std::cout << "进程ID: " << proc_info.pid << std::endl;
+                                std::cout << "父进程ID: " << proc_info.ppid << std::endl;
                                 std::cout << "进程名: " << proc_info.process_name << std::endl;
                                 std::cout << "进程路径: " << (proc_info.process_path.empty() ? "未知" : proc_info.process_path) << std::endl;
                                 std::cout << "完整命令行: " << proc_info.cmdline << std::endl;
@@ -204,6 +206,32 @@ public:
     ProcessInfo get_process_info(pid_t pid) {
         ProcessInfo info;
         info.pid = pid;
+        info.ppid = 0;  // 默认为0
+
+        // 从status文件获取父进程ID
+        std::ifstream status_file("/proc/" + std::to_string(pid) + "/status");
+        if (status_file.is_open()) {
+            std::string line;
+            while (std::getline(status_file, line)) {
+                if (line.substr(0, 5) == "PPid:") {
+                    // 提取PPid值
+                    size_t pos = line.find(':');
+                    if (pos != std::string::npos) {
+                        std::string ppid_str = line.substr(pos + 1);
+                        // 去除空格
+                        ppid_str.erase(0, ppid_str.find_first_not_of(" \t"));
+                        ppid_str.erase(ppid_str.find_last_not_of(" \t") + 1);
+                        try {
+                            info.ppid = std::stoi(ppid_str);
+                        } catch (...) {
+                            // 解析失败保持默认值0
+                        }
+                    }
+                    break; // 找到PPid后退出循环
+                }
+            }
+            status_file.close();
+        }
 
         // 获取进程名和路径，使用 /proc/PID/exe 获取真正的可执行文件路径
         std::string exe_path = "/proc/" + std::to_string(pid) + "/exe";
