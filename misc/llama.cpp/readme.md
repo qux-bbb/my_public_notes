@@ -36,4 +36,5 @@ llama-server设置api-key
 llama-server --api-key hello
 # 多个key用逗号隔开
 llama-server --api-key hello,world
+# 也可以设置环境变量LLAMA_API_KEY，值直接写key即可
 ```
