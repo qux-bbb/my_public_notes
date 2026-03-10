@@ -5,6 +5,14 @@ hydra - a very fast network logon cracker which supports many different services
 
 github地址: https://github.com/vanhauser-thc/thc-hydra
 
+安装：
+```bash
+# 安装命令行版本
+sudo apt install hydra
+# 安装图形化界面版本
+sudo apt install xhydra
+```
+
 示例如下：
 ```bash
 # 爆破FTP
