@@ -2,7 +2,7 @@
 
 keywords: ollama
 
-llama.cpp是用C/C++实现的LLM推理工具，可以对话，提供API接口
+llama.cpp是用C/C++实现的LLM推理工具，可以对话，提供API接口，可以设置api-key。
 
 github地址: https://github.com/ggml-org/llama.cpp
 
