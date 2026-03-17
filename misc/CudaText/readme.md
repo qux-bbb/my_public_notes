@@ -19,6 +19,3 @@ Plugins -> Options Editor Lite, 搜索"ui_max_size_open"，修改为自己期望
 
 ## 缺点
 1. 不能搜索文件夹
-
----
-2022/7/4  
