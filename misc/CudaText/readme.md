@@ -17,6 +17,8 @@ Plugins -> Options Editor Lite, 搜索"ui_max_size_open"，修改为自己期望
 
 方法来源: https://github.com/Alexey-T/CudaText/issues/5419  
 
+## 缺点
+1. 不能搜索文件夹
 
 ---
 2022/7/4  
