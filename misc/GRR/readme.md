@@ -1,5 +1,7 @@
 # GRR
 
+keywords: 应急响应
+
 GRR Rapid Response is an incident response framework focused on remote live forensics.
 
 github地址: https://github.com/google/grr
