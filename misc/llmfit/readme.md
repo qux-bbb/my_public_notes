@@ -1,6 +1,6 @@
 # llmfit
 
-llmfitk可以检测硬件，查找哪些模型适合在机器上运行。
+llmfit可以检测硬件，查找哪些大模型适合在机器上运行。
 
 github地址: https://github.com/AlexsJones/llmfit
 
