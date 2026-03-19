@@ -12,11 +12,8 @@ github地址: https://github.com/wazuh/wazuh
 各种部署方式(包含预构建虚机): https://documentation.wazuh.com/current/deployment-options/index.html
 
 
-## Windows客户端的简单UI程序路径
+## 一些注意点
 ```
+Windows客户端的简单UI程序路径
 C:\Program Files (x86)\ossec-agent\win32ui.exe
 ```
-
-
----
-2025/5/12
