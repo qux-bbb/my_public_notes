@@ -16,4 +16,6 @@ github地址: https://github.com/wazuh/wazuh
 ```
 Windows客户端的简单UI程序路径
 C:\Program Files (x86)\ossec-agent\win32ui.exe
+
+使用预构建虚机部署时，如果服务端没有ip地址，试试把网络模式改成NAT模式
 ```
