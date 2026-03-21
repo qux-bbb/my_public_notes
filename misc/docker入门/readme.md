@@ -61,8 +61,8 @@ https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non
 sudo groupadd docker
 # Add your user to the docker group.
 sudo usermod -aG docker $USER
-# 重启或使用该命令生效:
-newgrp docker
+# 最好重启生效，如果想临时在当前会话生效，可执行该命令`newgrp docker`，注意这个命令只能在当前终端生效，新建终端会失效。
+
 # run hello-world to verify
 docker run hello-world
 ```
