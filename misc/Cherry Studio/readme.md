@@ -9,5 +9,11 @@ github地址: https://github.com/CherryHQ/cherry-studio
 
 知识库功能结合ollama上的"bge-m3"嵌入模型很方便，但文档引用还有问题  
 
+## 快捷短语
+翻译
+```
+翻译以下内容，如果是中文则翻译成英文，如果是英文则翻译成中文：
+${content}
+```
 
 2025/2/9  
