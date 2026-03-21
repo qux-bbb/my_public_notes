@@ -1,4 +1,7 @@
 # linux---自启动方法
+
+keywords: 自启动项
+
 简单记一下linux程序自启动方法。  
 
 ## cron
