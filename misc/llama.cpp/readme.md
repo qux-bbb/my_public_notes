@@ -26,15 +26,17 @@ llama-cli -hf unsloth/Qwen3.5-9B-GGUF
 MODEL_ENDPOINT=https://www.modelscope.cn/
 ```
 
-启动llama-server，可以在浏览器中访问 http://localhost:8080
-```bash
 llama-server
-```
-
-llama-server设置api-key
 ```bash
+# 默认启动方式，可以在浏览器中访问 http://localhost:8080
+llama-server
+
+# 设置api-key
 llama-server --api-key hello
-# 多个key用逗号隔开
+# 多个key可以用逗号隔开，注意这里hello和world是两个不同的key
 llama-server --api-key hello,world
 # 也可以设置环境变量LLAMA_API_KEY，值直接写key即可
+
+# 设置host允许其他机器访问，默认是localhost
+llama-server --host 0.0.0.0 --api-key hello
 ```
