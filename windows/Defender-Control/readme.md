@@ -4,7 +4,7 @@ keywords: dControl.exe
 
 Defender Control可以很方便地禁用和启用Windows Defender。  
 
-官网: https://www.sordum.org/  
+官网: https://www.sordum.org/?s=Defender+Control
 
 
 2024/6/30  

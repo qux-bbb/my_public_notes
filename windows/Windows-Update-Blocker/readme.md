@@ -2,4 +2,4 @@
 
 Windows Update Blocker可以禁用Windows更新。
 
-官网: https://www.sordum.org/
+官网: https://www.sordum.org/?s=Windows+Update+Blocker
