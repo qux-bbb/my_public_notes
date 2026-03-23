@@ -13,3 +13,8 @@ bcdedit /enum | findstr hypervisorlaunchtype
 ```r
 bcdedit /set hypervisorlaunchtype off
 ```
+
+还需要关闭内存完整性以提高性能
+```
+Windows安全中心 -> 设备安全性 -> 内核隔离 -> 内核隔离详细信息 -> 内存完整性，关闭，重启系统
+```
