@@ -17,4 +17,7 @@ jj commit -m "first commit"
 
 # 查看提交历史
 jj log
+
+# 修改提交描述
+jj describe <提交ID>
 ```
