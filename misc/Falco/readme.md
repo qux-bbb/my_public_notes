@@ -17,6 +17,11 @@ https://github.com/falcosecurity/falco/tree/master/docker/docker-compose
 sudo cat /etc/shadow
 ```
 
+搜索日志:
+```bash
+grep falco /var/log/syslog
+```
+
 
 ---
 信息来源: https://cloud.tencent.com/developer/article/2452623  
