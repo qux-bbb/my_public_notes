@@ -29,6 +29,9 @@ https://www.immunet.com/
 ClamWin有图形界面，没有实时检测功能，开源，不需要单独安装ClamAV。  
 https://clamwin.com/  
 
+clamav-desktop正在开发中  
+https://github.com/ivangabriele/clamav-desktop
+
 
 ## ClamAV中各个程序的功能介绍
 
