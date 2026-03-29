@@ -21,7 +21,7 @@ Windows平台本身不支持实时监测，Immunet封装了ClamAV，提供实时
 
 
 ## Windows图形界面程序
-官网只有命令行版本的。  
+官网只有命令行版本的，第三方的图形化界面程序都很久不更新了。
 
 Immunet有图形界面和实时检测功能，不开源，不需要单独安装ClamAV。  
 https://www.immunet.com/  
