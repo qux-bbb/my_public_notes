@@ -23,5 +23,26 @@ grep falco /var/log/syslog
 ```
 
 
+## 规则
+Falco规则文件: https://github.com/falcosecurity/rules
+
+配置和规则文件夹 /etc/falco/
+
+一个规则例子：
+```yaml
+# Commands with Bash as Parent Logging rule
+- rule: Log Commands with Bash as Parent
+  desc: Logs all commands where bash is the parent process
+  condition: >
+    evt.type in (execve, execveat) and
+    proc.pname = bash
+  output: >
+    Command executed with bash as parent (user=%user.name proc=%proc.name pid=%proc.pid ppid=%proc.ppid exe=%proc.exe command=%proc.cmdline args=%proc.args exeline=%proc.exeline parent_command=%proc.pcmdline)
+  priority: INFO
+  tags: [shell, command, monitoring, bash_as_parent]
+
+```
+
+
 ---
 信息来源: https://cloud.tencent.com/developer/article/2452623  
