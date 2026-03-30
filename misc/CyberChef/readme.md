@@ -14,6 +14,10 @@ To Hexdump
 # 移位/凯撒/caser
 ROT13
 
+# 逐个字节加减
+ADD
+SUB
+
 # 删除一些字节
 Drop bytes
 
