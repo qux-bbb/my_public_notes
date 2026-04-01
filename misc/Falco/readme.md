@@ -43,6 +43,21 @@ Falco规则文件: https://github.com/falcosecurity/rules
 
 ```
 
+规则示例：Bash网络连接检测
+```yaml
+- rule: Detect Bash Network Connection
+  desc: Detects when a bash process initiates a network connection (potential reverse shell or data exfiltration)
+  condition: >
+    evt.type = connect and
+    proc.name = bash and
+    fd.typechar in ('4', '6')
+  output: >
+    Bash process detected making network connection 
+    (user=%user.name process=%proc.name cmdline=%proc.cmdline connection=%fd.name container_id=%container.id)
+  priority: WARNING
+  tags: [network, shell, mitre_execution]
+```
+
 
 ---
 信息来源: https://cloud.tencent.com/developer/article/2452623  
