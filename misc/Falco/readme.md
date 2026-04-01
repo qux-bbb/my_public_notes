@@ -28,7 +28,7 @@ Falco规则文件: https://github.com/falcosecurity/rules
 
 配置和规则文件夹 /etc/falco/
 
-一个规则例子：
+规则示例：父进程是Bash的进程命令记录
 ```yaml
 # Commands with Bash as Parent Logging rule
 - rule: Log Commands with Bash as Parent
@@ -40,7 +40,6 @@ Falco规则文件: https://github.com/falcosecurity/rules
     Command executed with bash as parent (user=%user.name proc=%proc.name pid=%proc.pid ppid=%proc.ppid exe=%proc.exe command=%proc.cmdline args=%proc.args exeline=%proc.exeline parent_command=%proc.pcmdline)
   priority: INFO
   tags: [shell, command, monitoring, bash_as_parent]
-
 ```
 
 规则示例：Bash网络连接检测
