@@ -44,6 +44,7 @@ Falco规则文件: https://github.com/falcosecurity/rules
 
 规则示例：Bash网络连接检测
 ```yaml
+# 现在这条规则检测到的cmdline不完整 https://github.com/falcosecurity/falco/issues/3842
 - rule: Detect Bash Network Connection
   desc: Detects when a bash process initiates a network connection (potential reverse shell or data exfiltration)
   condition: >
