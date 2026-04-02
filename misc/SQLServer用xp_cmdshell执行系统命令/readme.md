@@ -17,6 +17,9 @@ GO
 
 执行系统命令
 ```sql
+-- 查看当前身份
+EXEC xp_cmdshell 'whoami';
+
 -- 查看当前目录文件
 EXEC xp_cmdshell 'dir C:\';
 
