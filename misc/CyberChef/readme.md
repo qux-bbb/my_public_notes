@@ -31,6 +31,3 @@ Parse QR Code
 # unicode转中文，注意右下角编码可能需要手动切换为UTF-8 \u4F60\u597D
 Unescape Unicode Characters
 ```
-
-
-2021/12/20  
