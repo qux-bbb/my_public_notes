@@ -15,7 +15,7 @@ https://modelcontextprotocol.io/specification/2024-11-05/basic/transports
 2. Streamable HTTP, 用来替代旧的 HTTP with Server-Sent Events (SSE)
 
 
-## MCP-Inspector
+## MCP Inspector
 https://github.com/modelcontextprotocol/inspector
 
 用于测试和调试MCP服务器的工具
