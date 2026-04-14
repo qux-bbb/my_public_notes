@@ -19,3 +19,8 @@ https://modelcontextprotocol.io/specification/2024-11-05/basic/transports
 https://github.com/modelcontextprotocol/inspector
 
 用于测试和调试MCP服务器的工具
+
+安装启动打开UI界面
+```ps1
+npx @modelcontextprotocol/inspector
+```
