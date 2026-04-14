@@ -22,3 +22,14 @@ context: |
   语言：中文（简体）
   所有产出物必须用简体中文撰写。
 ```
+
+## 扩展功能
+OpenSpec默认是这样：
+```
+/opsx:propose ──► /opsx:apply ──► /opsx:archive
+```
+
+可以通过 `openspec config profile` 和 `openspec update` 扩展成这样或其他自定义的样子
+```
+/opsx:new ──► /opsx:ff or /opsx:continue ──► /opsx:apply ──► /opsx:verify ──► /opsx:archive
+```
