@@ -12,3 +12,13 @@ github地址: https://github.com/Fission-AI/OpenSpec
 cd your-project
 openspec init
 ```
+
+## 切换语言
+https://github.com/Fission-AI/OpenSpec/blob/main/docs/multi-language.md
+
+修改 openspec/config.yaml, 添加内容：
+```yaml
+context: |
+  语言：中文（简体）
+  所有产出物必须用简体中文撰写。
+```
