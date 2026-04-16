@@ -27,9 +27,13 @@ context: |
 OpenSpec默认是这样：
 ```
 /opsx:propose ──► /opsx:apply ──► /opsx:archive
+发起提案 ──► 应用实施 ──► 归档记录
 ```
 
 可以通过 `openspec config profile` 和 `openspec update` 扩展成这样或其他自定义的样子
 ```
 /opsx:new ──► /opsx:ff or /opsx:continue ──► /opsx:apply ──► /opsx:verify ──► /opsx:archive
+创建提案 ──► 策略选择 ──► 应用实施 ──► 验证确认 ──► 归档记录
+ff, Fast-Forward: 快速迭代，无需等待验证确认
+continue: 继续处理，需要人工介入
 ```
