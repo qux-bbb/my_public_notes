@@ -14,5 +14,7 @@ Username: remnux Password: malware
 然后应用更改: `sudo netplan apply`  
 参考链接: https://blog.csdn.net/qq_30727593/article/details/122855277  
 
+在这里看怎么配置GhidrAssistMCP: https://docs.remnux.org/discover-the-tools/use+artificial+intelligence#ghidrassistmcp
+
 
 2020/12/16  
