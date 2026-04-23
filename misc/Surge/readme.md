@@ -1,6 +1,6 @@
 # Surge
 
-Surge是一个Go编写的TUI下载器。
+Surge是一个Go编写的TUI下载工具。
 
 github地址: https://github.com/surge-downloader/Surge
 
