@@ -48,5 +48,15 @@ docker logs hbbs
 由于阿里云默认只允许22、3389、ICMP，所以不需要启用ufw
 
 
+## 安装客户端
+https://github.com/rustdesk/rustdesk/releases
+
+### Windows
+下载exe安装包，安装即可
+
+### Ubuntu
+下载deb安装包，安装即可
+
+
 ---
 2024/8/25  
