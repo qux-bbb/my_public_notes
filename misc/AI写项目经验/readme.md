@@ -1,5 +1,7 @@
 # AI写项目经验
 
+keywords: AI项目
+
 ```bash
 cd my_project
 openspec init
