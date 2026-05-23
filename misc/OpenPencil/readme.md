@@ -1,5 +1,7 @@
 # OpenPencil
 
+keywords: UI/UX 设计工具 界面设计
+
 AI-native design editor. Open-source Figma alternative.
 
 还在开发中，AI还不能用
