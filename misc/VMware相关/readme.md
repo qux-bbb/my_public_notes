@@ -1,6 +1,7 @@
 # VMware相关
 
 官网: https://www.vmware.com/  
+产品页面: https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
 
 VMware Workstation Pro 是非常好用的虚拟机软件，2023年11月被博通收购，2024年5月宣布对个人用户免费，需要注册账号登陆下载。  
 
