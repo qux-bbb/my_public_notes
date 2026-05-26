@@ -1,6 +1,6 @@
 # OpenCode
 
-开源 AI 编程代理
+开源 AI 编程智能体
 
 官网: https://opencode.ai/  
 github地址: https://github.com/anomalyco/opencode
