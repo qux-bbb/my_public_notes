@@ -2,7 +2,7 @@
 
 keywords: 剪视频 剪音频
 
-官网: https://mifi.no/losslesscut/  
+官网: https://losslesscut.app/  
 github地址: https://github.com/mifi/lossless-cut  
 
 LosslessCut目标是成为FFmpeg最好的GUI，快速无损编辑视频、音频，支持Windows、Linux、Mac。  
