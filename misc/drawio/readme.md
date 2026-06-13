@@ -13,6 +13,7 @@ github地址: https://github.com/jgraph/drawio
 右边 样式 里的 Sketch(手绘风) 圆角 曲线 都挺好看的  
 
 缺点是图标比较少，可以从这里搜索图标然后复制粘贴使用：  
+https://commons.wikimedia.org/  
 https://www.iconfinder.com/  
 https://openclipart.org/  
 https://simpleicons.org/ (开源SVG图标，信息来源: https://mp.weixin.qq.com/s/epCoS3T0qRiQv1lMFXfEnw)  
