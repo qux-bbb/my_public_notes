@@ -3,7 +3,7 @@
 keywords: 自动渗透测试
 
 ## 基本信息
-PentAGI, Penetration testing Artificial General Intelligence, 全自主的渗透测试智能体。
+PentAGI, Penetration testing Artificial General Intelligence, 渗透测试智能体。
 
 官网: https://pentagi.com/  
 github地址: https://github.com/vxcontrol/pentagi
