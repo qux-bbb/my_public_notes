@@ -1,6 +1,6 @@
 # LosslessCut
 
-keywords: 剪视频 剪音频
+keywords: 剪视频 剪音频 剪辑
 
 官网: https://losslesscut.app/  
 github地址: https://github.com/mifi/lossless-cut  
