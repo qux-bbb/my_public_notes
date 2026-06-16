@@ -1,5 +1,7 @@
 # MCP
 
+keywords: 官方
+
 ## 基本信息
 MCP, Model Context Protocol, 模型上下文协议，标准化工具调用
 
