@@ -18,4 +18,10 @@ Windows客户端的简单UI程序路径
 C:\Program Files (x86)\ossec-agent\win32ui.exe
 
 使用预构建虚机部署时，如果服务端没有ip地址，试试把网络模式改成NAT模式
+
+默认不会实时监控进程创建，只会每小时获取一次进程信息，可以问Hermes怎么配置实时进程监控和命令行获取
+
+官方只提供从官网下载安装客户端的命令，不提供从本地下载安装的命令，可以下载之后手动安装
+https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.5-1.msi
+msiexec.exe /i wazuh-agent-4.14.5-1.msi /q WAZUH_MANAGER='192.168.116.147' 
 ```
