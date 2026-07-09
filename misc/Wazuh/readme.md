@@ -25,3 +25,8 @@ C:\Program Files (x86)\ossec-agent\win32ui.exe
 https://packages.wazuh.com/4.x/windows/wazuh-agent-4.14.5-1.msi
 msiexec.exe /i wazuh-agent-4.14.5-1.msi /q WAZUH_MANAGER='192.168.116.147' 
 ```
+
+## 登陆有效时间
+默认登陆有效时间是900秒(15分钟)，可以修改为其他时间，单位是秒
+
+脚本: [wazuh_token_timeout.py](./files/wazuh_token_timeout.py)
