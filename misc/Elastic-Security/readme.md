@@ -49,3 +49,33 @@
 
 Wazuh有比较方便使用的资产管理功能，Elastic Security查看统计日志更灵活
 ```
+
+---
+
+## Kibana 界面改中文
+
+编辑 `kibana.yml`（路径取决于安装方式）：
+
+| 安装方式 | 配置文件路径 |
+|---------|------------|
+| RPM/DEB 包 | `/etc/kibana/kibana.yml` |
+| Tarball | `<kibana安装目录>/config/kibana.yml` |
+| Docker | 挂载卷中的配置 |
+
+添加一行：
+
+```yaml
+i18n.locale: "zh-CN"
+```
+
+重启 Kibana 后整个 UI（包括 Elastic Security 面板）即变为简体中文。
+
+```bash
+# systemd 方式
+sudo systemctl restart kibana
+
+# tarball 方式
+# 先 kill 进程再重新启动 bin/kibana
+```
+
+> ⚠ 如果只看到部分中文，清除浏览器缓存再刷新。
