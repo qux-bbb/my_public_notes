@@ -1,6 +1,6 @@
 # ZeroOmega
 
-keywords: Proxy SwitchyOmega 浏览器代理 浏览器扩展
+keywords: Proxy SwitchyOmega 浏览器代理 浏览器扩展 proxyswitch switchproxy switchomega
 
 Manage and switch between multiple proxies quickly & easily.  
 SwitchyOmega停止更新了，ZeroOmega兼容了manifest v3
