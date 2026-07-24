@@ -1,9 +1,13 @@
 # Portmaster
 
+keywords: Fab Fort Firewall
+
 Portmaster是一个开源的网络管理工具，可以按应用(可以是前后缀)、域名、IP地址等进行网络管理(允许、拒绝)，支持Windows、Linux。
 
 官网: https://safing.io/  
 github地址: https://github.com/safing/portmaster
+
+非常强大和详细，但也比较耗资源。
 
 如果打开后发现域名都无法解析，可以这样配置：  
 Global Settings -> Secure DNS -> Servers -> DNS Servers  
