@@ -11,9 +11,4 @@ github地址: https://github.com/zed-industries/zed
 ```
 
 缺点：
-1. git功能没有提交历史记录
-2. 只支持UTF-8编码的文件
-3. markdown预览不能选择复制内容
-
-
-2025/4/27
+1. 文件历史记录不太方便看变化
