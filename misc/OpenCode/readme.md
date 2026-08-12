@@ -9,3 +9,12 @@ github地址: https://github.com/anomalyco/opencode
 
 skills说明: https://opencode.ai/docs/zh-cn/skills/  
 注意添加或修改skill后，需要重启才会生效
+
+OpenCode Go
+```
+url:
+https://opencode.ai/zen/go/v1
+
+模型可以设置
+deepseek-v4-flash
+```
