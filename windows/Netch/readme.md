@@ -1,5 +1,7 @@
 # Netch
 
+很久不更新了，建议使用 ProxyBridge
+
 Netch是一个开源的代理软件，可以分应用代理，预置了一些常用的应用代理模式，可以代替proxifier。  
 github地址: https://github.com/NetchX/Netch  
 
