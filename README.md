@@ -1,3 +1,5 @@
+# my_public_notes
+
 该仓库用作公开笔记存储，基本结构为：  
 ```r
 notes_dir
