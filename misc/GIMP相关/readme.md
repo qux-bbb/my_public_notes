@@ -16,4 +16,7 @@ shift+画笔  可以画直线
 选中这个可以很方便地拖图片到画布边缘  
 
 
-2020/6/6  
+## GIMP MCP
+GIMP MCP 可以让大模型操作GIMP修图，很方便
+
+github地址: https://github.com/maorcc/gimp-mcp
