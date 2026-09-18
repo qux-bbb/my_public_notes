@@ -7,7 +7,9 @@ github地址: https://github.com/mifi/lossless-cut
 
 LosslessCut目标是成为FFmpeg最好的GUI，快速无损编辑视频、音频，支持Windows、Linux、Mac。  
 切视频、合并视频很快，可以精确跳转帧。  
-可以在左下角通过"更改FPS"实现变速功能(越高速度越快)。  
+可以在左下角通过"更改FPS"实现变速功能(越高速度越快)。 
+
+切视频要找关键帧作为起点或终点，不然最后合并会有几帧不想要的画面。
 
 信息来源: https://www.ruanyifeng.com/blog/2024/09/weekly-issue-319.html  
 
