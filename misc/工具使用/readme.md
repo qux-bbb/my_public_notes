@@ -32,7 +32,7 @@ github项目链接: https://github.com/DaPangR/Steganography
 
 ## everything
 **功能：** 搜索电脑上的所有文件，比windows自己的文件搜索快多了  
-官网及下载: http://www.voidtools.com  
+官网及下载: https://www.voidtools.com
 
 ## Snipaste
 **功能：**  截图、贴图软件，神器  
