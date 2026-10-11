@@ -16,3 +16,6 @@ $DSH_HOME/.credentials.yaml
 
 想要的功能：
 1. 打开远端linux机器的目录、本地wsl的目录作为工作区
+2. 连接MCP
+3. 记忆功能
+4. 侧边对话
