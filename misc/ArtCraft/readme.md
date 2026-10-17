@@ -2,7 +2,7 @@
 
 ArtCraft是一系列用Rust编写的软件，涵盖了Adobe、Office等产品，原生支持MCP。
 
-官网: https://getartcraft.com/
+官网: https://getartcraft.com/apps
 
 
 ## PhotoCraft
