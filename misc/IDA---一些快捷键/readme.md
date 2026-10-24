@@ -5,7 +5,7 @@ https://docs.hex-rays.com/user-guide/configuration/shortcuts
 
 这里记录了常用的快捷键
 ```
-F5              反汇编
+F5              反编译
                     如果在伪代码视图则更新伪代码结果
                     如果在汇编代码视图则新创建一个伪代码视图
 空格            切换视图(汇编代码 逻辑图)

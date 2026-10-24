@@ -13,7 +13,7 @@ View -> Open subviews -> Proximity Browser
 ## 修改16进制
 点击要修改那一行asm代码，然后菜单Edit->Patch program->Change bytes就可以修改，  
 修改完 `Edit -> Patch program -> Apply patches to input file` 就可以保存了。  
-在IDA里面修改16进制，修改完可以直接F5重新反汇编，看修改后的代码逻辑。  
+在IDA里面修改16进制，修改完可以直接F5重新反编译，看修改后的代码逻辑。  
 
 
 - - -
