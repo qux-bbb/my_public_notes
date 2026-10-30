@@ -1,5 +1,7 @@
 # TizuMark
 
+用 MarkFlowy 吧
+
 TizuMark是一个轻量的Markdown编辑器。
 
 github地址: https://github.com/tizuio/TizuMark
