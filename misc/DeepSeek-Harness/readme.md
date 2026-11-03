@@ -13,9 +13,13 @@ $DSH_HOME/.credentials.yaml
 %USERPROFILE%\.dsh\.credentials.yaml
 ```
 
+思考过程机器翻译 是DSH内置试验性插件，挺好用的
+
+dsh-mnemon是一个DSH插件，提供记忆功能  
+https://github.com/omdsh-dev/dsh-mnemon/blob/main/README.zh-CN.md
+
 
 想要的功能：
 1. 打开远端linux机器的目录、本地wsl的目录作为工作区
 2. 连接MCP
-3. 记忆功能
 4. 侧边对话
