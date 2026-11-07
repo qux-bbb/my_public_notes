@@ -6,4 +6,6 @@ BLA（致盲 LLM 智能体，Blind LLM Agents）——一种对抗性防御护�
 官网: https://bla.tools/  
 github地址: https://github.com/qybaihe/bla
 
+实测对VisualStudio编译的exe没什么保护作用。
+
 信息来源: https://www.zhihu.com/question/317983272/answer/2101943425641797526
