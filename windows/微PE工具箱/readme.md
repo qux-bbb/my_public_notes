@@ -1,6 +1,6 @@
 # 微PE工具箱
 
-keywords: U盘
+keywords: U盘 C盘扩容
 
 Windows PE系统维护工具箱，也可以分区。
 
