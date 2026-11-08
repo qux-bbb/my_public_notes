@@ -1,6 +1,6 @@
 # MarkFlowy
 
-MarkFlowy 是一个 Markdown 编辑器。
+MarkFlowy 是一个 Markdown 编辑器，可以展示目录，支持所见即所得编辑模式。
 
 github地址: https://github.com/drl990114/MarkFlowy
 
