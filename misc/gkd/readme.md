@@ -13,7 +13,7 @@ github介绍功能：
 
 官方不维护订阅，有一些第三方订阅：  
 https://github.com/topics/gkd-subscription  
-我用的AIsouler订阅: https://github.com/AIsouler/GKD_subscription  
+我用的lin-arm订阅: https://github.com/lin-arm/GKD_subscription  
 
 
 信息来源: https://www.bilibili.com/video/BV1X94y1E7k8  
