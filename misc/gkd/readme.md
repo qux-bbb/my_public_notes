@@ -37,5 +37,6 @@ https://github.com/gkd-kit/subscription-template
 写规则可以参考其他第三方订阅。  
 
 
----
-2023/12/7  
+## AI写订阅
+
+自己写订阅太麻烦了，可以让AI写，DSH Go就不错
