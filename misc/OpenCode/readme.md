@@ -18,3 +18,9 @@ https://opencode.ai/zen/go/v1
 模型可以设置
 deepseek-v4-flash
 ```
+
+插件
+```
+https://chromewebstore.google.com/detail/browse/mfnicocicmmlkpjnaffgihfjhdgjkdjg
+browse 让OpenCode操作系统的浏览器
+```
