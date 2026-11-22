@@ -30,7 +30,7 @@ https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/README
 
 
 ## 创建代码仓库
-```r
+```bash
 git init
 ```
 
@@ -40,14 +40,14 @@ git init
 
 
 ## 查看当前配置
-```r
+```bash
 git config --list
 ```
 
 
 ## 设置身份
 右键打开Git Bash  
-```r
+```bash
 git config user.name "Tony"
 git config user.email "tony@email.com"
 ```
@@ -55,7 +55,7 @@ git config user.email "tony@email.com"
 去掉最后的名字和邮箱可用来查看信息  
 
 取消设置 user.name  
-```r
+```bash
 git config --unset user.name
 ```
 
@@ -63,7 +63,7 @@ git config --unset user.name
 
 
 ## 提交代码
-```r
+```bash
 # 添加提交代码，a可以是文件，文件夹
 git add a
 # 添加所有文件
@@ -76,7 +76,7 @@ git commit -m "First commit"
 
 
 ## 查看修改内容
-```r
+```bash
 # 查看文件修改情况
 git status 
 # 查看更改内容
@@ -97,14 +97,14 @@ git diff --name-only
 
 
 ## 删除新生成的文件和文件夹
-```r
+```bash
 git clean -df
 ```
 
 
 ## 撤销未提交的修改
 1. 没有执行过add命令的文件
-    ```r
+    ```bash
     # 撤销单个文件
     git checkout src/....../MainActivity.java
     # 放弃所有修改 方法1
@@ -113,20 +113,20 @@ git clean -df
     git reset --hard
     ```
 2. 执行过add命令的文件(就是撤销add)
-    ```r
+    ```bash
     git reset HEAD src/....../MainActivity.java
     ```
     然后按没执行add命令的文件处理  
 
 
 ## 撤销已提交(commit)的修改
-```r
+```bash
 git reset HEAD^
 ```
 
 
 ## 查看提交记录
-```r
+```bash
 # 查看全部提交记录
 git log
 # 查看其中一条记录 -1 表示只输出一行
@@ -141,61 +141,61 @@ git log -p 文件名
 ```
 
 ## 强制恢复到某次提交
-```r
+```bash
 git reset --hard 4458e09
 ```
 
 
 ## 从所有的提交记录中彻底删除一个文件
-```r
+```bash
 git filter-branch --tree-filter 'rm top/secret/file' HEAD
 ```
 
 
 ## 删除某次提交记录
 找到要删除的提交记录的前一条记录，假设为 abcd，执行命令  
-```r
+```bash
 git rebase -i abcd
 ```
 编辑，将想要删除的记录前的"pick"改为"drop"即可(如果想保存当前状态的所有文件，建议先保存一份，在删完某次提交记录后，重新复制回来，加一次commint)  
 修改完成后，如果要同步到远程地址，需要强制push  
-```r
+```bash
 git push --force
 ```
 
 
 ## 恢复删除的提交记录
 查看历史记录  
-```r
+```bash
 git reflog
 ```
 复制要恢复阶段 的 hash值，执行reset命令  
-```r
+```bash
 git reset --hard 4458e09
 ```
 
 
 ## 修改某次提交的commit内容
 找到要修改的提交记录的前一条记录，假设为 abcd，执行命令  
-```r
+```bash
 git rebase -i abcd
 ```
 编辑，将想要修改的记录前的"pick"改为"edit"即可,wq保存退出，执行命令  
-```r
+```bash
 git commit --amend
 ```
 即可修改commit内容，修改完成后，wq保存退出，执行命令  
-```r
+```bash
 git rebase --continue
 ```
 即可修改完成，完成后，强制push到远程仓库  
-```r
+```bash
 git push --force
 ```
 
 
 ## 暂时储藏修改的代码
-```r
+```bash
 git stash
 # -m 可添加说明
 git stash -m "hello"
@@ -210,13 +210,13 @@ git stash pop
 
 
 ## 文件重命名
-```r
+```bash
 git mv a.txt b.txt
 ```
 
 
 ## 分支
-```r
+```bash
 # 查看当前版本库中有哪些分支
 git branch -a
 # 创建一个分支 version1.0
@@ -232,7 +232,7 @@ git branch -D version1.0
 
 
 ## 远程版本库协作
-```r
+```bash
 # 将远程版本库的代码下载到本地
 git clone https://github.com/example/test.git
 # 将远程版本库的代码下载到本地，包含子仓库
@@ -244,7 +244,7 @@ git push origin master
 
 
 ## 将远程版本库的修改同步到本地
-```r
+```bash
 # 将远程版本库的代码同步到本地，存放到一个origin/master分支上
 git fetch origin master
 # 相当于执行fetch和merge这两个命令，可以从远程版本库获取最新的代码并且合并到本地
@@ -255,14 +255,14 @@ git pull origin master --recurse-submodules
 
 
 ## 只下载一个指定的分支
-```r
+```bash
 git clone -b branch_name --single-branch https://github.com/example/test.git
 ```
 
 
 ## 代理
 有时候`git clone`比较慢，加个代理  
-```r
+```bash
 # 设置代理
 git config --global http.proxy http://127.0.0.1:10808
 git config --global https.proxy http://127.0.0.1:10808
@@ -283,17 +283,17 @@ github的地址虽然看起来是https，我设置了http才生效
 想要的效果是保留以前的提交记录  
 先在github或gitlab创建一个同名空仓库  
 然后本地用以下命令添加远程仓库就好，然后就可以像正常情况一样操作了  
-```r
+```bash
 git remote add origin https://github.com/the_user/hello
 ```
 第一次运行push指令应该这样：  
-```r
+```bash
 git push --set-upstream origin master
 ```
 
 
 ## 更新远程仓库地址
-```r
+```bash
 git config remote.origin.url git://new.url/proj.git
 ```
 设置成git协议可以用公私钥体系获取和更新私有仓库  
@@ -301,11 +301,11 @@ git config remote.origin.url git://new.url/proj.git
 
 ## 创建命令别名
 设置checkout别名为co  
-```r
+```bash
 git config --global alias.co checkout
 ```
 显示当前所有别名  
-```r
+```bash
 git config --global --get-regexp alias
 ```
 
@@ -316,7 +316,7 @@ git不跟踪空文件夹，解决办法是在空文件夹里建一个空文件
 
 ## 命令行显示汉字
 部分情况下命令行执行结果的中文显示为8进制串，这样设置可以显示为中文：  
-```r
+```bash
 git config --global core.quotepath false
 ```
 
