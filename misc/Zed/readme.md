@@ -10,5 +10,4 @@ github地址: https://github.com/zed-industries/zed
 切换软换行: Ctrl + K + Z
 ```
 
-缺点：
-1. 文件历史记录不太方便看变化
+在文件上鼠标右键选择"View History"，可以查看文件历史记录，要看具体差异还需要再点一下，稍微麻烦一步
