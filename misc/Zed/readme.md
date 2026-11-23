@@ -11,3 +11,7 @@ github地址: https://github.com/zed-industries/zed
 ```
 
 在文件上鼠标右键选择"View History"，可以查看文件历史记录，要看具体差异还需要再点一下，稍微麻烦一步
+
+缺点：
+- 界面只支持英文，不支持中文等其他语言
+- 缺少类似 Project Manager 的VSCode插件
