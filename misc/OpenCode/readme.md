@@ -21,6 +21,6 @@ deepseek-v4-flash
 
 插件
 ```
-https://chromewebstore.google.com/detail/browse/mfnicocicmmlkpjnaffgihfjhdgjkdjg
+https://opencode.ai/product/browse
 browse 让OpenCode操作系统的浏览器
 ```
