@@ -4,7 +4,7 @@ keywords: 重置root密码
 
 在忘记密码的情况下，如何重置linux用户密码？
 
-1. 在启动时可以看到GRUB菜单，按"e"修改启动选项(如果启动速度太快，可以录像看看有没有这个界面)
+1. 在启动时可以看到GRUB菜单，按"e"修改启动选项(如果没有GRUB菜单，可以启动的时候快速按ESC)
 2. 找到"linux"开头的行，只修改该行，把"ro"以及之后的内容都删掉，换成"rw init=/bin/bash"
 3. Ctrl+x, 启动，进入root权限的shell
 4. 重新挂载文件系统: mount -no remount,rw /
