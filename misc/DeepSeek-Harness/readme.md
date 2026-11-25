@@ -34,3 +34,7 @@ https://github.com/omdsh-dev/DSH-better-sidebar
 ## 想要的功能
 1. 打开远端linux机器的目录、本地wsl的目录作为工作区
 2. 连接MCP
+
+
+## 参考链接
+https://www.bilibili.com/video/av117663430871240
