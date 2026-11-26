@@ -11,5 +11,8 @@ github地址: https://github.com/CapSoftware/Cap
 
 可以生成键盘按键
 
+转写功能可以把语音转成文字，但现在效果还不好  
+在“样式”->“字幕”，可以选择语言和模型
+
 
 信息来源: https://www.bilibili.com/video/BV1Vb4q6AEfm
