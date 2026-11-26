@@ -2,6 +2,7 @@
 
 红白喜事礼簿记账。
 
+网站: https://egift-book.netlify.app/  
 github地址: https://github.com/jingguanzhang/gift-book/
 
 
